@@ -1,4 +1,0 @@
-# GFStatistics
-GFStatistics
-
-commit test
