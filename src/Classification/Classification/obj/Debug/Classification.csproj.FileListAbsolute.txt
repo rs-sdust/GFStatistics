@@ -1,0 +1,9 @@
+E:\高分统计\GF_Statistics\src\bin\Debug\Classification.exe.config
+E:\高分统计\GF_Statistics\src\bin\Debug\Classification.exe
+E:\高分统计\GF_Statistics\src\bin\Debug\Classification.pdb
+E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.frmMain.resources
+E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.Properties.Resources.resources
+E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.csproj.GenerateResource.Cache
+E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.exe.licenses
+E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.exe
+E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.pdb
