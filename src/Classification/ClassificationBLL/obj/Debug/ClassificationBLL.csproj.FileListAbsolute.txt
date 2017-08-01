@@ -2,3 +2,7 @@ E:\高分统计\GF_Statistics\src\bin\Debug\ClassificationBLL.dll
 E:\高分统计\GF_Statistics\src\bin\Debug\ClassificationBLL.pdb
 E:\高分统计\GF_Statistics\src\Classification\ClassificationBLL\obj\Debug\ClassificationBLL.dll
 E:\高分统计\GF_Statistics\src\Classification\ClassificationBLL\obj\Debug\ClassificationBLL.pdb
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\ClassificationBLL.dll
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\ClassificationBLL.pdb
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\Classification\ClassificationBLL\obj\Debug\ClassificationBLL.dll
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\Classification\ClassificationBLL\obj\Debug\ClassificationBLL.pdb

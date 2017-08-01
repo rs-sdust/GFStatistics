@@ -23,7 +23,7 @@ namespace Welcome
         public MainWindow()
         {
             InitializeComponent();
-            Icon = new DrawingImage();
+            //Icon = new DrawingImage();
             
         } 
 

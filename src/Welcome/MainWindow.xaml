@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Welcome.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="" MinHeight="400" MaxHeight="400" MaxWidth="512" MinWidth="512" Background="Azure" WindowStartupLocation="CenterScreen">
+        Title="" MinHeight="400" MaxHeight="400" MaxWidth="512" MinWidth="512" Background="Azure" WindowStartupLocation="CenterScreen" Icon="/Welcome;component/logo.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
