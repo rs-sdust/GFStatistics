@@ -7,11 +7,11 @@
 
 ## 系统开发环境说明
 
-    * 编译器：VS2010
-    * GIS组件：ESRI ArcGis
-    * 遥感处理组件：ENVI\IDL
-    * 界面控件：Wpf、WinForm、DevExpress 14.1
-    * 其他环境：根据各模块要求自行添加。
+    * 编译器：VS2010 .NET4.0    			  下载地址：http://pan.baidu.com/s/1kVqUfAn
+    * GIS组件：ESRI ArcGis 10.2 			   下载地址：http://pan.baidu.com/s/1kUO3WH5
+    * 遥感处理组件：ENVI\IDL 5.1 				下载地址：http://pan.baidu.com/s/1gf3n8QZ
+    * 界面控件：Wpf、WinForm、DevExpress 14.1 	下载地址：http://pan.baidu.com/s/1ge4ZoMv
+    * 其他环境：根据各模块要求自行添加，并在当前位置添加说明。
 
 ## 各模块开发说明
 
