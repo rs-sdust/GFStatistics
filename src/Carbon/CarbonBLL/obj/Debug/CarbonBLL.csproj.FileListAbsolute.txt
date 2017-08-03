@@ -2,3 +2,7 @@ E:\高分统计\GF_Statistics\src\bin\Debug\CarbonBLL.dll
 E:\高分统计\GF_Statistics\src\bin\Debug\CarbonBLL.pdb
 E:\高分统计\GF_Statistics\src\Carbon\CarbonBLL\obj\Debug\CarbonBLL.dll
 E:\高分统计\GF_Statistics\src\Carbon\CarbonBLL\obj\Debug\CarbonBLL.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\CarbonBLL.dll
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\CarbonBLL.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\Carbon\CarbonBLL\obj\Debug\CarbonBLL.dll
+F:\GFStatistic\GFStatistics.git\trunk\src\Carbon\CarbonBLL\obj\Debug\CarbonBLL.pdb

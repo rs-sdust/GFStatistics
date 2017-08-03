@@ -290,7 +290,7 @@ namespace BLL
     {
       bool allSuccessful = true;
       //Request extensions
-      if (m_requestedExtensions != null && currentProduct != 0)
+      if (m_requestedExtensions != null && (currentProduct != 0))
       {
         foreach (esriLicenseExtensionCode ext in m_requestedExtensions)
         {

@@ -2,3 +2,7 @@ E:\高分统计\GF_Statistics\src\bin\Debug\SampleBLL.dll
 E:\高分统计\GF_Statistics\src\bin\Debug\SampleBLL.pdb
 E:\高分统计\GF_Statistics\src\Sample\SampleBLL\obj\Debug\SampleBLL.dll
 E:\高分统计\GF_Statistics\src\Sample\SampleBLL\obj\Debug\SampleBLL.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\SampleBLL.dll
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\SampleBLL.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\Sample\SampleBLL\obj\Debug\SampleBLL.dll
+F:\GFStatistic\GFStatistics.git\trunk\src\Sample\SampleBLL\obj\Debug\SampleBLL.pdb

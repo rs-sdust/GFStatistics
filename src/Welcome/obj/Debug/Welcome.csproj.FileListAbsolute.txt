@@ -10,3 +10,15 @@ E:\高分统计\GF_Statistics\src\Welcome\obj\Debug\Welcome.Properties.Resources
 E:\高分统计\GF_Statistics\src\Welcome\obj\Debug\Welcome.csproj.GenerateResource.Cache
 E:\高分统计\GF_Statistics\src\Welcome\obj\Debug\Welcome.exe
 E:\高分统计\GF_Statistics\src\Welcome\obj\Debug\Welcome.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\Welcome.exe.config
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\Welcome.exe
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\Welcome.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\MainWindow.baml
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\MainWindow.g.cs
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\App.g.cs
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\Welcome_MarkupCompile.cache
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\Welcome.g.resources
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\Welcome.Properties.Resources.resources
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\Welcome.csproj.GenerateResource.Cache
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\Welcome.exe
+F:\GFStatistic\GFStatistics.git\trunk\src\Welcome\obj\Debug\Welcome.pdb

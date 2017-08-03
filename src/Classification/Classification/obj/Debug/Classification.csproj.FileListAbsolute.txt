@@ -7,3 +7,13 @@ E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classi
 E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.exe.licenses
 E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.exe
 E:\高分统计\GF_Statistics\src\Classification\Classification\obj\Debug\Classification.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.csprojResolveAssemblyReference.cache
+F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.Properties.Resources.resources
+F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.UCWorkFlow.resources
+F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.csproj.GenerateResource.Cache
+F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.frmMain.resources
+F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.exe.licenses
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\Classification.exe.config
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\Classification.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.exe
+F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.pdb
