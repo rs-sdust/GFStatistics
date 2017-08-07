@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.image16 = new DevExpress.Utils.ImageCollection(this.components);
             this.btnAddData = new DevExpress.XtraBars.BarButtonItem();
             this.btnNewTask = new DevExpress.XtraBars.BarButtonItem();
             this.btnOpenTask = new DevExpress.XtraBars.BarButtonItem();
@@ -39,8 +40,16 @@
             this.btnMask = new DevExpress.XtraBars.BarButtonItem();
             this.btnMosaic = new DevExpress.XtraBars.BarButtonItem();
             this.bsiSingleDate = new DevExpress.XtraBars.BarSubItem();
+            this.btnNNHard = new DevExpress.XtraBars.BarButtonItem();
+            this.bsiSoftHard = new DevExpress.XtraBars.BarSubItem();
+            this.btnfeatureAnaly = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSoftHard = new DevExpress.XtraBars.BarButtonItem();
             this.bsiMultiDate = new DevExpress.XtraBars.BarSubItem();
+            this.btnOverlayClass = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDecision = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRadarAndMultiSpectral = new DevExpress.XtraBars.BarSubItem();
+            this.btnOpticsDiv = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSyn = new DevExpress.XtraBars.BarButtonItem();
             this.bsiMiddleAndHigh = new DevExpress.XtraBars.BarSubItem();
             this.btnSample = new DevExpress.XtraBars.BarButtonItem();
             this.btnSampleAnaly = new DevExpress.XtraBars.BarButtonItem();
@@ -50,12 +59,22 @@
             this.btnVerify = new DevExpress.XtraBars.BarButtonItem();
             this.btnCropMosaic = new DevExpress.XtraBars.BarButtonItem();
             this.bsiAfter = new DevExpress.XtraBars.BarSubItem();
-            this.btnNNHard = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSoftHard = new DevExpress.XtraBars.BarButtonItem();
-            this.btnOverlayClass = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDecision = new DevExpress.XtraBars.BarButtonItem();
-            this.btnOpticsDiv = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSyn = new DevExpress.XtraBars.BarButtonItem();
+            this.staticSpt = new DevExpress.XtraBars.BarStaticItem();
+            this.staticXY = new DevExpress.XtraBars.BarStaticItem();
+            this.staticRaster = new DevExpress.XtraBars.BarStaticItem();
+            this.btnLyrZomToLyr = new DevExpress.XtraBars.BarButtonItem();
+            this.btnpopLyrRemoveLyr = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLyrOpenAttr = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLyrShpSaveAs = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLyrZomToResolution = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLyrRasterSaveAs = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLyrRender = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLyrTransparency = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLyrProp = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFramAddData = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFramReset = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFramClearBat = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFramExport = new DevExpress.XtraBars.BarButtonItem();
             this.ribbion32 = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupFile = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -67,14 +86,13 @@
             this.ribbonPageGroupAfter = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupVerify = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupCropMosaic = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
+            this.repositoryItemPopupContainerEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.hideContainerBottom = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.dpFlow = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.ucWorkFlow1 = new Classification.UCWorkFlow();
-            this.dpLayers = new DevExpress.XtraBars.Docking.DockPanel();
-            this.dockPanel2_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.barTop = new DevExpress.XtraBars.Bar();
             this.barbtnAddData = new DevExpress.XtraBars.BarButtonItem();
@@ -92,35 +110,43 @@
             this.barBtnSample = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnAfter = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnShutter = new DevExpress.XtraBars.BarButtonItem();
+            this.bar1 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.image16 = new DevExpress.Utils.ImageCollection(this.components);
+            this.dpLayers = new DevExpress.XtraBars.Docking.DockPanel();
+            this.dockPanel2_Container = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.axTOCControl = new ESRI.ArcGIS.Controls.AxTOCControl();
             this.panelMap = new DevExpress.XtraEditors.PanelControl();
             this.axToolbarControl = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.axMapControl = new ESRI.ArcGIS.Controls.AxMapControl();
-            this.axTOCControl = new ESRI.ArcGIS.Controls.AxTOCControl();
+            this.barDockingMenuItem1 = new DevExpress.XtraBars.BarDockingMenuItem();
+            this.popupMenulayer = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenuFrame = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.image16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbion32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.hideContainerBottom.SuspendLayout();
             this.dpFlow.SuspendLayout();
-            this.dockPanel1_Container.SuspendLayout();
-            this.dpLayers.SuspendLayout();
-            this.dockPanel2_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.image16)).BeginInit();
+            this.dpLayers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axTOCControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMap)).BeginInit();
             this.panelMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axTOCControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenulayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenuFrame)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
             // 
             this.ribbonControl.ExpandCollapseItem.Id = 0;
+            this.ribbonControl.Images = this.image16;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
             this.btnAddData,
@@ -142,18 +168,39 @@
             this.btnVerify,
             this.btnCropMosaic,
             this.bsiAfter,
+            this.btnfeatureAnaly,
             this.btnNNHard,
             this.btnSoftHard,
             this.btnOverlayClass,
             this.btnDecision,
             this.btnOpticsDiv,
-            this.btnSyn});
+            this.btnSyn,
+            this.bsiSoftHard,
+            this.staticSpt,
+            this.staticXY,
+            this.staticRaster,
+            this.btnLyrZomToLyr,
+            this.btnpopLyrRemoveLyr,
+            this.btnLyrOpenAttr,
+            this.btnLyrShpSaveAs,
+            this.btnLyrZomToResolution,
+            this.btnLyrRasterSaveAs,
+            this.btnLyrRender,
+            this.btnLyrTransparency,
+            this.btnLyrProp,
+            this.btnFramAddData,
+            this.btnFramReset,
+            this.btnFramClearBat,
+            this.btnFramExport});
             this.ribbonControl.LargeImages = this.ribbion32;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 17;
+            this.ribbonControl.MaxItemId = 15;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
+            this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemPopupContainerEdit1,
+            this.repositoryItemPopupContainerEdit2});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.True;
@@ -164,11 +211,56 @@
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
+            // image16
+            // 
+            this.image16.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("image16.ImageStream")));
+            this.image16.Images.SetKeyName(0, "add.png");
+            this.image16.Images.SetKeyName(1, "fixZomIn.png");
+            this.image16.Images.SetKeyName(2, "fixZomOut.png");
+            this.image16.Images.SetKeyName(3, "FullExtent.png");
+            this.image16.Images.SetKeyName(4, "nextView.png");
+            this.image16.Images.SetKeyName(5, "Pan.png");
+            this.image16.Images.SetKeyName(6, "preView.png");
+            this.image16.Images.SetKeyName(7, "ZoomIn.png");
+            this.image16.Images.SetKeyName(8, "ZoomOut.png");
+            this.image16.Images.SetKeyName(9, "after.png");
+            this.image16.Images.SetKeyName(10, "eagle.png");
+            this.image16.Images.SetKeyName(11, "identity.png");
+            this.image16.Images.SetKeyName(12, "multiWin.png");
+            this.image16.Images.SetKeyName(13, "selectSample.png");
+            this.image16.Images.SetKeyName(14, "shutter.png");
+            this.image16.Images.SetKeyName(15, "Neural network.png");
+            this.image16.Images.SetKeyName(16, "Decision.png");
+            this.image16.Images.SetKeyName(17, "featureAnaly.png");
+            this.image16.Images.SetKeyName(18, "NNHard.png");
+            this.image16.Images.SetKeyName(19, "OverlayClass.png");
+            this.image16.Images.SetKeyName(20, "Syn.png");
+            this.image16.Images.SetKeyName(21, "决策树.png");
+            this.image16.Images.SetKeyName(22, "分割.png");
+            this.image16.Images.SetKeyName(23, "软硬分类.png");
+            this.image16.Images.SetKeyName(24, "统计.png");
+            this.image16.Images.SetKeyName(25, "编码.png");
+            this.image16.Images.SetKeyName(26, "校验正确.png");
+            this.image16.Images.SetKeyName(27, "图层属性.png");
+            this.image16.Images.SetKeyName(28, "图层渲染.png");
+            this.image16.Images.SetKeyName(29, "图层透明度.png");
+            this.image16.Images.SetKeyName(30, "缩放到实际像素.png");
+            this.image16.Images.SetKeyName(31, "栅格另存为.png");
+            this.image16.Images.SetKeyName(32, "矢量数据另存为.png");
+            this.image16.Images.SetKeyName(33, "打开属性表.png");
+            this.image16.Images.SetKeyName(34, "移除.png");
+            this.image16.Images.SetKeyName(35, "缩放.png");
+            this.image16.Images.SetKeyName(36, "导出当前地图.png");
+            this.image16.Images.SetKeyName(37, "批量移除 .png");
+            this.image16.Images.SetKeyName(38, "重置图框.png");
+            this.image16.Images.SetKeyName(39, "加载数据.png");
+            // 
             // btnAddData
             // 
             this.btnAddData.Caption = "加载数据";
             this.btnAddData.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnAddData.Id = 1;
+            this.btnAddData.ImageIndex = 39;
             this.btnAddData.LargeImageIndex = 0;
             this.btnAddData.Name = "btnAddData";
             this.btnAddData.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddData_ItemClick);
@@ -193,6 +285,8 @@
             // 
             // btnSaveTask
             // 
+            this.btnSaveTask.ActAsDropDown = true;
+            this.btnSaveTask.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.btnSaveTask.Caption = "保存任务";
             this.btnSaveTask.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnSaveTask.Id = 11;
@@ -230,7 +324,44 @@
             this.bsiSingleDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.bsiSingleDate.Id = 15;
             this.bsiSingleDate.LargeImageIndex = 12;
+            this.bsiSingleDate.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnNNHard),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bsiSoftHard)});
             this.bsiSingleDate.Name = "bsiSingleDate";
+            // 
+            // btnNNHard
+            // 
+            this.btnNNHard.Caption = "神经网络硬分类";
+            this.btnNNHard.Id = 54;
+            this.btnNNHard.ImageIndex = 16;
+            this.btnNNHard.Name = "btnNNHard";
+            // 
+            // bsiSoftHard
+            // 
+            this.bsiSoftHard.Caption = "软硬分类";
+            this.bsiSoftHard.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.bsiSoftHard.Id = 62;
+            this.bsiSoftHard.ImageIndex = 23;
+            this.bsiSoftHard.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnfeatureAnaly),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSoftHard)});
+            this.bsiSoftHard.Name = "bsiSoftHard";
+            // 
+            // btnfeatureAnaly
+            // 
+            this.btnfeatureAnaly.Caption = "特征分析";
+            this.btnfeatureAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnfeatureAnaly.Id = 18;
+            this.btnfeatureAnaly.ImageIndex = 17;
+            this.btnfeatureAnaly.Name = "btnfeatureAnaly";
+            // 
+            // btnSoftHard
+            // 
+            this.btnSoftHard.Caption = "软硬分类";
+            this.btnSoftHard.Id = 55;
+            this.btnSoftHard.ImageIndex = 23;
+            this.btnSoftHard.LargeImageIndex = 25;
+            this.btnSoftHard.Name = "btnSoftHard";
             // 
             // bsiMultiDate
             // 
@@ -238,7 +369,24 @@
             this.bsiMultiDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.bsiMultiDate.Id = 16;
             this.bsiMultiDate.LargeImageIndex = 7;
+            this.bsiMultiDate.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnOverlayClass),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnDecision)});
             this.bsiMultiDate.Name = "bsiMultiDate";
+            // 
+            // btnOverlayClass
+            // 
+            this.btnOverlayClass.Caption = "叠加分类";
+            this.btnOverlayClass.Id = 56;
+            this.btnOverlayClass.ImageIndex = 19;
+            this.btnOverlayClass.Name = "btnOverlayClass";
+            // 
+            // btnDecision
+            // 
+            this.btnDecision.Caption = "决策树分类";
+            this.btnDecision.Id = 57;
+            this.btnDecision.ImageIndex = 21;
+            this.btnDecision.Name = "btnDecision";
             // 
             // bsiRadarAndMultiSpectral
             // 
@@ -246,7 +394,24 @@
             this.bsiRadarAndMultiSpectral.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.bsiRadarAndMultiSpectral.Id = 17;
             this.bsiRadarAndMultiSpectral.LargeImageIndex = 10;
+            this.bsiRadarAndMultiSpectral.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnOpticsDiv),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSyn)});
             this.bsiRadarAndMultiSpectral.Name = "bsiRadarAndMultiSpectral";
+            // 
+            // btnOpticsDiv
+            // 
+            this.btnOpticsDiv.Caption = "光学影像分割";
+            this.btnOpticsDiv.Id = 58;
+            this.btnOpticsDiv.ImageIndex = 22;
+            this.btnOpticsDiv.Name = "btnOpticsDiv";
+            // 
+            // btnSyn
+            // 
+            this.btnSyn.Caption = "图斑/像元综合分类";
+            this.btnSyn.Id = 59;
+            this.btnSyn.ImageIndex = 20;
+            this.btnSyn.Name = "btnSyn";
             // 
             // bsiMiddleAndHigh
             // 
@@ -278,8 +443,7 @@
             this.btnRecode.Caption = "地类重编码";
             this.btnRecode.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnRecode.Id = 22;
-            this.btnRecode.ImageIndex = 0;
-            this.btnRecode.LargeImageIndex = 13;
+            this.btnRecode.ImageIndex = 25;
             this.btnRecode.Name = "btnRecode";
             this.btnRecode.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRecode_ItemClick);
             // 
@@ -288,8 +452,7 @@
             this.btnReject.Caption = "分类后校正";
             this.btnReject.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnReject.Id = 23;
-            this.btnReject.ImageIndex = 1;
-            this.btnReject.LargeImageIndex = 14;
+            this.btnReject.ImageIndex = 26;
             this.btnReject.Name = "btnReject";
             // 
             // btnStatistics
@@ -297,8 +460,7 @@
             this.btnStatistics.Caption = "结果统计";
             this.btnStatistics.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnStatistics.Id = 24;
-            this.btnStatistics.ImageIndex = 2;
-            this.btnStatistics.LargeImageIndex = 15;
+            this.btnStatistics.ImageIndex = 24;
             this.btnStatistics.Name = "btnStatistics";
             // 
             // btnVerify
@@ -325,49 +487,127 @@
             this.bsiAfter.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.bsiAfter.Id = 5;
             this.bsiAfter.LargeImageIndex = 18;
+            this.bsiAfter.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnRecode),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnReject),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnStatistics)});
             this.bsiAfter.Name = "bsiAfter";
             // 
-            // btnNNHard
+            // staticSpt
             // 
-            this.btnNNHard.Caption = "神经网络硬分类";
-            this.btnNNHard.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnNNHard.Id = 7;
-            this.btnNNHard.Name = "btnNNHard";
+            this.staticSpt.Caption = "坐标系：";
+            this.staticSpt.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.staticSpt.Id = 68;
+            this.staticSpt.Name = "staticSpt";
+            this.staticSpt.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
-            // btnSoftHard
+            // staticXY
             // 
-            this.btnSoftHard.Caption = "软硬分类";
-            this.btnSoftHard.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSoftHard.Id = 8;
-            this.btnSoftHard.Name = "btnSoftHard";
+            this.staticXY.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.staticXY.Caption = "坐标：";
+            this.staticXY.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.staticXY.Id = 69;
+            this.staticXY.Name = "staticXY";
+            this.staticXY.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
-            // btnOverlayClass
+            // staticRaster
             // 
-            this.btnOverlayClass.Caption = "叠加分类";
-            this.btnOverlayClass.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnOverlayClass.Id = 9;
-            this.btnOverlayClass.Name = "btnOverlayClass";
+            this.staticRaster.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.staticRaster.Caption = "行：列：像素值：";
+            this.staticRaster.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.staticRaster.Id = 70;
+            this.staticRaster.Name = "staticRaster";
+            this.staticRaster.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
-            // btnDecision
+            // btnLyrZomToLyr
             // 
-            this.btnDecision.Caption = "决策树分类";
-            this.btnDecision.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnDecision.Id = 10;
-            this.btnDecision.Name = "btnDecision";
+            this.btnLyrZomToLyr.Caption = "缩放到图层";
+            this.btnLyrZomToLyr.Id = 2;
+            this.btnLyrZomToLyr.ImageIndex = 35;
+            this.btnLyrZomToLyr.Name = "btnLyrZomToLyr";
             // 
-            // btnOpticsDiv
+            // btnpopLyrRemoveLyr
             // 
-            this.btnOpticsDiv.Caption = "光学影像分割";
-            this.btnOpticsDiv.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnOpticsDiv.Id = 11;
-            this.btnOpticsDiv.Name = "btnOpticsDiv";
+            this.btnpopLyrRemoveLyr.Caption = "移除图层";
+            this.btnpopLyrRemoveLyr.Id = 3;
+            this.btnpopLyrRemoveLyr.ImageIndex = 34;
+            this.btnpopLyrRemoveLyr.Name = "btnpopLyrRemoveLyr";
             // 
-            // btnSyn
+            // btnLyrOpenAttr
             // 
-            this.btnSyn.Caption = "图斑/像元综合分类";
-            this.btnSyn.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSyn.Id = 12;
-            this.btnSyn.Name = "btnSyn";
+            this.btnLyrOpenAttr.Caption = "打开属性表";
+            this.btnLyrOpenAttr.Id = 4;
+            this.btnLyrOpenAttr.ImageIndex = 33;
+            this.btnLyrOpenAttr.Name = "btnLyrOpenAttr";
+            // 
+            // btnLyrShpSaveAs
+            // 
+            this.btnLyrShpSaveAs.Caption = "矢量数据另存为";
+            this.btnLyrShpSaveAs.Id = 5;
+            this.btnLyrShpSaveAs.ImageIndex = 31;
+            this.btnLyrShpSaveAs.Name = "btnLyrShpSaveAs";
+            // 
+            // btnLyrZomToResolution
+            // 
+            this.btnLyrZomToResolution.Caption = "缩放到实际像素";
+            this.btnLyrZomToResolution.Id = 6;
+            this.btnLyrZomToResolution.ImageIndex = 30;
+            this.btnLyrZomToResolution.Name = "btnLyrZomToResolution";
+            // 
+            // btnLyrRasterSaveAs
+            // 
+            this.btnLyrRasterSaveAs.Caption = "栅格数据另存";
+            this.btnLyrRasterSaveAs.Id = 7;
+            this.btnLyrRasterSaveAs.ImageIndex = 32;
+            this.btnLyrRasterSaveAs.Name = "btnLyrRasterSaveAs";
+            // 
+            // btnLyrRender
+            // 
+            this.btnLyrRender.Caption = "图层渲染";
+            this.btnLyrRender.Id = 8;
+            this.btnLyrRender.ImageIndex = 28;
+            this.btnLyrRender.Name = "btnLyrRender";
+            // 
+            // btnLyrTransparency
+            // 
+            this.btnLyrTransparency.Caption = "图层透明度";
+            this.btnLyrTransparency.Id = 9;
+            this.btnLyrTransparency.ImageIndex = 29;
+            this.btnLyrTransparency.Name = "btnLyrTransparency";
+            // 
+            // btnLyrProp
+            // 
+            this.btnLyrProp.Caption = "图层属性";
+            this.btnLyrProp.Id = 10;
+            this.btnLyrProp.ImageIndex = 27;
+            this.btnLyrProp.Name = "btnLyrProp";
+            // 
+            // btnFramAddData
+            // 
+            this.btnFramAddData.Caption = "加载数据";
+            this.btnFramAddData.Id = 11;
+            this.btnFramAddData.Name = "btnFramAddData";
+            // 
+            // btnFramReset
+            // 
+            this.btnFramReset.Caption = "重置图框";
+            this.btnFramReset.Id = 12;
+            this.btnFramReset.ImageIndex = 38;
+            this.btnFramReset.Name = "btnFramReset";
+            // 
+            // btnFramClearBat
+            // 
+            this.btnFramClearBat.Caption = "批量移除";
+            this.btnFramClearBat.Id = 13;
+            this.btnFramClearBat.ImageIndex = 37;
+            this.btnFramClearBat.Name = "btnFramClearBat";
+            // 
+            // btnFramExport
+            // 
+            this.btnFramExport.Caption = "导出当前地图";
+            this.btnFramExport.Id = 14;
+            this.btnFramExport.ImageIndex = 36;
+            this.btnFramExport.Name = "btnFramExport";
             // 
             // ribbion32
             // 
@@ -466,8 +706,25 @@
             this.ribbonPageGroupCropMosaic.ItemLinks.Add(this.btnCropMosaic);
             this.ribbonPageGroupCropMosaic.Name = "ribbonPageGroupCropMosaic";
             // 
+            // repositoryItemPopupContainerEdit1
+            // 
+            this.repositoryItemPopupContainerEdit1.AutoHeight = false;
+            this.repositoryItemPopupContainerEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemPopupContainerEdit1.Name = "repositoryItemPopupContainerEdit1";
+            // 
+            // repositoryItemPopupContainerEdit2
+            // 
+            this.repositoryItemPopupContainerEdit2.AutoHeight = false;
+            this.repositoryItemPopupContainerEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemPopupContainerEdit2.Name = "repositoryItemPopupContainerEdit2";
+            // 
             // ribbonStatusBar
             // 
+            this.ribbonStatusBar.ItemLinks.Add(this.staticSpt);
+            this.ribbonStatusBar.ItemLinks.Add(this.staticXY);
+            this.ribbonStatusBar.ItemLinks.Add(this.staticRaster);
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 568);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
@@ -518,45 +775,16 @@
             // 
             // dockPanel1_Container
             // 
-            this.dockPanel1_Container.Controls.Add(this.ucWorkFlow1);
             this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
             this.dockPanel1_Container.Size = new System.Drawing.Size(882, 229);
             this.dockPanel1_Container.TabIndex = 0;
             // 
-            // ucWorkFlow1
-            // 
-            this.ucWorkFlow1.BackColor = System.Drawing.SystemColors.Window;
-            this.ucWorkFlow1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucWorkFlow1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucWorkFlow1.Location = new System.Drawing.Point(0, 0);
-            this.ucWorkFlow1.Name = "ucWorkFlow1";
-            this.ucWorkFlow1.Size = new System.Drawing.Size(882, 229);
-            this.ucWorkFlow1.TabIndex = 0;
-            // 
-            // dpLayers
-            // 
-            this.dpLayers.Controls.Add(this.dockPanel2_Container);
-            this.dpLayers.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
-            this.dpLayers.ID = new System.Guid("281db4bf-3929-4ed7-bbc3-6e69fc19f90d");
-            this.dpLayers.Location = new System.Drawing.Point(0, 147);
-            this.dpLayers.Name = "dpLayers";
-            this.dpLayers.OriginalSize = new System.Drawing.Size(256, 200);
-            this.dpLayers.Size = new System.Drawing.Size(256, 401);
-            this.dpLayers.Text = "图层";
-            // 
-            // dockPanel2_Container
-            // 
-            this.dockPanel2_Container.Controls.Add(this.axTOCControl);
-            this.dockPanel2_Container.Location = new System.Drawing.Point(4, 23);
-            this.dockPanel2_Container.Name = "dockPanel2_Container";
-            this.dockPanel2_Container.Size = new System.Drawing.Size(248, 374);
-            this.dockPanel2_Container.TabIndex = 0;
-            // 
             // barManager
             // 
             this.barManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.barTop});
+            this.barTop,
+            this.bar1});
             this.barManager.Categories.AddRange(new DevExpress.XtraBars.BarManagerCategory[] {
             new DevExpress.XtraBars.BarManagerCategory("MapTool", new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295"))});
             this.barManager.DockControls.Add(this.barDockControlTop);
@@ -582,6 +810,7 @@
             this.barBtnSample,
             this.barBtnAfter,
             this.barBtnShutter});
+            this.barManager.MainMenu = this.bar1;
             this.barManager.MaxItemId = 15;
             // 
             // barTop
@@ -613,7 +842,6 @@
             // barbtnAddData
             // 
             this.barbtnAddData.Caption = "加载数据";
-            this.barbtnAddData.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barbtnAddData.Id = 0;
             this.barbtnAddData.ImageIndex = 0;
             this.barbtnAddData.Name = "barbtnAddData";
@@ -621,7 +849,6 @@
             // barBtnFull
             // 
             this.barBtnFull.Caption = "全图";
-            this.barBtnFull.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnFull.Id = 1;
             this.barBtnFull.ImageIndex = 3;
             this.barBtnFull.Name = "barBtnFull";
@@ -629,7 +856,6 @@
             // barBtnPan
             // 
             this.barBtnPan.Caption = "拖动";
-            this.barBtnPan.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnPan.Id = 2;
             this.barBtnPan.ImageIndex = 5;
             this.barBtnPan.Name = "barBtnPan";
@@ -637,7 +863,6 @@
             // barBtnZomIn
             // 
             this.barBtnZomIn.Caption = "放大";
-            this.barBtnZomIn.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnZomIn.Id = 3;
             this.barBtnZomIn.ImageIndex = 7;
             this.barBtnZomIn.Name = "barBtnZomIn";
@@ -645,7 +870,6 @@
             // barBtnZomOut
             // 
             this.barBtnZomOut.Caption = "缩小";
-            this.barBtnZomOut.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnZomOut.Id = 4;
             this.barBtnZomOut.ImageIndex = 8;
             this.barBtnZomOut.Name = "barBtnZomOut";
@@ -653,7 +877,6 @@
             // barBtnFixZomIn
             // 
             this.barBtnFixZomIn.Caption = "固定放大";
-            this.barBtnFixZomIn.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnFixZomIn.Id = 5;
             this.barBtnFixZomIn.ImageIndex = 2;
             this.barBtnFixZomIn.Name = "barBtnFixZomIn";
@@ -661,7 +884,6 @@
             // barBtnFixZomOut
             // 
             this.barBtnFixZomOut.Caption = "固定缩小";
-            this.barBtnFixZomOut.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnFixZomOut.Id = 6;
             this.barBtnFixZomOut.ImageIndex = 1;
             this.barBtnFixZomOut.Name = "barBtnFixZomOut";
@@ -669,7 +891,6 @@
             // barBtnPreview
             // 
             this.barBtnPreview.Caption = "上一视图";
-            this.barBtnPreview.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnPreview.Id = 7;
             this.barBtnPreview.ImageIndex = 6;
             this.barBtnPreview.Name = "barBtnPreview";
@@ -677,7 +898,6 @@
             // barBtnNextView
             // 
             this.barBtnNextView.Caption = "下一视图";
-            this.barBtnNextView.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnNextView.Id = 8;
             this.barBtnNextView.ImageIndex = 4;
             this.barBtnNextView.Name = "barBtnNextView";
@@ -685,7 +905,6 @@
             // barBtnIdentity
             // 
             this.barBtnIdentity.Caption = "识别";
-            this.barBtnIdentity.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnIdentity.Id = 9;
             this.barBtnIdentity.ImageIndex = 11;
             this.barBtnIdentity.Name = "barBtnIdentity";
@@ -693,7 +912,6 @@
             // barBtnEagleEye
             // 
             this.barBtnEagleEye.Caption = "鹰眼图";
-            this.barBtnEagleEye.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnEagleEye.Id = 10;
             this.barBtnEagleEye.ImageIndex = 10;
             this.barBtnEagleEye.Name = "barBtnEagleEye";
@@ -701,7 +919,6 @@
             // barBMultiWin
             // 
             this.barBMultiWin.Caption = "分窗显示";
-            this.barBMultiWin.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBMultiWin.Id = 11;
             this.barBMultiWin.ImageIndex = 12;
             this.barBMultiWin.Name = "barBMultiWin";
@@ -709,7 +926,6 @@
             // barBtnSample
             // 
             this.barBtnSample.Caption = "训练样本选取";
-            this.barBtnSample.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnSample.Id = 12;
             this.barBtnSample.ImageIndex = 13;
             this.barBtnSample.Name = "barBtnSample";
@@ -717,7 +933,6 @@
             // barBtnAfter
             // 
             this.barBtnAfter.Caption = "分类后校正";
-            this.barBtnAfter.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnAfter.Id = 13;
             this.barBtnAfter.ImageIndex = 9;
             this.barBtnAfter.Name = "barBtnAfter";
@@ -725,17 +940,26 @@
             // barBtnShutter
             // 
             this.barBtnShutter.Caption = "卷帘";
-            this.barBtnShutter.CategoryGuid = new System.Guid("59eb89ab-f63f-4029-bbb5-d20005766295");
             this.barBtnShutter.Id = 14;
             this.barBtnShutter.ImageIndex = 14;
             this.barBtnShutter.Name = "barBtnShutter";
+            // 
+            // bar1
+            // 
+            this.bar1.BarName = "Custom 3";
+            this.bar1.DockCol = 0;
+            this.bar1.DockRow = 1;
+            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar1.OptionsBar.MultiLine = true;
+            this.bar1.OptionsBar.UseWholeRow = true;
+            this.bar1.Text = "Custom 3";
             // 
             // barDockControlTop
             // 
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(2, 2);
-            this.barDockControlTop.Size = new System.Drawing.Size(754, 31);
+            this.barDockControlTop.Size = new System.Drawing.Size(754, 51);
             // 
             // barDockControlBottom
             // 
@@ -758,60 +982,83 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1014, 0);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 599);
             // 
-            // image16
+            // dpLayers
             // 
-            this.image16.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("image16.ImageStream")));
-            this.image16.Images.SetKeyName(0, "add.png");
-            this.image16.Images.SetKeyName(1, "fixZomIn.png");
-            this.image16.Images.SetKeyName(2, "fixZomOut.png");
-            this.image16.Images.SetKeyName(3, "FullExtent.png");
-            this.image16.Images.SetKeyName(4, "nextView.png");
-            this.image16.Images.SetKeyName(5, "Pan.png");
-            this.image16.Images.SetKeyName(6, "preView.png");
-            this.image16.Images.SetKeyName(7, "ZoomIn.png");
-            this.image16.Images.SetKeyName(8, "ZoomOut.png");
-            this.image16.Images.SetKeyName(9, "after.png");
-            this.image16.Images.SetKeyName(10, "eagle.png");
-            this.image16.Images.SetKeyName(11, "identity.png");
-            this.image16.Images.SetKeyName(12, "multiWin.png");
-            this.image16.Images.SetKeyName(13, "selectSample.png");
-            this.image16.Images.SetKeyName(14, "shutter.png");
+            this.dpLayers.Controls.Add(this.dockPanel2_Container);
+            this.dpLayers.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
+            this.dpLayers.ID = new System.Guid("281db4bf-3929-4ed7-bbc3-6e69fc19f90d");
+            this.dpLayers.Location = new System.Drawing.Point(0, 147);
+            this.dpLayers.Name = "dpLayers";
+            this.dpLayers.OriginalSize = new System.Drawing.Size(256, 200);
+            this.dpLayers.Size = new System.Drawing.Size(256, 401);
+            this.dpLayers.Text = "图层";
+            // 
+            // dockPanel2_Container
+            // 
+            this.dockPanel2_Container.Location = new System.Drawing.Point(4, 23);
+            this.dockPanel2_Container.Name = "dockPanel2_Container";
+            this.dockPanel2_Container.Size = new System.Drawing.Size(248, 374);
+            this.dockPanel2_Container.TabIndex = 0;
+            // 
+            // axTOCControl
+            // 
+            this.axTOCControl.Location = new System.Drawing.Point(0, 0);
+            this.axTOCControl.Name = "axTOCControl";
+            this.axTOCControl.Size = new System.Drawing.Size(75, 23);
+            this.axTOCControl.TabIndex = 0;
             // 
             // panelMap
             // 
-            this.panelMap.Controls.Add(this.axToolbarControl);
-            this.panelMap.Controls.Add(this.axMapControl);
             this.panelMap.Controls.Add(this.barDockControlTop);
             this.panelMap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMap.Location = new System.Drawing.Point(256, 147);
             this.panelMap.Name = "panelMap";
             this.panelMap.Size = new System.Drawing.Size(758, 401);
             this.panelMap.TabIndex = 9;
+            this.panelMap.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMap_Paint);
             // 
             // axToolbarControl
             // 
-            this.axToolbarControl.Location = new System.Drawing.Point(6, 39);
+            this.axToolbarControl.Location = new System.Drawing.Point(0, 0);
             this.axToolbarControl.Name = "axToolbarControl";
-            this.axToolbarControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl.OcxState")));
-            this.axToolbarControl.Size = new System.Drawing.Size(439, 28);
-            this.axToolbarControl.TabIndex = 2;
-            this.axToolbarControl.Visible = false;
+            this.axToolbarControl.Size = new System.Drawing.Size(75, 23);
+            this.axToolbarControl.TabIndex = 0;
             // 
             // axMapControl
             // 
-            this.axMapControl.Location = new System.Drawing.Point(6, 73);
+            this.axMapControl.Location = new System.Drawing.Point(0, 0);
             this.axMapControl.Name = "axMapControl";
-            this.axMapControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl.OcxState")));
-            this.axMapControl.Size = new System.Drawing.Size(439, 55);
-            this.axMapControl.TabIndex = 1;
+            this.axMapControl.Size = new System.Drawing.Size(75, 23);
+            this.axMapControl.TabIndex = 0;
             // 
-            // axTOCControl
+            // barDockingMenuItem1
             // 
-            this.axTOCControl.Location = new System.Drawing.Point(3, 16);
-            this.axTOCControl.Name = "axTOCControl";
-            this.axTOCControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl.OcxState")));
-            this.axTOCControl.Size = new System.Drawing.Size(88, 97);
-            this.axTOCControl.TabIndex = 0;
+            this.barDockingMenuItem1.Caption = "barDockingMenuItem1";
+            this.barDockingMenuItem1.Id = 34;
+            this.barDockingMenuItem1.Name = "barDockingMenuItem1";
+            // 
+            // popupMenulayer
+            // 
+            this.popupMenulayer.ItemLinks.Add(this.btnLyrZomToLyr);
+            this.popupMenulayer.ItemLinks.Add(this.btnpopLyrRemoveLyr);
+            this.popupMenulayer.ItemLinks.Add(this.btnLyrOpenAttr);
+            this.popupMenulayer.ItemLinks.Add(this.btnLyrShpSaveAs);
+            this.popupMenulayer.ItemLinks.Add(this.btnLyrZomToResolution);
+            this.popupMenulayer.ItemLinks.Add(this.btnLyrRasterSaveAs);
+            this.popupMenulayer.ItemLinks.Add(this.btnLyrTransparency);
+            this.popupMenulayer.ItemLinks.Add(this.btnLyrRender);
+            this.popupMenulayer.ItemLinks.Add(this.btnLyrProp);
+            this.popupMenulayer.Name = "popupMenulayer";
+            this.popupMenulayer.Ribbon = this.ribbonControl;
+            // 
+            // popupMenuFrame
+            // 
+            this.popupMenuFrame.ItemLinks.Add(this.btnAddData);
+            this.popupMenuFrame.ItemLinks.Add(this.btnFramReset);
+            this.popupMenuFrame.ItemLinks.Add(this.btnFramClearBat);
+            this.popupMenuFrame.ItemLinks.Add(this.btnFramExport);
+            this.popupMenuFrame.Name = "popupMenuFrame";
+            this.popupMenuFrame.Ribbon = this.ribbonControl;
             // 
             // frmMain
             // 
@@ -833,21 +1080,24 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Classification";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.image16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbion32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.hideContainerBottom.ResumeLayout(false);
             this.dpFlow.ResumeLayout(false);
-            this.dockPanel1_Container.ResumeLayout(false);
-            this.dpLayers.ResumeLayout(false);
-            this.dockPanel2_Container.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.image16)).EndInit();
+            this.dpLayers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axTOCControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMap)).EndInit();
             this.panelMap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axTOCControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenulayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenuFrame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -919,13 +1169,37 @@
         private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl;
         private ESRI.ArcGIS.Controls.AxMapControl axMapControl;
         private DevExpress.XtraBars.BarSubItem bsiAfter;
+        private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl;
+        private DevExpress.XtraBars.BarButtonItem btnfeatureAnaly;
+        private DevExpress.XtraBars.Bar bar1;
+        private DevExpress.XtraBars.BarDockingMenuItem barDockingMenuItem1;
         private DevExpress.XtraBars.BarButtonItem btnNNHard;
         private DevExpress.XtraBars.BarButtonItem btnSoftHard;
         private DevExpress.XtraBars.BarButtonItem btnOverlayClass;
         private DevExpress.XtraBars.BarButtonItem btnDecision;
         private DevExpress.XtraBars.BarButtonItem btnOpticsDiv;
         private DevExpress.XtraBars.BarButtonItem btnSyn;
-        private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl;
+        private DevExpress.XtraBars.BarSubItem bsiSoftHard;
+        private DevExpress.XtraBars.BarStaticItem staticSpt;
+        private DevExpress.XtraBars.BarStaticItem staticXY;
+        private DevExpress.XtraBars.BarStaticItem staticRaster;
+        private DevExpress.XtraBars.BarButtonItem btnLyrZomToLyr;
+        private DevExpress.XtraBars.BarButtonItem btnpopLyrRemoveLyr;
+        private DevExpress.XtraBars.BarButtonItem btnLyrOpenAttr;
+        private DevExpress.XtraBars.BarButtonItem btnLyrShpSaveAs;
+        private DevExpress.XtraBars.BarButtonItem btnLyrZomToResolution;
+        private DevExpress.XtraBars.BarButtonItem btnLyrRasterSaveAs;
+        private DevExpress.XtraBars.BarButtonItem btnLyrRender;
+        private DevExpress.XtraBars.BarButtonItem btnLyrTransparency;
+        private DevExpress.XtraBars.BarButtonItem btnLyrProp;
+        private DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit repositoryItemPopupContainerEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit repositoryItemPopupContainerEdit2;
+        private DevExpress.XtraBars.PopupMenu popupMenulayer;
+        private DevExpress.XtraBars.BarButtonItem btnFramAddData;
+        private DevExpress.XtraBars.BarButtonItem btnFramReset;
+        private DevExpress.XtraBars.BarButtonItem btnFramClearBat;
+        private DevExpress.XtraBars.BarButtonItem btnFramExport;
+        private DevExpress.XtraBars.PopupMenu popupMenuFrame;
     }
 }
 

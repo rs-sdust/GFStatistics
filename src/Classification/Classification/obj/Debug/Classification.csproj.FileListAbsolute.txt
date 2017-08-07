@@ -17,3 +17,4 @@ F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\Classification.exe.config
 F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\Classification.pdb
 F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.exe
 F:\GFStatistic\GFStatistics.git\trunk\src\Classification\Classification\obj\Debug\Classification.pdb
+F:\GFStatistic\GFStatistics.git\trunk\src\bin\Debug\Classification.exe

@@ -58,5 +58,21 @@ namespace Classification
         {
 
         }
+
+        private void panelMap_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+       
+
+        
     }
 }
