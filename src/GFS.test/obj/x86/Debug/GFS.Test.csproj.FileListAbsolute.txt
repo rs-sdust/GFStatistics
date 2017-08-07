@@ -1,0 +1,6 @@
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\test\obj\x86\Debug\GFS.Test.csprojResolveAssemblyReference.cache
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\test\obj\x86\Debug\GFS.Test.Form1.resources
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\test\obj\x86\Debug\GFS.Test.Properties.Resources.resources
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\test\obj\x86\Debug\GFS.Test.csproj.GenerateResource.Cache
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\test\obj\x86\Debug\GFS.Test.exe
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\test\obj\x86\Debug\GFS.Test.pdb

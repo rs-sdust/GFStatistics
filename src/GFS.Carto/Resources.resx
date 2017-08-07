@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Aspect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Aspect.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Basic_Random" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Basic_Random.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Black_and_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Black_and_White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Black_to_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Black_to_White.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blues" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Blues.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Blue_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue_Green_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Blue_Green_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue_Green_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Blue_Green_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Blue_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blue_to_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Blue_to_Red.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Brown_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown_to_Blue_Green_Diverging__Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Brown_to_Blue_Green_Diverging__Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown_to_Blue_Green_Diverging__Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Brown_to_Blue_Green_Diverging__Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cold_to_Hot_Diverging" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cold_to_Hot_Diverging.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cool_Grey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cool_Grey.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cool_Tones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cool_Tones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cyans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cyans.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cyan_Light_to_Blue_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cyan_Light_to_Blue_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cyan_to_Purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cyan_to_Purple.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dark_Glazes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Dark_Glazes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Distance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Distance.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elevation__1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Elevation__1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elevation__2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Elevation__2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enamel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Enamel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gray_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Gray_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Greens" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Greens.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green_Blues" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Green_Blues.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Green_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Green_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green_to_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Green_to_Blue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Magentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Magentas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Muted_Pastels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Muted_Pastels.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Oranges" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Oranges.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Orange_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Orange_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Orange_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Orange_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Partial_Spectrum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Partial_Spectrum.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Partial_Spectrum_1_Diverging" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Partial_Spectrum_1_Diverging.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Partial_Spectrum_2_Diverging" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Partial_Spectrum_2_Diverging.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pastels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pastels.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pastels_Blue_to_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pastels_Blue_to_Red.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pastel_Terra_Tones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pastel_Terra_Tones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pink_to_YellowGreen_Diverging__Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pink_to_YellowGreen_Diverging__Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pink_to_YellowGreen_Diverging__Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pink_to_YellowGreen_Diverging__Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Precipitation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Precipitation.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purples.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_Blues" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_Blues.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_Blue_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_Blue_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_Blue_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_Blue_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_Reds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_Reds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_Red_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_Red_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_Red_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_Red_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_to_Green_Diverging__Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_to_Green_Diverging__Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_to_Green_Diverging__Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_to_Green_Diverging__Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Reds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Red_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Red_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_to_Blue_Diverging__Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Red_to_Blue_Diverging__Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_to_Blue_Diverging__Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Red_to_Blue_Diverging__Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_to_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Red_to_Green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_to_Green_Diverging__Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Red_to_Green_Diverging__Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red_to_Green_Diverging__Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Red_to_Green_Diverging__Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Slope.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spectrum_Full_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Spectrum_Full_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spectrum_Full_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Spectrum_Full_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spectrum_Full_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Spectrum_Full_Light.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Surface" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Surface.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temperature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Temperature.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Terra_Tones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Terra_Tones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Verdant_Tones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Verdant_Tones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warm_Grey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Warm_Grey.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warm_Tones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Warm_Tones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White_to_Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\White_to_Black.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yellows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yellows.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yellow_Greens" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yellow_Greens.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yellow_Green_Bright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yellow_Green_Bright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yellow_Green_Light_to_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yellow_Green_Light_to_Dark.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yellow_to_Dark_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yellow_to_Dark_Red.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yellow_to_Green_to_Dark_Blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yellow_to_Green_to_Dark_Blue.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yellow_to_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yellow_to_Red.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

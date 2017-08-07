@@ -1,0 +1,17 @@
+
+ 
+记录时间：2017-08-07 08:47:32,115 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Test.Form1 property: [(null)] - 
+错误描述：测试消息
+ 
+
+ 
+记录时间：2017-08-07 08:47:32,585 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Test.Form1 property: [(null)] - 
+错误描述：Error
+ 
+System.Exception: 测试消息

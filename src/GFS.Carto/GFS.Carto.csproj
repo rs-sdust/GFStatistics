@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F7D01534-C5E0-4344-9C65-4676286C7BED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GFS.Carto</RootNamespace>
+    <AssemblyName>GFS.Carto</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>I:\DLLS\ESRI10.2.dll\ESRI.ArcGIS.Display.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>I:\DLLS\ESRI10.2.dll\ESRI.ArcGIS.System.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CartoAPI.cs" />
+    <Compile Include="ClassifyRecordClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs" />
+    <Compile Include="SymbleAPI.cs" />
+    <Compile Include="UniqueValueRecordClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GFS.Common\GFS.Common.csproj">
+      <Project>{EE17F69A-29F6-416C-A69B-24D5ACA52261}</Project>
+      <Name>GFS.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Aspect.jpg" />
+    <Content Include="Resources\Basic_Random.jpg" />
+    <Content Include="Resources\Black_and_White.jpg" />
+    <Content Include="Resources\Black_to_White.jpg" />
+    <Content Include="Resources\Blues.jpg" />
+    <Content Include="Resources\Blue_Bright.jpg" />
+    <Content Include="Resources\Blue_Green_Bright.jpg" />
+    <Content Include="Resources\Blue_Green_Light_to_Dark.jpg" />
+    <Content Include="Resources\Blue_Light_to_Dark.jpg" />
+    <Content Include="Resources\Blue_to_Red.jpg" />
+    <Content Include="Resources\Brown_Light_to_Dark.jpg" />
+    <Content Include="Resources\Brown_to_Blue_Green_Diverging__Bright.jpg" />
+    <Content Include="Resources\Brown_to_Blue_Green_Diverging__Dark.jpg" />
+    <Content Include="Resources\Cold_to_Hot_Diverging.jpg" />
+    <Content Include="Resources\Cool_Grey.jpg" />
+    <Content Include="Resources\Cool_Tones.jpg" />
+    <Content Include="Resources\Cyans.jpg" />
+    <Content Include="Resources\Cyan_Light_to_Blue_Dark.jpg" />
+    <Content Include="Resources\Cyan_to_Purple.jpg" />
+    <Content Include="Resources\Dark_Glazes.jpg" />
+    <Content Include="Resources\Distance.jpg" />
+    <Content Include="Resources\Elevation__1.jpg" />
+    <Content Include="Resources\Elevation__2.jpg" />
+    <Content Include="Resources\Enamel.jpg" />
+    <Content Include="Resources\Gray_Light_to_Dark.jpg" />
+    <Content Include="Resources\Greens.jpg" />
+    <Content Include="Resources\Green_Blues.jpg" />
+    <Content Include="Resources\Green_Bright.jpg" />
+    <Content Include="Resources\Green_Light_to_Dark.jpg" />
+    <Content Include="Resources\Green_to_Blue.jpg" />
+    <Content Include="Resources\Magentas.jpg" />
+    <Content Include="Resources\Muted_Pastels.jpg" />
+    <Content Include="Resources\Oranges.jpg" />
+    <Content Include="Resources\Orange_Bright.jpg" />
+    <Content Include="Resources\Orange_Light_to_Dark.jpg" />
+    <Content Include="Resources\Partial_Spectrum.jpg" />
+    <Content Include="Resources\Partial_Spectrum_1_Diverging.jpg" />
+    <Content Include="Resources\Partial_Spectrum_2_Diverging.jpg" />
+    <Content Include="Resources\Pastels.jpg" />
+    <Content Include="Resources\Pastels_Blue_to_Red.jpg" />
+    <Content Include="Resources\Pastel_Terra_Tones.jpg" />
+    <Content Include="Resources\Pink_to_YellowGreen_Diverging__Bright.jpg" />
+    <Content Include="Resources\Pink_to_YellowGreen_Diverging__Dark.jpg" />
+    <Content Include="Resources\Precipitation.jpg" />
+    <Content Include="Resources\Purples.jpg" />
+    <Content Include="Resources\Purple_Blues.jpg" />
+    <Content Include="Resources\Purple_Blue_Bright.jpg" />
+    <Content Include="Resources\Purple_Blue_Light_to_Dark.jpg" />
+    <Content Include="Resources\Purple_Bright.jpg" />
+    <Content Include="Resources\Purple_Reds.jpg" />
+    <Content Include="Resources\Purple_Red_Bright.jpg" />
+    <Content Include="Resources\Purple_Red_Light_to_Dark.jpg" />
+    <Content Include="Resources\Purple_to_Green_Diverging__Bright.jpg" />
+    <Content Include="Resources\Purple_to_Green_Diverging__Dark.jpg" />
+    <Content Include="Resources\Reds.jpg" />
+    <Content Include="Resources\Red_Bright.jpg" />
+    <Content Include="Resources\Red_Light_to_Dark.jpg" />
+    <Content Include="Resources\Red_to_Blue_Diverging__Bright.jpg" />
+    <Content Include="Resources\Red_to_Blue_Diverging__Dark.jpg" />
+    <Content Include="Resources\Red_to_Green.jpg" />
+    <Content Include="Resources\Red_to_Green_Diverging__Bright.jpg" />
+    <Content Include="Resources\Red_to_Green_Diverging__Dark.jpg" />
+    <Content Include="Resources\Slope.jpg" />
+    <Content Include="Resources\Spectrum_Full_Bright.jpg" />
+    <Content Include="Resources\Spectrum_Full_Dark.jpg" />
+    <Content Include="Resources\Spectrum_Full_Light.jpg" />
+    <Content Include="Resources\Surface.jpg" />
+    <Content Include="Resources\Temperature.jpg" />
+    <Content Include="Resources\Terra_Tones.jpg" />
+    <Content Include="Resources\up.png" />
+    <Content Include="Resources\Verdant_Tones.jpg" />
+    <Content Include="Resources\Warm_Grey.jpg" />
+    <Content Include="Resources\Warm_Tones.jpg" />
+    <Content Include="Resources\White_to_Black.jpg" />
+    <Content Include="Resources\Yellows.jpg" />
+    <Content Include="Resources\Yellow_Greens.jpg" />
+    <Content Include="Resources\Yellow_Green_Bright.jpg" />
+    <Content Include="Resources\Yellow_Green_Light_to_Dark.jpg" />
+    <Content Include="Resources\Yellow_to_Dark_Red.jpg" />
+    <Content Include="Resources\Yellow_to_Green_to_Dark_Blue.jpg" />
+    <Content Include="Resources\Yellow_to_Red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
