@@ -75,6 +75,7 @@
             this.btnFramReset = new DevExpress.XtraBars.BarButtonItem();
             this.btnFramClearBat = new DevExpress.XtraBars.BarButtonItem();
             this.btnFramExport = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbion32 = new DevExpress.Utils.ImageCollection(this.components);
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupFile = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -88,6 +89,9 @@
             this.repositoryItemPopupContainerEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
+            this.hideContainerBottom = new DevExpress.XtraBars.Docking.AutoHideContainer();
+            this.dpFlow = new DevExpress.XtraBars.Docking.DockPanel();
+            this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.barTop = new DevExpress.XtraBars.Bar();
             this.barbtnAddData = new DevExpress.XtraBars.BarButtonItem();
@@ -111,36 +115,42 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dpLayers = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel2_Container = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.pccBottom = new DevExpress.XtraBars.PopupControlContainer(this.components);
+            this.btnExit = new DevExpress.XtraEditors.SimpleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.listRecently = new DevExpress.XtraEditors.ImageListBoxControl();
+            this.labelRecently = new DevExpress.XtraEditors.LabelControl();
             this.axTOCControl = new ESRI.ArcGIS.Controls.AxTOCControl();
-            this.dpFlow = new DevExpress.XtraBars.Docking.DockPanel();
-            this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.ucWorkFlow = new Classification.UCWorkFlow();
             this.panelMap = new DevExpress.XtraEditors.PanelControl();
             this.axMapControl = new ESRI.ArcGIS.Controls.AxMapControl();
             this.axToolbarControl = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.barDockingMenuItem1 = new DevExpress.XtraBars.BarDockingMenuItem();
             this.popupMenulayer = new DevExpress.XtraBars.PopupMenu(this.components);
             this.popupMenuFrame = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.hideContainerBottom = new DevExpress.XtraBars.Docking.AutoHideContainer();
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.image16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbion32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
+            this.hideContainerBottom.SuspendLayout();
+            this.dpFlow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).BeginInit();
             this.dpLayers.SuspendLayout();
             this.dockPanel2_Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pccBottom)).BeginInit();
+            this.pccBottom.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listRecently)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axTOCControl)).BeginInit();
-            this.dpFlow.SuspendLayout();
-            this.dockPanel1_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelMap)).BeginInit();
             this.panelMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenulayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuFrame)).BeginInit();
-            this.hideContainerBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -191,10 +201,11 @@
             this.btnFramAddData,
             this.btnFramReset,
             this.btnFramClearBat,
-            this.btnFramExport});
+            this.btnFramExport,
+            this.barButtonItem1});
             this.ribbonControl.LargeImages = this.ribbion32;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 15;
+            this.ribbonControl.MaxItemId = 16;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -253,14 +264,13 @@
             this.image16.Images.SetKeyName(36, "导出当前地图.png");
             this.image16.Images.SetKeyName(37, "批量移除 .png");
             this.image16.Images.SetKeyName(38, "重置图框.png");
-            this.image16.Images.SetKeyName(39, "加载数据.png");
             // 
             // btnAddData
             // 
             this.btnAddData.Caption = "加载数据";
             this.btnAddData.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnAddData.Id = 1;
-            this.btnAddData.ImageIndex = 39;
+            this.btnAddData.ImageIndex = 0;
             this.btnAddData.LargeImageIndex = 0;
             this.btnAddData.Name = "btnAddData";
             this.btnAddData.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddData_ItemClick);
@@ -609,6 +619,13 @@
             this.btnFramExport.ImageIndex = 36;
             this.btnFramExport.Name = "btnFramExport";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "帮助";
+            this.barButtonItem1.Id = 15;
+            this.barButtonItem1.LargeImageIndex = 19;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
             // ribbion32
             // 
             this.ribbion32.ImageSize = new System.Drawing.Size(32, 32);
@@ -632,6 +649,7 @@
             this.ribbion32.Images.SetKeyName(16, "拼接照片.png");
             this.ribbion32.Images.SetKeyName(17, "任务.png");
             this.ribbion32.Images.SetKeyName(18, "编辑.png");
+            this.ribbion32.Images.SetKeyName(19, "帮助 (1).png");
             // 
             // ribbonPage1
             // 
@@ -737,6 +755,38 @@
             "DevExpress.XtraBars.Ribbon.RibbonStatusBar",
             "DevExpress.XtraBars.Ribbon.RibbonControl",
             "DevExpress.XtraBars.Navigation.OfficeNavigationBar"});
+            // 
+            // hideContainerBottom
+            // 
+            this.hideContainerBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.hideContainerBottom.Controls.Add(this.dpFlow);
+            this.hideContainerBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.hideContainerBottom.Location = new System.Drawing.Point(0, 548);
+            this.hideContainerBottom.Name = "hideContainerBottom";
+            this.hideContainerBottom.Size = new System.Drawing.Size(1014, 20);
+            // 
+            // dpFlow
+            // 
+            this.dpFlow.Controls.Add(this.dockPanel1_Container);
+            this.dpFlow.Dock = DevExpress.XtraBars.Docking.DockingStyle.Bottom;
+            this.dpFlow.DockVertical = DevExpress.Utils.DefaultBoolean.False;
+            this.dpFlow.FloatSize = new System.Drawing.Size(900, 256);
+            this.dpFlow.ID = new System.Guid("46559745-e4c9-4c9c-a7cd-714ebfb75c7a");
+            this.dpFlow.Location = new System.Drawing.Point(0, 0);
+            this.dpFlow.Name = "dpFlow";
+            this.dpFlow.OriginalSize = new System.Drawing.Size(758, 256);
+            this.dpFlow.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Bottom;
+            this.dpFlow.SavedIndex = 1;
+            this.dpFlow.Size = new System.Drawing.Size(1014, 256);
+            this.dpFlow.Text = "业务流程";
+            this.dpFlow.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
+            // 
+            // dockPanel1_Container
+            // 
+            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
+            this.dockPanel1_Container.Name = "dockPanel1_Container";
+            this.dockPanel1_Container.Size = new System.Drawing.Size(1006, 229);
+            this.dockPanel1_Container.TabIndex = 0;
             // 
             // barManager
             // 
@@ -941,52 +991,72 @@
             // 
             // dockPanel2_Container
             // 
+            this.dockPanel2_Container.Controls.Add(this.pccBottom);
+            this.dockPanel2_Container.Controls.Add(this.panel1);
             this.dockPanel2_Container.Controls.Add(this.axTOCControl);
             this.dockPanel2_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel2_Container.Name = "dockPanel2_Container";
             this.dockPanel2_Container.Size = new System.Drawing.Size(248, 374);
             this.dockPanel2_Container.TabIndex = 0;
             // 
+            // pccBottom
+            // 
+            this.pccBottom.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pccBottom.Appearance.Options.UseBackColor = true;
+            this.pccBottom.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pccBottom.Controls.Add(this.btnExit);
+            this.pccBottom.Location = new System.Drawing.Point(90, 296);
+            this.pccBottom.Name = "pccBottom";
+            this.pccBottom.Ribbon = this.ribbonControl;
+            this.pccBottom.Size = new System.Drawing.Size(120, 23);
+            this.pccBottom.TabIndex = 19;
+            this.pccBottom.Visible = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(0, -1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(101, 23);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "退出应用程序";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.listRecently);
+            this.panel1.Controls.Add(this.labelRecently);
+            this.panel1.Location = new System.Drawing.Point(3, 123);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(207, 167);
+            this.panel1.TabIndex = 1;
+            // 
+            // listRecently
+            // 
+            this.listRecently.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listRecently.Location = new System.Drawing.Point(0, 21);
+            this.listRecently.Name = "listRecently";
+            this.listRecently.Size = new System.Drawing.Size(207, 146);
+            this.listRecently.TabIndex = 10;
+            // 
+            // labelRecently
+            // 
+            this.labelRecently.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelRecently.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelRecently.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelRecently.LineLocation = DevExpress.XtraEditors.LineLocation.Bottom;
+            this.labelRecently.LineVisible = true;
+            this.labelRecently.Location = new System.Drawing.Point(0, 0);
+            this.labelRecently.Name = "labelRecently";
+            this.labelRecently.Size = new System.Drawing.Size(207, 21);
+            this.labelRecently.TabIndex = 9;
+            this.labelRecently.Text = "最近打开的任务:";
+            // 
             // axTOCControl
             // 
             this.axTOCControl.Location = new System.Drawing.Point(3, 0);
             this.axTOCControl.Name = "axTOCControl";
             this.axTOCControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl.OcxState")));
-            this.axTOCControl.Size = new System.Drawing.Size(106, 150);
+            this.axTOCControl.Size = new System.Drawing.Size(106, 117);
             this.axTOCControl.TabIndex = 0;
-            // 
-            // dpFlow
-            // 
-            this.dpFlow.Controls.Add(this.dockPanel1_Container);
-            this.dpFlow.Dock = DevExpress.XtraBars.Docking.DockingStyle.Bottom;
-            this.dpFlow.DockVertical = DevExpress.Utils.DefaultBoolean.False;
-            this.dpFlow.FloatSize = new System.Drawing.Size(900, 256);
-            this.dpFlow.ID = new System.Guid("46559745-e4c9-4c9c-a7cd-714ebfb75c7a");
-            this.dpFlow.Location = new System.Drawing.Point(0, 0);
-            this.dpFlow.Name = "dpFlow";
-            this.dpFlow.OriginalSize = new System.Drawing.Size(758, 256);
-            this.dpFlow.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Bottom;
-            this.dpFlow.SavedIndex = 1;
-            this.dpFlow.Size = new System.Drawing.Size(1014, 256);
-            this.dpFlow.Text = "业务流程";
-            this.dpFlow.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
-            // 
-            // dockPanel1_Container
-            // 
-            this.dockPanel1_Container.Controls.Add(this.ucWorkFlow);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
-            this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(1006, 229);
-            this.dockPanel1_Container.TabIndex = 0;
-            // 
-            // ucWorkFlow
-            // 
-            this.ucWorkFlow.BackColor = System.Drawing.SystemColors.Window;
-            this.ucWorkFlow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucWorkFlow.Location = new System.Drawing.Point(3, 3);
-            this.ucWorkFlow.Name = "ucWorkFlow";
-            this.ucWorkFlow.Size = new System.Drawing.Size(326, 182);
-            this.ucWorkFlow.TabIndex = 0;
             // 
             // panelMap
             // 
@@ -1045,14 +1115,15 @@
             this.popupMenuFrame.Name = "popupMenuFrame";
             this.popupMenuFrame.Ribbon = this.ribbonControl;
             // 
-            // hideContainerBottom
+            // appMenu
             // 
-            this.hideContainerBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.hideContainerBottom.Controls.Add(this.dpFlow);
-            this.hideContainerBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.hideContainerBottom.Location = new System.Drawing.Point(0, 548);
-            this.hideContainerBottom.Name = "hideContainerBottom";
-            this.hideContainerBottom.Size = new System.Drawing.Size(1014, 20);
+            this.appMenu.AllowRibbonQATMenu = false;
+            this.appMenu.ItemLinks.Add(this.btnAddData);
+            this.appMenu.ItemLinks.Add(this.btnOpenTask);
+            this.appMenu.ItemLinks.Add(this.barButtonItem1);
+            this.appMenu.Name = "appMenu";
+            this.appMenu.Ribbon = this.ribbonControl;
+            this.appMenu.ShowRightPane = true;
             // 
             // frmMain
             // 
@@ -1080,19 +1151,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
+            this.hideContainerBottom.ResumeLayout(false);
+            this.dpFlow.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barManager)).EndInit();
             this.dpLayers.ResumeLayout(false);
             this.dockPanel2_Container.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pccBottom)).EndInit();
+            this.pccBottom.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.listRecently)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axTOCControl)).EndInit();
-            this.dpFlow.ResumeLayout(false);
-            this.dockPanel1_Container.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelMap)).EndInit();
             this.panelMap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenulayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenuFrame)).EndInit();
-            this.hideContainerBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.appMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1195,6 +1270,13 @@
         private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl;
         private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl;
         private DevExpress.XtraBars.Docking.AutoHideContainer hideContainerBottom;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.PopupControlContainer pccBottom;
+        private DevExpress.XtraEditors.SimpleButton btnExit;
+        private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.ImageListBoxControl listRecently;
+        private DevExpress.XtraEditors.LabelControl labelRecently;
+        private DevExpress.XtraBars.Ribbon.ApplicationMenu appMenu;
     }
 }
 
