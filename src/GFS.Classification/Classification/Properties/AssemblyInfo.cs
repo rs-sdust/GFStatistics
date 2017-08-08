@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("GFS.Classification")]
-[assembly: AssemblyDescription("GFS Classification")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("BNU")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("GFS.Classification")]
-[assembly: AssemblyCopyright("Copyright ©BNU  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

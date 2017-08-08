@@ -40,22 +40,22 @@
   <ItemGroup>
     <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>I:\DLLS\Dev14.1.dll\DevExpress.XtraEditors.v14.1.dll</HintPath>
+      <HintPath>..\DLL\DevExpress.XtraEditors.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>I:\DLLS\ESRI10.2.dll\ESRI.ArcGIS.Display.dll</HintPath>
+      <HintPath>..\DLL\ESRI.ArcGIS.Display.dll</HintPath>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>I:\DLLS\ESRI10.2.dll\ESRI.ArcGIS.Geometry.dll</HintPath>
+      <HintPath>..\DLL\ESRI.ArcGIS.Geometry.dll</HintPath>
     </Reference>
     <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>I:\DLLS\ESRI10.2.dll\ESRI.ArcGIS.System.dll</HintPath>
+      <HintPath>..\DLL\ESRI.ArcGIS.System.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

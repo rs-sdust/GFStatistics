@@ -1,2 +1,0 @@
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\Classification\ClassificationBLL\obj\Debug\GFS.ClassificationBLL.dll
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\Classification\ClassificationBLL\obj\Debug\GFS.ClassificationBLL.pdb

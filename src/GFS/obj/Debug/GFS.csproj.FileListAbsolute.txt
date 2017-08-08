@@ -1,0 +1,12 @@
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.exe.config
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.exe
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.pdb
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\MainWindow.baml
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\MainWindow.g.cs
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\App.g.cs
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\GFS_MarkupCompile.cache
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\GFS.g.resources
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\GFS.Properties.Resources.resources
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\GFS.csproj.GenerateResource.Cache
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\GFS.exe
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS\obj\Debug\GFS.pdb

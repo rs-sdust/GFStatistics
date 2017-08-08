@@ -1,3 +1,0 @@
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\BLL\obj\Debug\GFS.BLL.csprojResolveAssemblyReference.cache
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\BLL\obj\Debug\BLL.dll
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\BLL\obj\Debug\BLL.pdb

@@ -11,7 +11,7 @@
 // </copyright>
 // <summary>Class CommonAPI.</summary>
 // ***********************************************************************
-using DevExpress.XtraEditors;
+using DevExpress.XtraEditors; 
 using DevExpress.XtraEditors.Controls;
 using ESRI.ArcGIS.Display;
 using ESRI.ArcGIS.Geometry;

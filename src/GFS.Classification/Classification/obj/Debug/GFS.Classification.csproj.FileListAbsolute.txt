@@ -1,0 +1,34 @@
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\obj\Debug\GFS.Classification.frmMain.resources
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\obj\Debug\GFS.Classification.Properties.Resources.resources
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\obj\Debug\GFS.Classification.csproj.GenerateResource.Cache
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\obj\Debug\GFS.Classification.exe.licenses
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\bin\Debug\GFS.Classification.exe.config
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\bin\Debug\GFS.Classification.exe
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\bin\Debug\GFS.Classification.pdb
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\bin\Debug\GFS.BLL.dll
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\bin\Debug\log4net.dll
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\bin\Debug\GFS.BLL.pdb
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\obj\Debug\GFS.Classification.UCWorkFlow.resources
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\obj\Debug\GFS.Classification.exe
+f:\users\yxq\documents\visual studio 2010\Projects\GFS.Classification\GFS.Classification\obj\Debug\GFS.Classification.pdb
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\GFS.Classification.exe.config
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\GFS.Classification.exe
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\GFS.Classification.pdb
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\DevExpress.Data.v14.1.dll
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\DevExpress.Utils.v14.1.dll
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\DevExpress.XtraBars.v14.1.dll
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\DevExpress.XtraEditors.v14.1.dll
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\GFS.BLL.dll
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\log4net.dll
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\bin\Debug\GFS.BLL.pdb
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\obj\Debug\GFS.Classification.csprojResolveAssemblyReference.cache
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\obj\Debug\GFS.Classification.frmMain.resources
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\obj\Debug\GFS.Classification.Properties.Resources.resources
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\obj\Debug\GFS.Classification.UCWorkFlow.resources
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\obj\Debug\GFS.Classification.csproj.GenerateResource.Cache
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\obj\Debug\GFS.Classification.exe.licenses
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\obj\Debug\GFS.Classification.exe
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Classification\Classification\obj\Debug\GFS.Classification.pdb
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.Classification.exe.config
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.Classification.exe
+E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.Classification.pdb
