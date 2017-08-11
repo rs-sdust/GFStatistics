@@ -15,8 +15,8 @@ using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ADF.CATIDs;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Controls;
-using SDJT.Sys;
-using SDJT.Commands.UI;
+//using SDJT.Sys;
+using GFS.Commands.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,19 +25,19 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraBars.Docking;
 using ESRI.ArcGIS.Geodatabase;
-using SDJT.Log;
+using GFS.BLL;
 
 /// <summary>
 /// The Commands namespace.
 /// </summary>
-namespace SDJT.Commands
+namespace GFS.Commands
 {
     /// <summary>
     /// Class CmdOpenLayerTable. This class cannot be inherited.
     /// </summary>
     [ClassInterface(ClassInterfaceType.None)]
     [Guid("857a9977-721e-4240-b07c-8cef78343a89")]
-    [ProgId("SDJT.Commands.CmdOpenLayerTable")]
+    [ProgId("GFS.Commands.CmdOpenLayerTable")]
     public sealed class CmdOpenLayerTable : BaseCommand
     {
         /// <summary>
@@ -55,7 +55,7 @@ namespace SDJT.Commands
         /// </summary>
         private frmLayerTable _frm = null;
 
-        private Logger m_logger = new Logger();
+        //private Logger m_logger = new Logger();
 
         /// <summary>
         /// The enabled state of this command, determines whether the command is usable.
@@ -158,7 +158,10 @@ namespace SDJT.Commands
         {
             try
             {
-                EnviVars.instance.TablePanel.Visibility = DockVisibility.Visible;
+                //EnviVars.instance.TablePanel.Visibility = DockVisibility.Visible;
+                
+                DockPanel panel = EnviVars.instance.TableContainer.Parent as DockPanel;
+                panel.Visibility = DockVisibility.Visible;
                 if (this._frm == null)
                 {
                     this._frm = new frmLayerTable(this.m_hookHelper.FocusMap, this.m_currentLayer as IFeatureLayer);
@@ -168,13 +171,13 @@ namespace SDJT.Commands
                     };
                     this._frm.Owner = EnviVars.instance.MainForm;
                     //ControlWrapper.SetFormLocation(this.m_frm, FormPositionMode.Center);
-                    //EnviVars.instance.TablePanel.Controls.Clear();
+                    EnviVars.instance.TableContainer.Controls.Clear();
                     _frm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                     _frm.TopLevel = false;
                     _frm.Dock = DockStyle.Fill;
                     _frm.Show();
-                    EnviVars.instance.TablePanel.Text = _frm.Text;
-                    EnviVars.instance.TablePanel.Controls.Add(_frm);
+                    panel.Text = _frm.Text;
+                    EnviVars.instance.TableContainer.Controls.Add(_frm);
                 }
                 else
                 {
@@ -183,7 +186,7 @@ namespace SDJT.Commands
 
                     if((this.m_currentLayer as IFeatureLayer)!=null )
                     {
-                        EnviVars.instance.TablePanel.Text ="属性表：" + this.m_currentLayer.Name;
+                        panel.Text = "属性表：" + this.m_currentLayer.Name;
                         _frm.GridControl._pFtLayer = this.m_currentLayer as IFeatureLayer;
                         _frm.GridControl.Initialize(_frm.GridControl._pFtLayer.FeatureClass as ITable, null, this.m_hookHelper.FocusMap);
                     }
@@ -191,11 +194,12 @@ namespace SDJT.Commands
                 }
 
 
-                this.m_logger.Log(LogLevel.Info, EventType.UserManagement, this._frm.Text, null);
+                //this.m_logger.Log(LogLevel.Info, EventType.UserManagement, this._frm.Text, null);
             }
             catch (Exception ex)
             {
-                this.m_logger.Log(LogLevel.Error, EventType.UserManagement, this._frm.Text, ex);
+                //this.m_logger.Log(LogLevel.Error, EventType.UserManagement, this._frm.Text, ex);
+                Log.WriteLog(typeof(CmdOpenLayerTable), ex);
             }
         }
     }

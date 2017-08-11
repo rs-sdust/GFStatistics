@@ -21,12 +21,12 @@ using System.Text;
 using System.Windows.Forms;
 using ESRI.ArcGIS.Carto;
 using DevExpress.XtraTreeList.Nodes;
-using SDJT.Sys;
+//using SDJT.Sys;
 
 /// <summary>
 /// The UI namespace.
 /// </summary>
-namespace SDJT.Commands.UI
+namespace GFS.Commands.UI
 {
     /// <summary>
     /// Class CtrlListboxLayers.

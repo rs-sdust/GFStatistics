@@ -5,7 +5,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 
-namespace SDJT.Commands.UI
+namespace GFS.Commands.UI
 {
     partial class CtrlListboxLayers
     {

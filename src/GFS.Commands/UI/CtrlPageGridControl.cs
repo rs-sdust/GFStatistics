@@ -26,16 +26,16 @@ using DevExpress.XtraGrid.Views.Grid;
 using System.Runtime.InteropServices;
 using DevExpress.XtraEditors;
 using ESRI.ArcGIS.Geometry;
-using SDJT.Common;
+using GFS.Common;
 using ESRI.ArcGIS.esriSystem;
-using SDJT.Sys;
+//using SDJT.Sys;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
-using SDJT.Log;
+using GFS.BLL;
 
 /// <summary>
 /// The UI namespace.
 /// </summary>
-namespace SDJT.Commands.UI
+namespace GFS.Commands.UI
 {
     /// <summary>
     /// Class CtrlPageGridControl.
@@ -266,7 +266,7 @@ namespace SDJT.Commands.UI
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void gridControl_DoubleClick(object sender, EventArgs e)
         {
-            Logger logger = new Logger();
+            //Logger logger = new Logger();
 
             //DataRow dataRow = this.gridView.GetDataRow(this.gridView.FocusedRowHandle);
             try
@@ -344,7 +344,8 @@ namespace SDJT.Commands.UI
             }
             catch(Exception ex)
             {
-                logger.Log(LogLevel.Error, EventType.UserManagement, this.Name, ex);
+                //logger.Log(LogLevel.Error, EventType.UserManagement, this.Name, ex);
+                Log.WriteLog(typeof(CtrlPageGridControl), ex);
             }
         }
 

@@ -20,20 +20,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using SDJT.Log;
-using SDJT.Const;
 
 /// <summary>
 /// The Commands namespace.
 /// </summary>
-namespace SDJT.Commands
+namespace GFS.Commands
 {
     /// <summary>
     /// Class CmdZoomToLayer. This class cannot be inherited.
     /// </summary>
     [ClassInterface(ClassInterfaceType.None)]
     [Guid("93f48f2d-45bd-4d4b-b4cf-a1b441d38b48")]
-    [ProgId("SDJT.Commands.CmdZoomToLayer")]
+    [ProgId("GFS.Commands.CmdZoomToLayer")]
     public sealed class CmdZoomToLayer : BaseCommand
     {
         /// <summary>
@@ -124,7 +122,6 @@ namespace SDJT.Commands
         ///             perform the actual work of the custom command.</remarks>
         public override void OnClick()
         {
-            Logger logger = new Logger();
             try
             {
                 ILayer currentLayer = CommandAPI.GetCurrentLayer(this.m_hookHelper);
@@ -137,7 +134,7 @@ namespace SDJT.Commands
             }
             catch (Exception ex)
             {
-                logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0105, ex);
+                GFS.BLL.Log.WriteLog(typeof(CmdRemoveLayer), ex);
             }
         }
     }

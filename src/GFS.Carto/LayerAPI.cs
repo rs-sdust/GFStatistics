@@ -23,7 +23,7 @@ using System.Text;
 /// <summary>
 /// The Carto namespace.
 /// </summary>
-namespace SDJT.Carto
+namespace GFS.Carto
 {
     /// <summary>
     /// Class LayerAPI.

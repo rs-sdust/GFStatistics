@@ -16,7 +16,7 @@ namespace GFS.Test
             InitializeComponent();
         }
         int i = 0;
-        BLL.TaskHostory history = new BLL.TaskHostory("taskHistory.xml", 5);
+        GFS.BLL.TaskHostory history = new GFS.BLL.TaskHostory("taskHistory.xml", 5);
         private void button1_Click(object sender, EventArgs e)
         {
             history.LoadHistory();
@@ -42,7 +42,7 @@ namespace GFS.Test
 
         private void button5_Click(object sender, EventArgs e)
         {
-            GFS.BLL.Log.WriteLog(typeof(Form1), new Exception(textBox1.Text));
+            GFS.BLL.Log.WriteLog(typeof(Form1), new Exception(textBox2.Text));
         }
     }
 }

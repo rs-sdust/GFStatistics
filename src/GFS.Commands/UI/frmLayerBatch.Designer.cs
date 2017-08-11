@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace SDJT.Commands.UI
+namespace GFS.Commands.UI
 {
     partial class frmLayerBatch
     {

@@ -15,8 +15,22 @@ namespace GFS.Commands
         /// <param name="toolbar"></param>
         public static void Initialize(IToolbarControl2 toolbar)
         {
+            toolbar.AddItem(new CmdClearLayers(), -1, -1);
+            toolbar.AddItem(new CmdExportMap(), -1, -1);
+            toolbar.AddItem(new CmdHelp(), -1, -1);
+            toolbar.AddItem(new CmdLayerBatch(), -1, -1);
+            toolbar.AddItem(new CmdLayerTransparency(), -1, -1);
+            toolbar.AddItem(new CmdNewTask(), -1, -1);
+            toolbar.AddItem(new CmdOpenLayerTable(), -1, -1);
+            toolbar.AddItem(new CmdOpenMxd(), -1, -1);
             toolbar.AddItem(new CmdRemoveLayer(),-1,-1);
             toolbar.AddItem(new CmdRendererLayer(), -1, -1);
+            toolbar.AddItem(new CmdSaveFile(), -1, -1);
+            toolbar.AddItem(new CmdZoomToLayer(), -1, -1);
+            toolbar.AddItem(new CmdZoomToRasterResolution(), -1, -1);
+            toolbar.AddItem(new CmdLayerProperty(), -1, -1);
+            toolbar.AddItem(new CmdIdentifyTool(), -1, -1);      
+            
         }
         /// <summary>
         /// 设置地图控件当前的激活工具

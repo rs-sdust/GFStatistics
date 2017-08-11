@@ -20,20 +20,20 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using ESRI.ArcGIS.Carto;
-using SDJT.Sys;
-using SDJT.Log;
+//using SDJT.Sys;
+using GFS.BLL;
 
 /// <summary>
 /// The UI namespace.
 /// </summary>
-namespace SDJT.Commands.UI
+namespace GFS.Commands.UI
 {
     /// <summary>
     /// Class frmLayerTransparency.
     /// </summary>
     public partial class frmLayerTransparency : DevExpress.XtraEditors.XtraForm
     {
-        private Logger m_logger = new Logger();
+        //private Logger m_logger = new Logger();
 
         /// <summary>
         /// The M_P layer
@@ -73,7 +73,8 @@ namespace SDJT.Commands.UI
             }
             catch (Exception ex)
             {
-                this.m_logger.Log(LogLevel.Error, EventType.UserManagement, this.Text, ex);
+                //this.m_logger.Log(LogLevel.Error, EventType.UserManagement, this.Text, ex);
+                Log.WriteLog(typeof(frmLayerTransparency), ex);
             }
         }
 
@@ -92,7 +93,8 @@ namespace SDJT.Commands.UI
             }
             catch(Exception ex)
             {
-                this.m_logger.Log(LogLevel.Error, EventType.UserManagement, this.Text, ex);
+                //this.m_logger.Log(LogLevel.Error, EventType.UserManagement, this.Text, ex);
+                Log.WriteLog(typeof(frmLayerTransparency), ex);
             }
         }
 

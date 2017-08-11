@@ -14,8 +14,8 @@
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ADF.CATIDs;
 using ESRI.ArcGIS.Controls;
-using SDJT.Const;
-using SDJT.Sys;
+//using SDJT.Const;
+//using SDJT.Sys;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,19 +25,19 @@ using System.Windows.Forms;
 using ESRI.ArcGIS.SystemUI;
 using DevExpress.XtraEditors;
 using ESRI.ArcGIS.Carto;
-using SDJT.Log;
+using GFS.BLL;
 
 /// <summary>
 /// The Commands namespace.
 /// </summary>
-namespace SDJT.Commands
+namespace GFS.Commands
 {
     /// <summary>
     /// Class CmdOpenMxd. This class cannot be inherited.
     /// </summary>
     [ClassInterface(ClassInterfaceType.None)]
     [Guid("5e78994d-4e4f-487b-80f7-928b16183999")]
-    [ProgId("SDJT.Commands.CmdOpenMxd")]
+    [ProgId("GFS.Commands.CmdOpenMxd")]
     public sealed class CmdOpenMxd : BaseCommand
     {
         /// <summary>
@@ -126,7 +126,7 @@ namespace SDJT.Commands
         ///             perform the actual work of the custom command.</remarks>
         public override void OnClick()
         {
-            Logger logger = new Logger();
+            //Logger logger = new Logger();
             try
             {
                 EnviVars.instance.MainForm.UseWaitCursor = true;
@@ -136,16 +136,18 @@ namespace SDJT.Commands
                 if ((!String.IsNullOrEmpty(EnviVars.instance.MapControl.DocumentFilename) &&
                     EnviVars.instance.MapControl.CheckMxFile(EnviVars.instance.MapControl.DocumentFilename)) || isCurrrentNew)
                 {
-                    DialogResult res = XtraMessageBox.Show("保存当前文档?", AppMessage.MSG0000, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult res = XtraMessageBox.Show("保存当前文档?", "提示信息", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (res == DialogResult.Yes)
                     {
                         //if yes, launch the Save command
-                        ICommand command = new CmdSaveFile();
-                        command.OnCreate(EnviVars.instance.PageLayoutControl.Object);
-                        command.OnClick();
+                        //ICommand command = new CmdSaveFile();
+                        //command.OnCreate(EnviVars.instance.MapControl.Object);
+                        //command.OnClick();
+                        IMxdContents mxdContents = EnviVars.instance.MapControl.Map as IMxdContents;
+                        MapAPI.SaveMapDocument(mxdContents, EnviVars.instance.MapControl.DocumentFilename.ToString(), false);
                     }
                 }
-                logger.Log(LogLevel.Info, EventType.UserManagement, AppMessage.MSG0090, null);
+                //logger.Log(LogLevel.Info, EventType.UserManagement, AppMessage.MSG0090, null);
                 //launch the OpenMapDoc command
 
                 //ICommand OpenMapDoc = new ControlsOpenDocCommandClass();
@@ -166,20 +168,23 @@ namespace SDJT.Commands
                         // set the first map as the active view
                         IMap map = mapDoc.get_Map(0);
                         mapDoc.SetActiveView((IActiveView)map);
-                        EnviVars.instance.PageLayoutControl.PageLayout = mapDoc.PageLayout;
-                        EnviVars.instance.Synchronizer.ReplaceMap(map);
+                        //EnviVars.instance.PageLayoutControl.PageLayout = mapDoc.PageLayout;
+                        //EnviVars.instance.Synchronizer.ReplaceMap(map);
+                        EnviVars.instance.MapControl.Map = map;
                         mapDoc.Close();
                         EnviVars.instance.MapControl.DocumentFilename = docName;
-                        CommandAPI.AddRecentFile(docName, FileType.MXD);
-                        CommandAPI.SaveRecentFilesInfo();
-                        logger.Log(LogLevel.Info, EventType.UserManagement, AppMessage.MSG0090, null);
+                        EnviVars.instance.history.AddTask(docName);
+                        //CommandAPI.AddRecentFile(docName, FileType.MXD);
+                        //CommandAPI.SaveRecentFilesInfo();
+                        //logger.Log(LogLevel.Info, EventType.UserManagement, AppMessage.MSG0090, null);
                     }
 
                 }
             }
             catch (Exception ex)
             {
-                logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0090, ex);
+                //logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0090, ex);
+                Log.WriteLog(typeof(CmdOpenMxd), ex);
             }
             finally
             {

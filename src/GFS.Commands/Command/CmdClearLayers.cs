@@ -14,7 +14,7 @@
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ADF.CATIDs;
 using ESRI.ArcGIS.Controls;
-using SDJT.Sys;
+//using SDJT.Sys;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,13 +24,14 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using ESRI.ArcGIS.SystemUI;
 using ESRI.ArcGIS.Carto;
-using SDJT.Const;
-using SDJT.Log;
+using GFS.BLL;
+//using SDJT.Const;
+//using SDJT.Log;
 
 /// <summary>
 /// The Commands namespace.
 /// </summary>
-namespace SDJT.Commands
+namespace GFS.Commands
 {
     /// <summary>
     /// Class CmdClearLayers. This class cannot be inherited.
@@ -126,7 +127,6 @@ namespace SDJT.Commands
         ///             perform the actual work of the custom command.</remarks>
         public override void OnClick()
         {
-            Logger logger = new Logger();
             try
             {
                 //MapAPI.NewDocument();
@@ -137,26 +137,28 @@ namespace SDJT.Commands
                     EnviVars.instance.MapControl.CheckMxFile(EnviVars.instance.MapControl.DocumentFilename)) || isCurrrentNew)
                 {
                     //ask the user whether he'd like to save the current doc
-                    DialogResult res = XtraMessageBox.Show("保存当前文档?", AppMessage.MSG0000, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult res = XtraMessageBox.Show("保存当前文档?", "提示信息", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (res == DialogResult.Yes)
                     {
                         //if yes, launch the Save command
                         ICommand command = new CmdSaveFile();
-                        command.OnCreate(EnviVars.instance.PageLayoutControl.Object);
+                        command.OnCreate(EnviVars.instance.MapControl.Object);
                         command.OnClick();
                     }
                 }
-
-                (EnviVars.instance.PageLayoutControl.PageLayout as IGraphicsContainer).DeleteAllElements();
+                EnviVars.instance.MapControl.ClearLayers();
+                //(EnviVars.instance.PageLayoutControl.PageLayout as IGraphicsContainer).DeleteAllElements();
                 IMap map = new MapClass();
                 map.Name = "图层";
-                EnviVars.instance.Synchronizer.ReplaceMap(map);
+                EnviVars.instance.MapControl.Map = map;
+                //EnviVars.instance.Synchronizer.ReplaceMap(map);
 
                 EnviVars.instance.MapControl.DocumentFilename = string.Empty;
             }
             catch (Exception ex)
             {
-                logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0103, ex);
+                //logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0103, ex);
+                Log.WriteLog(typeof(CmdClearLayers), ex);
             }
             finally
             {

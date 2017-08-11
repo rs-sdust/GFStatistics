@@ -18,24 +18,24 @@ using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.DataSourcesRaster;
 using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
-using SDJT.Sys;
+using GFS.BLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using SDJT.Log;
-using SDJT.Const;
+//using SDJT.Log;
+//using SDJT.Const;
 
 /// <summary>
 /// The Commands namespace.
 /// </summary>
-namespace SDJT.Commands
+namespace GFS.Commands
 {
     /// <summary>
     /// Class CmdZoomToRasterResolution. This class cannot be inherited.
     /// </summary>
-    [ClassInterface(ClassInterfaceType.None), Guid("8fd75dec-baa5-4ac4-9d6d-12ef12b9ac77"), ProgId("SDJT.Commands.CmdZoomToRasterResolution")]
+    [ClassInterface(ClassInterfaceType.None), Guid("8fd75dec-baa5-4ac4-9d6d-12ef12b9ac77"), ProgId("GFS.Commands.CmdZoomToRasterResolution")]
     public sealed class CmdZoomToRasterResolution : BaseCommand
     {
         /// <summary>
@@ -60,7 +60,7 @@ namespace SDJT.Commands
             get
             {
                 this.m_rasterLayer = (CommandAPI.GetCurrentLayer(this.m_hookHelper) as IRasterLayer);
-                return this.m_rasterLayer != null && EnviVars.instance.ActiveViewMode == ViewMode.Map;
+                return this.m_rasterLayer != null;
             }
         }
 
@@ -147,7 +147,7 @@ namespace SDJT.Commands
         {
             if (this.m_rasterLayer != null)
             {
-                Logger logger = new Logger();
+                //Logger logger = new Logger();
                 try
                 {
                     if (this.m_hookHelper.FocusMap.SpatialReference != null && !(this.m_hookHelper.FocusMap.SpatialReference is IUnknownCoordinateSystem))
@@ -168,7 +168,8 @@ namespace SDJT.Commands
                 }
                 catch (Exception ex)
                 {
-                    logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0106, ex);
+                    //logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0106, ex);
+                    Log.WriteLog(typeof(CmdZoomToRasterResolution), ex);
                 }
             }
         }

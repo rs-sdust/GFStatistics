@@ -1,0 +1,66 @@
+
+ 
+记录时间：2017-08-08 15:56:11,519 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.TaskHostory property: [(null)] - 
+错误描述：读取任务历史失败：文件不存在！
+ 
+
+ 
+记录时间：2017-08-08 15:56:12,667 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.TaskHostory property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.BLL.TaskHostory.AddTask(String taskFile) 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.BLL\TaskHostory.cs:行号 81
+
+ 
+记录时间：2017-08-08 15:56:13,498 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.TaskHostory property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.BLL.TaskHostory.AddTask(String taskFile) 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.BLL\TaskHostory.cs:行号 81
+
+ 
+记录时间：2017-08-08 15:56:15,106 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.TaskHostory property: [(null)] - 
+错误描述：读取任务历史失败：文件不存在！
+ 
+
+ 
+记录时间：2017-08-08 15:56:15,931 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.TaskHostory property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.BLL.TaskHostory.SaveHistory() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.BLL\TaskHostory.cs:行号 101
+
+ 
+记录时间：2017-08-08 15:56:21,970 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.TaskHostory property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.BLL.TaskHostory.AddTask(String taskFile) 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.BLL\TaskHostory.cs:行号 81
+
+ 
+记录时间：2017-08-08 15:56:22,754 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.TaskHostory property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.BLL.TaskHostory.SaveHistory() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.BLL\TaskHostory.cs:行号 101

@@ -14,25 +14,25 @@
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ADF.CATIDs;
 using ESRI.ArcGIS.Controls;
-using SDJT.Sys;
-using SDJT.Commands.UI;
+using GFS.Commands.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using GFS.BLL;
 
 /// <summary>
 /// The Commands namespace.
 /// </summary>
-namespace SDJT.Commands
+namespace GFS.Commands
 {
     /// <summary>
     /// Class CmdExportMap. This class cannot be inherited.
     /// </summary>
     [ClassInterface(ClassInterfaceType.None)]
     [Guid("78413703-174f-4652-afca-af5b1612eae9")]
-    [ProgId("SDJT.Commands.CmdExportMap")]
+    [ProgId("GFS.Commands.CmdExportMap")]
     public sealed class CmdExportMap : BaseCommand
     {
         /// <summary>

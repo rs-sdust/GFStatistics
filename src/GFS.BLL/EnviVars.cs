@@ -22,6 +22,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DevExpress.XtraBars;
 
 /// <summary>
 /// The Sys namespace.
@@ -117,6 +118,11 @@ namespace GFS.BLL
             get;
             set;
         }
+        public ControlContainer TableContainer
+        {
+            get;
+            set;
+        }
 
         /// <summary>
         /// Gets or sets the recent files control.
@@ -154,7 +160,30 @@ namespace GFS.BLL
             get;
             set;
         }
-
+        /// <summary>
+        /// 任务历史管理对象
+        /// </summary>
+        public TaskHostory history
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 状态栏显示当前的XY坐标
+        /// </summary>
+        public BarItem barItemXY
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 状态栏显示的栅格图层当前像元信息
+        /// </summary>
+        public BarItem barItemRaster
+        {
+            get;
+            set;
+        }
         /// <summary>
         /// Prevents a default instance of the <see cref="EnviVars" /> class from being created.
         /// </summary>

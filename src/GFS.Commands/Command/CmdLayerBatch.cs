@@ -15,18 +15,19 @@ using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ADF.CATIDs;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Controls;
-using SDJT.Sys;
-using SDJT.Commands.UI;
+//using SDJT.Sys;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using GFS.BLL;
+using GFS.Commands.UI;
 
 /// <summary>
 /// The Commands namespace.
 /// </summary>
-namespace SDJT.Commands
+namespace GFS.Commands
 {
     /// <summary>
     /// Class CmdLayerBatch. This class cannot be inherited.

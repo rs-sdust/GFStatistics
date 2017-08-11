@@ -20,13 +20,14 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using ESRI.ArcGIS.Carto;
-using SDJT.Const;
-using SDJT.Sys;
+using GFS.BLL;
+//using SDJT.Const;
+//using SDJT.Sys;
 
 /// <summary>
 /// The CommandUI namespace.
 /// </summary>
-namespace SDJT.Commands.UI
+namespace GFS.Commands.UI
 {
     /// <summary>
     /// Class frmExportMap.
@@ -58,7 +59,7 @@ namespace SDJT.Commands.UI
         private void btnFile_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.SaveFileDialog saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            saveFileDialog.Title = AppMessage.MSG0028;
+            saveFileDialog.Title = "请选择地图存储路径";
             saveFileDialog.AddExtension = true;
             saveFileDialog.OverwritePrompt = true;
             saveFileDialog.Filter = "TIFF (*.tif)|*.tif|JPEG (*.jpg)|*.jpg|BMP (*.BMP)|*.bmp|PNG (*.png)|*.png";
@@ -80,14 +81,14 @@ namespace SDJT.Commands.UI
             string text = this.txtFile.Text;
             if (string.IsNullOrEmpty(text))
             {
-                XtraMessageBox.Show(AppMessage.MSG0028 + "！", AppMessage.MSG0000, System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
+                XtraMessageBox.Show("请选择地图存储路径" + "！", "提示信息", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
             }
             else
             {
                 double num = Convert.ToDouble(this.spinDpi.Value);
                 if (num > 300.0)
                 {
-                    XtraMessageBox.Show(AppMessage.MSG0027, AppMessage.MSG0000, System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
+                    XtraMessageBox.Show("输出分辨率最高只支持300dpi！", "提示信息", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
                 }
                 else
                 {
@@ -95,17 +96,17 @@ namespace SDJT.Commands.UI
                     int width = Convert.ToInt32(this.txtWidth.Text);
                     int height = Convert.ToInt32(this.txtHeight.Text);
                     ExportManager exportManager = new ExportManager();
-                    string text2 = AppMessage.MSG0029;
+                    string text2 = "导出成功！";
                     if (!exportManager.ExportMapExtent(this._activeView, new Size(width, height), text, num))
                     {
-                        text2 = AppMessage.MSG0030;
+                        text2 = "导出失败！";
                         //logger.Log(LogLevel.Error, EventType.UserManagement, this.Text, new Exception(text2));
                     }
                     else
                     {
                         //logger.Log(LogLevel.Info, EventType.UserManagement, this.Text, null);
                     }
-                    XtraMessageBox.Show(text2, AppMessage.MSG0000, System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
+                    XtraMessageBox.Show(text2, "提示信息", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
                     base.DialogResult = System.Windows.Forms.DialogResult.OK;
                 }
             }

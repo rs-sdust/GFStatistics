@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0A68225B-B963-4134-8461-96CEFF541B12}</ProjectGuid>
+    <ProjectGuid>{9A86A4E6-D14C-415D-8718-2FAE1392C9E6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GFS.Commands</RootNamespace>
@@ -16,14 +16,15 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x64</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Debug\</OutputPath>
+    <OutputPath>..\GFS\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -41,98 +42,87 @@
     <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Data.v14.1.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Utils.v14.1.dll</HintPath>
-      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DevExpress.XtraBars.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.XtraEditors.v14.1.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.XtraGrid.v14.1.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.XtraTreeList.v14.1.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ESRI.ArcGIS.ADF.Local.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.AxControls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ESRI.ArcGIS.AxControls.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Carto, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Carto.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Controls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Controls.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ESRI.ArcGIS.DataManagementTools.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.DataSourcesRaster.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Display.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Geodatabase.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Geometry.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ESRI.ArcGIS.Geoprocessor.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.System.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.SystemUI.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\stdole.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -146,21 +136,83 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CMDInitializer.cs" />
+    <Compile Include="Command\CmdClearLayers.cs" />
+    <Compile Include="Command\CmdExportMap.cs" />
+    <Compile Include="Command\CmdHelp.cs" />
+    <Compile Include="Command\CmdIdentifyTool .cs" />
+    <Compile Include="Command\CmdLayerBatch.cs" />
+    <Compile Include="Command\CmdLayerProPerty.cs" />
+    <Compile Include="Command\CmdLayerTransparency.cs" />
+    <Compile Include="Command\CmdNewTask.cs" />
+    <Compile Include="Command\CmdOpenLayerTable.cs" />
+    <Compile Include="Command\CmdOpenMxd.cs" />
     <Compile Include="Command\CmdRemoveLayer.cs" />
     <Compile Include="Command\CmdRendererLayer.cs" />
+    <Compile Include="Command\CmdSaveFile.cs" />
+    <Compile Include="Command\CmdZoomToLayer.cs" />
+    <Compile Include="Command\CmdZoomToRasterResolution.cs" />
     <Compile Include="Command\CommandAPI.cs" />
+    <Compile Include="Command\IdentifyManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ctrlGeographicCoordinateInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CtrlListboxLayers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CtrlListboxLayers.Designer.cs">
+      <DependentUpon>CtrlListboxLayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CtrlPageGridControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CtrlPageGridControl.Designer.cs">
+      <DependentUpon>CtrlPageGridControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ctrlProjectionCoordinateInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UI\frmCreatePyramid.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\frmCreatePyramid.Designer.cs">
       <DependentUpon>frmCreatePyramid.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\frmLayerRender.cs">
+    <Compile Include="UI\frmExportMap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\frmLayerRender.Designer.cs">
-      <DependentUpon>frmLayerRender.cs</DependentUpon>
+    <Compile Include="UI\frmExportMap.Designer.cs">
+      <DependentUpon>frmExportMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmIdentify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLayerBatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLayerBatch.Designer.cs">
+      <DependentUpon>frmLayerBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmLayerProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLayerTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLayerTable.Designer.cs">
+      <DependentUpon>frmLayerTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmLayerTransparency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmLayerTransparency.Designer.cs">
+      <DependentUpon>frmLayerTransparency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmNewTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmNewTask.Designer.cs">
+      <DependentUpon>frmNewTask.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\frmSymbolSelector.cs">
       <SubType>Form</SubType>
@@ -171,24 +223,36 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GFS.BLL\GFS.BLL.csproj">
-      <Project>{901E9E8C-0994-4CDE-B051-E372F86A31C8}</Project>
+      <Project>{11EE695C-496F-4301-AAB6-11D1CA5F6CC1}</Project>
       <Name>GFS.BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\GFS.Carto\GFS.Carto.csproj">
-      <Project>{F7D01534-C5E0-4344-9C65-4676286C7BED}</Project>
+      <Project>{C47BCFB1-B3E2-4067-98EB-78B95D7276CF}</Project>
       <Name>GFS.Carto</Name>
     </ProjectReference>
     <ProjectReference Include="..\GFS.Common\GFS.Common.csproj">
-      <Project>{EE17F69A-29F6-416C-A69B-24D5ACA52261}</Project>
+      <Project>{6A3316EF-580C-4D4A-849B-42A78B2C5AB4}</Project>
       <Name>GFS.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="UI\CtrlPageGridControl.resx">
+      <DependentUpon>CtrlPageGridControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmCreatePyramid.resx">
       <DependentUpon>frmCreatePyramid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\frmLayerRender.resx">
-      <DependentUpon>frmLayerRender.cs</DependentUpon>
+    <EmbeddedResource Include="UI\frmExportMap.resx">
+      <DependentUpon>frmExportMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmLayerProperty.resx">
+      <DependentUpon>frmLayerProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmLayerTable.resx">
+      <DependentUpon>frmLayerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmNewTask.resx">
+      <DependentUpon>frmNewTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmSymbolSelector.resx">
       <DependentUpon>frmSymbolSelector.cs</DependentUpon>

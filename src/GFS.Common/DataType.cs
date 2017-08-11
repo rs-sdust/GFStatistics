@@ -19,7 +19,7 @@ using System.Text;
 /// <summary>
 /// The Common namespace.
 /// </summary>
-namespace SDJT.Common
+namespace GFS.Common
 {
     /// <summary>
     /// Enum DataType

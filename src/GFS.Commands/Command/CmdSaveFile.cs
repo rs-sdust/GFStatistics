@@ -19,23 +19,24 @@ using ESRI.ArcGIS.ADF.BaseClasses;
 using System.Runtime.InteropServices;
 using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.ADF.CATIDs;
-using SDJT.Sys;
+//using SDJT.Sys;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.SystemUI;
-using SDJT.Const;
-using SDJT.Log;
+using GFS.BLL;
+//using SDJT.Const;
+//using SDJT.Log;
 
 /// <summary>
 /// The Commands namespace.
 /// </summary>
-namespace SDJT.Commands
+namespace GFS.Commands
 {
     /// <summary>
     /// Class CmdSaveFile. This class cannot be inherited.
     /// </summary>
     [ClassInterface(ClassInterfaceType.None)]
     [Guid("a1ab3ca2-9cdf-4b73-bc04-c733086c845f")]
-    [ProgId("SDJT.Commands.CmdSaveFile")]
+    [ProgId("GFS.Commands.CmdSaveFile")]
     public sealed class CmdSaveFile : BaseCommand
     {
         /// <summary>
@@ -124,7 +125,7 @@ namespace SDJT.Commands
         ///             perform the actual work of the custom command.</remarks>
         public override void OnClick()
         {
-            Logger logger = new Logger();
+            //Logger logger = new Logger();
             try
             {
                 EnviVars.instance.MainForm.UseWaitCursor = true;
@@ -143,15 +144,15 @@ namespace SDJT.Commands
                     //command.OnCreate(EnviVars.instance.PageLayoutControl.Object);
                     //command.OnClick();
                     System.Windows.Forms.SaveFileDialog saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-                    saveFileDialog.Title = AppMessage.MSG0094;
-                    saveFileDialog.Filter = string.Format("{0} (*.mxd)|*.mxd", AppMessage.MSG0095);
+                    saveFileDialog.Title = "保存任务文档";
+                    saveFileDialog.Filter = string.Format("{0} (*.mxd)|*.mxd", "任务文档");
                     if (saveFileDialog.ShowDialog(EnviVars.instance.MainForm) == System.Windows.Forms.DialogResult.OK)
                     {
                         IMxdContents mxdContents = this.m_hookHelper.FocusMap as IMxdContents;
-                        if (EnviVars.instance.ActiveViewMode == ViewMode.PageLayout)
-                        {
-                            mxdContents = (this.m_hookHelper.PageLayout as IMxdContents);
-                        }
+                        //if (EnviVars.instance.ActiveViewMode == ViewMode.PageLayout)
+                        //{
+                        //    mxdContents = (this.m_hookHelper.PageLayout as IMxdContents);
+                        //}
                         MapAPI.SaveMapDocument(mxdContents, saveFileDialog.FileName, false);
                         //logger.Log(LogLevel.Info, EventType.UserManagement, AppMessage.MSG0095, null);
                     }
@@ -159,7 +160,8 @@ namespace SDJT.Commands
             }
             catch (Exception ex)
             {
-                logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0095, ex);
+                //logger.Log(LogLevel.Error, EventType.UserManagement, AppMessage.MSG0095, ex);
+                Log.WriteLog(typeof(CmdSaveFile), ex);
             }
             finally
             {

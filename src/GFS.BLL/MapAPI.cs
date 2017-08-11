@@ -57,6 +57,7 @@ namespace GFS.BLL
                     mapDocument.SetActiveView((IActiveView)map);
                     //EnviVars.instance.Synchronizer.PageLayoutControl.PageLayout = mapDocument.PageLayout;
                     //EnviVars.instance.Synchronizer.ReplaceMap(map);
+                    EnviVars.instance.MapControl.Map = map;
                     EnviVars.instance.MainForm.Text = sMxdFilePath;
                 }
                 catch (Exception ex)
@@ -76,9 +77,11 @@ namespace GFS.BLL
         /// </summary>
         public static void NewDocument()
         {
-            (EnviVars.instance.PageLayoutControl.PageLayout as IGraphicsContainer).DeleteAllElements();
+            //(EnviVars.instance.PageLayoutControl.PageLayout as IGraphicsContainer).DeleteAllElements();
+            EnviVars.instance.MapControl.ClearLayers();
             IMap map = new MapClass();
             map.Name = "图层";
+            EnviVars.instance.MapControl.Map = map;
             //EnviVars.instance.Synchronizer.ReplaceMap(map);
         }
 

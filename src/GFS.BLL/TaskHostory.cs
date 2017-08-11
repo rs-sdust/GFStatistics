@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 using System.IO;
+using DevExpress.XtraEditors.Controls;
 
 namespace GFS.BLL
 {
@@ -16,6 +17,7 @@ namespace GFS.BLL
             get { return this.taskHistory; }
         }
         private int taskCount=0;
+        private int imageIndex = 17;
         /// <summary>
         /// 记录最近的任务历史
         /// </summary>
@@ -35,8 +37,13 @@ namespace GFS.BLL
                 Log.WriteLog(typeof(TaskHostory), "读取任务历史失败：文件不存在！");
                 return;
             }
-            if (taskHistory.Count > 0)
-                taskHistory.Clear();
+            //if (taskHistory.Count > 0)
+            //    taskHistory.Clear();
+            if (EnviVars.instance.RecentFilesCtrl.Items.Count > 0)
+            {
+                EnviVars.instance.RecentFilesCtrl.Items.Clear();
+            }
+
             XmlTextReader xmlReader= new XmlTextReader(historyFile);
             try
             {
@@ -46,7 +53,9 @@ namespace GFS.BLL
                     {
                         if (xmlReader.Name == "Task")
                         {
-                            taskHistory.Add(xmlReader.ReadElementContentAsString());
+                            //taskHistory.Add(xmlReader.ReadElementContentAsString());
+                            string taskFile=xmlReader.ReadElementContentAsString();
+                            EnviVars.instance.RecentFilesCtrl.Items.Add(taskFile, imageIndex);
                         }
                     }
                 }
@@ -64,9 +73,35 @@ namespace GFS.BLL
 
         public void AddTask(string taskFile)
         {
-            if (taskHistory.Count >= taskCount)
-                taskHistory.RemoveAt(0);
-            taskHistory.Add(taskFile);
+            //if (taskHistory.Count >= taskCount)
+            //    taskHistory.RemoveAt(0);
+            //taskHistory.Add(taskFile);
+            try
+            {
+                //任务历史已存在
+                if (TaskExits(taskFile))
+                    return;
+                //任务历史超过要记录个数
+                if (EnviVars.instance.RecentFilesCtrl.Items.Count >= taskCount)
+                {
+                    EnviVars.instance.RecentFilesCtrl.Items.RemoveAt(0);
+                }
+                //添加任务到历史
+                EnviVars.instance.RecentFilesCtrl.Items.Add(taskFile, imageIndex);
+            }
+            catch (Exception ex)
+            {
+                GFS.BLL.Log.WriteLog(typeof(TaskHostory), ex);
+            }
+        }
+        private bool TaskExits(string taskFile)
+        {
+            foreach (ImageListBoxItem task in EnviVars.instance.RecentFilesCtrl.Items)
+            {
+                if (taskFile == task.Value.ToString())
+                    return true;
+            }
+            return false;
         }
 
         public void SaveHistory()
@@ -77,10 +112,10 @@ namespace GFS.BLL
                 xmlWriter.Formatting = Formatting.Indented;
                 xmlWriter.WriteStartDocument();
                 xmlWriter.WriteStartElement("TaskHistory");
-                foreach (string task in taskHistory)
+                foreach (ImageListBoxItem task in EnviVars.instance.RecentFilesCtrl.Items)
                 {
                     xmlWriter.WriteStartElement("Task");
-                    xmlWriter.WriteString(task);
+                    xmlWriter.WriteString(task.ToString());
                     xmlWriter.WriteEndElement();
                 }
                 xmlWriter.WriteEndElement();

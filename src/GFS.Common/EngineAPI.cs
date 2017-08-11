@@ -21,7 +21,7 @@ using ESRI.ArcGIS.esriSystem;
 using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
 using ESRI.ArcGIS.Geoprocessor;
-using ESRI.ArcGIS.SpatialAnalyst;
+//using ESRI.ArcGIS.SpatialAnalyst;
 using ESRI.ArcGIS.SystemUI;
 using System;
 using System.Collections;
@@ -35,7 +35,7 @@ using System.Windows.Forms;
 /// <summary>
 /// The Common namespace.
 /// </summary>
-namespace SDJT.Common
+namespace GFS.Common
 {
     /// <summary>
     /// Class EngineAPI.

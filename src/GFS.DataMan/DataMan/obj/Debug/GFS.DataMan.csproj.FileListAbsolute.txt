@@ -1,9 +1,0 @@
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.DataMan.exe.config
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.DataMan.exe
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\bin\Debug\GFS.DataMan.pdb
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.DataMan\DataMan\obj\Debug\GFS.DataMan.csprojResolveAssemblyReference.cache
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.DataMan\DataMan\obj\Debug\GFS.DataMan.frmMain.resources
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.DataMan\DataMan\obj\Debug\GFS.DataMan.Properties.Resources.resources
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.DataMan\DataMan\obj\Debug\GFS.DataMan.csproj.GenerateResource.Cache
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.DataMan\DataMan\obj\Debug\GFS.DataMan.exe
-E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.DataMan\DataMan\obj\Debug\GFS.DataMan.pdb

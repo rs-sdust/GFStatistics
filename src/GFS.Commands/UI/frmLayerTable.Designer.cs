@@ -1,4 +1,4 @@
-﻿namespace SDJT.Commands.UI
+﻿namespace GFS.Commands.UI
 {
     partial class frmLayerTable
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlPageGridControl1 = new SDJT.Commands.UI.CtrlPageGridControl();
+            this.ctrlPageGridControl1 = new CtrlPageGridControl();
             this.SuspendLayout();
             // 
             // ctrlPageGridControl1

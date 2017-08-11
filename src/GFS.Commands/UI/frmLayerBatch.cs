@@ -20,15 +20,16 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using ESRI.ArcGIS.Carto;
-using SDJT.Sys;
-using SDJT.Const;
-using SDJT.Carto;
-using SDJT.Log;
+//using SDJT.Sys;
+//using SDJT.Const;
+//using SDJT.Carto;
+using GFS.BLL;
+using GFS.Carto;
 
 /// <summary>
 /// The UI namespace.
 /// </summary>
-namespace SDJT.Commands.UI
+namespace GFS.Commands.UI
 {
     /// <summary>
     /// Class frmLayerBatch.
@@ -40,7 +41,7 @@ namespace SDJT.Commands.UI
         /// </summary>
         private IMap m_pMap;
 
-        private Logger m_logger = new Logger();
+        //private Logger m_logger = new Logger();
 
         /// <summary>
         /// The ms G01
@@ -68,7 +69,7 @@ namespace SDJT.Commands.UI
             {
                 if (this.ctrlListboxLayers1.GetLayers.Count == 0)
                 {
-                    XtraMessageBox.Show(frmLayerBatch.MSG01, AppMessage.MSG0000, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    XtraMessageBox.Show(frmLayerBatch.MSG01, "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
                 else
                 {
@@ -83,7 +84,8 @@ namespace SDJT.Commands.UI
             }
             catch (Exception ex)
             {
-                this.m_logger.Log(LogLevel.Error, EventType.UserManagement, this.Text, ex);
+                //this.m_logger.Log(LogLevel.Error, EventType.UserManagement, this.Text, ex);
+                Log.WriteLog(typeof(frmLayerBatch), ex);
             }
         }
 

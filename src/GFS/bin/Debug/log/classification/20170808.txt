@@ -1,0 +1,218 @@
+
+ 
+记录时间：2017-08-08 15:55:00,494 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.TaskHostory property: [(null)] - 
+错误描述：读取任务历史失败：文件不存在！
+ 
+
+ 
+记录时间：2017-08-08 17:51:58,001 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdNewTask property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdNewTask.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdNewTask.cs:行号 98
+
+ 
+记录时间：2017-08-08 17:54:26,628 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdOpenMxd property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdOpenMxd.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdOpenMxd.cs:行号 132
+
+ 
+记录时间：2017-08-08 18:08:25,523 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdClearLayers property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdClearLayers.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdClearLayers.cs:行号 150
+
+ 
+记录时间：2017-08-08 18:12:28,193 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdClearLayers property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdClearLayers.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdClearLayers.cs:行号 150
+
+ 
+记录时间：2017-08-08 18:17:05,211 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdClearLayers property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdClearLayers.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdClearLayers.cs:行号 150
+
+ 
+记录时间：2017-08-08 18:28:01,157 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdClearLayers property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdClearLayers.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdClearLayers.cs:行号 145
+
+ 
+记录时间：2017-08-08 18:29:48,171 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdClearLayers property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdClearLayers.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdClearLayers.cs:行号 145
+
+ 
+记录时间：2017-08-08 18:30:01,013 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdOpenMxd property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdOpenMxd.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdOpenMxd.cs:行号 144
+
+ 
+记录时间：2017-08-08 18:30:04,915 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdOpenMxd property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdOpenMxd.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdOpenMxd.cs:行号 144
+
+ 
+记录时间：2017-08-08 18:30:07,051 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdOpenMxd property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdOpenMxd.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdOpenMxd.cs:行号 144
+
+ 
+记录时间：2017-08-08 18:30:09,050 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdOpenMxd property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdOpenMxd.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdOpenMxd.cs:行号 144
+
+ 
+记录时间：2017-08-08 18:32:15,794 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-08 18:32:24,376 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-08 18:33:12,740 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-08 18:38:29,960 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdClearLayers property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdClearLayers.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdClearLayers.cs:行号 145
+
+ 
+记录时间：2017-08-08 18:38:42,831 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-08 18:39:33,688 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-08 18:39:45,201 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-08 18:40:34,661 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-08 18:40:41,112 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-08 18:43:39,115 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdClearLayers property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdClearLayers.OnClick() 位置 E:\高分统计\GF_Statistics\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdClearLayers.cs:行号 145

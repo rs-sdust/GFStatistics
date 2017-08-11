@@ -20,13 +20,13 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using ESRI.ArcGIS.Carto;
-using SDJT.Sys;
+//using SDJT.Sys;
 using ESRI.ArcGIS.Geodatabase;
 
 /// <summary>
 /// The UI namespace.
 /// </summary>
-namespace SDJT.Commands.UI
+namespace GFS.Commands.UI
 {
     /// <summary>
     /// Class frmLayerTable.

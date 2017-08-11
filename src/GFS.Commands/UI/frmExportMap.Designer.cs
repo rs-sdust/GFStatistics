@@ -1,4 +1,4 @@
-﻿namespace SDJT.Commands.UI
+﻿namespace GFS.Commands.UI
 {
     partial class frmExportMap
     {
