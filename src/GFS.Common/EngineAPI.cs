@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.Common
-// Author           : yxq
+// Author           : Ricker Yan
 // Created          : 03-30-2016
 //
-// Last Modified By : yxq
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-19-2016
 // ***********************************************************************
 // <copyright file="EngineAPI.cs" company="SDJT">
@@ -20,7 +20,7 @@ using ESRI.ArcGIS.Display;
 using ESRI.ArcGIS.esriSystem;
 using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
-using ESRI.ArcGIS.Geoprocessor;
+//using ESRI.ArcGIS.Geoprocessor;
 //using ESRI.ArcGIS.SpatialAnalyst;
 using ESRI.ArcGIS.SystemUI;
 using System;
@@ -31,6 +31,7 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 /// <summary>
 /// The Common namespace.
@@ -427,6 +428,165 @@ namespace GFS.Common
                         {
                             IFeatureClass featureClass = (datasetName as IName).Open() as IFeatureClass;
                             result = featureClass;
+                        }
+                    }
+                    finally
+                    {
+                        System.Runtime.InteropServices.Marshal.ReleaseComObject(enumDatasetName);
+                        System.Runtime.InteropServices.Marshal.ReleaseComObject(workspace);
+                    }
+                }
+            }
+            return result;
+        }
+        /// <summary>
+        /// create vector file by geometry
+        /// </summary>
+        /// <param name="sFilePath">vector file path</param>
+        /// <param name="geometry">based geometry</param>
+        /// <returns></returns>
+        public static bool CreateShpFile(string sFilePath, List<ROIGeometry> geometryList)
+        {
+            string directoryName = System.IO.Path.GetDirectoryName(sFilePath);
+            IFeatureWorkspace featureWorkspace = EngineAPI.OpenWorkspace(directoryName, DataType.shp) as IFeatureWorkspace;
+            bool result;
+            if (featureWorkspace == null)
+            {
+                result = false;
+            }
+            else
+            {
+                try
+                {
+                    string fileNameWithoutExtension = System.IO.Path.GetFileNameWithoutExtension(sFilePath);
+                    result = EngineAPI.CreateGeometryLayer(fileNameWithoutExtension, geometryList, featureWorkspace, "");
+                }
+                finally
+                {
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(featureWorkspace);
+                }
+            }
+            return result;
+        }
+        /// <summary>
+        /// Create geometry layer
+        /// </summary>
+        /// <param name="sName">filename without extension</param>
+        /// <param name="geometry">based geometry</param>
+        /// <param name="featureWorkspace">featureWorkspace</param>
+        /// <param name="sAlias"></param>
+        /// <returns></returns>
+        public static bool CreateGeometryLayer(string sName, List<ROIGeometry> geometryList, IFeatureWorkspace featureWorkspace, string sAlias = "")
+        {
+            bool result;
+            try
+            {
+                IObjectClassDescription objectClassDescription = new FeatureClassDescriptionClass();
+                IFields requiredFields = objectClassDescription.RequiredFields;
+                string shapeFieldName = (objectClassDescription as IFeatureClassDescription).ShapeFieldName;
+                int index = requiredFields.FindField(shapeFieldName);
+                IGeometryDef geometryDef = requiredFields.get_Field(index).GeometryDef;
+                IGeometryDefEdit geometryDefEdit = geometryDef as IGeometryDefEdit;
+                geometryDefEdit.GeometryType_2 = geometryList[0].geometry.GeometryType;
+                geometryDefEdit.SpatialReference_2 = geometryList[0].geometry.SpatialReference;
+                IFeatureClass featureClass = featureWorkspace.CreateFeatureClass(sName, requiredFields, new UIDClass
+                {
+                    Value = "esriGeoDatabase.Feature"
+                }, null, esriFeatureType.esriFTSimple, shapeFieldName, "");
+
+                try
+                {
+                    foreach (ROIGeometry roi in geometryList)
+                    {
+                        IFeature feature = featureClass.CreateFeature();
+                        feature.Shape = roi.geometry;
+                        feature.Store();
+                    }
+
+                    if (!string.IsNullOrEmpty(sAlias))
+                    {
+                        EngineAPI.AlterDatasetAlias(featureClass, sAlias);
+                    }
+                }
+                finally
+                {
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(featureClass);
+                }
+                result = true;
+            }
+            catch
+            {
+                result = false;
+            }
+            return result;
+        }
+        /// <summary>
+        /// alter alias of dataset
+        /// </summary>
+        /// <param name="objectClass">esri object</param>
+        /// <param name="sAlias">alias</param>
+        public static void AlterDatasetAlias(IObjectClass objectClass, string sAlias)
+        {
+            try
+            {
+                (objectClass as IClassSchemaEdit).AlterAliasName(sAlias);
+            }
+            catch
+            {
+            }
+        }
+
+        /// <summary>
+        /// 打开栅格文件
+        /// </summary>
+        public static IRasterDataset OpenRasterFile(string inFile)
+        {
+            FileInfo fInfo = new FileInfo(inFile);
+            return EngineAPI.OpenRasterFile(fInfo.DirectoryName, fInfo.Name);
+
+        }
+        /// <summary>
+        /// 打开矢量文件
+        /// </summary>
+        /// <param name="shpFile">文件名</param>
+        /// <returns></returns>
+        public static IFeatureClass OpenFeatureClass(string shpFile)
+        {
+            IFeatureClass result;
+            FileInfo fInfo = new FileInfo(shpFile);
+            if (!System.IO.Directory.Exists(fInfo.DirectoryName))
+            {
+                result = null;
+            }
+            else
+            {
+                IWorkspace workspace = EngineAPI.OpenWorkspace(fInfo.DirectoryName, DataType.shp);
+                if (workspace == null)
+                {
+                    result = null;
+                }
+                else
+                {
+                    IEnumDatasetName enumDatasetName = workspace.get_DatasetNames(esriDatasetType.esriDTFeatureClass);
+                    try
+                    {
+                        enumDatasetName.Reset();
+                        IDatasetName datasetName;
+                        while ((datasetName = enumDatasetName.Next()) != null)
+                        {
+                            if (fInfo.Name.StartsWith(datasetName.Name))
+                            {
+                                break;
+                            }
+                        }
+                        if (datasetName == null)
+                        {
+                            result = null;
+                        }
+                        else
+                        {
+                            IFeatureClass pFeatureClass = (datasetName as IName).Open() as IFeatureClass;
+                            result = pFeatureClass;
                         }
                     }
                     finally

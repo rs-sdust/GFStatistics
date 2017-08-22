@@ -1,0 +1,606 @@
+
+ 
+记录时间：2017-08-21 10:06:30,542 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:07:49,363 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:08:40,498 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:09:51,385 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:10:04,777 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:10:12,378 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:10:16,305 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:10:19,112 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:14:29,134 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:14:33,718 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:14:41,469 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:17:35,915 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:17:46,612 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:33:30,146 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GPExecutor property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentException: 路径的形式不合法。
+   在 System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 GFS.Common.EngineAPI.OpenRasterFile(String inFile) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Common\EngineAPI.cs:行号 543
+   在 GFS.BLL.GPExecutor.ZonalStatisticsAsTable(String inFile, String inValueFile, String zoneField, String statistisType) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\GPExecutor.cs:行号 142
+
+ 
+记录时间：2017-08-21 10:33:46,371 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GPExecutor property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentException: 路径的形式不合法。
+   在 System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 GFS.Common.EngineAPI.OpenRasterFile(String inFile) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Common\EngineAPI.cs:行号 543
+   在 GFS.BLL.GPExecutor.ZonalStatisticsAsTable(String inFile, String inValueFile, String zoneField, String statistisType) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\GPExecutor.cs:行号 142
+
+ 
+记录时间：2017-08-21 10:38:52,861 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-21 10:38:57,820 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-21 10:38:59,147 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-21 10:39:00,849 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-21 10:53:29,418 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 10:54:44,053 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:04:24,805 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:04:28,277 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:04:30,741 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:04:40,349 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:04:44,948 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:06:14,115 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:06:38,539 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GPExecutor property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentException: 路径的形式不合法。
+   在 System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 GFS.Common.EngineAPI.OpenRasterFile(String inFile) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Common\EngineAPI.cs:行号 544
+   在 GFS.BLL.GPExecutor.ZonalStatisticsAsTable(String inFile, String inValueFile, String zoneField, String statistisType) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\GPExecutor.cs:行号 142
+
+ 
+记录时间：2017-08-21 11:06:46,931 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:06:53,691 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GPExecutor property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentException: 路径的形式不合法。
+   在 System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 GFS.Common.EngineAPI.OpenRasterFile(String inFile) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Common\EngineAPI.cs:行号 544
+   在 GFS.BLL.GPExecutor.ZonalStatisticsAsTable(String inFile, String inValueFile, String zoneField, String statistisType) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\GPExecutor.cs:行号 142
+
+ 
+记录时间：2017-08-21 11:06:56,331 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:07:07,335 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GPExecutor property: [(null)] - 
+错误描述：Error
+ 
+System.Runtime.InteropServices.COMException (0x80041098): ERROR 010096: There is no Spatial Analyst license currently available or enabled.
+   在 ESRI.ArcGIS.SpatialAnalyst.RasterZonalOpClass.ZonalStatisticsAsTable(IGeoDataset zone, IGeoDataset value, Boolean ignoreNoData)
+   在 GFS.BLL.GPExecutor.ZonalStatisticsAsTable(String inFile, String inValueFile, String zoneField, String statistisType) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\GPExecutor.cs:行号 144
+
+ 
+记录时间：2017-08-21 11:07:26,651 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:11:12,293 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:11:46,856 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:12:14,455 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:12:28,209 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GPExecutor property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentException: 路径的形式不合法。
+   在 System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 GFS.Common.EngineAPI.OpenRasterFile(String inFile) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Common\EngineAPI.cs:行号 544
+   在 GFS.BLL.GPExecutor.ZonalStatisticsAsTable(String inFile, String inValueFile, String zoneField, String statistisType) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\GPExecutor.cs:行号 142
+
+ 
+记录时间：2017-08-21 11:13:44,726 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:13:52,843 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GPExecutor property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentException: 路径的形式不合法。
+   在 System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 GFS.Common.EngineAPI.OpenRasterFile(String inFile) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Common\EngineAPI.cs:行号 544
+   在 GFS.BLL.GPExecutor.ZonalStatisticsAsTable(String inFile, String inValueFile, String zoneField, String statistisType) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\GPExecutor.cs:行号 142
+
+ 
+记录时间：2017-08-21 11:14:29,765 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:17:33,034 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:17:58,669 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:18:11,307 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:19:39,354 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\Task.cs:行号 67
+
+ 
+记录时间：2017-08-21 11:21:01,402 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-21 11:21:02,930 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137
+
+ 
+记录时间：2017-08-21 14:17:03,164 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdSaveFile property: [(null)] - 
+错误描述：Error
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Commands.CmdSaveFile.OnClick() 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\Command\CmdSaveFile.cs:行号 137

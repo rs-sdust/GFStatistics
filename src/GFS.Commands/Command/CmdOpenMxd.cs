@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.Commands
-// Author           : yxq
+// Author           : Ricker Yan
 // Created          : 04-05-2016
 //
-// Last Modified By : yxq
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-21-2016
 // ***********************************************************************
 // <copyright file="CmdOpenMxd.cs" company="SDJT">
@@ -26,6 +26,7 @@ using ESRI.ArcGIS.SystemUI;
 using DevExpress.XtraEditors;
 using ESRI.ArcGIS.Carto;
 using GFS.BLL;
+using System.IO;
 
 /// <summary>
 /// The Commands namespace.
@@ -160,7 +161,19 @@ namespace GFS.Commands
                 dlg.Title = "打开文档";
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    string docName = dlg.FileName;
+                    string docName = dlg.FileName;                   
+                    string taskXml = docName.Substring(0,docName.LastIndexOf(".")) + ".xml";
+                    if (!File.Exists(taskXml))
+                    {
+                        XtraMessageBox.Show("任务描述文件不存在！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        return;
+                    }
+
+                    if (!Task.ParseTask(taskXml))
+                    {
+                        return;
+                    }
+                    EnviVars.instance.CurrentTask = taskXml;
                     IMapDocument mapDoc = new MapDocumentClass();
                     if (mapDoc.get_IsPresent(docName) && !mapDoc.get_IsPasswordProtected(docName))
                     {
@@ -173,6 +186,7 @@ namespace GFS.Commands
                         EnviVars.instance.MapControl.Map = map;
                         mapDoc.Close();
                         EnviVars.instance.MapControl.DocumentFilename = docName;
+
                         EnviVars.instance.history.AddTask(docName);
                         //CommandAPI.AddRecentFile(docName, FileType.MXD);
                         //CommandAPI.SaveRecentFilesInfo();

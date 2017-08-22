@@ -48,6 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnTaskFile.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.updateTime.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.updateTime.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCompany.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProduct.Properties)).BeginInit();
@@ -98,6 +99,8 @@
             this.updateTime.Location = new System.Drawing.Point(98, 136);
             this.updateTime.Name = "updateTime";
             this.updateTime.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.updateTime.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.updateTime.Size = new System.Drawing.Size(157, 20);
             this.updateTime.TabIndex = 10;
@@ -197,8 +200,11 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(290, 302);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(290, 302);
             this.Name = "frmNewTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -210,6 +216,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.updateTime.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.updateTime.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCompany.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProduct.Properties)).EndInit();

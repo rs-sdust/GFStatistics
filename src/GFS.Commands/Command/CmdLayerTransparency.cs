@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.Commands
-// Author           : YXQ
+// Author           : Ricker Yan
 // Created          : 04-22-2016
 //
-// Last Modified By : YXQ
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-22-2016
 // ***********************************************************************
 // <copyright file="CmdLayerTransparency.cs" company="SDJT">

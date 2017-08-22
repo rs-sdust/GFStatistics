@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : GFS.BLL
+// Author           : Ricker Yan
+// Created          : 08-11-2017
+//
+// Last Modified By : Ricker Yan
+// Last Modified On : 08-17-2017
+// ***********************************************************************
+// <copyright file="GFSApplication.cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary>main GIS frame logic</summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,7 +59,7 @@ namespace GFS.BLL
         private PopupMenu _popMenuRGB = null;
         //最近使用任务控件
         private ImageListBoxControl _lstRecently = null;
-        private TaskHostory history = null;
+        private TaskHistory history = null;
         //状态栏坐标系
         private BarItem _barItemSPt = null;
         //状态栏坐标
@@ -69,7 +82,7 @@ namespace GFS.BLL
         //private EagleEye _eagleEye = null;
         private MapControlEagle _eagleEye = null;
         private DockPanel _dpEagle = null;
-        private bool tmp1;
+        private bool tmp1 = false;
 
         /// <summary>
         /// 传递所有GIS控件和主窗体
@@ -142,7 +155,7 @@ namespace GFS.BLL
             //EnviVars.instance.TablePanel = tablePanel;
             EnviVars.instance.TableContainer = tableContainer;
             EnviVars.instance.RecentFilesCtrl = lstRecentFiles;
-            history = new TaskHostory("taskHistory.xml", 5);
+            history = new TaskHistory(ConstDef.FILE_RENCENTFILES, 5);
             EnviVars.instance.history = history;
             history.LoadHistory();
             _eagleEye = new MapControlEagle(this._mapControl as IMapControl4, this._mapControlEagle as IMapControl4);
@@ -576,28 +589,33 @@ namespace GFS.BLL
         //
         private void SetBarItemEnabled()
         {
-            if (!this.tmp1)
+            try
             {
-                Dictionary<string, bool> dictionary = new Dictionary<string, bool>();
-                for (int i = 0; i < this._toolbarControl.CommandPool.Count; i++)
+                if (!this.tmp1)
                 {
-                    ICommand command = this._toolbarControl.CommandPool.get_Command(i);
-                    dictionary.Add(command.Name, command.Enabled);
-
-                }
-                if (this._barList != null)
-                {
-                    foreach (Bar currentBar in this._barList)
+                    Dictionary<string, bool> dictionary = new Dictionary<string, bool>();
+                    for (int i = 0; i < this._toolbarControl.CommandPool.Count; i++)
                     {
-                        this.SetBarItemEnabled(dictionary, currentBar.Manager.Items);
+                        ICommand command = this._toolbarControl.CommandPool.get_Command(i);
+                        dictionary.Add(command.Name, command.Enabled);
+
                     }
-                    this._barEditLyList.Enabled = this._barItemSwipe.Enabled;
-                }
-                if (this._popMenuLayer != null)
-                {
-                    this.SetBarItemEnabled(dictionary, this._popMenuLayer.Manager.Items);
+                    if (this._barList != null)
+                    {
+                        foreach (Bar currentBar in this._barList)
+                        {
+                            this.SetBarItemEnabled(dictionary, currentBar.Manager.Items);
+                        }
+                        this._barEditLyList.Enabled = this._barItemSwipe.Enabled;
+                    }
+                    if (this._popMenuLayer != null)
+                    {
+                        this.SetBarItemEnabled(dictionary, this._popMenuLayer.Manager.Items);
+                    }
                 }
             }
+            catch(Exception)
+            {}
         }
         private void SetBarItemEnabled(Dictionary<string, bool> dictionary, BarItems barItems)
         {

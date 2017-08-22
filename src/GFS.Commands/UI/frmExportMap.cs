@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.SystemUI
-// Author           : yxq
+// Author           : Ricker Yan
 // Created          : 04-01-2016
 //
-// Last Modified By : yxq
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-22-2016
 // ***********************************************************************
 // <copyright file="frmExportMap.cs" company="SDJT">

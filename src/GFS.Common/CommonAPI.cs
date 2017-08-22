@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.Common
-// Author           : yxq
+// Author           : Ricker Yan
 // Created          : 04-01-2016
 //
-// Last Modified By : yxq
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-15-2016
 // ***********************************************************************
 // <copyright file="CommonAPI.cs" company="SDJT">
@@ -76,6 +76,25 @@ namespace GFS.Common
             return text;
         }
 
+        public static string ConvertToString(object objValue)
+        {
+            string result = "";
+            if (!CommonAPI.IsNullValue(objValue))
+            {
+                result = objValue.ToString();
+            }
+            return result;
+        }
+
+        public static int ConvertToInt(object objValue)
+        {
+            int result = 0;
+            if (!CommonAPI.IsNullValue(objValue))
+            {
+                int.TryParse(objValue.ToString(), out result);
+            }
+            return result;
+        }
         /// <summary>
         /// Converts to double.
         /// </summary>

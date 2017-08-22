@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.System
-// Author           : YXQ
+// Author           : Ricker Yan
 // Created          : 04-19-2016
 //
-// Last Modified By : YXQ
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-12-2016
 // ***********************************************************************
 // <copyright file="frmSymbolSelector.cs" company="SDJT">

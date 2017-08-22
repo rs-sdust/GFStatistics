@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : GFS.Commands
+// Author           : yxq
+// Created          : 08-11-2017
+//
+// Last Modified By : yxq
+// Last Modified On : 08-10-2017
+// ***********************************************************************
+// <copyright file="CmdLayerProPerty.cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary>ICommand for display layer properties</summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

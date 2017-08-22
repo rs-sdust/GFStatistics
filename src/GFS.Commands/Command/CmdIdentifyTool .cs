@@ -1,4 +1,17 @@
-﻿using DevExpress.XtraTreeList.Nodes;
+﻿// ***********************************************************************
+// Assembly         : GFS.Commands
+// Author           : Ricker Yan
+// Created          : 08-11-2017
+//
+// Last Modified By : Ricker Yan
+// Last Modified On : 08-10-2017
+// ***********************************************************************
+// <copyright file="CmdIdentifyTool .cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary>ITool for identify clicked obj</summary>
+// ***********************************************************************
+using DevExpress.XtraTreeList.Nodes;
 using ESRI.ArcGIS.ADF.BaseClasses;
 using ESRI.ArcGIS.ADF.CATIDs;
 using ESRI.ArcGIS.Carto;

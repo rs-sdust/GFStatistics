@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : GFS.Commands
+// Author           : Ricker Yan
+// Created          : 08-11-2017
+//
+// Last Modified By : Ricker Yan
+// Last Modified On : 08-08-2017
+// ***********************************************************************
+// <copyright file="CmdNewTask.cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary>ICommand for create new task</summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

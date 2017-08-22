@@ -1,9 +1,8 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.Common
-// Author           : yxq
+// Author           : Ricker Yan
 // Created          : 03-30-2016
-//
-// Last Modified By : yxq
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-06-2016
 // ***********************************************************************
 // <copyright file="DataType.cs" company="SDJT">

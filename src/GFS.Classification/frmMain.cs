@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : GFS.Classification
+// Author           : Ricker Yan
+// Created          : 08-17-2017
+//
+// Last Modified By : Ricker Yan
+// Last Modified On : 08-17-2017
+// ***********************************************************************
+// <copyright file="frmMain.cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary>main UI of classification</summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,54 +68,154 @@ namespace GFS.Classification
 
         #endregion
 
-        #region 业务模块事件
-        private void btnAddData_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        #region business events
+        //
+        //更新任务
+        //
+        private void btnUpdateTask_ItemClick(object sender, ItemClickEventArgs e)
         {
+            Task.UpdateTask(EnviVars.instance.CurrentTask);
 
         }
-
-        private void btnNewTask_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnOpenTask_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
+        //
+        //裁剪
+        //
         private void btnMask_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-  
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask,BLL.TaskState.DataPrepare);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnPrepare);
+            frmClipRaster frm = new frmClipRaster();
+            frm.ShowDialog();
         }
-
+        //
+        //镶嵌
+        //
+        private void btnMosaic_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.DataPrepare);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnPrepare);
+            frmMosaic frm = new frmMosaic();
+            frm.ShowDialog();
+        }
+        //
+        //样本选取
+        //
         private void btnSample_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnSample);
+            CmdROI roiTool = new CmdROI();
+            roiTool.OnCreate(this.m_mapControl);
+            roiTool.OnClick();
         }
-
+        //
+        //样本分析
+        //
+        private void btnSampleAnaly_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnSample);
+            frmSampleAnaly frm = new frmSampleAnaly();
+            frm.ShowDialog();
+        }
+        //
+        //神经网络硬分类
+        //
+        private void btnNNHard_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+        }
+        //
+        //特征分析
+        //
+        private void btnfeatureAnaly_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+        }
+        //
+        //软硬分类
+        //
+        private void btnSoftHard_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            List<string> testFile = new List<string>();
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Title = "打开栅格文件";
+            dlg.FileName = string.Empty;
+            dlg.Filter = "栅格文件|*.tif";
+            if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                testFile.Add(dlg.FileName);
+            GFS.Commands.UI.frmCreatePyramid frm = new Commands.UI.frmCreatePyramid(testFile);
+            frm.ShowDialog();
+        }
+        //
+        //叠加分类
+        //
+        private void btnOverlayClass_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+        }
+        //
+        //决策树分类
+        //
+        private void btnDecision_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+        }
+        //
+        //光学影像分割
+        //
+        private void btnOpticsDiv_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+        }
+        //
+        //图斑像元综合分类
+        //
+        private void btnSyn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+        }
+        //
+        //重编码
+        //
         private void btnRecode_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnAfter);
         }
-
+        //
+        //分类后校正
+        //
+        private void btnReject_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnAfter);
+        }
+        //
+        //结果统计
+        //
+        private void btnStatistics_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnAfter);
+        }
+        //
+        //精度验证
+        //
         private void btnVerify_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnVerification);
         }
-
+        //
+        //结果拼接
+        //
         private void btnCropMosaic_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            this.ucWorkFlow.RefreshFlow(FlowStatus.End);
         }
-
-        #endregion
-
-        #region basic GIS events
-
-        #endregion
-
-        #region fun
 
         #endregion
 

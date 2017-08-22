@@ -98,7 +98,7 @@ namespace GFS.Commands.UI
             }
             catch (Exception ex)
             {
-                GFS.BLL.Log.WriteLog(typeof(TaskHostory), ex);
+                GFS.BLL.Log.WriteLog(typeof(TaskHistory), ex);
             }
             finally
             {

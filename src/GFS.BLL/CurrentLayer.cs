@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.System
-// Author           : YXQ
+// Author           : Ricker Yan
 // Created          : 04-19-2016
 //
-// Last Modified By : YXQ
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-25-2016
 // ***********************************************************************
 // <copyright file="CurrentLayer.cs" company="SDJT">

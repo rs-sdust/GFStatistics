@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.Commands
-// Author           : YXQ
+// Author           : Ricker Yan
 // Created          : 04-22-2016
 //
-// Last Modified By : YXQ
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-21-2016
 // ***********************************************************************
 // <copyright file="CmdSaveFile.cs" company="SDJT">
@@ -134,7 +134,7 @@ namespace GFS.Commands
                 {
                     IMapDocument mapDocument = new MapDocumentClass();
                     mapDocument.Open(EnviVars.instance.MapControl.DocumentFilename, "");
-                    mapDocument.ReplaceContents((IMxdContents)EnviVars.instance.PageLayoutControl.PageLayout);
+                    //mapDocument.ReplaceContents((IMxdContents)EnviVars.instance.PageLayoutControl.PageLayout);
                     mapDocument.Save(mapDocument.UsesRelativePaths, true);
                     mapDocument.Close();
                 }

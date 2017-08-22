@@ -3,7 +3,7 @@
 // Author           : Admin
 // Created          : 03-30-2016
 //
-// Last Modified By : yxq
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-22-2016
 // ***********************************************************************
 // <copyright file="EnviVars.cs" company="SDJT">
@@ -163,7 +163,7 @@ namespace GFS.BLL
         /// <summary>
         /// 任务历史管理对象
         /// </summary>
-        public TaskHostory history
+        public TaskHistory history
         {
             get;
             set;
@@ -184,11 +184,48 @@ namespace GFS.BLL
             get;
             set;
         }
+        public string CurrentTask
+        {
+            get;
+            set;
+        }
+        public int taskID
+        {
+            get;
+            set;
+        }
+        public TaskState taskState
+        {
+            set;
+            get;
+        }
+        private GPExecutor m_gpExecutor = null;
+        public GPExecutor GpExecutor
+        {
+            get
+            {
+                if (this.m_gpExecutor == null)
+                {
+                    this.m_gpExecutor = new GPExecutor();
+                }
+                return this.m_gpExecutor;
+            }
+            set
+            {
+                this.m_gpExecutor = value;
+            }
+        }
         /// <summary>
         /// Prevents a default instance of the <see cref="EnviVars" /> class from being created.
         /// </summary>
         private EnviVars()
         {
+            try
+            {
+                this.m_gpExecutor = new GPExecutor();
+            }
+            catch (Exception)
+            { }
         }
 
         /// <summary>

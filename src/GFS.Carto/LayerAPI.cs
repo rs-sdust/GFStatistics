@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.Carto
-// Author           : YXQ
+// Author           : Ricker Yan
 // Created          : 04-19-2016
 //
-// Last Modified By : YXQ
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-15-2016
 // ***********************************************************************
 // <copyright file="LayerAPI.cs" company="SDJT">

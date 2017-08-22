@@ -29,7 +29,7 @@ namespace GFS.BLL
       // the list of products and their binding preference order.
       //
       ProductCode[] supportedRuntimes = new ProductCode[] { 
-        ProductCode.Engine, ProductCode.Desktop };
+        ProductCode.Desktop};
       foreach (ProductCode c in supportedRuntimes)
       {
         if (RuntimeManager.Bind(c))

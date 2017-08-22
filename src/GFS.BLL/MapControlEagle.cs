@@ -1,4 +1,17 @@
-﻿using ESRI.ArcGIS.Carto;
+﻿// ***********************************************************************
+// Assembly         : GFS.BLL
+// Author           : Ricker Yan
+// Created          : 08-11-2017
+//
+// Last Modified By : Ricker Yan
+// Last Modified On : 08-10-2017
+// ***********************************************************************
+// <copyright file="MapControlEagle.cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary>Eagle eye logic </summary>
+// ***********************************************************************
+using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.Display;
 using ESRI.ArcGIS.Geometry;
@@ -67,6 +80,9 @@ namespace GFS.BLL
             }
         }
 
+        /// <summary>
+        /// Updates the eagle map control.
+        /// </summary>
         public void UpdateEagleMapControl()
         {
             if (EnviVars.instance.EagleVisible)

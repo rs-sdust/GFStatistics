@@ -30,7 +30,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -121,7 +121,7 @@
     </Reference>
     <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\stdole.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -136,6 +136,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CMDInitializer.cs" />
+    <Compile Include="Command\CmdROI.cs" />
+    <Compile Include="Command\CmdToolDrawElement.cs" />
     <Compile Include="Command\CmdClearLayers.cs" />
     <Compile Include="Command\CmdExportMap.cs" />
     <Compile Include="Command\CmdHelp.cs" />
@@ -154,6 +156,17 @@
     <Compile Include="Command\CommandAPI.cs" />
     <Compile Include="Command\IdentifyManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Command\ROIElementClass.cs" />
+    <Compile Include="Command\ROILayerClass.cs" />
+    <Compile Include="Command\ROIManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CheckedTreeList.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UI\ctrlGeographicCoordinateInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -214,6 +227,9 @@
     <Compile Include="UI\frmNewTask.Designer.cs">
       <DependentUpon>frmNewTask.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\frmROI.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI\frmSymbolSelector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +252,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\CtrlPageGridControl.resx">
       <DependentUpon>CtrlPageGridControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmNewTask.resx">
       <DependentUpon>frmNewTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmROI.resx">
+      <DependentUpon>frmROI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmSymbolSelector.resx">
       <DependentUpon>frmSymbolSelector.cs</DependentUpon>

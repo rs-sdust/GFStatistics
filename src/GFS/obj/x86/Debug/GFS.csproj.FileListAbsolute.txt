@@ -1,3 +1,0 @@
-E:\高分统计\GFS\bin\Debug\GFS.exe.config
-E:\高分统计\GFS\bin\Debug\GFS.exe
-E:\高分统计\GFS\bin\Debug\GFS.pdb

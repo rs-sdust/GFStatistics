@@ -1,0 +1,33 @@
+
+ 
+记录时间：2017-08-17 12:56:12,380 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.UI.frmCreatePyramid property: [(null)] - 
+错误描述：Error
+ 
+System.Runtime.InteropServices.SEHException (0x80004005): 外部组件发生异常。
+   在 ESRI.ArcGIS.Geoprocessor.Geoprocessor..ctor()
+   在 GFS.Commands.UI.frmCreatePyramid.btnOK_Click(Object sender, EventArgs e) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\UI\frmCreatePyramid.cs:行号 195
+
+ 
+记录时间：2017-08-17 14:19:17,186 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.UI.frmCreatePyramid property: [(null)] - 
+错误描述：Error
+ 
+System.Runtime.InteropServices.SEHException (0x80004005): 外部组件发生异常。
+   在 ESRI.ArcGIS.Geoprocessor.Geoprocessor..ctor()
+   在 GFS.Commands.UI.frmCreatePyramid.btnOK_Click(Object sender, EventArgs e) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\UI\frmCreatePyramid.cs:行号 195
+
+ 
+记录时间：2017-08-17 14:34:16,300 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.UI.frmCreatePyramid property: [(null)] - 
+错误描述：Error
+ 
+System.Runtime.InteropServices.SEHException (0x80004005): 外部组件发生异常。
+   在 ESRI.ArcGIS.Geoprocessor.Geoprocessor..ctor()
+   在 GFS.Commands.UI.frmCreatePyramid.btnOK_Click(Object sender, EventArgs e) 位置 E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\UI\frmCreatePyramid.cs:行号 195

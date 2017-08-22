@@ -219,7 +219,7 @@
             this.btnHelp});
             this.ribbonControl.LargeImages = this.ribbion32;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 6;
+            this.ribbonControl.MaxItemId = 9;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -232,7 +232,7 @@
             this.ribbonControl.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl.ShowToolbarCustomizeItem = false;
-            this.ribbonControl.Size = new System.Drawing.Size(1014, 147);
+            this.ribbonControl.Size = new System.Drawing.Size(1201, 147);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
@@ -406,6 +406,7 @@
             this.btnUpdateTask.Id = 12;
             this.btnUpdateTask.LargeImageIndex = 4;
             this.btnUpdateTask.Name = "btnUpdateTask";
+            this.btnUpdateTask.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUpdateTask_ItemClick);
             // 
             // btnMask
             // 
@@ -423,6 +424,7 @@
             this.btnMosaic.Id = 14;
             this.btnMosaic.LargeImageIndex = 8;
             this.btnMosaic.Name = "btnMosaic";
+            this.btnMosaic.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMosaic_ItemClick);
             // 
             // bsiSingleDate
             // 
@@ -441,6 +443,7 @@
             this.btnNNHard.Id = 54;
             this.btnNNHard.ImageIndex = 16;
             this.btnNNHard.Name = "btnNNHard";
+            this.btnNNHard.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNNHard_ItemClick);
             // 
             // bsiSoftHard
             // 
@@ -460,6 +463,7 @@
             this.btnfeatureAnaly.Id = 18;
             this.btnfeatureAnaly.ImageIndex = 17;
             this.btnfeatureAnaly.Name = "btnfeatureAnaly";
+            this.btnfeatureAnaly.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnfeatureAnaly_ItemClick);
             // 
             // btnSoftHard
             // 
@@ -468,6 +472,7 @@
             this.btnSoftHard.ImageIndex = 23;
             this.btnSoftHard.LargeImageIndex = 25;
             this.btnSoftHard.Name = "btnSoftHard";
+            this.btnSoftHard.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSoftHard_ItemClick);
             // 
             // bsiMultiDate
             // 
@@ -486,6 +491,7 @@
             this.btnOverlayClass.Id = 56;
             this.btnOverlayClass.ImageIndex = 19;
             this.btnOverlayClass.Name = "btnOverlayClass";
+            this.btnOverlayClass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOverlayClass_ItemClick);
             // 
             // btnDecision
             // 
@@ -493,6 +499,7 @@
             this.btnDecision.Id = 57;
             this.btnDecision.ImageIndex = 21;
             this.btnDecision.Name = "btnDecision";
+            this.btnDecision.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDecision_ItemClick);
             // 
             // bsiRadarAndMultiSpectral
             // 
@@ -511,6 +518,7 @@
             this.btnOpticsDiv.Id = 58;
             this.btnOpticsDiv.ImageIndex = 22;
             this.btnOpticsDiv.Name = "btnOpticsDiv";
+            this.btnOpticsDiv.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOpticsDiv_ItemClick);
             // 
             // btnSyn
             // 
@@ -518,6 +526,7 @@
             this.btnSyn.Id = 59;
             this.btnSyn.ImageIndex = 20;
             this.btnSyn.Name = "btnSyn";
+            this.btnSyn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSyn_ItemClick);
             // 
             // bsiMiddleAndHigh
             // 
@@ -543,6 +552,7 @@
             this.btnSampleAnaly.Id = 20;
             this.btnSampleAnaly.LargeImageIndex = 11;
             this.btnSampleAnaly.Name = "btnSampleAnaly";
+            this.btnSampleAnaly.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSampleAnaly_ItemClick);
             // 
             // btnRecode
             // 
@@ -560,6 +570,7 @@
             this.btnReject.Id = 23;
             this.btnReject.ImageIndex = 26;
             this.btnReject.Name = "btnReject";
+            this.btnReject.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReject_ItemClick);
             // 
             // btnStatistics
             // 
@@ -568,6 +579,7 @@
             this.btnStatistics.Id = 24;
             this.btnStatistics.ImageIndex = 24;
             this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnStatistics_ItemClick);
             // 
             // btnVerify
             // 
@@ -813,7 +825,7 @@
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 568);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1014, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1201, 31);
             // 
             // dockManager
             // 
@@ -843,7 +855,7 @@
             this.hideContainerBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.hideContainerBottom.Location = new System.Drawing.Point(0, 548);
             this.hideContainerBottom.Name = "hideContainerBottom";
-            this.hideContainerBottom.Size = new System.Drawing.Size(1014, 20);
+            this.hideContainerBottom.Size = new System.Drawing.Size(1201, 20);
             // 
             // dpFlow
             // 
@@ -1096,6 +1108,7 @@
             this.barBtnSample.Id = 12;
             this.barBtnSample.ImageIndex = 13;
             this.barBtnSample.Name = "barBtnSample";
+            this.barBtnSample.Tag = "CmdROI";
             // 
             // barBtnAfter
             // 
@@ -1131,14 +1144,14 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(2, 2);
-            this.barDockControlTop.Size = new System.Drawing.Size(754, 31);
+            this.barDockControlTop.Size = new System.Drawing.Size(941, 31);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 599);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1014, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1201, 0);
             // 
             // barDockControlLeft
             // 
@@ -1151,7 +1164,7 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1014, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1201, 0);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 599);
             // 
             // dpLayers
@@ -1191,7 +1204,7 @@
             this.panelMap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMap.Location = new System.Drawing.Point(256, 147);
             this.panelMap.Name = "panelMap";
-            this.panelMap.Size = new System.Drawing.Size(758, 401);
+            this.panelMap.Size = new System.Drawing.Size(945, 401);
             this.panelMap.TabIndex = 9;
             // 
             // axMapControl
@@ -1249,7 +1262,7 @@
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 599);
+            this.ClientSize = new System.Drawing.Size(1201, 599);
             this.Controls.Add(this.panelMap);
             this.Controls.Add(this.dpLayers);
             this.Controls.Add(this.hideContainerBottom);
@@ -1264,7 +1277,6 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Classification";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            //this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).EndInit();

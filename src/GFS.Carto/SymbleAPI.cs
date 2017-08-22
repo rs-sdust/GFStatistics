@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.Carto
-// Author           : YXQ
+// Author           : Ricker Yan
 // Created          : 04-19-2016
 //
-// Last Modified By : YXQ
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-14-2016
 // ***********************************************************************
 // <copyright file="SymbleAPI.cs" company="SDJT">

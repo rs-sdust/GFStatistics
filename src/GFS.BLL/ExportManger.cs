@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : SDJT.System
-// Author           : yxq
+// Author           : Ricker Yan
 // Created          : 04-06-2016
 //
-// Last Modified By : yxq
+// Last Modified By : Ricker Yan
 // Last Modified On : 04-06-2016
 // ***********************************************************************
 // <copyright file="ExportManger.cs" company="SDJT">
