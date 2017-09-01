@@ -131,6 +131,12 @@
     <Compile Include="frmClipRaster.Designer.cs">
       <DependentUpon>frmClipRaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDecisionTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDecisionTree.Designer.cs">
+      <DependentUpon>frmDecisionTree.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="frmMosaic.Designer.cs">
       <DependentUpon>frmMosaic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOOClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOOClassification.Designer.cs">
+      <DependentUpon>frmOOClassification.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSampleAnaly.cs">
       <SubType>Form</SubType>
@@ -155,8 +167,19 @@
     <Compile Include="frmSampleAnalystResult.Designer.cs">
       <DependentUpon>frmSampleAnalystResult.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSegmentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSegmentation.Designer.cs">
+      <DependentUpon>frmSegmentation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UCWorkFlow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -190,6 +213,9 @@
     <EmbeddedResource Include="frmClipRaster.resx">
       <DependentUpon>frmClipRaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDecisionTree.resx">
+      <DependentUpon>frmDecisionTree.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +227,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSampleAnalystResult.resx">
       <DependentUpon>frmSampleAnalystResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSegmentation.resx">
+      <DependentUpon>frmSegmentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UCWorkFlow.resx">
       <DependentUpon>UCWorkFlow.cs</DependentUpon>

@@ -1,0 +1,16 @@
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.Classification.exe.config
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.Classification.exe
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.Classification.pdb
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.csprojResolveAssemblyReference.cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.frmClipRaster.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.frmDecisionTree.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.frmMain.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.frmMosaic.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.frmSampleAnaly.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.frmSampleAnalystResult.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.frmSegmentation.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.Properties.Resources.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.UCWorkFlow.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.csproj.GenerateResource.Cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.exe
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Classification\obj\x86\Debug\GFS.Classification.pdb

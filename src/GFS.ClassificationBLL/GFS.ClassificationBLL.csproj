@@ -43,13 +43,22 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Data.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Utils.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DevExpress.XtraBars.v14.1.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.XtraEditors.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DevExpress.XtraGrid.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Carto, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -75,6 +84,11 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Display.dll</HintPath>
     </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\DLL\ESRI.ArcGIS.GeoAnalyst.dll</HintPath>
+    </Reference>
     <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -85,6 +99,11 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Geometry.dll</HintPath>
     </Reference>
+    <Reference Include="ESRI.ArcGIS.SpatialAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\DLL\ESRI.ArcGIS.SpatialAnalyst.dll</HintPath>
+    </Reference>
     <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -92,6 +111,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -100,8 +120,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Canvas.cs" />
+    <Compile Include="DecisionNode.cs" />
+    <Compile Include="DecisionTree.cs" />
+    <Compile Include="DecisionTreeLayer.cs" />
+    <Compile Include="DecisionVariable.cs" />
+    <Compile Include="frmBandSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandSelection.Designer.cs">
+      <DependentUpon>frmBandSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditLeaf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditLeaf.Designer.cs">
+      <DependentUpon>frmEditLeaf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditNode.designer.cs">
+      <DependentUpon>frmEditNode.cs</DependentUpon>
+    </Compile>
     <Compile Include="MAP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomColor.cs" />
+    <Compile Include="RasterMapAlgebraOp.cs" />
     <Compile Include="SampleAnalyst.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +162,18 @@
       <Project>{6A3316EF-580C-4D4A-849B-42A78B2C5AB4}</Project>
       <Name>GFS.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBandSelection.resx">
+      <DependentUpon>frmBandSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditLeaf.resx">
+      <DependentUpon>frmEditLeaf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditNode.resx">
+      <DependentUpon>frmEditNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -128,6 +128,11 @@ namespace GFS.Common
             }
             return result;
         }
+        public static bool IsNumber(string str)
+        {
+            double number;
+            return double.TryParse(str, out number);
+        }
 
         /// <summary>
         /// Previews the item.

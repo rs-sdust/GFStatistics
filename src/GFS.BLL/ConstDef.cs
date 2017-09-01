@@ -45,6 +45,8 @@ namespace GFS.BLL
         /// </summary>
         public static readonly string PATH_TEMP;
 
+        public static readonly string PATH_IDL;
+
         /// <summary>
         /// esri符号文件
         /// </summary>
@@ -87,6 +89,9 @@ namespace GFS.BLL
 
             ConstDef.FILE_HELPFILE =
                 Path.Combine(STARTPATH, "help", "help.chm");
+
+            ConstDef.PATH_IDL =
+                Path.Combine(STARTPATH, "IDL");
 
         }
     }

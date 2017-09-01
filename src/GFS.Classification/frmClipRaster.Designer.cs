@@ -93,7 +93,7 @@
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(48, 14);
             this.labelControl2.TabIndex = 7;
-            this.labelControl2.Text = "矢量数据";
+            this.labelControl2.Text = "裁剪范围";
             // 
             // cBEreaster
             // 
@@ -112,7 +112,7 @@
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(61, 25);
             this.labelControl1.TabIndex = 4;
-            this.labelControl1.Text = "栅格图像";
+            this.labelControl1.Text = "被裁减图像";
             // 
             // siBgrid
             // 

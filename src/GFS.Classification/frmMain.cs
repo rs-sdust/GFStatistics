@@ -124,6 +124,8 @@ namespace GFS.Classification
         private void btnNNHard_ItemClick(object sender, ItemClickEventArgs e)
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            frmSegmentation frm = new frmSegmentation();
+            frm.ShowDialog();
         }
         //
         //特征分析
@@ -161,6 +163,8 @@ namespace GFS.Classification
         private void btnDecision_ItemClick(object sender, ItemClickEventArgs e)
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            frmDecisionTree frm = new frmDecisionTree();
+            frm.Show();
         }
         //
         //光学影像分割
@@ -218,6 +222,7 @@ namespace GFS.Classification
         }
 
         #endregion
+
 
 
 

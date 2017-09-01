@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using GFS.BLL;
 using ESRI.ArcGIS.Geoprocessor;
 using GFS.Commands.UI;
+using ProductionMeta;
 
 namespace GFS.Test
 {
@@ -103,5 +104,52 @@ namespace GFS.Test
             MessageBox.Show(msg);
 
         }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Title = "选择产品数据";
+            openDialog.Multiselect = true;
+            openDialog.Title = "请选择文件";
+            openDialog.Filter = "tiff(*.tif)|*.tif|All files(*.*)|*.*";
+            if (openDialog.ShowDialog() == DialogResult.OK)
+            {
+                foreach (string file in openDialog.FileNames)
+                {
+                    this.listBoxFile.Items.Add(file);
+                }
+            }
+        }
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+            if (listBoxFile.Items.Count < 1)
+                return;
+            //if (string.IsNullOrEmpty(textBoxDataSource.Text.TrimEnd()))
+            //{
+            //    MessageBox.Show("请填写数据源！");
+            //}
+            //else
+            {
+                foreach (string file in this.listBoxFile.Items)
+                {
+                    ProductMeta meta = new ProductMeta(file,this.textBoxDataSource.Text.TrimEnd(),textBoxRegion.Text.TrimEnd());
+                    meta.WriteMeta();
+                }
+                MessageBox.Show("Finished.");
+            }
+        }
+
+        private void buttonRemove_Click(object sender, EventArgs e)
+        {
+            if (this.listBoxFile.SelectedItems.Count > 0)
+            {
+                foreach (var item in listBoxFile.SelectedItems)
+                {
+                    this.listBoxFile.Items.Remove(item);
+                }
+            }
+        }
+
     }
 }

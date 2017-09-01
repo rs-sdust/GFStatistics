@@ -1,0 +1,9 @@
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.ClassificationBLL.dll
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.ClassificationBLL.pdb
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.csprojResolveAssemblyReference.cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.frmEditLeaf.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.frmEditNode.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.csproj.GenerateResource.Cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.dll.licenses
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.dll
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.pdb

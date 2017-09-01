@@ -1,0 +1,10 @@
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.ClassificationBLL.dll
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.ClassificationBLL.pdb
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Debug\GFS.ClassificationBLL.csprojResolveAssemblyReference.cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Debug\GFS.ClassificationBLL.frmBandSelection.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Debug\GFS.ClassificationBLL.frmEditLeaf.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Debug\GFS.ClassificationBLL.frmEditNode.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Debug\GFS.ClassificationBLL.csproj.GenerateResource.Cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Debug\GFS.ClassificationBLL.dll.licenses
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Debug\GFS.ClassificationBLL.dll
+E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Debug\GFS.ClassificationBLL.pdb

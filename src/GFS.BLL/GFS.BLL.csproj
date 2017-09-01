@@ -194,6 +194,7 @@
     </Compile>
     <Compile Include="GFSApplication.cs" />
     <Compile Include="GPExecutor.cs" />
+    <Compile Include="IDLModel.cs" />
     <Compile Include="ITableConversion.cs" />
     <Compile Include="LicenseInitializer.cs" />
     <Compile Include="LicenseInitializer.Designer.cs">
@@ -226,6 +227,17 @@
       <Project>{6A3316EF-580C-4D4A-849B-42A78B2C5AB4}</Project>
       <Name>GFS.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="COM_IDL_connectLib">
+      <Guid>{B59EEB78-AE99-4508-A1B4-8D39A414F23E}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,9 @@
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.Carbon.exe.config
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.Carbon.exe
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.Carbon.pdb
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carbon\obj\x86\Release\GFS.Carbon.csprojResolveAssemblyReference.cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carbon\obj\x86\Release\GFS.Carbon.frmMain.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carbon\obj\x86\Release\GFS.Carbon.UCWorkFlow.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carbon\obj\x86\Release\GFS.Carbon.csproj.GenerateResource.Cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carbon\obj\x86\Release\GFS.Carbon.exe
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carbon\obj\x86\Release\GFS.Carbon.pdb

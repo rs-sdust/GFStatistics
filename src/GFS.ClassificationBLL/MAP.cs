@@ -22,6 +22,8 @@ using GFS.Commands.UI;
 using GFS.BLL;
 using DevExpress.XtraEditors;
 using GFS.Common;
+using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace GFS.ClassificationBLL
 {
@@ -57,6 +59,28 @@ namespace GFS.ClassificationBLL
             {
                 XtraMessageBox.Show("加载数据失败！", "提示信息", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
                 Log.WriteLog(typeof(MAP), ex);
+            }
+        }
+
+        public static int GetBandCount(string rasterFile)
+        {
+            IRasterLayer pRasterLayer = null;
+            try
+            {
+                pRasterLayer = new RasterLayerClass();
+                pRasterLayer.CreateFromFilePath(rasterFile);
+                return pRasterLayer.BandCount;
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show("读取栅格波段失败！请检查文件是否损坏：" + rasterFile, "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                Log.WriteLog(typeof(MapAPI), ex);
+                return -1;
+            }
+            finally
+            {
+                if (pRasterLayer != null)
+                    Marshal.ReleaseComObject(pRasterLayer);
             }
         }
     }

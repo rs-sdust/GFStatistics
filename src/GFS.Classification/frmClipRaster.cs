@@ -91,20 +91,19 @@ namespace GFS.Classification
 
         private void siBOK_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(cBEreaster.Text.Trim()) || string.IsNullOrEmpty(cBEvector.Text.Trim()) || string.IsNullOrEmpty(TXEEresult.Text.Trim()))
+            if (string.IsNullOrEmpty(cBEreaster.Text.TrimEnd()) || string.IsNullOrEmpty(cBEvector.Text.TrimEnd()) || string.IsNullOrEmpty(TXEEresult.Text.TrimEnd()))
             {
                 MessageBox.Show("错误信息：\n栅格图像的值：是必需的\n矢量数据的值：是必需的\n输出结果的值：是必需的");
             }
             else
-            {
-                
+            {                
                 string msg = string.Empty;
                 WaitDialogForm frmWait = new WaitDialogForm("正在裁剪...", "提示信息");
                 try
                 {
                     frmWait.Owner = this;
                     frmWait.TopMost = false;
-                    if (EnviVars.instance.GpExecutor.ExtractByMask(cBEreaster.Text, cBEvector.Text, TXEEresult.Text, out msg))
+                    if (EnviVars.instance.GpExecutor.ExtractByMask(cBEreaster.Text.TrimEnd(), cBEvector.Text.TrimEnd(), TXEEresult.Text.TrimEnd(), out msg))
                     {
                         System.Windows.Forms.DialogResult dialogResult = XtraMessageBox.Show("裁剪成功,是否加载结果？", "提示信息", System.Windows.Forms.MessageBoxButtons.YesNo, System.Windows.Forms.MessageBoxIcon.Asterisk);
                         if (dialogResult == System.Windows.Forms.DialogResult.Yes)

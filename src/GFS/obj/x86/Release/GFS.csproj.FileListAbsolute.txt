@@ -1,0 +1,10 @@
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.exe.config
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.exe
+E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\MainWindow.baml
+E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\MainWindow.g.cs
+E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\App.g.cs
+E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS_MarkupCompile.cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS.g.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS.Properties.Resources.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS.csproj.GenerateResource.Cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS.exe

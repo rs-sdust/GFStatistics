@@ -285,7 +285,7 @@ namespace GFS.Classification
             string fileList = string.Empty;
             foreach (var item in listDataSet.Items)
             {
-                fileList += item.ToString() + ";";
+                fileList += item.ToString().TrimEnd() + ";";
             }
             fileList = fileList.Substring(0, fileList.Length - 1);
             return fileList;

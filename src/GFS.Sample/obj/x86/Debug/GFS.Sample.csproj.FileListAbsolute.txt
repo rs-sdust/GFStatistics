@@ -1,0 +1,9 @@
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.Sample.exe.config
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.Sample.exe
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.Sample.pdb
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Sample\obj\x86\Debug\GFS.Sample.csprojResolveAssemblyReference.cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Sample\obj\x86\Debug\GFS.Sample.frmMain.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Sample\obj\x86\Debug\GFS.Sample.UCWorkFlow.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Sample\obj\x86\Debug\GFS.Sample.csproj.GenerateResource.Cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Sample\obj\x86\Debug\GFS.Sample.exe
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Sample\obj\x86\Debug\GFS.Sample.pdb

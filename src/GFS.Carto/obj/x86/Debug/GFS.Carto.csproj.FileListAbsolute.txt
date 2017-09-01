@@ -1,0 +1,7 @@
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.Carto.dll
+E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.Carto.pdb
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.csprojResolveAssemblyReference.cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.Resources.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.csproj.GenerateResource.Cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.dll
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.pdb

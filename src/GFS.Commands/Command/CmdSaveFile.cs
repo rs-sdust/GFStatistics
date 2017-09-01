@@ -134,7 +134,7 @@ namespace GFS.Commands
                 {
                     IMapDocument mapDocument = new MapDocumentClass();
                     mapDocument.Open(EnviVars.instance.MapControl.DocumentFilename, "");
-                    //mapDocument.ReplaceContents((IMxdContents)EnviVars.instance.PageLayoutControl.PageLayout);
+                    mapDocument.ReplaceContents((IMxdContents)EnviVars.instance.MapControl.Map);
                     mapDocument.Save(mapDocument.UsesRelativePaths, true);
                     mapDocument.Close();
                 }

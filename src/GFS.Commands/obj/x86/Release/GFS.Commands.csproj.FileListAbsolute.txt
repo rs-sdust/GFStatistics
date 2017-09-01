@@ -1,0 +1,15 @@
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.Commands.dll
+E:\高分统计\GFStatistics.git\trunk\Release\GFS.Commands.pdb
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.csprojResolveAssemblyReference.cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.Properties.Resources.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.UI.CtrlPageGridControl.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.UI.frmCreatePyramid.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.UI.frmExportMap.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.UI.frmLayerProperty.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.UI.frmLayerTable.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.UI.frmNewTask.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.UI.FrmROI.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.UI.frmSymbolSelector.resources
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.csproj.GenerateResource.Cache
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.dll
+E:\高分统计\GFStatistics.git\trunk\src\GFS.Commands\obj\x86\Release\GFS.Commands.pdb

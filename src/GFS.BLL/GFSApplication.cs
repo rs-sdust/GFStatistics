@@ -744,9 +744,25 @@ namespace GFS.BLL
         {
             try
             {
+
                 if (this._barItemXY != null)
                 {
-                    this._barItemXY.Caption = string.Format("坐标：{0},{1}", mapX, mapY);
+                    ISpatialReference spatialReference = this._mapControl.SpatialReference;
+                    if (spatialReference != null)
+                    {
+                        if (spatialReference is IProjectedCoordinateSystem)
+                        {
+                            IProjectedCoordinateSystem projectedCoordinateSystem = spatialReference as IProjectedCoordinateSystem;
+                            IPoint point = new PointClass();
+                            point.SpatialReference = spatialReference;
+                            point.X = mapX;
+                            point.Y = mapY;
+                            point.Project(projectedCoordinateSystem.GeographicCoordinateSystem);
+                            this._barItemXY.Caption = string.Format("坐标：{0},{1}", point.X, point.Y);
+                        }
+                    }
+                    else
+                        this._barItemXY.Caption = string.Format("坐标：{0},{1}", mapX, mapY);
                 }
                 if (this._barItemRaster != null)
                 {
