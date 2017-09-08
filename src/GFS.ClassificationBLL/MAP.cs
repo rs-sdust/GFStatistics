@@ -24,14 +24,16 @@ using DevExpress.XtraEditors;
 using GFS.Common;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace GFS.ClassificationBLL
 {
     public class MAP
     {
-        //
-        //加载栅格文件到主地图控件
-        //
+        /// <summary>
+        /// 加载栅格文件到主地图控件
+        /// </summary>
+        /// <param name="rasterPath">The raster path.</param>
         public static void AddRasterFileToMap(string rasterPath)
         {
             try
@@ -57,11 +59,37 @@ namespace GFS.ClassificationBLL
             }
             catch (Exception ex)
             {
-                XtraMessageBox.Show("加载数据失败！", "提示信息", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
+                //XtraMessageBox.Show("加载数据失败！", "提示信息", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
                 Log.WriteLog(typeof(MAP), ex);
+                throw ex;
             }
         }
 
+        /// <summary>
+        /// 加载矢量文件到主地图控件
+        /// </summary>
+        /// <param name="rasterPath">The raster path.</param>
+        public static void AddShpFileToMap(string filePath)
+        {
+            try
+            {
+                FileInfo fileinfo = new FileInfo(filePath);
+                string path = filePath.Substring(0, filePath.Length - fileinfo.Name.Length);
+                string filename = fileinfo.Name;
+                EnviVars.instance.MapControl.AddShapeFile(path,filename);
+            }
+            catch (Exception ex)
+            {
+                Log.WriteLog(typeof(MAP), ex);
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// Gets raster band count.
+        /// </summary>
+        /// <param name="rasterFile">The raster file.</param>
+        /// <returns>System.Int32.</returns>
         public static int GetBandCount(string rasterFile)
         {
             IRasterLayer pRasterLayer = null;

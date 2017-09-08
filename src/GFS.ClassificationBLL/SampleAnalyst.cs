@@ -63,7 +63,7 @@ namespace GFS.ClassificationBLL
                 {
                     return null;
                 }
-                return EnviVars.instance.GpExecutor.ZonalStatisticsAsTable(shpROI, rasterFile, "class");
+                return EnviVars.instance.GpExecutor.ZonalStatisticsAsTable(shpROI, rasterFile, "CLASS_NAME");
             }
             catch (Exception ex)
             {
@@ -93,11 +93,11 @@ namespace GFS.ClassificationBLL
                 {
                     XmlNode xmlNode2 = xmlNode.ChildNodes[i];
                     string value = xmlNode2.Attributes[0].Value;
-                    //string value2 = xmlNode2.Attributes[1].Value;
-                    //string[] array = value2.Split(new char[]
-                    //{
-                    //    ','
-                    //});
+                    string value2 = xmlNode2.Attributes[1].Value;
+                    string[] array = value2.Split(new char[]
+                    {
+                        ','
+                    });
                     //int red = CommonAPI.ConvertToInt(array[0]);
                     //int green = CommonAPI.ConvertToInt(array[1]);
                     //int blue = CommonAPI.ConvertToInt(array[2]);
@@ -115,7 +115,7 @@ namespace GFS.ClassificationBLL
                     roiLayerDic.Add(rOILayerClass.ID, rOILayerClass);
 
                     string innerText = xmlNode2.SelectSingleNode("GeometryDef/CoordSysStr").InnerText;
-                    spatialReference = this.GetSpatialRefFromPrjStr(innerText);
+                    spatialReference = EngineAPI.GetSpatialRefFromPrjStr(innerText);
                     XmlNodeList xmlNodeList = xmlNode2.SelectNodes("GeometryDef/Polygon/Exterior/LinearRing/Coordinates");
                     for (int j = 0; j < xmlNodeList.Count; j++)
                     {
@@ -158,22 +158,6 @@ namespace GFS.ClassificationBLL
                 }
             }
 
-        }
-        //
-        //Get spatialReference from string 
-        //
-        private ISpatialReference GetSpatialRefFromPrjStr(string strPrj)
-        {
-            ISpatialReference result = null;
-            if (strPrj != "none")
-            {
-                ISpatialReferenceFactory4 spatialReferenceFactory = new SpatialReferenceEnvironmentClass();
-                ISpatialReferenceInfo spatialReferenceInfo;
-                int num;
-                spatialReferenceFactory.CreateESRISpatialReferenceInfo(strPrj, out spatialReferenceInfo, out num);
-                result = (spatialReferenceInfo as ISpatialReference);
-            }
-            return result;
         }
         //
         //Create vector file by ROI
@@ -220,6 +204,7 @@ namespace GFS.ClassificationBLL
                 empty = string.Empty;
             return empty;
         }
+
         private bool CreateShpFile(List<ROIGeometry> geometryList, out string sShpFilePath)
         {
             bool result = false;
@@ -267,6 +252,7 @@ namespace GFS.ClassificationBLL
                     }
                     catch (Exception ex)
                     {
+                        Log.WriteLog(typeof(SampleAnalyst),ex);
                         result = false;
                     }
                     finally
@@ -279,6 +265,7 @@ namespace GFS.ClassificationBLL
             }
             catch (Exception ex)
             {
+                Log.WriteLog(typeof(SampleAnalyst), ex);
                 result = false;
             }
 
@@ -299,12 +286,13 @@ namespace GFS.ClassificationBLL
             IObjectClassDescription objectClassDescription = new FeatureClassDescriptionClass();
             IFields requiredFields = objectClassDescription.RequiredFields;
             IFieldsEdit fieldsEdit = requiredFields as IFieldsEdit;
-            IField field = new FieldClass();
-            IFieldEdit fieldEdit = field as IFieldEdit;
-            fieldEdit.Name_2 = "class";
-            fieldEdit.Type_2 = esriFieldType.esriFieldTypeString;
-            fieldEdit.Length_2 = 50; 
-            fieldsEdit.AddField(field);
+            IField field1 = new FieldClass();
+            IFieldEdit fieldEdit1 = field1 as IFieldEdit;
+            fieldEdit1.Name_2 = "CLASS_NAME";
+            fieldEdit1.Type_2 = esriFieldType.esriFieldTypeString;
+            fieldEdit1.Length_2 = 50;
+            fieldsEdit.AddField(field1);
+
             return requiredFields;
         }
     }

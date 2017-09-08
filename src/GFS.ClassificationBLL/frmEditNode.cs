@@ -51,21 +51,15 @@ namespace GFS.ClassificationBLL
             //_curNode.expression = this.txtExp.Text.TrimEnd();
             //_curNode.decisionData = this.txtData.Text.TrimEnd();
             //get variable list
-            List<string> variable = DecisionTree.ParseExpression(this.txtExp.Text, out _curNode.expression);
-            if (variable != null)
-            {
-                foreach (string str in variable)
-                {
-                    if (!IsVariableExists(str))
-                    {
-                        DataRow row = DecisionTree.variableTable.NewRow();
-                        row[0] = str;
-                        DecisionTree.variableTable.Rows.Add(row);
-                    }
-                }
+            if (!DecisionTree.ParseExpression(this.txtExp.Text, out _curNode.expression))
+            { 
+                XtraMessageBox.Show("解析条件失败，请重新填写！");
+                return;
             }
+
             //refresh variable table
-            //Canvas.instance.RefreshVariable();
+            Canvas.instance.decisionTree.RefreshVariableTable();
+
             this.Close();
         }
 

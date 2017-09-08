@@ -662,7 +662,7 @@ namespace GFS.Commands.UI
                 {
                     System.Windows.Forms.SaveFileDialog saveFileDialog = new System.Windows.Forms.SaveFileDialog();
                     saveFileDialog.Title = FrmROI.MSG02;
-                    saveFileDialog.Filter = string.Format("XML {0} (*.xml)|*.xml", "文件");
+                    saveFileDialog.Filter = string.Format("样本{0} (*.sample)|*.sample", "文件");
                     if (saveFileDialog.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
                     {
                         string fileName = saveFileDialog.FileName;
@@ -691,7 +691,7 @@ namespace GFS.Commands.UI
             {
                 System.Windows.Forms.OpenFileDialog openFileDialog = new System.Windows.Forms.OpenFileDialog();
                 openFileDialog.Title = FrmROI.MSG03;
-                openFileDialog.Filter = string.Format("XML {0} (*.xml)|*.xml", "文件");
+                openFileDialog.Filter = string.Format("样本{0} (*.sample)|*.sample", "文件");
                 if (openFileDialog.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
                 {
                     string fileName = openFileDialog.FileName;
@@ -723,7 +723,7 @@ namespace GFS.Commands.UI
                 {
                     System.Windows.Forms.SaveFileDialog saveFileDialog = new System.Windows.Forms.SaveFileDialog();
                     saveFileDialog.Title = FrmROI.MSG02;
-                    saveFileDialog.Filter = string.Format("XML {0} (*.xml)|*.xml", "文件");
+                    saveFileDialog.Filter = string.Format("样本{0} (*.sample)|*.sample", "文件");
                     if (saveFileDialog.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
                     {
                         string fileName = saveFileDialog.FileName;

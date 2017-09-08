@@ -242,7 +242,7 @@ namespace GFS.BLL
                     geometryDefEdit.SpatialReference_2 = spatialRef;
                     break;
                 }
-            }
+            } 
             UID uID = new UIDClass();
             uID.Value = "esriGeoDatabase.Feature";
             return (workspace as IFeatureWorkspace).CreateFeatureClass(sName, fields, uID, null, esriFeatureType.esriFTSimple, shapeFieldName, "");

@@ -545,6 +545,43 @@ namespace GFS.Common
             return EngineAPI.OpenRasterFile(fInfo.DirectoryName, fInfo.Name);
 
         }
+
+        public static IRasterDataset OpenRasterDataset(string inFile, int bandIndex)
+        {
+            IWorkspaceFactory pWorkspaceFactory = null; 
+            IRasterWorkspace rasterWorkspace=null;
+            IRasterDataset rasterDataset = null;
+            int Index = inFile.LastIndexOf("\\");
+            string filePath = inFile.Substring(0, Index);
+            string fileName = inFile.Substring(Index + 1);
+
+            try
+            {
+                pWorkspaceFactory = new RasterWorkspaceFactory();
+                rasterWorkspace = (IRasterWorkspace)pWorkspaceFactory.OpenFromFile(filePath, 0);
+                rasterDataset = rasterWorkspace.OpenRasterDataset(fileName);
+                if (bandIndex > 0)
+                {
+                    IRasterBandCollection pRasterBandCollection = rasterDataset as IRasterBandCollection;
+                    IRasterBand pBand = pRasterBandCollection.Item(bandIndex - 1);
+                    rasterDataset = pBand as IRasterDataset;
+                }
+            }
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Failed in Opening RasterDataset. " + ex.InnerException.ToString());
+                //Log.WriteLog(typeof(RasterMapAlgebraOp), ex);
+                throw ex;
+            }
+            finally
+            {
+                if(pWorkspaceFactory!=null)
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(pWorkspaceFactory);
+                if (rasterWorkspace != null)
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(rasterWorkspace);
+            }
+            return rasterDataset;
+        }
         /// <summary>
         /// 打开矢量文件
         /// </summary>
@@ -598,5 +635,23 @@ namespace GFS.Common
             }
             return result;
         }
+
+        //
+        //Get spatialReference from string 
+        //
+        public static ISpatialReference GetSpatialRefFromPrjStr(string strPrj)
+        {
+            ISpatialReference result = null;
+            if (strPrj != "none")
+            {
+                ISpatialReferenceFactory4 spatialReferenceFactory = new SpatialReferenceEnvironmentClass();
+                ISpatialReferenceInfo spatialReferenceInfo;
+                int num;
+                spatialReferenceFactory.CreateESRISpatialReferenceInfo(strPrj, out spatialReferenceInfo, out num);
+                result = (spatialReferenceInfo as ISpatialReference);
+            }
+            return result;
+        }
+
     }
 }

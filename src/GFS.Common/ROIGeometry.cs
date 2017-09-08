@@ -21,14 +21,23 @@ namespace GFS.Common
 {
     public class ROIGeometry
     {
+        public int id;
         public string name
         { get; set; }
+        public int color;
         public IGeometry geometry
         { get; set; }
-        public ROIGeometry(string name,IGeometry geometry)
+        public ROIGeometry(int id,string name,int color,IGeometry geometry)
         {
+            this.id = id;
+            this.color = color;
             this.name = name;
             this.geometry=geometry;
+        }
+        public ROIGeometry(string name, IGeometry geometry)
+        {
+            this.name = name;
+            this.geometry = geometry;
         }
     }
 }

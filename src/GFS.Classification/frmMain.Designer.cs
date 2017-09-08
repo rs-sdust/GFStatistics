@@ -135,6 +135,12 @@
             this.popupMenulayer = new DevExpress.XtraBars.PopupMenu(this.components);
             this.popupMenuFrame = new DevExpress.XtraBars.PopupMenu(this.components);
             this.popupMenuRGB = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.bsiVegIndex = new DevExpress.XtraBars.BarSubItem();
+            this.btnNDVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnEVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSAVI = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pccRight)).BeginInit();
@@ -216,10 +222,16 @@
             this.btnFramReset,
             this.btnFramClearBat,
             this.btnFramExport,
-            this.btnHelp});
+            this.btnHelp,
+            this.bsiVegIndex,
+            this.btnNDVI,
+            this.btnDVI,
+            this.btnEVI,
+            this.btnRVI,
+            this.btnSAVI});
             this.ribbonControl.LargeImages = this.ribbion32;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 9;
+            this.ribbonControl.MaxItemId = 17;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -331,6 +343,7 @@
             this.ribbion32.Images.SetKeyName(18, "编辑.png");
             this.ribbion32.Images.SetKeyName(19, "recent.png");
             this.ribbion32.Images.SetKeyName(20, "help.png");
+            this.ribbion32.Images.SetKeyName(21, "carbon.png");
             // 
             // labelRecently
             // 
@@ -388,6 +401,11 @@
             this.image16.Images.SetKeyName(37, "批量移除 .png");
             this.image16.Images.SetKeyName(38, "重置图框.png");
             this.image16.Images.SetKeyName(39, "加载数据.png");
+            this.image16.Images.SetKeyName(40, "dvi.png");
+            this.image16.Images.SetKeyName(41, "evi.png");
+            this.image16.Images.SetKeyName(42, "ndvi.png");
+            this.image16.Images.SetKeyName(43, "rvi.png");
+            this.image16.Images.SetKeyName(44, "savi.png");
             // 
             // btnAddData
             // 
@@ -447,7 +465,7 @@
             // 
             // bsiSoftHard
             // 
-            this.bsiSoftHard.Caption = "软硬分类";
+            this.bsiSoftHard.Caption = "面向对象分类";
             this.bsiSoftHard.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.bsiSoftHard.Id = 62;
             this.bsiSoftHard.ImageIndex = 23;
@@ -458,7 +476,7 @@
             // 
             // btnfeatureAnaly
             // 
-            this.btnfeatureAnaly.Caption = "特征分析";
+            this.btnfeatureAnaly.Caption = "图像分割";
             this.btnfeatureAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnfeatureAnaly.Id = 18;
             this.btnfeatureAnaly.ImageIndex = 17;
@@ -467,7 +485,7 @@
             // 
             // btnSoftHard
             // 
-            this.btnSoftHard.Caption = "软硬分类";
+            this.btnSoftHard.Caption = "面向对象分类";
             this.btnSoftHard.Id = 55;
             this.btnSoftHard.ImageIndex = 23;
             this.btnSoftHard.LargeImageIndex = 25;
@@ -772,6 +790,7 @@
             // 
             this.ribbonPageGroupData.ItemLinks.Add(this.btnMask);
             this.ribbonPageGroupData.ItemLinks.Add(this.btnMosaic);
+            this.ribbonPageGroupData.ItemLinks.Add(this.bsiVegIndex);
             this.ribbonPageGroupData.Name = "ribbonPageGroupData";
             this.ribbonPageGroupData.Text = "测量数据准备";
             // 
@@ -1214,7 +1233,6 @@
             this.axMapControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl.OcxState")));
             this.axMapControl.Size = new System.Drawing.Size(100, 100);
             this.axMapControl.TabIndex = 2;
-            //this.axMapControl.OnMouseMove += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseMoveEventHandler(this.axMapControl_OnMouseMove);
             // 
             // axToolbarControl
             // 
@@ -1257,6 +1275,65 @@
             // 
             this.popupMenuRGB.Name = "popupMenuRGB";
             this.popupMenuRGB.Ribbon = this.ribbonControl;
+            // 
+            // bsiVegIndex
+            // 
+            this.bsiVegIndex.Caption = "植被指数计算";
+            this.bsiVegIndex.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.bsiVegIndex.Id = 11;
+            this.bsiVegIndex.LargeImageIndex = 21;
+            this.bsiVegIndex.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnDVI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnRVI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnEVI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnNDVI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSAVI)});
+            this.bsiVegIndex.Name = "bsiVegIndex";
+            // 
+            // btnNDVI
+            // 
+            this.btnNDVI.Caption = "归一化植被指数(NDVI)";
+            this.btnNDVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnNDVI.Id = 12;
+            this.btnNDVI.ImageIndex = 42;
+            this.btnNDVI.Name = "btnNDVI";
+            this.btnNDVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNDVI_ItemClick);
+            // 
+            // btnDVI
+            // 
+            this.btnDVI.Caption = "差值植被指数(DVI)";
+            this.btnDVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnDVI.Id = 13;
+            this.btnDVI.ImageIndex = 40;
+            this.btnDVI.Name = "btnDVI";
+            this.btnDVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDVI_ItemClick);
+            // 
+            // btnEVI
+            // 
+            this.btnEVI.Caption = "增强型植被指数(EVI)";
+            this.btnEVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnEVI.Id = 14;
+            this.btnEVI.ImageIndex = 41;
+            this.btnEVI.Name = "btnEVI";
+            this.btnEVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEVI_ItemClick);
+            // 
+            // btnRVI
+            // 
+            this.btnRVI.Caption = "比值植被指数(RVI)";
+            this.btnRVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnRVI.Id = 15;
+            this.btnRVI.ImageIndex = 43;
+            this.btnRVI.Name = "btnRVI";
+            this.btnRVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRVI_ItemClick);
+            // 
+            // btnSAVI
+            // 
+            this.btnSAVI.Caption = "土壤调节植被指数(SAVI)";
+            this.btnSAVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnSAVI.Id = 16;
+            this.btnSAVI.ImageIndex = 44;
+            this.btnSAVI.Name = "btnSAVI";
+            this.btnSAVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSAVI_ItemClick);
             // 
             // frmMain
             // 
@@ -1423,6 +1500,12 @@
         private DevExpress.XtraBars.Docking.DockPanel dpEagle;
         private DevExpress.XtraBars.Docking.ControlContainer controlContainer2;
         private ESRI.ArcGIS.Controls.AxMapControl axMapControlEagle;
+        private DevExpress.XtraBars.BarSubItem bsiVegIndex;
+        private DevExpress.XtraBars.BarButtonItem btnNDVI;
+        private DevExpress.XtraBars.BarButtonItem btnDVI;
+        private DevExpress.XtraBars.BarButtonItem btnEVI;
+        private DevExpress.XtraBars.BarButtonItem btnRVI;
+        private DevExpress.XtraBars.BarButtonItem btnSAVI;
         //private DevExpress.XtraBars.Docking.ControlContainer controlContainer1;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;

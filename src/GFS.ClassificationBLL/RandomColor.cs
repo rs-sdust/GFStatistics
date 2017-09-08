@@ -66,7 +66,7 @@ namespace GFS.ClassificationBLL
         private static Color GetDarkerColor(Color color)
         {
             const int max = 255;
-            int increase = new Random(Guid.NewGuid().GetHashCode()).Next(30, 255); //还可以根据需要调整此处的值
+            int increase = new Random(Guid.NewGuid().GetHashCode()).Next(30, 255); //根据需要调整此处的值
 
 
             int r = Math.Abs(Math.Min(color.R - increase, max));

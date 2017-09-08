@@ -99,6 +99,11 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Geodatabase.dll</HintPath>
     </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\ESRI.ArcGIS.Geometry.dll</HintPath>
+    </Reference>
     <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -124,17 +129,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FlowStatus.cs" />
-    <Compile Include="frmClipRaster.cs">
+    <Compile Include="DataPrepare\frmDVI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClipRaster.Designer.cs">
+    <Compile Include="DataPrepare\frmDVI.designer.cs">
+      <DependentUpon>frmDVI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrepare\frmEVI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrepare\frmEVI.designer.cs">
+      <DependentUpon>frmEVI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrepare\frmNDVI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrepare\frmNDVI.designer.cs">
+      <DependentUpon>frmNDVI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrepare\frmRVI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrepare\frmRVI.designer.cs">
+      <DependentUpon>frmRVI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPrepare\frmSAVI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrepare\frmSAVI.designer.cs">
+      <DependentUpon>frmSAVI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreview.Designer.cs">
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkFlow\FlowStatus.cs" />
+    <Compile Include="DataPrepare\frmClipRaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPrepare\frmClipRaster.Designer.cs">
       <DependentUpon>frmClipRaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDecisionTree.cs">
+    <Compile Include="SingleSatellite\frmDecisionTree.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDecisionTree.Designer.cs">
+    <Compile Include="SingleSatellite\frmDecisionTree.Designer.cs">
       <DependentUpon>frmDecisionTree.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
@@ -143,35 +184,71 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMosaic.cs">
+    <Compile Include="DataPrepare\frmMosaic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMosaic.Designer.cs">
+    <Compile Include="DataPrepare\frmMosaic.Designer.cs">
       <DependentUpon>frmMosaic.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmOOClassification.cs">
+    <Compile Include="SingleSatellite\frmOOClassification.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmOOClassification.Designer.cs">
+    <Compile Include="SingleSatellite\frmOOClassification.Designer.cs">
       <DependentUpon>frmOOClassification.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSampleAnaly.cs">
+    <Compile Include="SingleSatellite\frmOOClassMorePara.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSampleAnaly.Designer.cs">
+    <Compile Include="SingleSatellite\frmOOClassMorePara.Designer.cs">
+      <DependentUpon>frmOOClassMorePara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\frmSampleAnaly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\frmSampleAnaly.Designer.cs">
       <DependentUpon>frmSampleAnaly.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSampleAnalystResult.cs">
+    <Compile Include="Sample\frmSampleAnalystResult.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSampleAnalystResult.Designer.cs">
+    <Compile Include="Sample\frmSampleAnalystResult.Designer.cs">
       <DependentUpon>frmSampleAnalystResult.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSegmentation.cs">
+    <Compile Include="SingleSatellite\frmSegmentation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSegmentation.Designer.cs">
+    <Compile Include="SingleSatellite\frmSegmentation.Designer.cs">
       <DependentUpon>frmSegmentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostClassification\frmClassifyAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostClassification\frmClassifyAdjustment.Designer.cs">
+      <DependentUpon>frmClassifyAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostClassification\frmClassifyAdjustment1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostClassification\frmClassifyAdjustment1.Designer.cs">
+      <DependentUpon>frmClassifyAdjustment1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostClassification\frmRecode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostClassification\frmRecode.Designer.cs">
+      <DependentUpon>frmRecode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostClassification\frmReName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostClassification\frmReName.Designer.cs">
+      <DependentUpon>frmReName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostClassification\frmStatisticsResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostClassification\frmStatisticsResult.Designer.cs">
+      <DependentUpon>frmStatisticsResult.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -180,10 +257,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UCWorkFlow.cs">
+    <Compile Include="WorkFlow\UCWorkFlow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCWorkFlow.Designer.cs">
+    <Compile Include="WorkFlow\UCWorkFlow.Designer.cs">
       <DependentUpon>UCWorkFlow.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -210,37 +287,79 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmClipRaster.resx">
+    <EmbeddedResource Include="DataPrepare\frmClipRaster.resx">
       <DependentUpon>frmClipRaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDecisionTree.resx">
+    <EmbeddedResource Include="DataPrepare\frmDVI.resx">
+      <DependentUpon>frmDVI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrepare\frmEVI.resx">
+      <DependentUpon>frmEVI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrepare\frmNDVI.resx">
+      <DependentUpon>frmNDVI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrepare\frmRVI.resx">
+      <DependentUpon>frmRVI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPrepare\frmSAVI.resx">
+      <DependentUpon>frmSAVI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreview.resx">
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleSatellite\frmDecisionTree.resx">
       <DependentUpon>frmDecisionTree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMosaic.resx">
+    <EmbeddedResource Include="DataPrepare\frmMosaic.resx">
       <DependentUpon>frmMosaic.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSampleAnaly.resx">
+    <EmbeddedResource Include="SingleSatellite\frmOOClassification.resx">
+      <DependentUpon>frmOOClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleSatellite\frmOOClassMorePara.resx">
+      <DependentUpon>frmOOClassMorePara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\frmSampleAnaly.resx">
       <DependentUpon>frmSampleAnaly.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSampleAnalystResult.resx">
+    <EmbeddedResource Include="Sample\frmSampleAnalystResult.resx">
       <DependentUpon>frmSampleAnalystResult.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSegmentation.resx">
+    <EmbeddedResource Include="SingleSatellite\frmSegmentation.resx">
       <DependentUpon>frmSegmentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostClassification\frmClassifyAdjustment.resx">
+      <DependentUpon>frmClassifyAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostClassification\frmClassifyAdjustment1.resx">
+      <DependentUpon>frmClassifyAdjustment1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostClassification\frmRecode.resx">
+      <DependentUpon>frmRecode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostClassification\frmReName.resx">
+      <DependentUpon>frmReName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostClassification\frmStatisticsResult.resx">
+      <DependentUpon>frmStatisticsResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCWorkFlow.resx">
+    <EmbeddedResource Include="WorkFlow\UCWorkFlow.resx">
       <DependentUpon>UCWorkFlow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="classify.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Preview\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

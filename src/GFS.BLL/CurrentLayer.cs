@@ -9,7 +9,7 @@
 // <copyright file="CurrentLayer.cs" company="SDJT">
 //     Copyright (c) SDJT. All rights reserved.
 // </copyright>
-// <summary></summary>
+// <summary>当前图层</summary>
 // ***********************************************************************
 using ESRI.ArcGIS.Carto;
 using System;

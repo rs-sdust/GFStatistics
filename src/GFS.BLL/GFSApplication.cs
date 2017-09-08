@@ -106,6 +106,7 @@ namespace GFS.BLL
 
             (mapControl as IMapControlEvents2_Event).OnMouseMove += new IMapControlEvents2_OnMouseMoveEventHandler(this.mapControl_OnMouseMove);
             (mapControl as IMapControlEvents2_Event).OnAfterScreenDraw += new IMapControlEvents2_OnAfterScreenDrawEventHandler(this.mapControl_OnAfterScreenDraw);
+
             (tocControl as ITOCControlEvents_Event).OnMouseDown += new ITOCControlEvents_OnMouseDownEventHandler(this.tocControl_OnMouseDown);
             (tocControl as ITOCControlEvents_Event).OnDoubleClick += new ITOCControlEvents_OnDoubleClickEventHandler(this.tocControl_OnDoubleClick);
             (tocControl as ITOCControlEvents_Event).OnBeginLabelEdit += new ITOCControlEvents_OnBeginLabelEditEventHandler(this.tocControl_OnBeginLabelEdit);

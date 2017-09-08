@@ -9,7 +9,7 @@
 // <copyright file="frmSymbolSelector.cs" company="SDJT">
 //     Copyright (c) SDJT. All rights reserved.
 // </copyright>
-// <summary></summary>
+// <summary>符号选择器</summary>
 // ***********************************************************************
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Controls;

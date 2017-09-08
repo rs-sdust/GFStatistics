@@ -88,7 +88,22 @@ namespace GFS.BLL
             get;
             set;
         }
-
+        private IDLModel m_IdlModel=null;
+        public IDLModel IdlModel
+        {
+            get
+            {
+                if (this.m_IdlModel == null)
+                {
+                    this.m_IdlModel = new IDLModel(ConstDef.PATH_IDL);
+                }
+                return this.m_IdlModel;
+            }
+            set
+            {
+                this.m_IdlModel = value;
+            }
+        }
         /// <summary>
         /// Gets or sets the main form.
         /// </summary>
@@ -223,6 +238,7 @@ namespace GFS.BLL
             try
             {
                 this.m_gpExecutor = new GPExecutor();
+                this.m_IdlModel = new IDLModel(ConstDef.PATH_IDL);
             }
             catch (Exception)
             { }

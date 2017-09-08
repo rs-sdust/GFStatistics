@@ -9,7 +9,7 @@
 // <copyright file="frmLayerRender.cs" company="SDJT">
 //     Copyright (c) SDJT. All rights reserved.
 // </copyright>
-// <summary></summary>
+// <summary>图层渲染UI</summary>
 // ***********************************************************************
 using System;
 using System.Collections.Generic;

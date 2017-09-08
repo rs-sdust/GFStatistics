@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : GFS.ClassificationBLL
+// Author           : Ricker Yan
+// Created          : 09-01-2017
+//
+// Last Modified By : Ricker Yan
+// Last Modified On : 09-01-2017
+// ***********************************************************************
+// <copyright file="RasterMapAlgebraOp.cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary>决策树分类的业务逻辑类</summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +21,7 @@ using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.DataSourcesRaster;
 using DevExpress.XtraEditors;
 using System.IO;
+using GFS.BLL;
 
 namespace GFS.ClassificationBLL
 {
@@ -20,15 +34,10 @@ namespace GFS.ClassificationBLL
             this.root = root;
             this.variable = variable;
         }
-        public static bool CheckExp(DecisionNode root)
-        {
-            return true;
-        }
         public void Execute(string fileName)
         {
             try
             {
-
                 //组合公式
                 string expression = "Con(" + root.expression + "," + root.NodeName + "TRUE," + root.NodeName + "FALSE)";
                 ExpCombine(root.lChild, root.rChild, ref expression);
@@ -60,6 +69,12 @@ namespace GFS.ClassificationBLL
                 throw ex;
             } 
         }
+        /// <summary>
+        /// 将各节点决策条件组合
+        /// </summary>
+        /// <param name="lNode">The l node.</param>
+        /// <param name="rNode">The r node.</param>
+        /// <param name="exp">The exp.</param>
         private void ExpCombine(DecisionNode lNode,DecisionNode rNode,ref string exp)
         {
             if (lNode.lChild != null)
@@ -91,6 +106,12 @@ namespace GFS.ClassificationBLL
             }
 
         }
+        /// <summary>
+        /// 检查决策条件公式
+        /// </summary>
+        /// <param name="node">The node.</param>
+        /// <param name="msg">The MSG.</param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public bool CheckExp(DecisionNode node,out string msg)
         {
             msg = "";
@@ -102,13 +123,16 @@ namespace GFS.ClassificationBLL
                     return false;
                 }
 
-                CheckExp(node.lChild);
-                CheckExp(node.rChild);
+                CheckExp(node.lChild,out msg);
+                CheckExp(node.rChild,out msg);
             }
             return true;
             
         }
 
+        //
+        //打开栅格文件指定波段为RasterDataset
+        //
         private IRasterDataset OpenRasterDataset(string inFile)
         {
             if (inFile.Contains(":Band_"))
@@ -147,6 +171,7 @@ namespace GFS.ClassificationBLL
             catch (Exception ex)
             {
                 //Console.WriteLine("Failed in Opening RasterDataset. " + ex.InnerException.ToString());
+                Log.WriteLog(typeof(RasterMapAlgebraOp), ex);
             }
 
             return rasterDataset;

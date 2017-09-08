@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : GFS.Commands
+// Author           : Ricker Yan
+// Created          : 09-01-2017
+//
+// Last Modified By : Ricker Yan
+// Last Modified On : 09-01-2017
+// ***********************************************************************
+// <copyright file="frmNewTask.cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +24,6 @@ using ESRI.ArcGIS.SystemUI;
 using GFS.BLL;
 using ESRI.ArcGIS.Carto;
 using System.Xml;
-
 namespace GFS.Commands.UI
 {
     public partial class frmNewTask : DevExpress.XtraEditors.XtraForm
@@ -26,15 +38,14 @@ namespace GFS.Commands.UI
         {
             this.updateTime.EditValue = DateTime.Now;
         }
-
-        private void btnTaskFile_Click(object sender, EventArgs e)
+        private void btnTaskFile_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Title = "新建任务文档";
             dialog.Filter = string.Format("{0} (*.mxd)|*.mxd", "任务文档");
             if (dialog.ShowDialog() == DialogResult.OK)
             {
-                this.btnTaskFile.EditValue = this.taskFile = dialog.FileName;            
+                this.btnTaskFile.EditValue = this.taskFile = dialog.FileName;
             }
         }
 
@@ -106,5 +117,8 @@ namespace GFS.Commands.UI
                 xmlWriter.Close();
             }
         }
+
+
+
     }
 }

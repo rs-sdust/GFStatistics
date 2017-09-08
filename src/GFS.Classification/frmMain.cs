@@ -97,6 +97,34 @@ namespace GFS.Classification
             frmMosaic frm = new frmMosaic();
             frm.ShowDialog();
         }
+        private void btnDVI_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmDVI frm = new frmDVI();
+            frm.ShowDialog();
+        }
+        private void btnRVI_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmRVI frm = new frmRVI();
+            frm.ShowDialog();
+        }
+
+        private void btnEVI_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmEVI frm = new frmEVI();
+            frm.ShowDialog();
+        }
+
+        private void btnNDVI_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmNDVI frm = new frmNDVI();
+            frm.ShowDialog();
+        }
+
+        private void btnSAVI_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmSAVI frm = new frmSAVI();
+            frm.ShowDialog();
+        }
         //
         //样本选取
         //
@@ -124,30 +152,24 @@ namespace GFS.Classification
         private void btnNNHard_ItemClick(object sender, ItemClickEventArgs e)
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
-            frmSegmentation frm = new frmSegmentation();
-            frm.ShowDialog();
+
         }
         //
-        //特征分析
+        //图像分割
         //
         private void btnfeatureAnaly_ItemClick(object sender, ItemClickEventArgs e)
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            frmSegmentation frm = new frmSegmentation();
+            frm.ShowDialog();
         }
         //
-        //软硬分类
+        //面向对象分类
         //
         private void btnSoftHard_ItemClick(object sender, ItemClickEventArgs e)
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
-            List<string> testFile = new List<string>();
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.Title = "打开栅格文件";
-            dlg.FileName = string.Empty;
-            dlg.Filter = "栅格文件|*.tif";
-            if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                testFile.Add(dlg.FileName);
-            GFS.Commands.UI.frmCreatePyramid frm = new Commands.UI.frmCreatePyramid(testFile);
+            frmOOClassification frm = new frmOOClassification();
             frm.ShowDialog();
         }
         //
@@ -187,6 +209,8 @@ namespace GFS.Classification
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
             this.ucWorkFlow.RefreshFlow(FlowStatus.btnAfter);
+            frmRecode frm = new frmRecode();
+            frm.ShowDialog();
         }
         //
         //分类后校正
@@ -222,6 +246,10 @@ namespace GFS.Classification
         }
 
         #endregion
+
+
+
+
 
 
 

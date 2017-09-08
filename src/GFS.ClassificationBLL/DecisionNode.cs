@@ -26,7 +26,7 @@ namespace GFS.ClassificationBLL
     /// </summary>
     public class DecisionNode
     {
-        public string expression;
+        public string expression = string.Empty;
         //public string decisionData;
         public int classValue=-1;
         public Color nodeColor

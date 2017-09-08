@@ -22,13 +22,15 @@ using System.Drawing.Drawing2D;
 using GFS.BLL;
 using System.Xml;
 using System.Data;
+using System.Text.RegularExpressions;
 
 namespace GFS.ClassificationBLL
 {
     public class DecisionTree
     {
-        private static readonly string operators = "+ - * / < <= > >= == != & |";
+        private static readonly string operators = "+ - * / < <= > >= == != & | ( )";
         public static DataTable variableTable = null;
+        private List<string> variableList=null;
         //
         //节点层列表
         //
@@ -430,17 +432,15 @@ namespace GFS.ClassificationBLL
             }
         }
 
-        public static List<string> ParseExpression(string inExp,out string outExp)
+        public static bool ParseExpression(string inExp,out string outExp)
         {
-            List<string> variableList = null;
             try
             {
                 outExp = inExp.TrimEnd();
                 //if expression is null return null
                 if (string.IsNullOrEmpty(outExp))
-                    return variableList;
+                    return true;
                 //split expression by blank
-                variableList = new List<string>();
                 string[] expVariable = outExp.Split(' ');
                 //parse variables in the expression and add []
                 foreach (string ele in expVariable)
@@ -449,21 +449,89 @@ namespace GFS.ClassificationBLL
                         continue;
                     if (DecisionTree.operators.Contains(ele))
                         continue;
+                    if (outExp.Contains("[" + ele + "]"))
+                        continue;
                     outExp = outExp.Replace(ele, "[" + ele + "]");
-                    variableList.Add(ele);
                 }
-                return variableList;
+                return true;
 
             }
             catch (Exception ex)
             {
                 Log.WriteLog(typeof(DecisionTree), ex);
                 outExp = string.Empty;
-                return null;
+                return false;
             }
         }
 
-
+        public void RefreshVariableTable()
+        {
+            variableList = new List<string>();
+            AddNewVariable(this.layerList[0].nodeList[0]);
+            DelOldVariable();
+        }
+        //
+        //添加新增变量
+        //
+        private void AddNewVariable(DecisionNode node)
+        {
+            if (node.lChild != null)
+            {
+                Regex reg = new Regex(@"\[(.+?)]");
+                //Add new variable
+                foreach (Match m in reg.Matches(node.expression))
+                {
+                    string variable = m.Groups[1].ToString();
+                    if (!variableList.Contains(variable))
+                    {
+                        variableList.Add(variable);
+                    }
+                    if (!IsVariableExists(variable))
+                    {
+                        DataRow row = DecisionTree.variableTable.NewRow();
+                        row[0] = variable;
+                        DecisionTree.variableTable.Rows.Add(row);
+                    }
+                }
+                AddNewVariable(node.lChild);
+                AddNewVariable(node.rChild);
+            }
+        }
+        //
+        //移除修改后的旧变量
+        //
+        private void DelOldVariable()
+        {
+            if (variableList.Count > 0)
+            {
+                int count = DecisionTree.variableTable.Rows.Count-1;
+                for (int i = count; i > 0; i--)
+                {
+                    if (!variableList.Contains(DecisionTree.variableTable.Rows[i][0].ToString()))
+                    {
+                        DecisionTree.variableTable.Rows.RemoveAt(i);
+                    }
+                }
+            }
+            else
+            {
+                DecisionTree.variableTable.Rows.Clear();
+            }
+        }
+        private bool IsVariableExists(string name)
+        {
+            if (DecisionTree.variableTable.Rows.Count == 0)
+                return false;
+            else
+            {
+                for (int i = 0; i < DecisionTree.variableTable.Rows.Count; i++)
+                {
+                    if (name == DecisionTree.variableTable.Rows[i][0].ToString())
+                        return true;
+                }
+                return false;
+            }
+        }
 
     }
 }

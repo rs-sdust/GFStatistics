@@ -191,6 +191,53 @@ namespace GFS.BLL
                     Marshal.ReleaseComObject(pResTable);
             }
         }
+
+        /// <summary>
+        /// Reclassifies the specified raster.
+        /// </summary>
+        /// <param name="inRaster">The in raster.</param>
+        /// <param name="outRaster">The out raster.</param>
+        /// <param name="reMap">The remap.eg "old new;old new"</param>
+        /// <param name="msg">The out MSG.</param>
+        /// <param name="reField">The reclass field.</param>
+        /// <param name="missingValue">The missing value.</param>
+        /// <returns><c>true</c> succeed <c>false</c> failed</returns>
+        public bool Reclassify(string inRaster,string outRaster,string reMap,out string msg,string reField = "VALUE",string missingValue = "NODATA")
+        {
+            msg = "";
+            bool result = false;
+            ESRI.ArcGIS.SpatialAnalystTools.Reclassify reClass = null;
+            try
+            {
+                reClass = new ESRI.ArcGIS.SpatialAnalystTools.Reclassify();
+                reClass.in_raster = inRaster;
+                reClass.missing_values = missingValue;
+                reClass.out_raster = outRaster;
+                reClass.reclass_field = reField;
+                reClass.remap = reMap;
+                IGeoProcessorResult geoProcessorResult = this.m_gp.Execute(reClass, null) as IGeoProcessorResult;
+                msg += GetGPMessages(this.m_gp);
+                if (geoProcessorResult.Status == esriJobStatus.esriJobSucceeded)
+                {
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                }
+                return result;
+            }
+            catch (Exception ex)
+            {
+                msg = "error!\r\n" + ex.Message;
+                return false;
+            }
+            finally
+            {
+                //if(reClass!=null)
+                //    Marshal.ReleaseComObject(reClass);
+            }
+        }
     
     }
 }

@@ -73,7 +73,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.btnTaskFile.Size = new System.Drawing.Size(222, 20);
             this.btnTaskFile.TabIndex = 0;
-            this.btnTaskFile.Click += new System.EventHandler(this.btnTaskFile_Click);
+            this.btnTaskFile.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnTaskFile_ButtonClick);
             // 
             // groupControl2
             // 

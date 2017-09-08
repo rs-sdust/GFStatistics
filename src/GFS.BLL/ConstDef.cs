@@ -9,7 +9,7 @@
 // <copyright file="ConstDef.cs" company="SDJT">
 //     Copyright (c) SDJT. All rights reserved.
 // </copyright>
-// <summary></summary>
+// <summary>系统配置</summary>
 // ***********************************************************************
 using System;
 using System.Collections.Generic;
@@ -46,6 +46,8 @@ namespace GFS.BLL
         public static readonly string PATH_TEMP;
 
         public static readonly string PATH_IDL;
+        public static readonly string IDL_FUN_SEGMENTONLY = "FX_Segmentonly";
+        public static readonly string IDL_FUN_NEURAL_NET = "Neural_Net_Classification_Function";
 
         /// <summary>
         /// esri符号文件

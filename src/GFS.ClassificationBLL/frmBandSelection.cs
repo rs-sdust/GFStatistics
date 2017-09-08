@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : GFS.ClassificationBLL
+// Author           : Ricker Yan
+// Created          : 09-01-2017
+//
+// Last Modified By : Ricker Yan
+// Last Modified On : 09-01-2017
+// ***********************************************************************
+// <copyright file="frmBandSelection.cs" company="BNU">
+//     Copyright (c) BNU. All rights reserved.
+// </copyright>
+// <summary>选择波段UI</summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
