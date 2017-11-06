@@ -48,8 +48,8 @@
             this.ClientSize = new System.Drawing.Size(394, 371);
             this.Controls.Add(this.axMapControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPreview";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "预览";
             this.Load += new System.EventHandler(this.Look_Load);

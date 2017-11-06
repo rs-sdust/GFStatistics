@@ -28,42 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.btnNewTask = new DevExpress.XtraBars.BarButtonItem();
             this.btnOpenTask = new DevExpress.XtraBars.BarButtonItem();
             this.btnSaveTask = new DevExpress.XtraBars.BarButtonItem();
             this.btnHelp = new DevExpress.XtraBars.BarButtonItem();
-            this.pccRight = new DevExpress.XtraBars.PopupControlContainer();
+            this.pccRight = new DevExpress.XtraBars.PopupControlContainer(this.components);
             this.listRecently = new DevExpress.XtraEditors.ImageListBoxControl();
-            this.ribbion32 = new DevExpress.Utils.ImageCollection();
+            this.ribbion32 = new DevExpress.Utils.ImageCollection(this.components);
             this.labelRecently = new DevExpress.XtraEditors.LabelControl();
-            this.image16 = new DevExpress.Utils.ImageCollection();
+            this.image16 = new DevExpress.Utils.ImageCollection(this.components);
             this.btnAddData = new DevExpress.XtraBars.BarButtonItem();
             this.btnUpdateTask = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMask = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMosaic = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiSingleDate = new DevExpress.XtraBars.BarSubItem();
-            this.btnNNHard = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiSoftHard = new DevExpress.XtraBars.BarSubItem();
-            this.btnfeatureAnaly = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSoftHard = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiMultiDate = new DevExpress.XtraBars.BarSubItem();
-            this.btnOverlayClass = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDecision = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiRadarAndMultiSpectral = new DevExpress.XtraBars.BarSubItem();
-            this.btnOpticsDiv = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSyn = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiMiddleAndHigh = new DevExpress.XtraBars.BarSubItem();
-            this.btnSample = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSampleAnaly = new DevExpress.XtraBars.BarButtonItem();
-            this.btnRecode = new DevExpress.XtraBars.BarButtonItem();
-            this.btnReject = new DevExpress.XtraBars.BarButtonItem();
-            this.btnStatistics = new DevExpress.XtraBars.BarButtonItem();
-            this.btnVerify = new DevExpress.XtraBars.BarButtonItem();
-            this.btnCropMosaic = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiAfter = new DevExpress.XtraBars.BarSubItem();
+            this.btnFrame = new DevExpress.XtraBars.BarButtonItem();
+            this.btnErrorAnaly = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExamine = new DevExpress.XtraBars.BarButtonItem();
+            this.btnEstimate = new DevExpress.XtraBars.BarButtonItem();
+            this.btnsimulation = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSelection = new DevExpress.XtraBars.BarButtonItem();
+            this.btnExport = new DevExpress.XtraBars.BarButtonItem();
             this.staticSpt = new DevExpress.XtraBars.BarStaticItem();
             this.staticXY = new DevExpress.XtraBars.BarStaticItem();
             this.staticRaster = new DevExpress.XtraBars.BarStaticItem();
@@ -80,27 +66,28 @@
             this.btnFramReset = new DevExpress.XtraBars.BarButtonItem();
             this.btnFramClearBat = new DevExpress.XtraBars.BarButtonItem();
             this.btnFramExport = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSampleLayer = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSummary = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAutoLayer = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupFile = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupTask = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupSample = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupSingle = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupMulti = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupAfter = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.repositoryItemPopupContainerEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.dockManager = new DevExpress.XtraBars.Docking.DockManager();
+            this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.hideContainerBottom = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.dpFlow = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
+            this.ucWorkFlow = new GFS.Sample.UCWorkFlow();
             this.dockPanelTable = new DevExpress.XtraBars.Docking.DockPanel();
             this.controlContainer1 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.dpEagle = new DevExpress.XtraBars.Docking.DockPanel();
             this.controlContainer2 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.axMapControlEagle = new ESRI.ArcGIS.Controls.AxMapControl();
-            this.barManager = new DevExpress.XtraBars.BarManager();
+            this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.barTop = new DevExpress.XtraBars.Bar();
             this.barbtnAddData = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnFull = new DevExpress.XtraBars.BarButtonItem();
@@ -119,6 +106,9 @@
             this.barEditItemLayer = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.barBtnSwipe = new DevExpress.XtraBars.BarButtonItem();
+            this.bsiBaseMap = new DevExpress.XtraBars.BarSubItem();
+            this.barBtnPOI = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnImagery = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -126,14 +116,13 @@
             this.dpLayers = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel2_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.axTOCControl = new ESRI.ArcGIS.Controls.AxTOCControl();
-            this.ucWorkFlow = new GFS.Sample.UCWorkFlow();
             this.panelMap = new DevExpress.XtraEditors.PanelControl();
             this.axMapControl = new ESRI.ArcGIS.Controls.AxMapControl();
             this.axToolbarControl = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.barDockingMenuItem1 = new DevExpress.XtraBars.BarDockingMenuItem();
-            this.popupMenulayer = new DevExpress.XtraBars.PopupMenu();
-            this.popupMenuFrame = new DevExpress.XtraBars.PopupMenu();
-            this.popupMenuRGB = new DevExpress.XtraBars.PopupMenu();
+            this.popupMenulayer = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenuFrame = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenuRGB = new DevExpress.XtraBars.PopupMenu(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pccRight)).BeginInit();
@@ -146,6 +135,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.hideContainerBottom.SuspendLayout();
             this.dpFlow.SuspendLayout();
+            this.dockPanel1_Container.SuspendLayout();
             this.dockPanelTable.SuspendLayout();
             this.dpEagle.SuspendLayout();
             this.controlContainer2.SuspendLayout();
@@ -176,28 +166,13 @@
             this.btnOpenTask,
             this.btnSaveTask,
             this.btnUpdateTask,
-            this.btnMask,
-            this.btnMosaic,
-            this.bsiSingleDate,
-            this.bsiMultiDate,
-            this.bsiRadarAndMultiSpectral,
-            this.bsiMiddleAndHigh,
-            this.btnSample,
-            this.btnSampleAnaly,
-            this.btnRecode,
-            this.btnReject,
-            this.btnStatistics,
-            this.btnVerify,
-            this.btnCropMosaic,
-            this.bsiAfter,
-            this.btnfeatureAnaly,
-            this.btnNNHard,
-            this.btnSoftHard,
-            this.btnOverlayClass,
-            this.btnDecision,
-            this.btnOpticsDiv,
-            this.btnSyn,
-            this.bsiSoftHard,
+            this.btnFrame,
+            this.btnErrorAnaly,
+            this.btnExamine,
+            this.btnEstimate,
+            this.btnsimulation,
+            this.btnSelection,
+            this.btnExport,
             this.staticSpt,
             this.staticXY,
             this.staticRaster,
@@ -214,10 +189,13 @@
             this.btnFramReset,
             this.btnFramClearBat,
             this.btnFramExport,
-            this.btnHelp});
+            this.btnHelp,
+            this.btnSampleLayer,
+            this.btnSummary,
+            this.btnAutoLayer});
             this.ribbonControl.LargeImages = this.ribbion32;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 6;
+            this.ribbonControl.MaxItemId = 9;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -329,6 +307,7 @@
             this.ribbion32.Images.SetKeyName(18, "编辑.png");
             this.ribbion32.Images.SetKeyName(19, "recent.png");
             this.ribbion32.Images.SetKeyName(20, "help.png");
+            this.ribbion32.Images.SetKeyName(21, "samplelayer32.png");
             // 
             // labelRecently
             // 
@@ -386,6 +365,9 @@
             this.image16.Images.SetKeyName(37, "批量移除 .png");
             this.image16.Images.SetKeyName(38, "重置图框.png");
             this.image16.Images.SetKeyName(39, "加载数据.png");
+            this.image16.Images.SetKeyName(40, "basemap.png");
+            this.image16.Images.SetKeyName(41, "poi.png");
+            this.image16.Images.SetKeyName(42, "image.png");
             // 
             // btnAddData
             // 
@@ -405,197 +387,71 @@
             this.btnUpdateTask.LargeImageIndex = 4;
             this.btnUpdateTask.Name = "btnUpdateTask";
             // 
-            // btnMask
+            // btnFrame
             // 
-            this.btnMask.Caption = "图像裁剪";
-            this.btnMask.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnMask.Id = 13;
-            this.btnMask.LargeImageIndex = 5;
-            this.btnMask.Name = "btnMask";
-            this.btnMask.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMask_ItemClick);
+            this.btnFrame.Caption = "构建抽样框";
+            this.btnFrame.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnFrame.Id = 13;
+            this.btnFrame.LargeImageIndex = 5;
+            this.btnFrame.Name = "btnFrame";
+            this.btnFrame.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMask_ItemClick);
             // 
-            // btnMosaic
+            // btnErrorAnaly
             // 
-            this.btnMosaic.Caption = "图像拼接";
-            this.btnMosaic.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnMosaic.Id = 14;
-            this.btnMosaic.LargeImageIndex = 8;
-            this.btnMosaic.Name = "btnMosaic";
+            this.btnErrorAnaly.Caption = "误差分析";
+            this.btnErrorAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnErrorAnaly.Id = 14;
+            this.btnErrorAnaly.LargeImageIndex = 8;
+            this.btnErrorAnaly.Name = "btnErrorAnaly";
+            this.btnErrorAnaly.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMosaic_ItemClick);
             // 
-            // bsiSingleDate
+            // btnExamine
             // 
-            this.bsiSingleDate.Caption = "单期影像分类";
-            this.bsiSingleDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiSingleDate.Id = 15;
-            this.bsiSingleDate.LargeImageIndex = 12;
-            this.bsiSingleDate.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnNNHard),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bsiSoftHard)});
-            this.bsiSingleDate.Name = "bsiSingleDate";
+            this.btnExamine.Caption = "样本审核";
+            this.btnExamine.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnExamine.Id = 19;
+            this.btnExamine.LargeImageIndex = 9;
+            this.btnExamine.Name = "btnExamine";
+            this.btnExamine.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSample_ItemClick);
             // 
-            // btnNNHard
+            // btnEstimate
             // 
-            this.btnNNHard.Caption = "神经网络硬分类";
-            this.btnNNHard.Id = 54;
-            this.btnNNHard.ImageIndex = 16;
-            this.btnNNHard.Name = "btnNNHard";
+            this.btnEstimate.Caption = "总体估计";
+            this.btnEstimate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnEstimate.Id = 20;
+            this.btnEstimate.LargeImageIndex = 11;
+            this.btnEstimate.Name = "btnEstimate";
+            this.btnEstimate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEstimate_ItemClick);
             // 
-            // bsiSoftHard
+            // btnsimulation
             // 
-            this.bsiSoftHard.Caption = "软硬分类";
-            this.bsiSoftHard.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiSoftHard.Id = 62;
-            this.bsiSoftHard.ImageIndex = 23;
-            this.bsiSoftHard.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnfeatureAnaly),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnSoftHard)});
-            this.bsiSoftHard.Name = "bsiSoftHard";
+            this.btnsimulation.Caption = "抽样仿真";
+            this.btnsimulation.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnsimulation.Id = 22;
+            this.btnsimulation.ImageIndex = 25;
+            this.btnsimulation.LargeImageIndex = 12;
+            this.btnsimulation.Name = "btnsimulation";
+            this.btnsimulation.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRecode_ItemClick);
             // 
-            // btnfeatureAnaly
+            // btnSelection
             // 
-            this.btnfeatureAnaly.Caption = "特征分析";
-            this.btnfeatureAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnfeatureAnaly.Id = 18;
-            this.btnfeatureAnaly.ImageIndex = 17;
-            this.btnfeatureAnaly.Name = "btnfeatureAnaly";
+            this.btnSelection.Caption = "样本抽选";
+            this.btnSelection.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnSelection.Id = 23;
+            this.btnSelection.ImageIndex = 26;
+            this.btnSelection.LargeImageIndex = 7;
+            this.btnSelection.Name = "btnSelection";
+            this.btnSelection.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSelection_ItemClick);
             // 
-            // btnSoftHard
+            // btnExport
             // 
-            this.btnSoftHard.Caption = "软硬分类";
-            this.btnSoftHard.Id = 55;
-            this.btnSoftHard.ImageIndex = 23;
-            this.btnSoftHard.LargeImageIndex = 25;
-            this.btnSoftHard.Name = "btnSoftHard";
-            // 
-            // bsiMultiDate
-            // 
-            this.bsiMultiDate.Caption = "多期影像分类";
-            this.bsiMultiDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiMultiDate.Id = 16;
-            this.bsiMultiDate.LargeImageIndex = 7;
-            this.bsiMultiDate.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnOverlayClass),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnDecision)});
-            this.bsiMultiDate.Name = "bsiMultiDate";
-            // 
-            // btnOverlayClass
-            // 
-            this.btnOverlayClass.Caption = "叠加分类";
-            this.btnOverlayClass.Id = 56;
-            this.btnOverlayClass.ImageIndex = 19;
-            this.btnOverlayClass.Name = "btnOverlayClass";
-            // 
-            // btnDecision
-            // 
-            this.btnDecision.Caption = "决策树分类";
-            this.btnDecision.Id = 57;
-            this.btnDecision.ImageIndex = 21;
-            this.btnDecision.Name = "btnDecision";
-            // 
-            // bsiRadarAndMultiSpectral
-            // 
-            this.bsiRadarAndMultiSpectral.Caption = "雷达+多光谱";
-            this.bsiRadarAndMultiSpectral.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiRadarAndMultiSpectral.Id = 17;
-            this.bsiRadarAndMultiSpectral.LargeImageIndex = 10;
-            this.bsiRadarAndMultiSpectral.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnOpticsDiv),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnSyn)});
-            this.bsiRadarAndMultiSpectral.Name = "bsiRadarAndMultiSpectral";
-            // 
-            // btnOpticsDiv
-            // 
-            this.btnOpticsDiv.Caption = "光学影像分割";
-            this.btnOpticsDiv.Id = 58;
-            this.btnOpticsDiv.ImageIndex = 22;
-            this.btnOpticsDiv.Name = "btnOpticsDiv";
-            // 
-            // btnSyn
-            // 
-            this.btnSyn.Caption = "图斑/像元综合分类";
-            this.btnSyn.Id = 59;
-            this.btnSyn.ImageIndex = 20;
-            this.btnSyn.Name = "btnSyn";
-            // 
-            // bsiMiddleAndHigh
-            // 
-            this.bsiMiddleAndHigh.Caption = "中分+高分";
-            this.bsiMiddleAndHigh.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiMiddleAndHigh.Id = 18;
-            this.bsiMiddleAndHigh.LargeImageIndex = 6;
-            this.bsiMiddleAndHigh.Name = "bsiMiddleAndHigh";
-            // 
-            // btnSample
-            // 
-            this.btnSample.Caption = "样本选取";
-            this.btnSample.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSample.Id = 19;
-            this.btnSample.LargeImageIndex = 9;
-            this.btnSample.Name = "btnSample";
-            this.btnSample.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSample_ItemClick);
-            // 
-            // btnSampleAnaly
-            // 
-            this.btnSampleAnaly.Caption = "样本分析";
-            this.btnSampleAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSampleAnaly.Id = 20;
-            this.btnSampleAnaly.LargeImageIndex = 11;
-            this.btnSampleAnaly.Name = "btnSampleAnaly";
-            // 
-            // btnRecode
-            // 
-            this.btnRecode.Caption = "地类重编码";
-            this.btnRecode.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnRecode.Id = 22;
-            this.btnRecode.ImageIndex = 25;
-            this.btnRecode.Name = "btnRecode";
-            this.btnRecode.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRecode_ItemClick);
-            // 
-            // btnReject
-            // 
-            this.btnReject.Caption = "分类后校正";
-            this.btnReject.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnReject.Id = 23;
-            this.btnReject.ImageIndex = 26;
-            this.btnReject.Name = "btnReject";
-            // 
-            // btnStatistics
-            // 
-            this.btnStatistics.Caption = "结果统计";
-            this.btnStatistics.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnStatistics.Id = 24;
-            this.btnStatistics.ImageIndex = 24;
-            this.btnStatistics.Name = "btnStatistics";
-            // 
-            // btnVerify
-            // 
-            this.btnVerify.Caption = "精度验证";
-            this.btnVerify.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnVerify.Id = 2;
-            this.btnVerify.LargeImageIndex = 17;
-            this.btnVerify.Name = "btnVerify";
-            this.btnVerify.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVerify_ItemClick);
-            // 
-            // btnCropMosaic
-            // 
-            this.btnCropMosaic.Caption = "区域作物拼接";
-            this.btnCropMosaic.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnCropMosaic.Id = 10;
-            this.btnCropMosaic.LargeImageIndex = 16;
-            this.btnCropMosaic.Name = "btnCropMosaic";
-            this.btnCropMosaic.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCropMosaic_ItemClick);
-            // 
-            // bsiAfter
-            // 
-            this.bsiAfter.Caption = "分类后处理";
-            this.bsiAfter.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiAfter.Id = 5;
-            this.bsiAfter.LargeImageIndex = 18;
-            this.bsiAfter.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnRecode),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnReject),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnStatistics)});
-            this.bsiAfter.Name = "bsiAfter";
+            this.btnExport.Caption = "数据导出";
+            this.btnExport.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnExport.Id = 24;
+            this.btnExport.ImageIndex = 24;
+            this.btnExport.LargeImageIndex = 10;
+            this.btnExport.Name = "btnExport";
+            this.btnExport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnExport_ItemClick);
             // 
             // staticSpt
             // 
@@ -726,16 +582,40 @@
             this.btnFramExport.Name = "btnFramExport";
             this.btnFramExport.Tag = "CmdExportMap";
             // 
+            // btnSampleLayer
+            // 
+            this.btnSampleLayer.Caption = "编辑分层";
+            this.btnSampleLayer.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnSampleLayer.Id = 6;
+            this.btnSampleLayer.LargeImageIndex = 21;
+            this.btnSampleLayer.Name = "btnSampleLayer";
+            this.btnSampleLayer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSampleLayer_ItemClick);
+            // 
+            // btnSummary
+            // 
+            this.btnSummary.Caption = "样本汇总";
+            this.btnSummary.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnSummary.Id = 7;
+            this.btnSummary.LargeImageIndex = 15;
+            this.btnSummary.Name = "btnSummary";
+            this.btnSummary.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSummary_ItemClick);
+            // 
+            // btnAutoLayer
+            // 
+            this.btnAutoLayer.Caption = "自动分层";
+            this.btnAutoLayer.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnAutoLayer.Id = 8;
+            this.btnAutoLayer.LargeImageIndex = 21;
+            this.btnAutoLayer.Name = "btnAutoLayer";
+            this.btnAutoLayer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAutoLayer_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroupFile,
             this.ribbonPageGroupTask,
             this.ribbonPageGroupData,
-            this.ribbonPageGroupSample,
-            this.ribbonPageGroupSingle,
-            this.ribbonPageGroupMulti,
-            this.ribbonPageGroupAfter});
+            this.ribbonPageGroupSample});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "ribbonPage1";
             // 
@@ -756,38 +636,23 @@
             // 
             // ribbonPageGroupData
             // 
-            this.ribbonPageGroupData.ItemLinks.Add(this.btnMask);
-            this.ribbonPageGroupData.ItemLinks.Add(this.btnMosaic);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnFrame);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnAutoLayer);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnSampleLayer);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnErrorAnaly);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnsimulation);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnSelection);
             this.ribbonPageGroupData.Name = "ribbonPageGroupData";
-            this.ribbonPageGroupData.Text = "测量数据准备";
+            this.ribbonPageGroupData.Text = "抽样";
             // 
             // ribbonPageGroupSample
             // 
-            this.ribbonPageGroupSample.ItemLinks.Add(this.btnSample);
-            this.ribbonPageGroupSample.ItemLinks.Add(this.btnSampleAnaly);
+            this.ribbonPageGroupSample.ItemLinks.Add(this.btnSummary);
+            this.ribbonPageGroupSample.ItemLinks.Add(this.btnExamine);
+            this.ribbonPageGroupSample.ItemLinks.Add(this.btnEstimate);
+            this.ribbonPageGroupSample.ItemLinks.Add(this.btnExport);
             this.ribbonPageGroupSample.Name = "ribbonPageGroupSample";
-            this.ribbonPageGroupSample.Text = "训练样本提取";
-            // 
-            // ribbonPageGroupSingle
-            // 
-            this.ribbonPageGroupSingle.ItemLinks.Add(this.bsiSingleDate);
-            this.ribbonPageGroupSingle.ItemLinks.Add(this.bsiMultiDate);
-            this.ribbonPageGroupSingle.Name = "ribbonPageGroupSingle";
-            this.ribbonPageGroupSingle.Text = "单星影像分类";
-            // 
-            // ribbonPageGroupMulti
-            // 
-            this.ribbonPageGroupMulti.ItemLinks.Add(this.bsiMiddleAndHigh);
-            this.ribbonPageGroupMulti.ItemLinks.Add(this.bsiRadarAndMultiSpectral);
-            this.ribbonPageGroupMulti.Name = "ribbonPageGroupMulti";
-            this.ribbonPageGroupMulti.Text = "多星影像分类";
-            // 
-            // ribbonPageGroupAfter
-            // 
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.bsiAfter);
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnVerify, true);
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnCropMosaic, true);
-            this.ribbonPageGroupAfter.Name = "ribbonPageGroupAfter";
+            this.ribbonPageGroupSample.Text = "推算";
             // 
             // repositoryItemPopupContainerEdit1
             // 
@@ -867,6 +732,15 @@
             this.dockPanel1_Container.Name = "dockPanel1_Container";
             this.dockPanel1_Container.Size = new System.Drawing.Size(1006, 229);
             this.dockPanel1_Container.TabIndex = 0;
+            // 
+            // ucWorkFlow
+            // 
+            this.ucWorkFlow.BackColor = System.Drawing.SystemColors.Window;
+            this.ucWorkFlow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucWorkFlow.Location = new System.Drawing.Point(3, 3);
+            this.ucWorkFlow.Name = "ucWorkFlow";
+            this.ucWorkFlow.Size = new System.Drawing.Size(326, 182);
+            this.ucWorkFlow.TabIndex = 0;
             // 
             // dockPanelTable
             // 
@@ -951,8 +825,11 @@
             this.barBtnSample,
             this.barBtnAfter,
             this.barEditItemLayer,
-            this.barBtnSwipe});
-            this.barManager.MaxItemId = 17;
+            this.barBtnSwipe,
+            this.bsiBaseMap,
+            this.barBtnPOI,
+            this.barBtnImagery});
+            this.barManager.MaxItemId = 20;
             this.barManager.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemComboBox2});
             // 
@@ -980,7 +857,8 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.barBtnSample),
             new DevExpress.XtraBars.LinkPersistInfo(this.barBtnAfter),
             new DevExpress.XtraBars.LinkPersistInfo(this.barEditItemLayer),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barBtnSwipe)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.barBtnSwipe),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bsiBaseMap)});
             this.barTop.OptionsBar.AllowQuickCustomization = false;
             this.barTop.Text = "Tools";
             // 
@@ -1115,6 +993,33 @@
             this.barBtnSwipe.Name = "barBtnSwipe";
             this.barBtnSwipe.Tag = "ControlToolsMapInquiry_Swipe";
             // 
+            // bsiBaseMap
+            // 
+            this.bsiBaseMap.Caption = "底图";
+            this.bsiBaseMap.Id = 17;
+            this.bsiBaseMap.ImageIndex = 40;
+            this.bsiBaseMap.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barBtnPOI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barBtnImagery)});
+            this.bsiBaseMap.Name = "bsiBaseMap";
+            this.bsiBaseMap.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
+            // barBtnPOI
+            // 
+            this.barBtnPOI.Caption = "街区图";
+            this.barBtnPOI.Id = 18;
+            this.barBtnPOI.ImageIndex = 41;
+            this.barBtnPOI.Name = "barBtnPOI";
+            this.barBtnPOI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnPOI_ItemClick);
+            // 
+            // barBtnImagery
+            // 
+            this.barBtnImagery.Caption = "影像图";
+            this.barBtnImagery.Id = 19;
+            this.barBtnImagery.ImageIndex = 42;
+            this.barBtnImagery.Name = "barBtnImagery";
+            this.barBtnImagery.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnImagery_ItemClick);
+            // 
             // barDockControlTop
             // 
             this.barDockControlTop.CausesValidation = false;
@@ -1171,15 +1076,6 @@
             this.axTOCControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl.OcxState")));
             this.axTOCControl.Size = new System.Drawing.Size(100, 100);
             this.axTOCControl.TabIndex = 0;
-            // 
-            // ucWorkFlow
-            // 
-            this.ucWorkFlow.BackColor = System.Drawing.SystemColors.Window;
-            this.ucWorkFlow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucWorkFlow.Location = new System.Drawing.Point(3, 3);
-            this.ucWorkFlow.Name = "ucWorkFlow";
-            this.ucWorkFlow.Size = new System.Drawing.Size(326, 182);
-            this.ucWorkFlow.TabIndex = 0;
             // 
             // panelMap
             // 
@@ -1275,6 +1171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.hideContainerBottom.ResumeLayout(false);
             this.dpFlow.ResumeLayout(false);
+            this.dockPanel1_Container.ResumeLayout(false);
             this.dockPanelTable.ResumeLayout(false);
             this.dpEagle.ResumeLayout(false);
             this.controlContainer2.ResumeLayout(false);
@@ -1306,31 +1203,22 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupTask;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupData;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupSample;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupSingle;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupMulti;
         private DevExpress.XtraBars.BarButtonItem btnNewTask;
         private DevExpress.XtraBars.BarButtonItem btnOpenTask;
         private DevExpress.XtraBars.BarButtonItem btnSaveTask;
         private DevExpress.XtraBars.BarButtonItem btnUpdateTask;
-        private DevExpress.XtraBars.BarButtonItem btnMask;
-        private DevExpress.XtraBars.BarButtonItem btnMosaic;
-        private DevExpress.XtraBars.BarSubItem bsiSingleDate;
-        private DevExpress.XtraBars.BarSubItem bsiMultiDate;
-        private DevExpress.XtraBars.BarSubItem bsiRadarAndMultiSpectral;
-        private DevExpress.XtraBars.BarSubItem bsiMiddleAndHigh;
-        private DevExpress.XtraBars.BarButtonItem btnSample;
-        private DevExpress.XtraBars.BarButtonItem btnSampleAnaly;
-        private DevExpress.XtraBars.BarButtonItem btnRecode;
-        private DevExpress.XtraBars.BarButtonItem btnReject;
-        private DevExpress.XtraBars.BarButtonItem btnStatistics;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupAfter;
+        private DevExpress.XtraBars.BarButtonItem btnFrame;
+        private DevExpress.XtraBars.BarButtonItem btnErrorAnaly;
+        private DevExpress.XtraBars.BarButtonItem btnExamine;
+        private DevExpress.XtraBars.BarButtonItem btnEstimate;
+        private DevExpress.XtraBars.BarButtonItem btnsimulation;
+        private DevExpress.XtraBars.BarButtonItem btnSelection;
+        private DevExpress.XtraBars.BarButtonItem btnExport;
         private DevExpress.XtraBars.Docking.DockManager dockManager;
         private DevExpress.XtraBars.Docking.DockPanel dpFlow;
         private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
         private DevExpress.XtraBars.Docking.DockPanel dpLayers;
         private DevExpress.XtraBars.Docking.ControlContainer dockPanel2_Container;
-        private DevExpress.XtraBars.BarButtonItem btnVerify;
-        private DevExpress.XtraBars.BarButtonItem btnCropMosaic;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
@@ -1360,16 +1248,7 @@
         //private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl;
         //private ESRI.ArcGIS.Controls.AxMapControl axMapControl;
         //private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl;
-        private DevExpress.XtraBars.BarSubItem bsiAfter;
-        private DevExpress.XtraBars.BarButtonItem btnfeatureAnaly;
         private DevExpress.XtraBars.BarDockingMenuItem barDockingMenuItem1;
-        private DevExpress.XtraBars.BarButtonItem btnNNHard;
-        private DevExpress.XtraBars.BarButtonItem btnSoftHard;
-        private DevExpress.XtraBars.BarButtonItem btnOverlayClass;
-        private DevExpress.XtraBars.BarButtonItem btnDecision;
-        private DevExpress.XtraBars.BarButtonItem btnOpticsDiv;
-        private DevExpress.XtraBars.BarButtonItem btnSyn;
-        private DevExpress.XtraBars.BarSubItem bsiSoftHard;
         private DevExpress.XtraBars.BarStaticItem staticSpt;
         private DevExpress.XtraBars.BarStaticItem staticXY;
         private DevExpress.XtraBars.BarStaticItem staticRaster;
@@ -1406,6 +1285,12 @@
         private DevExpress.XtraBars.Docking.DockPanel dpEagle;
         private DevExpress.XtraBars.Docking.ControlContainer controlContainer2;
         private ESRI.ArcGIS.Controls.AxMapControl axMapControlEagle;
+        private DevExpress.XtraBars.BarSubItem bsiBaseMap;
+        private DevExpress.XtraBars.BarButtonItem barBtnPOI;
+        private DevExpress.XtraBars.BarButtonItem barBtnImagery;
+        private DevExpress.XtraBars.BarButtonItem btnSampleLayer;
+        private DevExpress.XtraBars.BarButtonItem btnSummary;
+        private DevExpress.XtraBars.BarButtonItem btnAutoLayer;
         //private DevExpress.XtraBars.Docking.ControlContainer controlContainer1;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;

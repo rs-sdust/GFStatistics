@@ -6,5 +6,6 @@ using System.Text;
 namespace GFS.Sample
 {
     public enum FlowStatus
-    { Start, btnPrepare, btnSample, btnSingleDate, btnAfter, btnVerification, End }
+    { Start, btnFrame, btnErrorAnalyze, btnSimulation, btnSample,btnSummary, btnReview,btnEstimate, End }
+
 }

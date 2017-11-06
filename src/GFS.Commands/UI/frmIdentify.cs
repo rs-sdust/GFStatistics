@@ -150,6 +150,7 @@ namespace GFS.Commands.UI
                 if (this.treeList1.FocusedNode.ParentNode != null)
                 {
                     DataTable dataSource = this.treeList1.FocusedNode.Tag as DataTable;
+                    this.gridView1.Columns.Clear();
                     this.gridControl1.DataSource = dataSource;
                 }
                 this.gridControl1.RefreshDataSource();

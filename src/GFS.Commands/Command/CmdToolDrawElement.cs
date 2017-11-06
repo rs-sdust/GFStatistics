@@ -31,14 +31,6 @@ using GFS.BLL;
 
 namespace GFS.Commands
 {
-    public enum EnumDrawType
-    {
-        circle,
-        ellipse,
-        square,
-        rectangle,
-        polygon
-    }
 
     [ClassInterface(ClassInterfaceType.None), Guid("53ef2f15-e450-4404-9edc-b3aad31f8ed5"), ProgId("GFS.CmdToolDrawElement")]
     public sealed class CmdToolDrawElement : BaseTool

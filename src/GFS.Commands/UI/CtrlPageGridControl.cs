@@ -174,6 +174,7 @@ namespace GFS.Commands.UI
             this.dataNavigator.TextStringFormat = string.Format("第 {0} 页,共 {1} 页",_PageIndex,_PageCount );
 
             DataTable dataSource = this._dt.AsEnumerable().Take(this._Pagesize).CopyToDataTable<DataRow>();
+            this.gridView.Columns.Clear();
             this.gridControl.DataSource = dataSource;
             this.dataNavigator.Buttons.CustomButtons[0].Enabled = false;
             this.dataNavigator.Buttons.CustomButtons[1].Enabled = false;
@@ -207,6 +208,7 @@ namespace GFS.Commands.UI
                 this._dt = this.GetDataTable(pTable, pQueryFilter, this._PageIndex);
                 if (this._dt != null)
                 {
+                    this.gridView.Columns.Clear();
                     this.gridControl.DataSource = _dt;
                 }
             }
@@ -252,6 +254,7 @@ namespace GFS.Commands.UI
                     dataTable.Rows.Add(dataRow);
                     row = cursor.NextRow();
                 }
+                if (cursor != null)
                 Marshal.ReleaseComObject(cursor);
                 result = dataTable;
             }
@@ -425,6 +428,7 @@ namespace GFS.Commands.UI
                 dt.Rows.Add(dr);
                 pRow = pCusor.NextRow();
             }
+            this.gridView.Columns.Clear();
             gridControl.DataSource = dt;
         }
     }

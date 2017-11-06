@@ -1,0 +1,51 @@
+
+ 
+记录时间：2017-10-27 09:23:52,471 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Sample.frmSampleLayer property: [(null)] - 
+错误描述：Exception
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Sample.frmSampleLayer.gridControlTable_DoubleClick(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSampleLayer.cs:行号 181
+
+ 
+记录时间：2017-10-27 09:23:53,863 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Sample.frmSampleLayer property: [(null)] - 
+错误描述：Exception
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Sample.frmSampleLayer.gridControlTable_DoubleClick(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSampleLayer.cs:行号 181
+
+ 
+记录时间：2017-10-27 09:23:54,495 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Sample.frmSampleLayer property: [(null)] - 
+错误描述：Exception
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Sample.frmSampleLayer.gridControlTable_DoubleClick(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSampleLayer.cs:行号 181
+
+ 
+记录时间：2017-10-27 09:23:55,127 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Sample.frmSampleLayer property: [(null)] - 
+错误描述：Exception
+ 
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 GFS.Sample.frmSampleLayer.gridControlTable_DoubleClick(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSampleLayer.cs:行号 181
+
+ 
+记录时间：2017-10-27 11:00:17,470 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdRemoveLayer property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 ESRI.ArcGIS.Carto.FeatureLayerClass.Disconnect()
+   在 GFS.Commands.CmdRemoveLayer.OnClick() 位置 G:\高分统计项目一期\trunk\src\GFS.Commands\Command\CmdRemoveLayer.cs:行号 136

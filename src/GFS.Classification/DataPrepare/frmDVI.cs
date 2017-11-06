@@ -101,7 +101,6 @@ namespace GFS.Classification
                     frmWait.TopMost = false;
                     VegetationIndex.Calculate(VegIndex.DVI, cmbInRaster.Text.TrimEnd(), txtOut.Text.TrimEnd()
                         , cBERed.SelectedIndex, cBENIRed.SelectedIndex);
-                    Thread.Sleep(3000);
                     if (DialogResult.OK == XtraMessageBox.Show("计算完毕，是否加载结果文件?", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
                     {
                         MAP.AddRasterFileToMap(txtOut.Text.TrimEnd());

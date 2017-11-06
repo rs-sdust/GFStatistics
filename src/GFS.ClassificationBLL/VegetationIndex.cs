@@ -58,7 +58,7 @@ namespace GFS.ClassificationBLL
                         expression = "[NIR] - [RED]";
                         break;
                     case VegIndex.EVI:
-                        expression = "2.5 * (([NIR] - [RED]) / ([NIR] + 6 * [RED] - 7.5 * [BLUE] + 1))";
+                        expression = "2.5 * ([NIR] - [RED]) / ([NIR] + 6.0 * [RED] - 7.5 * [BLUE] + 1)";
                         pRSalgebra.BindRaster(GFS.Common.EngineAPI.OpenRasterDataset(inFile, blueIndex) as IGeoDataset, "BLUE");
                         break;
                     case VegIndex.NDVI:

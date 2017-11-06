@@ -43,28 +43,11 @@
             this.image16 = new DevExpress.Utils.ImageCollection(this.components);
             this.btnAddData = new DevExpress.XtraBars.BarButtonItem();
             this.btnUpdateTask = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMask = new DevExpress.XtraBars.BarButtonItem();
-            this.btnMosaic = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiSingleDate = new DevExpress.XtraBars.BarSubItem();
-            this.btnNNHard = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiSoftHard = new DevExpress.XtraBars.BarSubItem();
-            this.btnfeatureAnaly = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSoftHard = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiMultiDate = new DevExpress.XtraBars.BarSubItem();
-            this.btnOverlayClass = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDecision = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiRadarAndMultiSpectral = new DevExpress.XtraBars.BarSubItem();
-            this.btnOpticsDiv = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSyn = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiMiddleAndHigh = new DevExpress.XtraBars.BarSubItem();
-            this.btnSample = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSampleAnaly = new DevExpress.XtraBars.BarButtonItem();
-            this.btnRecode = new DevExpress.XtraBars.BarButtonItem();
-            this.btnReject = new DevExpress.XtraBars.BarButtonItem();
-            this.btnStatistics = new DevExpress.XtraBars.BarButtonItem();
-            this.btnVerify = new DevExpress.XtraBars.BarButtonItem();
-            this.btnCropMosaic = new DevExpress.XtraBars.BarButtonItem();
-            this.bsiAfter = new DevExpress.XtraBars.BarSubItem();
+            this.btnForest = new DevExpress.XtraBars.BarButtonItem();
+            this.btnShrub = new DevExpress.XtraBars.BarButtonItem();
+            this.btnGrass = new DevExpress.XtraBars.BarButtonItem();
+            this.btnPlant = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSoil = new DevExpress.XtraBars.BarButtonItem();
             this.staticSpt = new DevExpress.XtraBars.BarStaticItem();
             this.staticXY = new DevExpress.XtraBars.BarStaticItem();
             this.staticRaster = new DevExpress.XtraBars.BarStaticItem();
@@ -86,9 +69,6 @@
             this.ribbonPageGroupTask = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupSample = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupSingle = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupMulti = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupAfter = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.repositoryItemPopupContainerEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -178,28 +158,11 @@
             this.btnOpenTask,
             this.btnSaveTask,
             this.btnUpdateTask,
-            this.btnMask,
-            this.btnMosaic,
-            this.bsiSingleDate,
-            this.bsiMultiDate,
-            this.bsiRadarAndMultiSpectral,
-            this.bsiMiddleAndHigh,
-            this.btnSample,
-            this.btnSampleAnaly,
-            this.btnRecode,
-            this.btnReject,
-            this.btnStatistics,
-            this.btnVerify,
-            this.btnCropMosaic,
-            this.bsiAfter,
-            this.btnfeatureAnaly,
-            this.btnNNHard,
-            this.btnSoftHard,
-            this.btnOverlayClass,
-            this.btnDecision,
-            this.btnOpticsDiv,
-            this.btnSyn,
-            this.bsiSoftHard,
+            this.btnForest,
+            this.btnShrub,
+            this.btnGrass,
+            this.btnPlant,
+            this.btnSoil,
             this.staticSpt,
             this.staticXY,
             this.staticRaster,
@@ -219,7 +182,7 @@
             this.btnHelp});
             this.ribbonControl.LargeImages = this.ribbion32;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 6;
+            this.ribbonControl.MaxItemId = 7;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -331,6 +294,11 @@
             this.ribbion32.Images.SetKeyName(18, "编辑.png");
             this.ribbion32.Images.SetKeyName(19, "recent.png");
             this.ribbion32.Images.SetKeyName(20, "help.png");
+            this.ribbion32.Images.SetKeyName(21, "forest.png");
+            this.ribbion32.Images.SetKeyName(22, "shrub32.png");
+            this.ribbion32.Images.SetKeyName(23, "grass32.png");
+            this.ribbion32.Images.SetKeyName(24, "plant32.png");
+            this.ribbion32.Images.SetKeyName(25, "soil32.png");
             // 
             // labelRecently
             // 
@@ -407,197 +375,50 @@
             this.btnUpdateTask.LargeImageIndex = 4;
             this.btnUpdateTask.Name = "btnUpdateTask";
             // 
-            // btnMask
+            // btnForest
             // 
-            this.btnMask.Caption = "图像裁剪";
-            this.btnMask.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnMask.Id = 13;
-            this.btnMask.LargeImageIndex = 5;
-            this.btnMask.Name = "btnMask";
-            this.btnMask.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMask_ItemClick);
+            this.btnForest.Caption = "森林碳储量核算";
+            this.btnForest.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnForest.Id = 13;
+            this.btnForest.LargeImageIndex = 21;
+            this.btnForest.Name = "btnForest";
+            this.btnForest.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnForest_ItemClick);
             // 
-            // btnMosaic
+            // btnShrub
             // 
-            this.btnMosaic.Caption = "图像拼接";
-            this.btnMosaic.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnMosaic.Id = 14;
-            this.btnMosaic.LargeImageIndex = 8;
-            this.btnMosaic.Name = "btnMosaic";
+            this.btnShrub.Caption = "灌丛碳储量核算";
+            this.btnShrub.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnShrub.Id = 14;
+            this.btnShrub.LargeImageIndex = 22;
+            this.btnShrub.Name = "btnShrub";
+            this.btnShrub.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnShrub_ItemClick);
             // 
-            // bsiSingleDate
+            // btnGrass
             // 
-            this.bsiSingleDate.Caption = "单期影像分类";
-            this.bsiSingleDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiSingleDate.Id = 15;
-            this.bsiSingleDate.LargeImageIndex = 12;
-            this.bsiSingleDate.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnNNHard),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bsiSoftHard)});
-            this.bsiSingleDate.Name = "bsiSingleDate";
+            this.btnGrass.Caption = "草地碳储量核算";
+            this.btnGrass.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnGrass.Id = 19;
+            this.btnGrass.LargeImageIndex = 23;
+            this.btnGrass.Name = "btnGrass";
+            this.btnGrass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGrass_ItemClick);
             // 
-            // btnNNHard
+            // btnPlant
             // 
-            this.btnNNHard.Caption = "神经网络硬分类";
-            this.btnNNHard.Id = 54;
-            this.btnNNHard.ImageIndex = 16;
-            this.btnNNHard.Name = "btnNNHard";
+            this.btnPlant.Caption = "植被碳储量核算";
+            this.btnPlant.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnPlant.Id = 20;
+            this.btnPlant.LargeImageIndex = 24;
+            this.btnPlant.Name = "btnPlant";
+            this.btnPlant.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPlant_ItemClick);
             // 
-            // bsiSoftHard
+            // btnSoil
             // 
-            this.bsiSoftHard.Caption = "软硬分类";
-            this.bsiSoftHard.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiSoftHard.Id = 62;
-            this.bsiSoftHard.ImageIndex = 23;
-            this.bsiSoftHard.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnfeatureAnaly),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnSoftHard)});
-            this.bsiSoftHard.Name = "bsiSoftHard";
-            // 
-            // btnfeatureAnaly
-            // 
-            this.btnfeatureAnaly.Caption = "特征分析";
-            this.btnfeatureAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnfeatureAnaly.Id = 18;
-            this.btnfeatureAnaly.ImageIndex = 17;
-            this.btnfeatureAnaly.Name = "btnfeatureAnaly";
-            // 
-            // btnSoftHard
-            // 
-            this.btnSoftHard.Caption = "软硬分类";
-            this.btnSoftHard.Id = 55;
-            this.btnSoftHard.ImageIndex = 23;
-            this.btnSoftHard.LargeImageIndex = 25;
-            this.btnSoftHard.Name = "btnSoftHard";
-            // 
-            // bsiMultiDate
-            // 
-            this.bsiMultiDate.Caption = "多期影像分类";
-            this.bsiMultiDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiMultiDate.Id = 16;
-            this.bsiMultiDate.LargeImageIndex = 7;
-            this.bsiMultiDate.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnOverlayClass),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnDecision)});
-            this.bsiMultiDate.Name = "bsiMultiDate";
-            // 
-            // btnOverlayClass
-            // 
-            this.btnOverlayClass.Caption = "叠加分类";
-            this.btnOverlayClass.Id = 56;
-            this.btnOverlayClass.ImageIndex = 19;
-            this.btnOverlayClass.Name = "btnOverlayClass";
-            // 
-            // btnDecision
-            // 
-            this.btnDecision.Caption = "决策树分类";
-            this.btnDecision.Id = 57;
-            this.btnDecision.ImageIndex = 21;
-            this.btnDecision.Name = "btnDecision";
-            // 
-            // bsiRadarAndMultiSpectral
-            // 
-            this.bsiRadarAndMultiSpectral.Caption = "雷达+多光谱";
-            this.bsiRadarAndMultiSpectral.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiRadarAndMultiSpectral.Id = 17;
-            this.bsiRadarAndMultiSpectral.LargeImageIndex = 10;
-            this.bsiRadarAndMultiSpectral.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnOpticsDiv),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnSyn)});
-            this.bsiRadarAndMultiSpectral.Name = "bsiRadarAndMultiSpectral";
-            // 
-            // btnOpticsDiv
-            // 
-            this.btnOpticsDiv.Caption = "光学影像分割";
-            this.btnOpticsDiv.Id = 58;
-            this.btnOpticsDiv.ImageIndex = 22;
-            this.btnOpticsDiv.Name = "btnOpticsDiv";
-            // 
-            // btnSyn
-            // 
-            this.btnSyn.Caption = "图斑/像元综合分类";
-            this.btnSyn.Id = 59;
-            this.btnSyn.ImageIndex = 20;
-            this.btnSyn.Name = "btnSyn";
-            // 
-            // bsiMiddleAndHigh
-            // 
-            this.bsiMiddleAndHigh.Caption = "中分+高分";
-            this.bsiMiddleAndHigh.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiMiddleAndHigh.Id = 18;
-            this.bsiMiddleAndHigh.LargeImageIndex = 6;
-            this.bsiMiddleAndHigh.Name = "bsiMiddleAndHigh";
-            // 
-            // btnSample
-            // 
-            this.btnSample.Caption = "样本选取";
-            this.btnSample.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSample.Id = 19;
-            this.btnSample.LargeImageIndex = 9;
-            this.btnSample.Name = "btnSample";
-            this.btnSample.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSample_ItemClick);
-            // 
-            // btnSampleAnaly
-            // 
-            this.btnSampleAnaly.Caption = "样本分析";
-            this.btnSampleAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSampleAnaly.Id = 20;
-            this.btnSampleAnaly.LargeImageIndex = 11;
-            this.btnSampleAnaly.Name = "btnSampleAnaly";
-            // 
-            // btnRecode
-            // 
-            this.btnRecode.Caption = "地类重编码";
-            this.btnRecode.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnRecode.Id = 22;
-            this.btnRecode.ImageIndex = 25;
-            this.btnRecode.Name = "btnRecode";
-            this.btnRecode.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRecode_ItemClick);
-            // 
-            // btnReject
-            // 
-            this.btnReject.Caption = "分类后校正";
-            this.btnReject.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnReject.Id = 23;
-            this.btnReject.ImageIndex = 26;
-            this.btnReject.Name = "btnReject";
-            // 
-            // btnStatistics
-            // 
-            this.btnStatistics.Caption = "结果统计";
-            this.btnStatistics.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnStatistics.Id = 24;
-            this.btnStatistics.ImageIndex = 24;
-            this.btnStatistics.Name = "btnStatistics";
-            // 
-            // btnVerify
-            // 
-            this.btnVerify.Caption = "精度验证";
-            this.btnVerify.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnVerify.Id = 2;
-            this.btnVerify.LargeImageIndex = 17;
-            this.btnVerify.Name = "btnVerify";
-            this.btnVerify.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVerify_ItemClick);
-            // 
-            // btnCropMosaic
-            // 
-            this.btnCropMosaic.Caption = "区域作物拼接";
-            this.btnCropMosaic.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnCropMosaic.Id = 10;
-            this.btnCropMosaic.LargeImageIndex = 16;
-            this.btnCropMosaic.Name = "btnCropMosaic";
-            this.btnCropMosaic.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCropMosaic_ItemClick);
-            // 
-            // bsiAfter
-            // 
-            this.bsiAfter.Caption = "分类后处理";
-            this.bsiAfter.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiAfter.Id = 5;
-            this.bsiAfter.LargeImageIndex = 18;
-            this.bsiAfter.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnRecode),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnReject),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnStatistics)});
-            this.bsiAfter.Name = "bsiAfter";
+            this.btnSoil.Caption = "土壤碳储量核算";
+            this.btnSoil.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnSoil.Id = 22;
+            this.btnSoil.LargeImageIndex = 25;
+            this.btnSoil.Name = "btnSoil";
+            this.btnSoil.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSoil_ItemClick);
             // 
             // staticSpt
             // 
@@ -734,10 +555,7 @@
             this.ribbonPageGroupFile,
             this.ribbonPageGroupTask,
             this.ribbonPageGroupData,
-            this.ribbonPageGroupSample,
-            this.ribbonPageGroupSingle,
-            this.ribbonPageGroupMulti,
-            this.ribbonPageGroupAfter});
+            this.ribbonPageGroupSample});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "ribbonPage1";
             // 
@@ -758,38 +576,18 @@
             // 
             // ribbonPageGroupData
             // 
-            this.ribbonPageGroupData.ItemLinks.Add(this.btnMask);
-            this.ribbonPageGroupData.ItemLinks.Add(this.btnMosaic);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnForest);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnShrub);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnGrass);
+            this.ribbonPageGroupData.ItemLinks.Add(this.btnPlant);
             this.ribbonPageGroupData.Name = "ribbonPageGroupData";
-            this.ribbonPageGroupData.Text = "测量数据准备";
+            this.ribbonPageGroupData.Text = "植被碳储量核算";
             // 
             // ribbonPageGroupSample
             // 
-            this.ribbonPageGroupSample.ItemLinks.Add(this.btnSample);
-            this.ribbonPageGroupSample.ItemLinks.Add(this.btnSampleAnaly);
+            this.ribbonPageGroupSample.ItemLinks.Add(this.btnSoil);
             this.ribbonPageGroupSample.Name = "ribbonPageGroupSample";
-            this.ribbonPageGroupSample.Text = "训练样本提取";
-            // 
-            // ribbonPageGroupSingle
-            // 
-            this.ribbonPageGroupSingle.ItemLinks.Add(this.bsiSingleDate);
-            this.ribbonPageGroupSingle.ItemLinks.Add(this.bsiMultiDate);
-            this.ribbonPageGroupSingle.Name = "ribbonPageGroupSingle";
-            this.ribbonPageGroupSingle.Text = "单星影像分类";
-            // 
-            // ribbonPageGroupMulti
-            // 
-            this.ribbonPageGroupMulti.ItemLinks.Add(this.bsiMiddleAndHigh);
-            this.ribbonPageGroupMulti.ItemLinks.Add(this.bsiRadarAndMultiSpectral);
-            this.ribbonPageGroupMulti.Name = "ribbonPageGroupMulti";
-            this.ribbonPageGroupMulti.Text = "多星影像分类";
-            // 
-            // ribbonPageGroupAfter
-            // 
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.bsiAfter);
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnVerify, true);
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnCropMosaic, true);
-            this.ribbonPageGroupAfter.Name = "ribbonPageGroupAfter";
+            this.ribbonPageGroupSample.Text = "土壤碳储量核算";
             // 
             // repositoryItemPopupContainerEdit1
             // 
@@ -1309,31 +1107,20 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupTask;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupData;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupSample;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupSingle;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupMulti;
         private DevExpress.XtraBars.BarButtonItem btnNewTask;
         private DevExpress.XtraBars.BarButtonItem btnOpenTask;
         private DevExpress.XtraBars.BarButtonItem btnSaveTask;
         private DevExpress.XtraBars.BarButtonItem btnUpdateTask;
-        private DevExpress.XtraBars.BarButtonItem btnMask;
-        private DevExpress.XtraBars.BarButtonItem btnMosaic;
-        private DevExpress.XtraBars.BarSubItem bsiSingleDate;
-        private DevExpress.XtraBars.BarSubItem bsiMultiDate;
-        private DevExpress.XtraBars.BarSubItem bsiRadarAndMultiSpectral;
-        private DevExpress.XtraBars.BarSubItem bsiMiddleAndHigh;
-        private DevExpress.XtraBars.BarButtonItem btnSample;
-        private DevExpress.XtraBars.BarButtonItem btnSampleAnaly;
-        private DevExpress.XtraBars.BarButtonItem btnRecode;
-        private DevExpress.XtraBars.BarButtonItem btnReject;
-        private DevExpress.XtraBars.BarButtonItem btnStatistics;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupAfter;
+        private DevExpress.XtraBars.BarButtonItem btnForest;
+        private DevExpress.XtraBars.BarButtonItem btnShrub;
+        private DevExpress.XtraBars.BarButtonItem btnGrass;
+        private DevExpress.XtraBars.BarButtonItem btnPlant;
+        private DevExpress.XtraBars.BarButtonItem btnSoil;
         private DevExpress.XtraBars.Docking.DockManager dockManager;
         private DevExpress.XtraBars.Docking.DockPanel dpFlow;
         private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
         private DevExpress.XtraBars.Docking.DockPanel dpLayers;
         private DevExpress.XtraBars.Docking.ControlContainer dockPanel2_Container;
-        private DevExpress.XtraBars.BarButtonItem btnVerify;
-        private DevExpress.XtraBars.BarButtonItem btnCropMosaic;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
@@ -1363,16 +1150,7 @@
         //private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl;
         //private ESRI.ArcGIS.Controls.AxMapControl axMapControl;
         //private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl;
-        private DevExpress.XtraBars.BarSubItem bsiAfter;
-        private DevExpress.XtraBars.BarButtonItem btnfeatureAnaly;
         private DevExpress.XtraBars.BarDockingMenuItem barDockingMenuItem1;
-        private DevExpress.XtraBars.BarButtonItem btnNNHard;
-        private DevExpress.XtraBars.BarButtonItem btnSoftHard;
-        private DevExpress.XtraBars.BarButtonItem btnOverlayClass;
-        private DevExpress.XtraBars.BarButtonItem btnDecision;
-        private DevExpress.XtraBars.BarButtonItem btnOpticsDiv;
-        private DevExpress.XtraBars.BarButtonItem btnSyn;
-        private DevExpress.XtraBars.BarSubItem bsiSoftHard;
         private DevExpress.XtraBars.BarStaticItem staticSpt;
         private DevExpress.XtraBars.BarStaticItem staticXY;
         private DevExpress.XtraBars.BarStaticItem staticRaster;

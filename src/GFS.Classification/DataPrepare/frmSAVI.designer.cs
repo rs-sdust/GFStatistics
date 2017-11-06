@@ -137,7 +137,7 @@
             // 
             // cBENIRed
             // 
-            this.cBENIRed.EditValue = "Band_4";
+            this.cBENIRed.EditValue = "";
             this.cBENIRed.Location = new System.Drawing.Point(98, 108);
             this.cBENIRed.Name = "cBENIRed";
             this.cBENIRed.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -147,7 +147,7 @@
             // 
             // cBERed
             // 
-            this.cBERed.EditValue = "Band_3";
+            this.cBERed.EditValue = "";
             this.cBERed.Location = new System.Drawing.Point(98, 74);
             this.cBERed.Name = "cBERed";
             this.cBERed.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -257,6 +257,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbInRaster.Size = new System.Drawing.Size(252, 20);
             this.cmbInRaster.TabIndex = 15;
+            this.cmbInRaster.SelectedIndexChanged += new System.EventHandler(this.cmbInRaster_SelectedIndexChanged);
             // 
             // labelControl2
             // 
@@ -282,7 +283,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 421);
+            this.ClientSize = new System.Drawing.Size(415, 421);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl1);
@@ -291,14 +292,13 @@
             this.Controls.Add(this.siBConcel);
             this.Controls.Add(this.siBOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(622, 450);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(421, 450);
             this.Name = "frmSAVI";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "土壤调节植被指数(SAVI)";
             this.Load += new System.EventHandler(this.frmSAVI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gCHelp)).EndInit();
             this.gCHelp.ResumeLayout(false);

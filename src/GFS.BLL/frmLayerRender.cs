@@ -968,6 +968,7 @@ namespace GFS.BLL
                                 row = cursor.NextRow();
                             }
                         }
+                        if(cursor!=null)
                         Marshal.ReleaseComObject(cursor);
                         if (this.gridViewRasterUniqueValue.SelectedRowsCount == 0)
                         {
@@ -1709,6 +1710,7 @@ namespace GFS.BLL
                     break;
                 }
             }
+            if (enumStyleGalleryItem != null)
             Marshal.ReleaseComObject(enumStyleGalleryItem);
             return styleGalleryItem;
         }

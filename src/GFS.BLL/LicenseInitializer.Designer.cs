@@ -400,7 +400,7 @@ namespace GFS.BLL
     private Dictionary<esriLicenseProductCode, esriLicenseStatus> m_productStatus = new Dictionary<esriLicenseProductCode, esriLicenseStatus>();
     private Dictionary<esriLicenseExtensionCode, esriLicenseStatus> m_extensionStatus = new Dictionary<esriLicenseExtensionCode, esriLicenseStatus>();
 
-    private bool m_productCheckOrdering = true; //default from low to high
+    private bool m_productCheckOrdering = false; //default from high to low
     #endregion
   }
 }

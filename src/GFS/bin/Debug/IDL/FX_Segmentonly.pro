@@ -2,8 +2,8 @@
 ;  COMPILE_OPT IDL2
 ;  ENVI, /RESTORE_BASE_SAVE_FILES
 ;  ENVI_BATCH_INIT
-;  InputFile = "J:\åŒ—å¸ˆå¤§\Feature_Extraction\GF1_PMS1_E1154_N378_20140607_L1A0000246663-MSS1_subset.tif"
-;  OutputFile = "J:\åŒ—å¸ˆå¤§\OUT\OUt.dat" 
+;  InputFile = "J:\±±Ê¦´ó\Feature_Extraction\GF1_PMS1_E1154_N378_20140607_L1A0000246663-MSS1_subset.tif"
+;  OutputFile = "J:\±±Ê¦´ó\OUT\OUt.dat" 
 ;  Segment_Settings_Scale_Level = 50.0
 ;  Merge_Settings_scale_level = 40.0
 ;  Kernel_Size = 9
@@ -13,19 +13,19 @@
 ;+
 ; :Description:
 ;    Describe the procedure.
-;    å®ç°å›¾åƒåˆ†å‰²
+;    ÊµÏÖÍ¼Ïñ·Ö¸î
 ;    
 ; :Params:
-;    InputFileï¼šå¾…åˆ†å‰²å›¾åƒ
-;    Segment_Settings_Scale_Level:åˆ†å‰²å°ºåº¦
-;    Merge_Settings_scale_level:èåˆå°ºåº¦
-;    Kernel_Size:çº¹ç†å†…æ ¸å¤§å°
-;    OutputFile:åˆ†å‰²è¾“å‡ºç»“æœ
+;    InputFile£º´ı·Ö¸îÍ¼Ïñ
+;    Segment_Settings_Scale_Level:·Ö¸î³ß¶È
+;    Merge_Settings_scale_level:ÈÚºÏ³ß¶È
+;    Kernel_Size:ÎÆÀíÄÚºË´óĞ¡
+;    OutputFile:·Ö¸îÊä³ö½á¹û
 ;    
-; :Author: æ¨ä»¥å¤
+; :Author: ÑîÒÔÀ¤
 ;-
 
-PRO FX_Segmentonly,InputFile,Segment_Settings_Scale_Level,Merge_Settings_scale_level,Kernel_Size,OutputFile
+PRO FX_Segmentonly,InputFile,Segment_Settings_Scale_Level,Merge_Settings_scale_level,Kernel_Size,OutputFile,vectorFile
   COMPILE_OPT idl2
   ENVI, /RESTORE_BASE_SAVE_FILES
   ENVI_BATCH_INIT
@@ -36,7 +36,8 @@ PRO FX_Segmentonly,InputFile,Segment_Settings_Scale_Level,Merge_Settings_scale_l
     fid=fid, pos=pos, dims=dims,r_fid=r_fid, $
     merge_level=Merge_Settings_scale_level, $
     scale_level=Segment_Settings_Scale_Level, $
-    segmentation_raster_filename=OutputFile,KERNEL_SIZE=Kernel_Size
+    segmentation_raster_filename=OutputFile,$
+    vector_filename = vectorFile,KERNEL_SIZE=Kernel_Size
   ENVI_FILE_MNG,id=r_fid,/REMOVE
   ENVI_FILE_MNG,id=fid,/REMOVE
 END

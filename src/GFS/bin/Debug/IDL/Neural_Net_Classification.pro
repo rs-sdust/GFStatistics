@@ -1,49 +1,49 @@
-PRO NEURAL_NET_CLASSIFICATION
-  COMPILE_OPT idl2
-  envi,/RESTORE_BASE_SAVE_FILES
-  ENVI_BATCH_INIT
-  InputFilename = ''
-  ExampleShpFile = ''
-  OutFileName = ''
-  
-  ;the training threshold contribution,between 0.0 and 1.0
-  theta = 0.9
-  ;the training rate,between 0.0 and 1.0
-  eta = 0.2
-  ;the training momentum,between 0.0 and 1.0
-  alpha = 0.9
-  ;the activation function,0: Logistic,1: Hyperbolic
-  act_type = 0
-  ;the RMS training error criteria
-  rms_crit = 0.1
-  ;the number of hidden layers,Typically[0,1 or 2]
-  num_layers = 2
-  ;the maximum number of training sweeps
-  num_sweeps = 20
-  ;an minimum activation threshold
-  THRESH = 0.4
-  
-  Neural_Net_Classification_Function,InputFilename,ExampleShpFile,theta,eta,alpha,act_type,rms_crit,num_layers,num_sweeps,THRESH,OutFileName
-END
+;PRO NEURAL_NET_CLASSIFICATION
+;  COMPILE_OPT idl2
+;  envi,/RESTORE_BASE_SAVE_FILES
+;  ENVI_BATCH_INIT
+;  InputFilename = ''
+;  ExampleShpFile = ''
+;  OutFileName = ''
+;  
+;  ;the training threshold contribution,between 0.0 and 1.0
+;  theta = 0.9
+;  ;the training rate,between 0.0 and 1.0
+;  eta = 0.2
+;  ;the training momentum,between 0.0 and 1.0
+;  alpha = 0.9
+;  ;the activation function,0: Logistic,1: Hyperbolic
+;  act_type = 0
+;  ;the RMS training error criteria
+;  rms_crit = 0.1
+;  ;the number of hidden layers,Typically[0,1 or 2]
+;  num_layers = 2
+;  ;the maximum number of training sweeps
+;  num_sweeps = 20
+;  ;an minimum activation threshold
+;  THRESH = 0.4
+;  
+;  Neural_Net_Classification_Function,InputFilename,ExampleShpFile,theta,eta,alpha,act_type,rms_crit,num_layers,num_sweeps,THRESH,OutFileName
+;END
 ;+
 ; :DESCRIPTION:
 ;    Describe the procedure.
-;  åˆ©ç”¨ç¥ç»ç½‘ç»œå®ç°é¢å‘å¯¹è±¡çš„åˆ†ç±»
+;  ÀûÓÃÉñ¾­ÍøÂçÊµÏÖÃæÏò¶ÔÏóµÄ·ÖÀà
 ; :PARAMS:
-;    InputFilenameï¼šå¾…åˆ†ç±»å½±åƒ
-;    ExampleShpFileï¼šæ ·æœ¬ç‚¹Shpæ–‡ä»¶
-;       Shpæ–‡ä»¶å±æ€§è¡¨æ ¼å¼ï¼šFID   Shape    CLASS_NAME CLASS_ID   CLASS_CLRS
-;                    å±æ€§ï¼š           Geometry  String(40) String(10) String(12)
-;                    å€¼ï¼š                Polygon   City(Road) 1(2,3,4,5) 1(2,3,4,5)
-;    thetaï¼šthe training threshold contribution,between 0.0 and 1.0
-;    etaï¼šthe training rate,between 0.0 and 1.0
-;    alphaï¼šthe training momentum,between 0.0 and 1.0
+;    InputFilename£º´ı·ÖÀàÓ°Ïñ
+;    ExampleShpFile£ºÑù±¾µãShpÎÄ¼ş
+;       ShpÎÄ¼şÊôĞÔ±í¸ñÊ½£ºFID   Shape    CLASS_NAME CLASS_ID   CLASS_CLRS
+;                    ÊôĞÔ£º           Geometry  String(40) String(10) String(12)
+;                    Öµ£º                Polygon   City(Road) 1(2,3,4,5) 1(2,3,4,5)
+;    theta£ºthe training threshold contribution,between 0.0 and 1.0
+;    eta£ºthe training rate,between 0.0 and 1.0
+;    alpha£ºthe training momentum,between 0.0 and 1.0
 ;    act_type:the activation function,0: Logistic,1: Hyperbolic
 ;    rms_crit:the RMS training error criteria
 ;    num_layers:the number of hidden layers,Typically[0,1 or 2]
 ;    num_sweeps:the maximum number of training sweeps
 ;    THRESH:an minimum activation threshold
-;    OutFileName:åˆ†ç±»ç»“æœç»å¯¹è·¯å¾„
+;    OutFileName:·ÖÀà½á¹û¾ø¶ÔÂ·¾¶
 ;
 ; :AUTHOR: Yikun Yang
 ;-

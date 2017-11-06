@@ -39,6 +39,7 @@ namespace GFS.Classification
         //
         private string _pixelType = string.Empty;
 
+
         public frmMosaic()
         {
             InitializeComponent();

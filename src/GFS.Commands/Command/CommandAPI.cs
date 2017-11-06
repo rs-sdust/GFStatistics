@@ -25,6 +25,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using GFS.BLL;
 
 /// <summary>
 /// The Commands namespace.
@@ -103,11 +104,13 @@ namespace GFS.Commands
                 }
                 finally
                 {
+                    if (layers != null)
                     Marshal.ReleaseComObject(layers);
                 }
             }
             finally
             {
+                if (o != null)
                 Marshal.ReleaseComObject(o);
             }
         }
@@ -138,7 +141,12 @@ namespace GFS.Commands
                 }
                 if (rasterFiles.Count > 0)
                 {
-                    new frmCreatePyramid(rasterFiles) { Owner = GFS.BLL.EnviVars.instance.MainForm }.ShowDialog();
+                    //new frmCreatePyramid(rasterFiles) { Owner = GFS.BLL.EnviVars.instance.MainForm }.ShowDialog();
+                    //using(GPExecutor gp = new GPExecutor())
+                    {
+                        EnviVars.instance.GpExecutor.CreatePyramid(rasterFiles);
+                    }
+                    //EnviVars.instance.GpExecutor.CreatePyramid(rasterFiles);
                 }
                 foreach (KeyValuePair<string, IRasterLayer> pair2 in dictionary)
                 {

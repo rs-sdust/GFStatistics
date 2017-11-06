@@ -11,6 +11,8 @@ using GFS.Commands;
 using ESRI.ArcGIS.Controls;
 using DevExpress.XtraBars;
 using ESRI.ArcGIS.SystemUI;
+using GFS.SampleBLL;
+using DevExpress.XtraEditors;
 
 namespace GFS.Sample
 {
@@ -51,11 +53,25 @@ namespace GFS.Sample
             app.Initialize(barList, appMenu, popupMenuFrame, popupMenulayer, popupMenuRGB,
                 barEditItemLayer, staticSpt, staticXY, staticRaster, barBtnSwipe,barBtnEagleEye,
                 dpEagle,listRecently,controlContainer1);
+            //BaseMap.Add(BaseMapLayer.ChinaPoi);
+            if (Internet.IsConnectInternet())
+                BaseMap.Add(BaseMapLayer.ChinaPoi);
         }
 
         #endregion
 
         #region 业务模块事件
+
+        private void barBtnPOI_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            BaseMap.Add(BaseMapLayer.ChinaPoi);
+        }
+
+        private void barBtnImagery_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            BaseMap.Add(BaseMapLayer.Imagery);
+        }
+
         private void btnAddData_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
@@ -73,17 +89,74 @@ namespace GFS.Sample
 
         private void btnMask_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-  
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnFrame);
+            frmSampleFrame frm = new frmSampleFrame();
+            frm.ShowDialog();
+        }
+        private void btnAutoLayer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnFrame);
+            frmAutoLayer frm = new frmAutoLayer();
+            frm.ShowDialog();
+        }
+        private void btnSampleLayer_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnFrame);
+            frmSampleLayer frm = new frmSampleLayer();
+            frm.ShowDialog();
+        }
+        private void btnMosaic_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnErrorAnalyze);
+            frmErrorAnalysis frm = new frmErrorAnalysis();
+            frm.ShowDialog();
+        }
+        private void btnSelection_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnSample);
+            frmSamplingSelect frm = new frmSamplingSelect();
+            frm.ShowDialog();
+        }
+
+
+        private void btnExport_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FolderBrowserDialog Dlg = new FolderBrowserDialog();
+            if(DialogResult.OK == Dlg.ShowDialog())
+            {
+                string toFolder = Dlg.SelectedPath;
+                XtraMessageBox.Show(ExportData.Export(toFolder));
+            }
+        }
+
+        private void btnEstimate_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnEstimate);
+            frmAllEstimation frm = new frmAllEstimation();
+            frm.ShowDialog();
         }
 
         private void btnSample_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnReview);
+            frmSampleReview frm = new frmSampleReview();
+            frm.Owner = this;
+            frm.Show();
         }
 
         private void btnRecode_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnSimulation);
+            frmSampleSimulation frm = new frmSampleSimulation();
+            frm.Owner = this;
+            frm.Show();
+        }
 
+        private void btnSummary_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmSampleSummary frm = new frmSampleSummary();
+            frm.Owner = this;
+            frm.Show();
         }
 
         private void btnVerify_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -97,6 +170,18 @@ namespace GFS.Sample
         }
 
         #endregion
+
+
+
+
+
+
+
+
+
+
+
+
 
         #region basic GIS events
 

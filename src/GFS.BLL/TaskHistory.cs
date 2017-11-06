@@ -121,9 +121,10 @@ namespace GFS.BLL
         //
         public void SaveHistory()
         {
-            XmlTextWriter xmlWriter = new XmlTextWriter(historyFile,Encoding.UTF8);
+            XmlTextWriter xmlWriter = null;
             try
             {
+                xmlWriter  = new XmlTextWriter(historyFile, Encoding.UTF8);
                 xmlWriter.Formatting = Formatting.Indented;
                 xmlWriter.WriteStartDocument();
                 xmlWriter.WriteStartElement("TaskHistory");

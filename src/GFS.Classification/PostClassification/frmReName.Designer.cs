@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReName));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.LiBCname = new DevExpress.XtraEditors.ListBoxControl();
@@ -116,12 +117,12 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(400, 310);
+            this.MaximumSize = new System.Drawing.Size(400, 311);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(400, 310);
+            this.MinimumSize = new System.Drawing.Size(400, 311);
             this.Name = "frmReName";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "重编码";
             ((System.ComponentModel.ISupportInitialize)(this.LiBCname)).EndInit();

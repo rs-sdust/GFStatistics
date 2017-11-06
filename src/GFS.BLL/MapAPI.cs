@@ -29,6 +29,9 @@ using DevExpress.XtraEditors;
 using ESRI.ArcGIS.SystemUI;
 using ESRI.ArcGIS.DataSourcesRaster;
 using GFS.Common;
+using DevExpress.Utils;
+using ESRI.ArcGIS.DataManagementTools;
+using System.Collections;
 //using SDJT.Log;
 
 /// <summary>
@@ -398,6 +401,48 @@ namespace GFS.BLL
             return result;
         }
 
+        public static string PixelType2NetType(rstPixelType pixelType)
+        {
+            string result = "";
+            switch (pixelType)
+            {
+                case rstPixelType.PT_U1:
+                    result = "1_BIT";
+                    break;
+                case rstPixelType.PT_U2:
+                    result = "2_BIT";
+                    break;
+                case rstPixelType.PT_U4:
+                    result = "4_BIT";
+                    break;
+                case rstPixelType.PT_UCHAR:
+                    result = "8_BIT_UNSIGNED";
+                    break;
+                case rstPixelType.PT_CHAR:
+                    result = "8_BIT_SIGNED";
+                    break;
+                case rstPixelType.PT_USHORT:
+                    result = "16_BIT_UNSIGNED";
+                    break;
+                case rstPixelType.PT_SHORT:
+                    result = "16_BIT_SIGNED";
+                    break;
+                case rstPixelType.PT_ULONG:
+                    result = "32_BIT_UNSIGNED";
+                    break;
+                case rstPixelType.PT_LONG:
+                    result = "32_BIT_SIGNED";
+                    break;
+                case rstPixelType.PT_FLOAT:
+                    result = "32_BIT_FLOAT";
+                    break;
+                case rstPixelType.PT_DOUBLE:
+                    result = "64_BIT";
+                    break;
+            }
+            return result;
+        }
+
         /// <summary>
         /// Get all layers.
         /// </summary>
@@ -437,6 +482,141 @@ namespace GFS.BLL
             }
             catch (Exception)
             { }
+        }
+        public static IRasterLayer GetTopVisableRaster()
+        {
+            IRasterLayer rasterLyr = null;
+            try
+            {
+                List<ILayer> layers = EngineAPI.GetLayers(EnviVars.instance.MapControl.ActiveView.FocusMap, "{6CA416B1-E160-11D2-9F4E-00C04F6BC78E}", null);
+                int i = layers.Count;
+                while (i > 0)
+                {
+                    ILayer lyr = layers[i-1];
+                    if (lyr is IRasterLayer)
+                    {
+                        if (lyr.Visible)
+                        {
+                            rasterLyr = lyr as IRasterLayer;
+                        }
+                    }
+                    i--;
+                }
+                return rasterLyr;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 加载矢量文件到主地图控件
+        /// </summary>
+        /// <param name="rasterPath">The raster path.</param>
+        public static void AddShpFileToMap(string filePath)
+        {
+            try
+            {
+                FileInfo fileinfo = new FileInfo(filePath);
+                string path = filePath.Substring(0, filePath.Length - fileinfo.Name.Length);
+                string filename = fileinfo.Name;
+                EnviVars.instance.MapControl.AddShapeFile(path, filename);
+            }
+            catch (Exception ex)
+            {
+                Log.WriteLog(typeof(MapAPI), ex);
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// 加载栅格文件到主地图控件
+        /// </summary>
+        /// <param name="rasterPath">The raster path.</param>
+        public static void AddRasterFileToMap(string rasterPath)
+        {
+            try
+            {
+                IRasterLayer rasterLayer = new RasterLayerClass();
+                string directoryName = System.IO.Path.GetDirectoryName(rasterPath);
+                string fileName = System.IO.Path.GetFileName(rasterPath);
+                IRasterWorkspace rasterWorkspace = EngineAPI.OpenWorkspace(directoryName, DataType.raster) as IRasterWorkspace;
+                IRasterDataset rasterDataset = rasterWorkspace.OpenRasterDataset(fileName);
+                rasterLayer.CreateFromDataset(rasterDataset);
+                IRasterPyramid3 rasterPyramid = rasterDataset as IRasterPyramid3;
+                if (rasterPyramid != null && !rasterPyramid.Present)
+                {
+                    //new frmCreatePyramid(new List<string>
+                    //{
+                    //    rasterLayer.FilePath
+                    //})
+                    //{
+                    //    Owner = EnviVars.instance.MainForm
+                    //}.ShowDialog();
+                    //using (GPExecutor gp = new GPExecutor())
+                    {
+                        EnviVars.instance.GpExecutor.CreatePyramid(new List<string>
+                    {
+                        rasterLayer.FilePath
+                    });
+                    }
+                }
+                EnviVars.instance.MapControl.AddLayer(rasterLayer, 0);
+            }
+            catch (Exception ex)
+            {
+                //XtraMessageBox.Show("加载数据失败！", "提示信息", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);
+                Log.WriteLog(typeof(MapAPI), ex);
+                throw ex;
+            }
+        }
+
+        public static void UniqueValueRender(IFeatureLayer pFLayer, string fieldName)
+        {
+            IUniqueValueRenderer uniqueValueRenderer = new UniqueValueRenderer();
+            uniqueValueRenderer.FieldCount = 1;
+            uniqueValueRenderer.set_Field(0, fieldName);
+
+            List<string> uniqueValues = GetLayerUniqueFieldValue(pFLayer, fieldName);
+            Random rand = new Random();
+            foreach (string value in uniqueValues)
+            {
+                IFillSymbol fillSymbol = new SimpleFillSymbol();
+                fillSymbol.Color = new RgbColor() { Red = rand.Next(0, 255), Green = rand.Next(0, 255), Blue = rand.Next(0, 255) };
+                uniqueValueRenderer.AddValue(value, "", (ISymbol)fillSymbol);
+            }
+            
+            var featureRenderer = (IFeatureRenderer)uniqueValueRenderer;
+            var geoFeatureLayer = (IGeoFeatureLayer)pFLayer;
+            geoFeatureLayer.Renderer = featureRenderer;
+        }
+        public static List<string> GetLayerUniqueFieldValue(IFeatureLayer pFeatureLayer, string fieldName)
+        {
+            List<string> arrValues = new List<string>();
+            IQueryFilter pQueryFilter = new QueryFilterClass();
+            IFeatureCursor pFeatureCursor = null;
+
+            pQueryFilter.SubFields = fieldName;
+            pFeatureCursor = pFeatureLayer.FeatureClass.Search(pQueryFilter, true);
+
+            IDataStatistics pDataStati = new DataStatisticsClass();
+            pDataStati.Field = fieldName;
+            pDataStati.Cursor = (ICursor)pFeatureCursor;
+
+            IEnumerator pEnumerator = pDataStati.UniqueValues;
+            pEnumerator.Reset();
+            while (pEnumerator.MoveNext())
+            {
+                object pObj = pEnumerator.Current;
+                arrValues.Add(pObj.ToString());
+            }
+            if (pQueryFilter!=null)
+            Marshal.ReleaseComObject(pQueryFilter);
+            if (pFeatureCursor != null)
+            Marshal.ReleaseComObject(pFeatureCursor);
+            arrValues.Sort();
+            return arrValues;
         }
         /// <summary>
         /// Initializes static members of the <see cref="MapAPI" /> class.

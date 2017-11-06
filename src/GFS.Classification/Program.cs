@@ -18,62 +18,38 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using ESRI.ArcGIS.esriSystem;
 using DevExpress.XtraEditors;
-using GFS.BLL;
+using GFS.License;
 using ESRI.ArcGIS;
+using GFS.BLL;
 
 namespace GFS.Classification
 {
     static class Program
     {
-        //private static LicenseInitializer m_AOLicenseInitializer = new LicenseInitializer();
-        private static IAoInitialize m_AoInitialize = null;
+        private static LicenseInitializer m_AOLicenseInitializer = new LicenseInitializer();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Process process = ProcessCheck.RuningInstance();
+            if (process != null)
+            {
+                ProcessCheck.HandleRunningInstance(process);
+                //System.Threading.Thread.Sleep(1000);  
+                System.Environment.Exit(1);
+            }
             try
             {
-                Process process = ProcessCheck.RuningInstance();
-                if (process != null)
+                bool licensed = m_AOLicenseInitializer.InitializeApplication(new esriLicenseProductCode[] { esriLicenseProductCode.esriLicenseProductCodeEngine, esriLicenseProductCode.esriLicenseProductCodeStandard, esriLicenseProductCode.esriLicenseProductCodeAdvanced },
+                                new esriLicenseExtensionCode[] { esriLicenseExtensionCode.esriLicenseExtensionCodeSpatialAnalyst });
+                if (!licensed)
                 {
-                    ProcessCheck.HandleRunningInstance(process);
-                    //System.Threading.Thread.Sleep(1000);  
-                    System.Environment.Exit(1);
+                    XtraMessageBox.Show(m_AOLicenseInitializer.LicenseMessage(), "初始化许可失败", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
-                if (!RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop))
-                {
-                    XtraMessageBox.Show("绑定ArcGisRuntime失败！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    return;
-                }
-                else
-                {
-                    m_AoInitialize = new AoInitializeClass();
-                    if (m_AoInitialize.Initialize(esriLicenseProductCode.esriLicenseProductCodeAdvanced) != esriLicenseStatus.esriLicenseCheckedOut)
-                    {
-                        if (m_AoInitialize.Initialize(esriLicenseProductCode.esriLicenseProductCodeEngine) != esriLicenseStatus.esriLicenseCheckedOut)
-                        {
-                            XtraMessageBox.Show("初始化许可失败!", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                        }
-                        return;
-                    }
-
-                    if (m_AoInitialize.CheckOutExtension(esriLicenseExtensionCode.esriLicenseExtensionCodeSpatialAnalyst) != esriLicenseStatus.esriLicenseCheckedOut)
-                    {
-                        XtraMessageBox.Show("启用扩展失败：esriLicenseExtensionCodeSpatialAnalyst，相关模块无法运行。", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    }
-                }
-                
-                //bool licensed = m_AOLicenseInitializer.InitializeApplication(new esriLicenseProductCode[] { esriLicenseProductCode.esriLicenseProductCodeAdvanced },
-                //                new esriLicenseExtensionCode[] { });
-                //if (!licensed)
-                //{
-                //    XtraMessageBox.Show(m_AOLicenseInitializer.LicenseMessage(), "初始化许可失败", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                //}
-
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new frmMain());
             }
             catch (Exception ex)
@@ -82,12 +58,7 @@ namespace GFS.Classification
             }
             finally
             {
-                //m_AOLicenseInitializer.ShutdownApplication();
-                if (m_AoInitialize != null)
-                {
-                    m_AoInitialize.CheckInExtension(esriLicenseExtensionCode.esriLicenseExtensionCodeSpatialAnalyst);
-                    m_AoInitialize.Shutdown();
-                }
+                m_AOLicenseInitializer.ShutdownApplication();
             }
         }
     }

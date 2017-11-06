@@ -75,8 +75,19 @@ namespace GFS.Sample
         //初始化流程列表
         private void IniFlowList()
         {
-            flowList = new List<Button>() 
-            { btnPrepare,btnSample,btnSingleDate,btnAfter,btnVerification};
+            flowList = new List<Button>() { btnFrame, btnErrorAnalyze, btnSimulation, btnSample,btnSummary, btnReview ,btnEstimate};
+            
+            //foreach(Control ctrl in this.panel1.Controls) 
+            //{
+            //    try
+            //    {
+            //        flowList.Add(ctrl as Button);
+            //    }
+            //    catch
+            //    {
+            //        continue;
+            //    }
+            //}
         }
         //获取流程右侧边中心坐标
         private Point GetLeftCenter(Button btn)
@@ -97,39 +108,45 @@ namespace GFS.Sample
             //抗锯齿
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             //绘制链接线
-            Point start = GetRightCenter(btnGF);
-            Point end = GetLeftCenter(btnDB);
+            Point start = GetRightCenter(btnFrame);
+            Point end = GetLeftCenter(btnErrorAnalyze);
+            ChangePenColor(ref pen, btnFrame, btnErrorAnalyze);
             e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnDB);
-            end = GetLeftCenter(btnPrepare);
-            ChangePenColor(ref pen,btnDB, btnPrepare);
+            start = GetRightCenter(btnErrorAnalyze);
+            end = GetLeftCenter(btnSimulation);
+            ChangePenColor(ref pen,btnErrorAnalyze, btnSimulation);
             e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnPrepare);
+            start = GetRightCenter(btnSimulation);
             end = GetLeftCenter(btnSample);
-            ChangePenColor(ref pen,btnPrepare, btnSample);
+            ChangePenColor(ref pen,btnSimulation, btnSample);
             e.Graphics.DrawLine(pen, start, end);
+
+            //start = GetRightCenter(btnSample);
+            //end = GetLeftCenter(btnSingleDate);
+            //ChangePenColor(ref pen,btnSample, btnSingleDate);
+            //e.Graphics.DrawLine(pen, start, end);
+            //end = GetLeftCenter(btnMultiDate);
+            //ChangePenColor(ref pen,btnSample, btnMultiDate);
+            //e.Graphics.DrawLine(pen, start, end);
 
             start = GetRightCenter(btnSample);
-            end = GetLeftCenter(btnSingleDate);
-            ChangePenColor(ref pen,btnSample, btnSingleDate);
-            e.Graphics.DrawLine(pen, start, end);
-            end = GetLeftCenter(btnMultiDate);
-            ChangePenColor(ref pen,btnSample, btnMultiDate);
+            end = GetLeftCenter(btnSummary);
+            ChangePenColor(ref pen, btnSample, btnSummary);
             e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnSingleDate);
-            end = GetLeftCenter(btnAfter);
-            ChangePenColor(ref pen,btnSingleDate, btnAfter);
+            start = GetRightCenter(btnSummary);
+            end = GetLeftCenter(btnReview);
+            ChangePenColor(ref pen, btnSummary, btnReview);
             e.Graphics.DrawLine(pen, start, end);
-            start = GetRightCenter(btnMultiDate);
-            ChangePenColor(ref pen, btnMultiDate, btnAfter);
-            e.Graphics.DrawLine(pen, start, end);
+            //start = GetRightCenter(btnMultiDate);
+            //ChangePenColor(ref pen, btnMultiDate, btnReview);
+            //e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnAfter);
-            end = GetLeftCenter(btnVerification);
-            ChangePenColor(ref pen, btnAfter,btnVerification);
+            start = GetRightCenter(btnReview);
+            end = GetLeftCenter(btnEstimate);
+            ChangePenColor(ref pen, btnReview,btnEstimate);
             e.Graphics.DrawLine(pen, start, end);
 
 

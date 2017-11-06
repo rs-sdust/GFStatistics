@@ -22,6 +22,7 @@ namespace GFS.Classification
         private void frmEVI_Load(object sender, EventArgs e)
         {
             this.Size = MinimumSize;
+            MapAPI.GetAllLayers(cmbInRaster, null);
         }
 
         private void siBInput_Click(object sender, EventArgs e)
@@ -33,25 +34,29 @@ namespace GFS.Classification
             if (fileDialog.ShowDialog() == DialogResult.OK)
             {
                 string file = fileDialog.FileName;
-                cmbInRaster.Text = file;
-                string[] Band;
-                if (VegetationIndex.ReadBands(cmbInRaster.Text, out Band))
+                int bandCount = MAP.GetBandCount(file);
+                if (bandCount < 2)
                 {
-                    for (int j = 0; j < Band.Length; j++)
-                    {
-
-                        cBERed.Properties.Items.Add(Band[j]);
-                        cBENIRed.Properties.Items.Add(Band[j]);
-                        cBEBlue.Properties.Items.Add(Band[j]);
-                    }
+                    XtraMessageBox.Show("输入影像至少应包含两个波段！", "提示信息");
+                    this.cmbInRaster.Text = string.Empty;
                 }
                 else
-                {
-                    return;
-                }
+                    this.cmbInRaster.Text = file;
+                InitialBands(bandCount);
             }
         }
-
+        private void cmbInRaster_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (string.Empty == cmbInRaster.SelectedItem.ToString())
+                return;
+            int bandCount = MAP.GetBandCount(cmbInRaster.SelectedItem.ToString());
+            if (bandCount < 2)
+            {
+                XtraMessageBox.Show("输入影像至少应包含两个波段！", "提示信息");
+                this.cmbInRaster.Text = string.Empty;
+            }
+            InitialBands(bandCount);
+        }
         private void siBOutput_Click(object sender, EventArgs e)
         {
             string localFilePath = string.Empty;
@@ -66,9 +71,30 @@ namespace GFS.Classification
 
         private void siBOK_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(cmbInRaster.Text.Trim()) || string.IsNullOrEmpty(cBEBlue.Text.Trim()) || string.IsNullOrEmpty(cBERed.Text.Trim()) || string.IsNullOrEmpty(cBENIRed.Text.Trim()) || string.IsNullOrEmpty(txtOut.Text.Trim()))
+            if (string.IsNullOrEmpty(cmbInRaster.Text.TrimEnd()))
             {
-                MessageBox.Show("错误信息：\n输入影像的值：是必需的\n参数的值：不能为空\n输出结果的值;是必需的");
+                XtraMessageBox.Show("输入文件不能为空！");
+                return;
+            }
+            else if (cBEBlue.SelectedIndex < 0)
+            {
+                XtraMessageBox.Show("请选择蓝光波段！");
+                return;
+            }
+            else if (cBERed.SelectedIndex < 0)
+            {
+                XtraMessageBox.Show("请选择红光波段！");
+                return;
+            }
+            else if (cBENIRed.SelectedIndex < 0)
+            {
+                XtraMessageBox.Show("请选择近红外波段！");
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtOut.Text.TrimEnd()))
+            {
+                XtraMessageBox.Show("输出文件不能为空！");
+                return;
             }
             else
             {
@@ -78,22 +104,15 @@ namespace GFS.Classification
                 {
                     frmWait.Owner = this;
                     frmWait.TopMost = false;
-                    string Messagex = string.Empty;
-                    VegetationIndex rvi = new VegetationIndex();
-                    if (rvi.EVI(cmbInRaster.Text, cBERed.Text, cBENIRed.Text,cBEBlue.Text , txtOut.Text))
-                    {
-                        System.Windows.Forms.DialogResult dialogResult = XtraMessageBox.Show("计算成功,是否加载结果？", "提示信息", System.Windows.Forms.MessageBoxButtons.YesNo, System.Windows.Forms.MessageBoxIcon.Asterisk);
-                        if (dialogResult == System.Windows.Forms.DialogResult.Yes)
-                        {
-                            //添加结果到主地图视图
-                            MAP.AddRasterFileToMap(txtOut.Text);
-                        }
+                    VegetationIndex.Calculate(VegIndex.EVI, cmbInRaster.Text.TrimEnd(), txtOut.Text.TrimEnd()
+                        , cBERed.SelectedIndex, cBENIRed.SelectedIndex,cBEBlue.SelectedIndex);
 
-                        else
-                        {
-                            XtraMessageBox.Show("加载失败", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        }
+                    if (DialogResult.OK == XtraMessageBox.Show("计算完毕，是否加载结果文件?", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
+                    {
+                        MAP.AddRasterFileToMap(txtOut.Text.TrimEnd());
                     }
+
+                    this.Close();
 
                 }
 
@@ -105,7 +124,6 @@ namespace GFS.Classification
                 finally
                 {
                     frmWait.Close();
-                    this.Close();
                 }
             }
         }
@@ -128,6 +146,33 @@ namespace GFS.Classification
                 siBHelp.Text = "显示帮助>>";
             }
         }
+        private void InitialBands(int bandCount)
+        {
+            this.cBERed.Properties.Items.Clear();
+            this.cBENIRed.Properties.Items.Clear();
+            this.cBEBlue.Properties.Items.Clear();
+
+            if (bandCount < 2)
+            {
+                this.cBERed.Text = string.Empty;
+                this.cBENIRed.Text = string.Empty;
+                this.cBEBlue.Text = string.Empty;
+                return;
+            }
+            for (int i = 0; i < bandCount; i++)
+            {
+                this.cBERed.Properties.Items.Add("Band_" + (i + 1));
+                this.cBENIRed.Properties.Items.Add("Band_" + (i + 1));
+                this.cBEBlue.Properties.Items.Add("Band_" + (i + 1));
+            }
+            if (bandCount >= 4)
+            {
+                this.cBERed.SelectedIndex = 2;
+                this.cBENIRed.SelectedIndex = 3;
+                this.cBEBlue.SelectedIndex = 1;
+            }
+        }
+
 
        
     }

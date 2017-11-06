@@ -3,9 +3,9 @@ PRO SUPERVISED_CLASSIFICATION
   ENVI,/RESTORE_BASE_SAVE_FILES
   ENVI_BATCH_INIT
   InputFilename = "G:\新建文件夹\北师大\OUT\OUt.img"
-  ExampleShpFile = "G:\新建文件夹\北师大\OUT\ANN\Shape\New_Shapefile.shp"
-  OutFileName = "G:\新建文件夹\北师大\ziji\idlshiyanclassyyk.img"
-  Maximum_likelihood_Classification,InputFilename,ExampleShpFile,OutFileName
+  ExampleShpFile = "G:\新建文件夹\北师大\新建文件夹1\color_sample\sample.shp"
+  OutFileName = "G:\新建文件夹\北师大\ziji\idlshiyanclassyyk111.img"
+  MAXIMUM_LIKELIHOOD_CLASSIFICATION,InputFilename,ExampleShpFile,OutFileName
 END
 ;+
 ; :DESCRIPTION:
@@ -21,7 +21,7 @@ END
 ;
 ; :AUTHOR: Yikun Yang
 ;-
-PRO Maximum_likelihood_Classification,InputFilename,ExampleShpFile,OutFileName
+PRO MAXIMUM_LIKELIHOOD_CLASSIFICATION,InputFilename,ExampleShpFile,OutFileName
   COMPILE_OPT idl2
   ENVI,/RESTORE_BASE_SAVE_FILES
   ENVI_BATCH_INIT
@@ -32,6 +32,7 @@ PRO Maximum_likelihood_Classification,InputFilename,ExampleShpFile,OutFileName
   ;ROI
   ROI_IDS = LONARR(n_ent)
   color = STRARR(n_ent)
+  backup_color = STRARR(n_ent)
   temp_roi_id = 0
   FOR j = 0,n_ent-1 DO BEGIN
     ent1=oshp->GETATTRIBUTES(j)
@@ -40,6 +41,7 @@ PRO Maximum_likelihood_Classification,InputFilename,ExampleShpFile,OutFileName
     ENVI_CONVERT_FILE_COORDINATES,fid,XPTS,YPTS,vert[0,*],vert[1,*]
     ROI_NAME = ent1.ATTRIBUTE_0
     color[j] = ent1.ATTRIBUTE_1
+    backup_color[j] = ent1.ATTRIBUTE_2
     IF j EQ 0 THEN BEGIN
       ROI_IDS[J] = ENVI_CREATE_ROI(color=color[j], name=ROI_NAME,nl=nl,ns=ns)
       num = N_ELEMENTS(XPTS)
@@ -72,7 +74,14 @@ PRO Maximum_likelihood_Classification,InputFilename,ExampleShpFile,OutFileName
   OBJ_DESTROY,oshp
   ENVI_FILE_MNG,id=fid,/REMOVE
   ENVI_DELETE_ROIS,roiid,/ALL
-
+  
+  backup_color = backup_color[uniq(backup_color)]
+  ncolor = N_ELEMENTS(backup_color)
+  roi_colors1 = BYTARR(3,ncolor)
+  for kkk = 0,ncolor-1 do begin
+    roi_colors1[*,kkk] = STRSPLIT(backup_color[kkk],',',/EXTRACT)    
+  endfor
+  
   ENVI_OPEN_FILE,InputFilename,r_fid=fid
   ENVI_FILE_QUERY,fid,nb=nb,ns=ns,nl=nl,dims=dims
   pos = LINDGEN(nb)
@@ -83,7 +92,7 @@ PRO Maximum_likelihood_Classification,InputFilename,ExampleShpFile,OutFileName
   num_classes = N_ELEMENTS(roi_ids)
   ; Set the unclassified class to black and use roi colors
   lookup = BYTARR(3,num_classes+1)
-  lookup[0,1] = roi_colors
+  lookup[0,1] = roi_colors1
   ; 计算类ROI的基本统计信息
   ;
   mean = FLTARR(N_ELEMENTS(pos), num_classes)
@@ -101,7 +110,7 @@ PRO Maximum_likelihood_Classification,InputFilename,ExampleShpFile,OutFileName
   ENDFOR
   ;
   ;thresh=REPLICATE(0.05,num_classes)
-  
+
   out_bname = 'MaximumLikelihood'
   ENVI_DOIT, 'class_doit', fid=fid, pos=pos, dims=dims, $
     out_bname=out_bname, out_name=OutFileName, method=2, $

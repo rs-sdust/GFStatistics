@@ -24,6 +24,8 @@ using GFS.Commands;
 using ESRI.ArcGIS.Controls;
 using DevExpress.XtraBars;
 using ESRI.ArcGIS.SystemUI;
+using GFS.Commands.UI;
+using ESRI.ArcGIS.Geometry;
 
 namespace GFS.Classification
 {
@@ -64,11 +66,23 @@ namespace GFS.Classification
             app.Initialize(barList, appMenu, popupMenuFrame, popupMenulayer, popupMenuRGB,
                 barEditItemLayer, staticSpt, staticXY, staticRaster, barBtnSwipe,barBtnEagleEye,
                 dpEagle,listRecently,controlContainer1);
+            if (Internet.IsConnectInternet())
+                BaseMap.Add(BaseMapLayer.ChinaPoi);
         }
 
         #endregion
 
         #region business events
+
+        private void barBtnPOI_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            BaseMap.Add(BaseMapLayer.ChinaPoi);
+        }
+
+        private void barBtnImagery_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            BaseMap.Add(BaseMapLayer.Imagery);
+        }
         //
         //更新任务
         //
@@ -84,8 +98,10 @@ namespace GFS.Classification
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask,BLL.TaskState.DataPrepare);
             this.ucWorkFlow.RefreshFlow(FlowStatus.btnPrepare);
-            frmClipRaster frm = new frmClipRaster();
-            frm.ShowDialog();
+            //frmClipRaster frm = new frmClipRaster();
+            //frm.ShowDialog();
+            CmdClipRaster clip = new CmdClipRaster();
+            clip.OnClick();
         }
         //
         //镶嵌
@@ -169,7 +185,8 @@ namespace GFS.Classification
         private void btnSoftHard_ItemClick(object sender, ItemClickEventArgs e)
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
-            frmOOClassification frm = new frmOOClassification();
+            //frmOOClassification frm = new frmOOClassification();
+            frmOOMaximumLike frm = new frmOOMaximumLike();
             frm.ShowDialog();
         }
         //
@@ -219,6 +236,9 @@ namespace GFS.Classification
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
             this.ucWorkFlow.RefreshFlow(FlowStatus.btnAfter);
+            frmReCorect frm = new frmReCorect();
+            frm.Owner = this;
+            frm.Show();
         }
         //
         //结果统计
@@ -227,7 +247,11 @@ namespace GFS.Classification
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
             this.ucWorkFlow.RefreshFlow(FlowStatus.btnAfter);
+            frmStatisticsResult frm = new frmStatisticsResult();
+            frm.ShowDialog();
         }
+
+
         //
         //精度验证
         //
@@ -235,6 +259,8 @@ namespace GFS.Classification
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
             this.ucWorkFlow.RefreshFlow(FlowStatus.btnVerification);
+            frmAccuracyVerify frm = new frmAccuracyVerify();
+            frm.ShowDialog();
         }
         //
         //结果拼接
@@ -243,9 +269,13 @@ namespace GFS.Classification
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
             this.ucWorkFlow.RefreshFlow(FlowStatus.End);
+            frmMosaic frm = new frmMosaic();
+            frm.ShowDialog();
         }
 
         #endregion
+
+
 
 
 

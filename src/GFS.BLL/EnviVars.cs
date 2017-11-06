@@ -204,7 +204,7 @@ namespace GFS.BLL
             get;
             set;
         }
-        public int taskID
+        public long taskID
         {
             get;
             set;
@@ -225,10 +225,10 @@ namespace GFS.BLL
                 }
                 return this.m_gpExecutor;
             }
-            set
-            {
-                this.m_gpExecutor = value;
-            }
+            //set
+            //{
+            //    this.m_gpExecutor = value;
+            //}
         }
         /// <summary>
         /// Prevents a default instance of the <see cref="EnviVars" /> class from being created.

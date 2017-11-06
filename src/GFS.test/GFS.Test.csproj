@@ -145,7 +145,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GP.cs" />
-    <Compile Include="ProductMeta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -157,6 +156,14 @@
     <ProjectReference Include="..\GFS.Commands\GFS.Commands.csproj">
       <Project>{9A86A4E6-D14C-415D-8718-2FAE1392C9E6}</Project>
       <Name>GFS.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GFS.Common\GFS.Common.csproj">
+      <Project>{6A3316EF-580C-4D4A-849B-42A78B2C5AB4}</Project>
+      <Name>GFS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GFS.License\GFS.License.csproj">
+      <Project>{F9CFBDED-A428-443F-BCEC-32B7BA2F5C2D}</Project>
+      <Name>GFS.License</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

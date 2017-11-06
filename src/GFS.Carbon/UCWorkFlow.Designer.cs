@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCWorkFlow));
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.panel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.toolTip1 = new System.Windows.Forms.ToolTip();
             this.btnGF = new System.Windows.Forms.Button();
             this.btnDB = new System.Windows.Forms.Button();
             this.btnPrepare = new System.Windows.Forms.Button();
@@ -41,6 +39,7 @@
             this.btnMultiDate = new System.Windows.Forms.Button();
             this.btnAfter = new System.Windows.Forms.Button();
             this.btnVerification = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +64,156 @@
             this.imageList1.Images.SetKeyName(14, "btnVerificationDefault");
             this.imageList1.Images.SetKeyName(15, "btnVerificationRunning");
             this.imageList1.Images.SetKeyName(16, "btnVerificationDone");
+            // 
+            // btnGF
+            // 
+            this.btnGF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGF.FlatAppearance.BorderSize = 0;
+            this.btnGF.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnGF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGF.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnGF.ImageIndex = 0;
+            this.btnGF.ImageList = this.imageList1;
+            this.btnGF.Location = new System.Drawing.Point(27, 71);
+            this.btnGF.Name = "btnGF";
+            this.btnGF.Size = new System.Drawing.Size(80, 54);
+            this.btnGF.TabIndex = 3;
+            this.btnGF.Text = "GF卫星";
+            this.btnGF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnGF, "流程说明，\r\n浮动状态无法显示。");
+            this.btnGF.UseVisualStyleBackColor = false;
+            // 
+            // btnDB
+            // 
+            this.btnDB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDB.FlatAppearance.BorderSize = 0;
+            this.btnDB.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDB.ImageIndex = 1;
+            this.btnDB.ImageList = this.imageList1;
+            this.btnDB.Location = new System.Drawing.Point(155, 71);
+            this.btnDB.Name = "btnDB";
+            this.btnDB.Size = new System.Drawing.Size(80, 54);
+            this.btnDB.TabIndex = 4;
+            this.btnDB.Text = "数据管理系统";
+            this.btnDB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnDB, "流程说明");
+            this.btnDB.UseVisualStyleBackColor = false;
+            // 
+            // btnPrepare
+            // 
+            this.btnPrepare.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPrepare.FlatAppearance.BorderSize = 0;
+            this.btnPrepare.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnPrepare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrepare.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPrepare.ImageKey = "btnPrepareDefault";
+            this.btnPrepare.ImageList = this.imageList1;
+            this.btnPrepare.Location = new System.Drawing.Point(283, 71);
+            this.btnPrepare.Name = "btnPrepare";
+            this.btnPrepare.Size = new System.Drawing.Size(80, 54);
+            this.btnPrepare.TabIndex = 5;
+            this.btnPrepare.Tag = "default";
+            this.btnPrepare.Text = "测量数据准备";
+            this.btnPrepare.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnPrepare, "流程说明");
+            this.btnPrepare.UseVisualStyleBackColor = false;
+            // 
+            // btnSample
+            // 
+            this.btnSample.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSample.FlatAppearance.BorderSize = 0;
+            this.btnSample.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnSample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSample.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSample.ImageKey = "btnSampleDefault";
+            this.btnSample.ImageList = this.imageList1;
+            this.btnSample.Location = new System.Drawing.Point(411, 71);
+            this.btnSample.Name = "btnSample";
+            this.btnSample.Size = new System.Drawing.Size(80, 54);
+            this.btnSample.TabIndex = 7;
+            this.btnSample.Tag = "default";
+            this.btnSample.Text = "训练样本选取";
+            this.btnSample.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnSample, "流程说明");
+            this.btnSample.UseVisualStyleBackColor = false;
+            // 
+            // btnSingleDate
+            // 
+            this.btnSingleDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSingleDate.FlatAppearance.BorderSize = 0;
+            this.btnSingleDate.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnSingleDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSingleDate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSingleDate.ImageKey = "btnSingleDateDefault";
+            this.btnSingleDate.ImageList = this.imageList1;
+            this.btnSingleDate.Location = new System.Drawing.Point(539, 7);
+            this.btnSingleDate.Name = "btnSingleDate";
+            this.btnSingleDate.Size = new System.Drawing.Size(80, 54);
+            this.btnSingleDate.TabIndex = 8;
+            this.btnSingleDate.Tag = "default";
+            this.btnSingleDate.Text = "单期分类";
+            this.btnSingleDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnSingleDate, "流程说明");
+            this.btnSingleDate.UseVisualStyleBackColor = false;
+            // 
+            // btnMultiDate
+            // 
+            this.btnMultiDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMultiDate.FlatAppearance.BorderSize = 0;
+            this.btnMultiDate.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnMultiDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMultiDate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnMultiDate.ImageKey = "btnSingleDateDefault";
+            this.btnMultiDate.ImageList = this.imageList1;
+            this.btnMultiDate.Location = new System.Drawing.Point(539, 135);
+            this.btnMultiDate.Name = "btnMultiDate";
+            this.btnMultiDate.Size = new System.Drawing.Size(80, 54);
+            this.btnMultiDate.TabIndex = 9;
+            this.btnMultiDate.Tag = "default";
+            this.btnMultiDate.Text = "多期分类";
+            this.btnMultiDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnMultiDate, "流程说明");
+            this.btnMultiDate.UseVisualStyleBackColor = false;
+            // 
+            // btnAfter
+            // 
+            this.btnAfter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAfter.FlatAppearance.BorderSize = 0;
+            this.btnAfter.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnAfter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAfter.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAfter.ImageKey = "btnAfterDefault";
+            this.btnAfter.ImageList = this.imageList1;
+            this.btnAfter.Location = new System.Drawing.Point(667, 71);
+            this.btnAfter.Name = "btnAfter";
+            this.btnAfter.Size = new System.Drawing.Size(80, 54);
+            this.btnAfter.TabIndex = 10;
+            this.btnAfter.Tag = "default";
+            this.btnAfter.Text = "分类后处理";
+            this.btnAfter.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnAfter, "流程说明");
+            this.btnAfter.UseVisualStyleBackColor = false;
+            // 
+            // btnVerification
+            // 
+            this.btnVerification.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnVerification.FlatAppearance.BorderSize = 0;
+            this.btnVerification.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnVerification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerification.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnVerification.ImageKey = "btnVerificationDefault";
+            this.btnVerification.ImageList = this.imageList1;
+            this.btnVerification.Location = new System.Drawing.Point(795, 71);
+            this.btnVerification.Name = "btnVerification";
+            this.btnVerification.Size = new System.Drawing.Size(80, 54);
+            this.btnVerification.TabIndex = 11;
+            this.btnVerification.Tag = "default";
+            this.btnVerification.Text = "精度验证";
+            this.btnVerification.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnVerification, "流程说明");
+            this.btnVerification.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -99,148 +248,6 @@
             this.panel1.Size = new System.Drawing.Size(902, 196);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.UCWorkFlow_Paint);
-            // 
-            // btnGF
-            // 
-            this.btnGF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGF.FlatAppearance.BorderSize = 0;
-            this.btnGF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGF.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGF.ImageIndex = 0;
-            this.btnGF.ImageList = this.imageList1;
-            this.btnGF.Location = new System.Drawing.Point(27, 71);
-            this.btnGF.Name = "btnGF";
-            this.btnGF.Size = new System.Drawing.Size(80, 54);
-            this.btnGF.TabIndex = 3;
-            this.btnGF.Text = "GF卫星";
-            this.btnGF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnGF, "流程说明，\r\n浮动状态无法显示。");
-            this.btnGF.UseVisualStyleBackColor = false;
-            // 
-            // btnDB
-            // 
-            this.btnDB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDB.FlatAppearance.BorderSize = 0;
-            this.btnDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDB.ImageIndex = 1;
-            this.btnDB.ImageList = this.imageList1;
-            this.btnDB.Location = new System.Drawing.Point(155, 71);
-            this.btnDB.Name = "btnDB";
-            this.btnDB.Size = new System.Drawing.Size(80, 54);
-            this.btnDB.TabIndex = 4;
-            this.btnDB.Text = "数据管理系统";
-            this.btnDB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnDB, "流程说明");
-            this.btnDB.UseVisualStyleBackColor = false;
-            // 
-            // btnPrepare
-            // 
-            this.btnPrepare.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPrepare.FlatAppearance.BorderSize = 0;
-            this.btnPrepare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrepare.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPrepare.ImageKey = "btnPrepareDefault";
-            this.btnPrepare.ImageList = this.imageList1;
-            this.btnPrepare.Location = new System.Drawing.Point(283, 71);
-            this.btnPrepare.Name = "btnPrepare";
-            this.btnPrepare.Size = new System.Drawing.Size(80, 54);
-            this.btnPrepare.TabIndex = 5;
-            this.btnPrepare.Tag = "default";
-            this.btnPrepare.Text = "测量数据准备";
-            this.btnPrepare.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnPrepare, "流程说明");
-            this.btnPrepare.UseVisualStyleBackColor = false;
-            // 
-            // btnSample
-            // 
-            this.btnSample.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSample.FlatAppearance.BorderSize = 0;
-            this.btnSample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSample.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSample.ImageKey = "btnSampleDefault";
-            this.btnSample.ImageList = this.imageList1;
-            this.btnSample.Location = new System.Drawing.Point(411, 71);
-            this.btnSample.Name = "btnSample";
-            this.btnSample.Size = new System.Drawing.Size(80, 54);
-            this.btnSample.TabIndex = 7;
-            this.btnSample.Tag = "default";
-            this.btnSample.Text = "训练样本选取";
-            this.btnSample.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnSample, "流程说明");
-            this.btnSample.UseVisualStyleBackColor = false;
-            // 
-            // btnSingleDate
-            // 
-            this.btnSingleDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSingleDate.FlatAppearance.BorderSize = 0;
-            this.btnSingleDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSingleDate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSingleDate.ImageKey = "btnSingleDateDefault";
-            this.btnSingleDate.ImageList = this.imageList1;
-            this.btnSingleDate.Location = new System.Drawing.Point(539, 7);
-            this.btnSingleDate.Name = "btnSingleDate";
-            this.btnSingleDate.Size = new System.Drawing.Size(80, 54);
-            this.btnSingleDate.TabIndex = 8;
-            this.btnSingleDate.Tag = "default";
-            this.btnSingleDate.Text = "单期分类";
-            this.btnSingleDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnSingleDate, "流程说明");
-            this.btnSingleDate.UseVisualStyleBackColor = false;
-            // 
-            // btnMultiDate
-            // 
-            this.btnMultiDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMultiDate.FlatAppearance.BorderSize = 0;
-            this.btnMultiDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMultiDate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMultiDate.ImageKey = "btnSingleDateDefault";
-            this.btnMultiDate.ImageList = this.imageList1;
-            this.btnMultiDate.Location = new System.Drawing.Point(539, 135);
-            this.btnMultiDate.Name = "btnMultiDate";
-            this.btnMultiDate.Size = new System.Drawing.Size(80, 54);
-            this.btnMultiDate.TabIndex = 9;
-            this.btnMultiDate.Tag = "default";
-            this.btnMultiDate.Text = "多期分类";
-            this.btnMultiDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnMultiDate, "流程说明");
-            this.btnMultiDate.UseVisualStyleBackColor = false;
-            // 
-            // btnAfter
-            // 
-            this.btnAfter.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAfter.FlatAppearance.BorderSize = 0;
-            this.btnAfter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAfter.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAfter.ImageKey = "btnAfterDefault";
-            this.btnAfter.ImageList = this.imageList1;
-            this.btnAfter.Location = new System.Drawing.Point(667, 71);
-            this.btnAfter.Name = "btnAfter";
-            this.btnAfter.Size = new System.Drawing.Size(80, 54);
-            this.btnAfter.TabIndex = 10;
-            this.btnAfter.Tag = "default";
-            this.btnAfter.Text = "分类后处理";
-            this.btnAfter.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnAfter, "流程说明");
-            this.btnAfter.UseVisualStyleBackColor = false;
-            // 
-            // btnVerification
-            // 
-            this.btnVerification.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnVerification.FlatAppearance.BorderSize = 0;
-            this.btnVerification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerification.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnVerification.ImageKey = "btnVerificationDefault";
-            this.btnVerification.ImageList = this.imageList1;
-            this.btnVerification.Location = new System.Drawing.Point(795, 71);
-            this.btnVerification.Name = "btnVerification";
-            this.btnVerification.Size = new System.Drawing.Size(80, 54);
-            this.btnVerification.TabIndex = 11;
-            this.btnVerification.Tag = "default";
-            this.btnVerification.Text = "精度验证";
-            this.btnVerification.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnVerification, "流程说明");
-            this.btnVerification.UseVisualStyleBackColor = false;
             // 
             // UCWorkFlow
             // 

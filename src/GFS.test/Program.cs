@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using GFS.BLL;
 using ESRI.ArcGIS.esriSystem;
+using GFS.License;
 
 namespace GFS.Test
 {

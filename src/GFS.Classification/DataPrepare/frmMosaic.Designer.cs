@@ -43,6 +43,7 @@
             this.siBAdd = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnPreview = new DevExpress.XtraEditors.SimpleButton();
             this.listDataSet = new DevExpress.XtraEditors.ListBoxControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -50,7 +51,6 @@
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.cmbPixelType = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.btnPreview = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtOut.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkUpload.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -205,6 +205,16 @@
             this.groupControl1.TabIndex = 67;
             this.groupControl1.Text = "拼接影像集";
             // 
+            // btnPreview
+            // 
+            this.btnPreview.ImageIndex = 2;
+            this.btnPreview.Location = new System.Drawing.Point(334, 31);
+            this.btnPreview.Name = "btnPreview";
+            this.btnPreview.Size = new System.Drawing.Size(39, 24);
+            this.btnPreview.TabIndex = 72;
+            this.btnPreview.Text = "预览";
+            this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
+            // 
             // listDataSet
             // 
             this.listDataSet.Location = new System.Drawing.Point(14, 61);
@@ -275,16 +285,6 @@
             this.labelControl3.TabIndex = 41;
             this.labelControl3.Text = "像素类型";
             // 
-            // btnPreview
-            // 
-            this.btnPreview.ImageIndex = 2;
-            this.btnPreview.Location = new System.Drawing.Point(334, 31);
-            this.btnPreview.Name = "btnPreview";
-            this.btnPreview.Size = new System.Drawing.Size(39, 24);
-            this.btnPreview.TabIndex = 72;
-            this.btnPreview.Text = "预览";
-            this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
-            // 
             // frmMosaic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -300,12 +300,12 @@
             this.Controls.Add(this.siBOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(672, 462);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(439, 462);
             this.Name = "frmMosaic";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "图像拼接";
             this.Load += new System.EventHandler(this.mosaic_Load);

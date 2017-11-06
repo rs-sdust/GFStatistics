@@ -1,0 +1,24 @@
+
+ 
+记录时间：2017-10-23 14:30:17,925 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.UI.frmCreatePyramid property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.SEHException (0x80004005): 外部组件发生异常。
+   在 ESRI.ArcGIS.Geoprocessor.Geoprocessor..ctor()
+   在 GFS.Commands.UI.frmCreatePyramid.btnOK_Click(Object sender, EventArgs e)
+
+ 
+记录时间：2017-10-23 15:03:07,849 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.UI.frmCreatePyramid property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 ESRI.ArcGIS.Geoprocessing.GeoProcessorClass.Execute(String Name, IVariantArray ipValues, ITrackCancel pTrackCancel)
+   在 ESRI.ArcGIS.Geoprocessor.Geoprocessor.ExecuteInner(IGPProcess process, ITrackCancel trackCancel, IGeoProcessor igp, IVariantArray iva)
+   在 ESRI.ArcGIS.Geoprocessor.Geoprocessor.Execute(IGPProcess process, ITrackCancel trackCancel)
+   在 GFS.Commands.UI.frmCreatePyramid.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Commands\UI\frmCreatePyramid.cs:行号 205

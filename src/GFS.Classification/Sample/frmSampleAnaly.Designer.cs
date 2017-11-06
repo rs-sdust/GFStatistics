@@ -212,12 +212,12 @@
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(638, 384);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(372, 384);
             this.Name = "frmSampleAnaly";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "样本分析";
             this.Load += new System.EventHandler(this.frmSampleAnaly_Load);

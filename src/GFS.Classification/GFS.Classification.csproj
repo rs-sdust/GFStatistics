@@ -34,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -50,7 +51,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Data.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Utils.v14.1.dll</HintPath>
@@ -66,6 +69,7 @@
     <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ESRI.ArcGIS.ADF.Local.dll</HintPath>
@@ -101,7 +105,7 @@
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geometry, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>..\DLL\ESRI.ArcGIS.Geometry.dll</HintPath>
     </Reference>
     <Reference Include="ESRI.ArcGIS.System, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
@@ -159,11 +163,41 @@
     <Compile Include="DataPrepare\frmSAVI.designer.cs">
       <DependentUpon>frmSAVI.cs</DependentUpon>
     </Compile>
+    <Compile Include="SingleSatellite\frmOOMaximumLike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleSatellite\frmOOMaximumLike.Designer.cs">
+      <DependentUpon>frmOOMaximumLike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Verification\frmVerifyResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verification\frmVerifyResult.Designer.cs">
+      <DependentUpon>frmVerifyResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Verification\frmAccuracyVerify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verification\frmAccuracyVerify.Designer.cs">
+      <DependentUpon>frmAccuracyVerify.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPreview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPreview.Designer.cs">
       <DependentUpon>frmPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostClassification\frmStatisticsResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostClassification\frmStatisticsResult.Designer.cs">
+      <DependentUpon>frmStatisticsResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostClassification\frmStatisticTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostClassification\frmStatisticTable.designer.cs">
+      <DependentUpon>frmStatisticTable.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkFlow\FlowStatus.cs" />
     <Compile Include="DataPrepare\frmClipRaster.cs">
@@ -220,18 +254,6 @@
     <Compile Include="SingleSatellite\frmSegmentation.Designer.cs">
       <DependentUpon>frmSegmentation.cs</DependentUpon>
     </Compile>
-    <Compile Include="PostClassification\frmClassifyAdjustment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PostClassification\frmClassifyAdjustment.Designer.cs">
-      <DependentUpon>frmClassifyAdjustment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PostClassification\frmClassifyAdjustment1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PostClassification\frmClassifyAdjustment1.Designer.cs">
-      <DependentUpon>frmClassifyAdjustment1.cs</DependentUpon>
-    </Compile>
     <Compile Include="PostClassification\frmRecode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,12 +265,6 @@
     </Compile>
     <Compile Include="PostClassification\frmReName.Designer.cs">
       <DependentUpon>frmReName.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PostClassification\frmStatisticsResult.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PostClassification\frmStatisticsResult.Designer.cs">
-      <DependentUpon>frmStatisticsResult.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -282,6 +298,10 @@
       <Name>GFS.Common</Name>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
+    <ProjectReference Include="..\GFS.License\GFS.License.csproj">
+      <Project>{F9CFBDED-A428-443F-BCEC-32B7BA2F5C2D}</Project>
+      <Name>GFS.License</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -305,8 +325,23 @@
     <EmbeddedResource Include="DataPrepare\frmSAVI.resx">
       <DependentUpon>frmSAVI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SingleSatellite\frmOOMaximumLike.resx">
+      <DependentUpon>frmOOMaximumLike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verification\frmVerifyResult.resx">
+      <DependentUpon>frmVerifyResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verification\frmAccuracyVerify.resx">
+      <DependentUpon>frmAccuracyVerify.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPreview.resx">
       <DependentUpon>frmPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostClassification\frmStatisticsResult.resx">
+      <DependentUpon>frmStatisticsResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostClassification\frmStatisticTable.resx">
+      <DependentUpon>frmStatisticTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SingleSatellite\frmDecisionTree.resx">
       <DependentUpon>frmDecisionTree.cs</DependentUpon>
@@ -332,20 +367,11 @@
     <EmbeddedResource Include="SingleSatellite\frmSegmentation.resx">
       <DependentUpon>frmSegmentation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PostClassification\frmClassifyAdjustment.resx">
-      <DependentUpon>frmClassifyAdjustment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PostClassification\frmClassifyAdjustment1.resx">
-      <DependentUpon>frmClassifyAdjustment1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PostClassification\frmRecode.resx">
       <DependentUpon>frmRecode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PostClassification\frmReName.resx">
       <DependentUpon>frmReName.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PostClassification\frmStatisticsResult.resx">
-      <DependentUpon>frmStatisticsResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -358,9 +384,7 @@
   <ItemGroup>
     <Content Include="classify.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Preview\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

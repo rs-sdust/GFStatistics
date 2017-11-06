@@ -102,18 +102,19 @@ namespace GFS.Classification
             }
 
             WaitDialogForm frmWait = new WaitDialogForm("正在分割...", "提示信息");
+                            string segImage = Path.Combine(ConstDef.PATH_TEMP, DateTime.Now.ToFileTime().ToString() + ".tif");
+                string vectorFile = Path.Combine(ConstDef.PATH_TEMP, DateTime.Now.ToFileTime().ToString() + ".shp");
             try
             {
                 frmWait.Owner = this;
                 frmWait.TopMost = false;
-
                 string cmd = ConstDef.IDL_FUN_SEGMENTONLY + ",'" + cmbIn.Text.TrimEnd() + "'," +
                             spinSegment.Value.ToString() + "," + spinMerge.Value.ToString() + "," +
-                            spinKernel.Value.ToString() + ",'" + txtOut.Text.TrimEnd() + "'";
+                            spinKernel.Value.ToString() + ",'" + txtOut.Text.TrimEnd() + "','" + vectorFile + "'";
                 EnviVars.instance.IdlModel.Execute(cmd);
 
                 if (XtraMessageBox.Show("分割完成，是否加载？","提示信息",MessageBoxButtons.OKCancel) == DialogResult.OK)
-                    MAP.AddRasterFileToMap(txtOut.Text.TrimEnd());
+                    MAP.AddShpFileToMap(vectorFile);
                 this.Close();
             }
             catch(Exception ex)
@@ -126,7 +127,7 @@ namespace GFS.Classification
                     if (fInfo.Length / (1024 * 1024) > 1)
                     {
                         if (XtraMessageBox.Show("分割完成，是否加载？", "提示信息", MessageBoxButtons.OKCancel) == DialogResult.OK)
-                            MAP.AddRasterFileToMap(txtOut.Text.TrimEnd());
+                            MAP.AddShpFileToMap(vectorFile);
                         this.Close();
                     }
                 }

@@ -63,7 +63,6 @@
             this.cBEResult.Name = "cBEResult";
             this.cBEResult.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cBEResult.Properties.ReadOnly = true;
             this.cBEResult.Size = new System.Drawing.Size(261, 20);
             this.cBEResult.TabIndex = 15;
             // 
@@ -120,9 +119,9 @@
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.memoEdit1);
-            this.groupControl2.Location = new System.Drawing.Point(441, 1);
+            this.groupControl2.Location = new System.Drawing.Point(438, -1);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(148, 151);
+            this.groupControl2.Size = new System.Drawing.Size(160, 151);
             this.groupControl2.TabIndex = 56;
             this.groupControl2.Text = "结果统计";
             // 
@@ -136,7 +135,7 @@
             this.memoEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.memoEdit1.Properties.ReadOnly = true;
             this.memoEdit1.Properties.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.memoEdit1.Size = new System.Drawing.Size(144, 127);
+            this.memoEdit1.Size = new System.Drawing.Size(156, 127);
             this.memoEdit1.TabIndex = 1;
             this.memoEdit1.UseOptimizedRendering = true;
             // 
@@ -144,22 +143,23 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 152);
+            this.ClientSize = new System.Drawing.Size(424, 162);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.siBHelp);
             this.Controls.Add(this.siBConcel);
             this.Controls.Add(this.siBOK);
             this.Controls.Add(this.groupControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(605, 190);
+            this.MaximumSize = new System.Drawing.Size(605, 191);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(430, 190);
+            this.MinimumSize = new System.Drawing.Size(430, 191);
             this.Name = "frmStatisticsResult";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "结果统计";
-            this.Load += new System.EventHandler(this.siBHelp_Click);
+            this.Load += new System.EventHandler(this.frmStatisticsResult_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cBEResult.Properties)).EndInit();

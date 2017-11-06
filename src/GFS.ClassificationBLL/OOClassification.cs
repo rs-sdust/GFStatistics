@@ -210,7 +210,7 @@ namespace GFS.ClassificationBLL
                     if (current2.Checked)
                     {
                         //geometryCollection.AddGeometryCollection(current2.Element.Geometry as IGeometryCollection);
-                        roiGeometryList.Add(new ROIGeometry(current.Value.ID, current.Value.Name, current.Value.ID, current2.Element.Geometry));
+                        roiGeometryList.Add(new ROIGeometry(current.Value.ID, current.Value.Name, current.Value.Color, current2.Element.Geometry));
                     }
                 }
                 //if (geometryCollection.GeometryCount > 0)
@@ -286,6 +286,7 @@ namespace GFS.ClassificationBLL
                     }
                     finally
                     {
+                        if (featureClass != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(featureClass);
                     }
 

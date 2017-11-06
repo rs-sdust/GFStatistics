@@ -72,6 +72,7 @@ namespace GFS.Common
             }
             finally
             {
+                if (enumLayer != null)
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(enumLayer);
             }
             return list;
@@ -99,6 +100,12 @@ namespace GFS.Common
                     {
                         case DataType.shp:
                             workspaceFactory = new ShapefileWorkspaceFactoryClass();
+                            //关闭资源锁定   
+                            IWorkspaceFactoryLockControl ipWsFactoryLock = (IWorkspaceFactoryLockControl)workspaceFactory;
+                            if (ipWsFactoryLock.SchemaLockingEnabled)
+                            {
+                                ipWsFactoryLock.DisableSchemaLocking();
+                            }
                             break;
                         case DataType.mdb:
                             workspaceFactory = new AccessWorkspaceFactoryClass();
@@ -134,6 +141,7 @@ namespace GFS.Common
                 {
                     workspaceFactory = new CadWorkspaceFactoryClass();
                 }
+
                 result = workspaceFactory.OpenFromFile(sFilePath, 0);
             }
             catch
@@ -316,7 +324,9 @@ namespace GFS.Common
                     }
                     finally
                     {
+                        if (enumDatasetName != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(enumDatasetName);
+                        if (workspace != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(workspace);
                     }
                 }
@@ -361,6 +371,7 @@ namespace GFS.Common
                     }
                     finally
                     {
+                        if (workspace != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(workspace);
                     }
                 }
@@ -415,6 +426,7 @@ namespace GFS.Common
                                 }
                                 finally
                                 {
+                                    if (subsetNames != null)
                                     System.Runtime.InteropServices.Marshal.ReleaseComObject(subsetNames);
                                 }
                                 break;
@@ -432,7 +444,9 @@ namespace GFS.Common
                     }
                     finally
                     {
+                        if (enumDatasetName != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(enumDatasetName);
+                        if (workspace != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(workspace);
                     }
                 }
@@ -463,6 +477,7 @@ namespace GFS.Common
                 }
                 finally
                 {
+                    if (featureWorkspace != null)
                     System.Runtime.InteropServices.Marshal.ReleaseComObject(featureWorkspace);
                 }
             }
@@ -510,6 +525,7 @@ namespace GFS.Common
                 }
                 finally
                 {
+                    if (featureClass != null)
                     System.Runtime.InteropServices.Marshal.ReleaseComObject(featureClass);
                 }
                 result = true;
@@ -611,7 +627,7 @@ namespace GFS.Common
                         IDatasetName datasetName;
                         while ((datasetName = enumDatasetName.Next()) != null)
                         {
-                            if (fInfo.Name.StartsWith(datasetName.Name))
+                            if (fInfo.Name==(datasetName.Name+".shp"))
                             {
                                 break;
                             }
@@ -628,7 +644,9 @@ namespace GFS.Common
                     }
                     finally
                     {
+                        if (enumDatasetName != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(enumDatasetName);
+                        if (workspace != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(workspace);
                     }
                 }
@@ -652,6 +670,235 @@ namespace GFS.Common
             }
             return result;
         }
+
+        ///<summary>
+        /// 获取shp数值字段列表
+        /// </summary>
+        /// <param name="inFile">输入shp文件名</param>
+        /// <param name="fields">字段列表</param>
+        public static void GetValueFields(string inFile, List<string> fields)
+        {
+            IWorkspaceFactory pWorkspaceFactory = null;
+            IFeatureWorkspace pFeatureWorkspace=null;
+            IFeatureClass featureClass = null;
+            //IFeatureLayer pFeatureLayer;
+            try
+            {
+                //获取当前路径和文件名
+                if (inFile == "") return;
+                int Index = inFile.LastIndexOf("\\");
+                string filePath = inFile.Substring(0, Index);
+                string fileName = inFile.Substring(Index + 1);
+
+                //打开工作空间并获取字段列表
+                pWorkspaceFactory = new ShapefileWorkspaceFactoryClass();
+                pFeatureWorkspace = (IFeatureWorkspace)pWorkspaceFactory.OpenFromFile(filePath, 0);
+                //pFeatureLayer = new FeatureLayerClass();
+                featureClass = pFeatureWorkspace.OpenFeatureClass(fileName);
+                int nFields = featureClass.Fields.FieldCount;
+                for (int i = 0; i < nFields; i++)
+                {
+                    //if (featureClass.Fields.get_Field(i).Type == esriFieldType.esriFieldTypeDouble ||
+                    //    featureClass.Fields.get_Field(i).Type == esriFieldType.esriFieldTypeInteger ||
+                    //    featureClass.Fields.get_Field(i).Type == esriFieldType.esriFieldTypeSmallInteger)
+                    {
+                        string name = featureClass.Fields.get_Field(i).Name;
+                        fields.Add(name);
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (featureClass != null)
+                    Marshal.ReleaseComObject(featureClass);
+                if (pFeatureWorkspace != null)
+                    Marshal.ReleaseComObject(pFeatureWorkspace);
+                if (pWorkspaceFactory != null)
+                    Marshal.ReleaseComObject(pWorkspaceFactory);
+                
+            }
+
+        }
+
+        /// <summary>
+        /// 获取shp字段列表
+        /// </summary>
+        /// <param name="featureClass">The feature class.</param>
+        /// <param name="fieldType">0只获取数值字段；1获取除数值外字段；2获取所有字段</param>
+        /// <param name="fields">字段列表</param>
+        public static void GetFields(IFeatureClass featureClass, int fieldType, List<string> fields)
+        {
+            int nFields = featureClass.Fields.FieldCount;
+            if (fieldType==0)
+            {
+                for (int i = 0; i < nFields; i++)
+                {
+                    if (featureClass.Fields.get_Field(i).Type.GetHashCode() < 4)
+                    {
+                        string name = featureClass.Fields.get_Field(i).Name;
+                        fields.Add(name);
+                    }
+                }
+            }
+            else if (fieldType == 1)
+            {
+                for (int i = 0; i < nFields; i++)
+                {
+                    if (featureClass.Fields.get_Field(i).Type.GetHashCode() > 3)
+                    {
+                        string name = featureClass.Fields.get_Field(i).Name;
+                        fields.Add(name);
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < nFields; i++)
+                {
+                        string name = featureClass.Fields.get_Field(i).Name;
+                        fields.Add(name);
+                }
+            }
+
+
+        }
+
+        /// <summary>
+        /// Creates SHPfile.
+        /// </summary>
+        /// <param name="sFilePath">The file path.</param>
+        /// <param name="geometry">The geometry.</param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        public static bool CreateShpFile(string sFilePath, IGeometry geometry)
+        {
+            string directoryName = System.IO.Path.GetDirectoryName(sFilePath);
+            IFeatureWorkspace featureWorkspace = EngineAPI.OpenWorkspace(directoryName, DataType.shp) as IFeatureWorkspace;
+            bool result;
+            if (featureWorkspace == null)
+            {
+                result = false;
+            }
+            else
+            {
+                try
+                {
+                    string fileNameWithoutExtension = System.IO.Path.GetFileNameWithoutExtension(sFilePath);
+                    result = EngineAPI.CreateGeometryLayer(fileNameWithoutExtension, geometry, featureWorkspace, "");
+                }
+                finally
+                {
+                    if (featureWorkspace != null)
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(featureWorkspace);
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Creates the geometry layer.
+        /// </summary>
+        /// <param name="sName">Name of the s.</param>
+        /// <param name="geometry">The geometry.</param>
+        /// <param name="featureWorkspace">The feature workspace.</param>
+        /// <param name="sAlias">The s alias.</param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        public static bool CreateGeometryLayer(string sName, IGeometry geometry, IFeatureWorkspace featureWorkspace, string sAlias = "")
+        {
+            bool result;
+            try
+            {
+                IObjectClassDescription objectClassDescription = new FeatureClassDescriptionClass();
+                IFields requiredFields = objectClassDescription.RequiredFields;
+                string shapeFieldName = (objectClassDescription as IFeatureClassDescription).ShapeFieldName;
+                int index = requiredFields.FindField(shapeFieldName);
+                IGeometryDef geometryDef = requiredFields.get_Field(index).GeometryDef;
+                IGeometryDefEdit geometryDefEdit = geometryDef as IGeometryDefEdit;
+                geometryDefEdit.GeometryType_2 = geometry.GeometryType;
+                geometryDefEdit.SpatialReference_2 = geometry.SpatialReference;
+                IFeatureClass featureClass = featureWorkspace.CreateFeatureClass(sName, requiredFields, new UIDClass
+                {
+                    Value = "esriGeoDatabase.Feature"
+                }, null, esriFeatureType.esriFTSimple, shapeFieldName, "");
+                try
+                {
+                    IFeature feature = featureClass.CreateFeature();
+                    feature.Shape = geometry;
+                    feature.Store();
+                    if (!string.IsNullOrEmpty(sAlias))
+                    {
+                        EngineAPI.AlterDatasetAlias(featureClass, sAlias);
+                    }
+                }
+                finally
+                {
+                    if (featureClass != null)
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(featureClass);
+                }
+                result = true;
+            }
+            catch
+            {
+                result = false;
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// Determines whether [DataSet exist] [the specified workspace].
+        /// </summary>
+        /// <param name="pWorkspace">The p workspace.</param>
+        /// <param name="sName">Name of the s.</param>
+        /// <param name="type">The type.</param>
+        /// <returns><c>true</c> if [is name exist] [the specified p workspace]; otherwise, <c>false</c>.</returns>
+        public static bool IsNameExist(IWorkspace pWorkspace, string sName, esriDatasetType type = esriDatasetType.esriDTFeatureClass)
+        {
+            return (pWorkspace as IWorkspace2).get_NameExists(type, sName);
+        }
+
+        /// <summary>
+        /// Deletes the dataset.
+        /// </summary>
+        /// <param name="targetWorkspace">The target workspace.</param>
+        /// <param name="sTargetName">Name of the s target.</param>
+        /// <param name="type">The type.</param>
+        public static void DeleteDataset(IWorkspace targetWorkspace, string sTargetName, esriDatasetType type = esriDatasetType.esriDTFeatureClass)
+        {
+            IDatasetName datasetName = null;
+            switch (type)
+            {
+                case esriDatasetType.esriDTFeatureDataset:
+                    datasetName = new FeatureDatasetNameClass();
+                    break;
+                case esriDatasetType.esriDTFeatureClass:
+                    datasetName = new FeatureClassNameClass();
+                    break;
+                default:
+                    if (type == esriDatasetType.esriDTTable)
+                    {
+                        datasetName = new TableNameClass();
+                    }
+                    break;
+            }
+            if (datasetName != null)
+            {
+                datasetName.Name = sTargetName;
+                datasetName.WorkspaceName = ((targetWorkspace as IDataset).FullName as IWorkspaceName);
+                EngineAPI.DeleteDataset(targetWorkspace, datasetName);
+            }
+        }
+        private static void DeleteDataset(IWorkspace targetWorkspace, IDatasetName datasetName)
+        {
+            if (EngineAPI.IsNameExist(targetWorkspace, datasetName.Name, esriDatasetType.esriDTFeatureClass))
+            {
+                (targetWorkspace as IFeatureWorkspaceManage).DeleteByName(datasetName);
+            }
+        }
+
 
     }
 }

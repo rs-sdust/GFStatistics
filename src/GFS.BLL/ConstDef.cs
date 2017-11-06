@@ -48,7 +48,8 @@ namespace GFS.BLL
         public static readonly string PATH_IDL;
         public static readonly string IDL_FUN_SEGMENTONLY = "FX_Segmentonly";
         public static readonly string IDL_FUN_NEURAL_NET = "Neural_Net_Classification_Function";
-
+        public static readonly string IDL_FUN_CONFUSION = "Confusion_Matrix_Calcute";
+        public static readonly string IDL_FUN_MAXIMUM = "MAXIMUM_LIKELIHOOD_CLASSIFICATION";
         /// <summary>
         /// esri符号文件
         /// </summary>

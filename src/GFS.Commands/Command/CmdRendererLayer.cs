@@ -67,21 +67,27 @@ namespace GFS.Commands
                 }
                 else
                 {
-                    if (this.m_currentLayer is IRasterLayer)
+                    try
                     {
-                        string format = ((this.m_currentLayer as IRasterLayer).Raster as IRaster2).RasterDataset.Format;
-                        if (format.StartsWith("Cache", StringComparison.OrdinalIgnoreCase))
+                        if (this.m_currentLayer is IRasterLayer)
                         {
-                            result = false;
-                            return result;
+                            string format = ((this.m_currentLayer as IRasterLayer).Raster as IRaster2).RasterDataset.Format;
+                            if (format.StartsWith("Cache", StringComparison.OrdinalIgnoreCase))
+                            {
+                                result = false;
+                                return result;
+                            }
+                            if ((this.m_currentLayer as IRasterLayer).BandCount > 1)
+                            {
+                                result = false;
+                                return result;
+                            }
                         }
-                        if ((this.m_currentLayer as IRasterLayer).BandCount > 1)
-                        {
-                            result = false;
-                            return result;
-                        }
+                        result = true;
                     }
-                    result = true;
+                    catch (Exception)
+                    { result = false; }
+
                 }
                 return result;
             }

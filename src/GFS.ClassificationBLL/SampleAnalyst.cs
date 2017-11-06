@@ -257,6 +257,7 @@ namespace GFS.ClassificationBLL
                     }
                     finally
                     {
+                        if (featureClass != null)
                         System.Runtime.InteropServices.Marshal.ReleaseComObject(featureClass);
                     }
 

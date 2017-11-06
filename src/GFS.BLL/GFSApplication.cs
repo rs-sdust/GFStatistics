@@ -106,6 +106,7 @@ namespace GFS.BLL
 
             (mapControl as IMapControlEvents2_Event).OnMouseMove += new IMapControlEvents2_OnMouseMoveEventHandler(this.mapControl_OnMouseMove);
             (mapControl as IMapControlEvents2_Event).OnAfterScreenDraw += new IMapControlEvents2_OnAfterScreenDrawEventHandler(this.mapControl_OnAfterScreenDraw);
+            (mapControl as IMapControlEvents2_Event).OnMouseDown += new IMapControlEvents2_OnMouseDownEventHandler(this.mapControl_OnMouseDown);
 
             (tocControl as ITOCControlEvents_Event).OnMouseDown += new ITOCControlEvents_OnMouseDownEventHandler(this.tocControl_OnMouseDown);
             (tocControl as ITOCControlEvents_Event).OnDoubleClick += new ITOCControlEvents_OnDoubleClickEventHandler(this.tocControl_OnDoubleClick);
@@ -308,7 +309,22 @@ namespace GFS.BLL
         {
             this.GetStatusXY(mapX, mapY);
         }
-
+        private void mapControl_OnMouseDown(int button, int shift, int x, int y, double mapX, double mapY)
+        {
+            //按下中键绑定移动图层命令
+            ITool tool=null;
+            if (button == 4)
+            {
+                //清空地图工具，防止误操作
+                tool = this._mapControl.CurrentTool;
+                this._mapControl.CurrentTool = null;
+                //更改鼠标样式
+                _mapControl.MousePointer = esriControlsMousePointer.esriPointerPan;
+                //拖动图层
+                _mapControl.Pan();
+            }
+            this._mapControl.MousePointer = esriControlsMousePointer.esriPointerArrow;
+        }
         private void mapControl_OnAfterScreenDraw(int hdc)
         {
             this.UpdateLyrList(this._mapControl.Map);
@@ -378,6 +394,7 @@ namespace GFS.BLL
                                 RefreshView(layer);
                             }
                         }
+                            
                     }
                     else
                     {
@@ -412,7 +429,20 @@ namespace GFS.BLL
         //
         private void MainFormClosed(object sender, FormClosedEventArgs e)
         {
-            history.SaveHistory();
+            try
+            {
+                history.SaveHistory();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message);
+                Log.WriteLog(typeof(GFSApplication), ex);
+            }
+            try
+            { CommonAPI.DelectDir(ConstDef.PATH_TEMP); }
+            catch (Exception)
+            { }
+
         }
         //
         //创建RGB波段组合菜单项
@@ -759,7 +789,37 @@ namespace GFS.BLL
                             point.X = mapX;
                             point.Y = mapY;
                             point.Project(projectedCoordinateSystem.GeographicCoordinateSystem);
-                            this._barItemXY.Caption = string.Format("坐标：{0},{1}", point.X, point.Y);
+                            double lon = point.X;
+                            double lat = point.Y;
+                            int lon_degree = (int)Math.Floor(Convert.ToDecimal(lon));
+                            int lat_degree = (int)Math.Floor(Convert.ToDecimal(lat));
+                            lon = (lon - lon_degree)*60;
+                            lat = (lat - lat_degree) * 60;
+                            int lon_m = (int)Math.Floor(Convert.ToDecimal(lon));
+                            int lat_m = (int)Math.Floor(Convert.ToDecimal(lat));
+                            lon = (lon - lon_m) * 60;
+                            lat = (lat - lat_m) * 60;
+                            int lon_s = (int)Math.Floor(Convert.ToDecimal(lon));
+                            int lat_s = (int)Math.Floor(Convert.ToDecimal(lat));
+                            string strLon = "";
+                            string strLat = "";
+                            if (lon_degree > 0)
+                            {
+                                strLon = lon_degree + "° " + lon_m + "′ " + lon_s + "″ E";                      
+                            }
+                            else 
+                            {
+                                strLon = lon_degree + "° " + lon_m + "′ " + lon_s + "″ E";
+                            }
+                            if (lat_degree > 0)
+                            {
+                                strLat = lat_degree + "° " + lat_m + "′ " + lat_s + "″ N";
+                            }
+                            else
+                            {
+                                strLat = lat_degree + "° " + lat_m + "′ " + lat_s + "″ N";
+                            }
+                            this._barItemXY.Caption = string.Format("坐标：{0},{1}", strLon, strLat);
                         }
                     }
                     else
@@ -867,6 +927,8 @@ namespace GFS.BLL
             {
             }
         }
+
+
 
     }
 }

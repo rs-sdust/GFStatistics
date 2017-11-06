@@ -81,6 +81,12 @@
             this.btnFramReset = new DevExpress.XtraBars.BarButtonItem();
             this.btnFramClearBat = new DevExpress.XtraBars.BarButtonItem();
             this.btnFramExport = new DevExpress.XtraBars.BarButtonItem();
+            this.bsiVegIndex = new DevExpress.XtraBars.BarSubItem();
+            this.btnDVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnEVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnNDVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSAVI = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupFile = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupTask = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -89,6 +95,8 @@
             this.ribbonPageGroupSingle = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupMulti = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupAfter = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.repositoryItemPopupContainerEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -121,6 +129,9 @@
             this.barEditItemLayer = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.barBtnSwipe = new DevExpress.XtraBars.BarButtonItem();
+            this.bsiBaseMap = new DevExpress.XtraBars.BarSubItem();
+            this.barBtnPOI = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnImagery = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -135,12 +146,6 @@
             this.popupMenulayer = new DevExpress.XtraBars.PopupMenu(this.components);
             this.popupMenuFrame = new DevExpress.XtraBars.PopupMenu(this.components);
             this.popupMenuRGB = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.bsiVegIndex = new DevExpress.XtraBars.BarSubItem();
-            this.btnNDVI = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDVI = new DevExpress.XtraBars.BarButtonItem();
-            this.btnEVI = new DevExpress.XtraBars.BarButtonItem();
-            this.btnRVI = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSAVI = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pccRight)).BeginInit();
@@ -406,6 +411,9 @@
             this.image16.Images.SetKeyName(42, "ndvi.png");
             this.image16.Images.SetKeyName(43, "rvi.png");
             this.image16.Images.SetKeyName(44, "savi.png");
+            this.image16.Images.SetKeyName(45, "basemap.png");
+            this.image16.Images.SetKeyName(46, "image.png");
+            this.image16.Images.SetKeyName(47, "poi.png");
             // 
             // btnAddData
             // 
@@ -758,6 +766,65 @@
             this.btnFramExport.Name = "btnFramExport";
             this.btnFramExport.Tag = "CmdExportMap";
             // 
+            // bsiVegIndex
+            // 
+            this.bsiVegIndex.Caption = "植被指数";
+            this.bsiVegIndex.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.bsiVegIndex.Id = 11;
+            this.bsiVegIndex.LargeImageIndex = 21;
+            this.bsiVegIndex.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnDVI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnRVI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnEVI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnNDVI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSAVI)});
+            this.bsiVegIndex.Name = "bsiVegIndex";
+            // 
+            // btnDVI
+            // 
+            this.btnDVI.Caption = "差值植被指数(DVI)";
+            this.btnDVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnDVI.Id = 13;
+            this.btnDVI.ImageIndex = 40;
+            this.btnDVI.Name = "btnDVI";
+            this.btnDVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDVI_ItemClick);
+            // 
+            // btnRVI
+            // 
+            this.btnRVI.Caption = "比值植被指数(RVI)";
+            this.btnRVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnRVI.Id = 15;
+            this.btnRVI.ImageIndex = 43;
+            this.btnRVI.Name = "btnRVI";
+            this.btnRVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRVI_ItemClick);
+            // 
+            // btnEVI
+            // 
+            this.btnEVI.Caption = "增强型植被指数(EVI)";
+            this.btnEVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnEVI.Id = 14;
+            this.btnEVI.ImageIndex = 41;
+            this.btnEVI.Name = "btnEVI";
+            this.btnEVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEVI_ItemClick);
+            // 
+            // btnNDVI
+            // 
+            this.btnNDVI.Caption = "归一化植被指数(NDVI)";
+            this.btnNDVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnNDVI.Id = 12;
+            this.btnNDVI.ImageIndex = 42;
+            this.btnNDVI.Name = "btnNDVI";
+            this.btnNDVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNDVI_ItemClick);
+            // 
+            // btnSAVI
+            // 
+            this.btnSAVI.Caption = "土壤调节植被指数(SAVI)";
+            this.btnSAVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnSAVI.Id = 16;
+            this.btnSAVI.ImageIndex = 44;
+            this.btnSAVI.Name = "btnSAVI";
+            this.btnSAVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSAVI_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -767,7 +834,9 @@
             this.ribbonPageGroupSample,
             this.ribbonPageGroupSingle,
             this.ribbonPageGroupMulti,
-            this.ribbonPageGroupAfter});
+            this.ribbonPageGroupAfter,
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "ribbonPage1";
             // 
@@ -818,9 +887,17 @@
             // ribbonPageGroupAfter
             // 
             this.ribbonPageGroupAfter.ItemLinks.Add(this.bsiAfter);
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnVerify, true);
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnCropMosaic, true);
             this.ribbonPageGroupAfter.Name = "ribbonPageGroupAfter";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnVerify);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnCropMosaic);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             // 
             // repositoryItemPopupContainerEdit1
             // 
@@ -993,8 +1070,11 @@
             this.barBtnSample,
             this.barBtnAfter,
             this.barEditItemLayer,
-            this.barBtnSwipe});
-            this.barManager.MaxItemId = 17;
+            this.barBtnSwipe,
+            this.bsiBaseMap,
+            this.barBtnImagery,
+            this.barBtnPOI});
+            this.barManager.MaxItemId = 21;
             this.barManager.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemComboBox2});
             // 
@@ -1022,7 +1102,8 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.barBtnSample),
             new DevExpress.XtraBars.LinkPersistInfo(this.barBtnAfter),
             new DevExpress.XtraBars.LinkPersistInfo(this.barEditItemLayer),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barBtnSwipe)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.barBtnSwipe),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bsiBaseMap)});
             this.barTop.OptionsBar.AllowQuickCustomization = false;
             this.barTop.Text = "Tools";
             // 
@@ -1104,7 +1185,7 @@
             this.barBtnIdentity.Id = 9;
             this.barBtnIdentity.ImageIndex = 11;
             this.barBtnIdentity.Name = "barBtnIdentity";
-            this.barBtnIdentity.Tag = "CmdIdentifyTool";
+            this.barBtnIdentity.Tag = "ControlToolsMapInquiry_Identify";
             // 
             // barBtnEagleEye
             // 
@@ -1157,6 +1238,33 @@
             this.barBtnSwipe.ImageIndex = 14;
             this.barBtnSwipe.Name = "barBtnSwipe";
             this.barBtnSwipe.Tag = "ControlToolsMapInquiry_Swipe";
+            // 
+            // bsiBaseMap
+            // 
+            this.bsiBaseMap.Caption = "底图";
+            this.bsiBaseMap.Id = 17;
+            this.bsiBaseMap.ImageIndex = 45;
+            this.bsiBaseMap.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barBtnPOI),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barBtnImagery)});
+            this.bsiBaseMap.Name = "bsiBaseMap";
+            this.bsiBaseMap.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
+            // barBtnPOI
+            // 
+            this.barBtnPOI.Caption = "街区图";
+            this.barBtnPOI.Id = 20;
+            this.barBtnPOI.ImageIndex = 47;
+            this.barBtnPOI.Name = "barBtnPOI";
+            this.barBtnPOI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnPOI_ItemClick);
+            // 
+            // barBtnImagery
+            // 
+            this.barBtnImagery.Caption = "影像图";
+            this.barBtnImagery.Id = 19;
+            this.barBtnImagery.ImageIndex = 46;
+            this.barBtnImagery.Name = "barBtnImagery";
+            this.barBtnImagery.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnImagery_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -1276,65 +1384,6 @@
             this.popupMenuRGB.Name = "popupMenuRGB";
             this.popupMenuRGB.Ribbon = this.ribbonControl;
             // 
-            // bsiVegIndex
-            // 
-            this.bsiVegIndex.Caption = "植被指数计算";
-            this.bsiVegIndex.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.bsiVegIndex.Id = 11;
-            this.bsiVegIndex.LargeImageIndex = 21;
-            this.bsiVegIndex.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnDVI),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnRVI),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnEVI),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnNDVI),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnSAVI)});
-            this.bsiVegIndex.Name = "bsiVegIndex";
-            // 
-            // btnNDVI
-            // 
-            this.btnNDVI.Caption = "归一化植被指数(NDVI)";
-            this.btnNDVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnNDVI.Id = 12;
-            this.btnNDVI.ImageIndex = 42;
-            this.btnNDVI.Name = "btnNDVI";
-            this.btnNDVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNDVI_ItemClick);
-            // 
-            // btnDVI
-            // 
-            this.btnDVI.Caption = "差值植被指数(DVI)";
-            this.btnDVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnDVI.Id = 13;
-            this.btnDVI.ImageIndex = 40;
-            this.btnDVI.Name = "btnDVI";
-            this.btnDVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDVI_ItemClick);
-            // 
-            // btnEVI
-            // 
-            this.btnEVI.Caption = "增强型植被指数(EVI)";
-            this.btnEVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnEVI.Id = 14;
-            this.btnEVI.ImageIndex = 41;
-            this.btnEVI.Name = "btnEVI";
-            this.btnEVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEVI_ItemClick);
-            // 
-            // btnRVI
-            // 
-            this.btnRVI.Caption = "比值植被指数(RVI)";
-            this.btnRVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnRVI.Id = 15;
-            this.btnRVI.ImageIndex = 43;
-            this.btnRVI.Name = "btnRVI";
-            this.btnRVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRVI_ItemClick);
-            // 
-            // btnSAVI
-            // 
-            this.btnSAVI.Caption = "土壤调节植被指数(SAVI)";
-            this.btnSAVI.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSAVI.Id = 16;
-            this.btnSAVI.ImageIndex = 44;
-            this.btnSAVI.Name = "btnSAVI";
-            this.btnSAVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSAVI_ItemClick);
-            // 
             // frmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -1353,7 +1402,7 @@
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "Classification";
+            this.Text = "分类";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
@@ -1506,6 +1555,11 @@
         private DevExpress.XtraBars.BarButtonItem btnEVI;
         private DevExpress.XtraBars.BarButtonItem btnRVI;
         private DevExpress.XtraBars.BarButtonItem btnSAVI;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarSubItem bsiBaseMap;
+        private DevExpress.XtraBars.BarButtonItem barBtnPOI;
+        private DevExpress.XtraBars.BarButtonItem barBtnImagery;
         //private DevExpress.XtraBars.Docking.ControlContainer controlContainer1;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;

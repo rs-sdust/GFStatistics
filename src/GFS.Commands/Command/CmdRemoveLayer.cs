@@ -130,6 +130,12 @@ namespace GFS.Commands
                 ILayer currentLayer = CommandAPI.GetCurrentLayer(this.m_hookHelper);
                 if (currentLayer != null)
                 {
+                    if (!(currentLayer is MapServerRESTLayer))
+                    {
+                        IDataLayer2 pDataLayer = currentLayer as IDataLayer2;
+                        pDataLayer.Disconnect();
+                    }
+                    
                     this.m_hookHelper.ActiveView.FocusMap.DeleteLayer(currentLayer);
                     (this.m_hookHelper.ActiveView.FocusMap as IActiveView).Refresh();
                     GFS.BLL.EnviVars.instance.TOCControl.Update();

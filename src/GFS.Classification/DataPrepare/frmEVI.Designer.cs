@@ -83,7 +83,7 @@
             // 
             // cBEBlue
             // 
-            this.cBEBlue.EditValue = "Band_2";
+            this.cBEBlue.EditValue = "";
             this.cBEBlue.Location = new System.Drawing.Point(91, 37);
             this.cBEBlue.Name = "cBEBlue";
             this.cBEBlue.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -101,7 +101,7 @@
             // 
             // cBENIRed
             // 
-            this.cBENIRed.EditValue = "Band_4";
+            this.cBENIRed.EditValue = "";
             this.cBENIRed.Location = new System.Drawing.Point(91, 116);
             this.cBENIRed.Name = "cBENIRed";
             this.cBENIRed.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -111,7 +111,7 @@
             // 
             // cBERed
             // 
-            this.cBERed.EditValue = "Band_3";
+            this.cBERed.EditValue = "";
             this.cBERed.Location = new System.Drawing.Point(92, 76);
             this.cBERed.Name = "cBERed";
             this.cBERed.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -208,6 +208,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbInRaster.Size = new System.Drawing.Size(252, 20);
             this.cmbInRaster.TabIndex = 15;
+            this.cmbInRaster.SelectedIndexChanged += new System.EventHandler(this.cmbInRaster_SelectedIndexChanged);
             // 
             // labelControl2
             // 
@@ -281,7 +282,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 432);
+            this.ClientSize = new System.Drawing.Size(416, 432);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl1);
@@ -291,12 +292,12 @@
             this.Controls.Add(this.siBOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(621, 461);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(422, 461);
             this.Name = "frmEVI";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "增强型植被指数(EVI)";
             this.Load += new System.EventHandler(this.frmEVI_Load);

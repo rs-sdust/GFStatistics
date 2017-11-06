@@ -35,6 +35,7 @@ namespace GFS.Classification
 {
     public partial class frmClipRaster : DevExpress.XtraEditors.XtraForm
     {
+
         public frmClipRaster()
         {
             InitializeComponent();

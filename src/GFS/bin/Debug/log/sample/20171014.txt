@@ -1,0 +1,66 @@
+
+ 
+记录时间：2017-10-14 15:24:48,324 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 选择的样本数大于样本总量！
+   在 GFS.SampleBLL.SampleSelection.Sampling(String inFirstUnit, String firstUnit_Name, String inSecondUnit, String inCultivation, Int32 sampleNum, String outSample) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleSelection.cs:行号 216
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 127
+
+ 
+记录时间：2017-10-14 15:25:54,563 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 选择的样本数大于样本总量！
+   在 GFS.SampleBLL.SampleSelection.Sampling(String inFirstUnit, String firstUnit_Name, String inSecondUnit, String inCultivation, Int32 sampleNum, String outSample) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleSelection.cs:行号 216
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 127
+
+ 
+记录时间：2017-10-14 15:29:33,930 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 选择的样本数大于样本总量！
+   在 GFS.SampleBLL.SampleSelection.Sampling(String inFirstUnit, String firstUnit_Name, String inSecondUnit, String inCultivation, Int32 sampleNum, String outSample) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleSelection.cs:行号 216
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 127
+
+ 
+记录时间：2017-10-14 15:30:24,354 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 选择的样本数大于样本总量！
+   在 GFS.SampleBLL.SampleSelection.Sampling(String inFirstUnit, String firstUnit_Name, String inSecondUnit, String inCultivation, Int32 sampleNum, String outSample) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleSelection.cs:行号 216
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 127
+
+ 
+记录时间：2017-10-14 16:33:26,900 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 选择的样本数大于样本总量！
+   在 GFS.SampleBLL.SampleSelection.Sampling(String inFirstUnit, String firstUnit_Name, String inSecondUnit, String inCultivation, Int32 sampleNum, String outSample) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleSelection.cs:行号 217
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 127
+
+ 
+记录时间：2017-10-14 16:45:49,865 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.SampleBLL.SampleSelection.Sampling(String inFirstUnit, String firstUnit_Name, String inSecondUnit, String inCultivation, Int32 sampleNum, String outSample) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleSelection.cs:行号 229
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 127

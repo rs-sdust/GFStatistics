@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using GFS.BLL;
 using ESRI.ArcGIS.Geoprocessor;
 using GFS.Commands.UI;
-using ProductionMeta;
+//using ProductionMeta;
 
 namespace GFS.Test
 {
@@ -111,7 +111,7 @@ namespace GFS.Test
             openDialog.Title = "选择产品数据";
             openDialog.Multiselect = true;
             openDialog.Title = "请选择文件";
-            openDialog.Filter = "tiff(*.tif)|*.tif|All files(*.*)|*.*";
+            openDialog.Filter = "tiff(*.tif)|*.tif|ShapeFile|*.shp|All files(*.*)|*.*";
             if (openDialog.ShowDialog() == DialogResult.OK)
             {
                 foreach (string file in openDialog.FileNames)
@@ -123,32 +123,72 @@ namespace GFS.Test
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            if (listBoxFile.Items.Count < 1)
-                return;
-            //if (string.IsNullOrEmpty(textBoxDataSource.Text.TrimEnd()))
-            //{
-            //    MessageBox.Show("请填写数据源！");
-            //}
-            //else
+            if (this.listBoxFile.Items.Count < 1)
             {
-                foreach (string file in this.listBoxFile.Items)
-                {
-                    ProductMeta meta = new ProductMeta(file,this.textBoxDataSource.Text.TrimEnd(),textBoxRegion.Text.TrimEnd());
-                    meta.WriteMeta();
-                }
-                MessageBox.Show("Finished.");
+                return;
             }
+            foreach (var item in listBoxFile.Items)
+            {
+                ProductMeta meta = new ProductMeta(item.ToString(), textBoxDataSource.Text, textBoxRegion.Text, txtDesc.Text, txtSubClass.Text);
+                if (item.ToString().EndsWith(".shp"))
+                    meta.WriteShpMeta();
+                else
+                    meta.WriteGeoMeta();
+                ProductQuickView view = new ProductQuickView(item.ToString());
+                view.Create();
+            }
+            MessageBox.Show("Finished.");
+
         }
 
         private void buttonRemove_Click(object sender, EventArgs e)
         {
-            if (this.listBoxFile.SelectedItems.Count > 0)
+            foreach (int index in this.listBoxFile.SelectedIndices)
             {
-                foreach (var item in listBoxFile.SelectedItems)
+                this.listBoxFile.Items.RemoveAt(index);
+            }
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Title = "选择文档数据";
+            openDialog.Multiselect = true;
+            openDialog.Title = "请选择文件";
+            openDialog.Filter = "tiff(*.xls)|*.xls|All files(*.*)|*.*";
+            if (openDialog.ShowDialog() == DialogResult.OK)
+            {
+                foreach (string file in openDialog.FileNames)
                 {
-                    this.listBoxFile.Items.Remove(item);
+                    this.listBox2.Items.Add(file);
                 }
             }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            if (this.listBox2.SelectedItems.Count > 0)
+            {
+                foreach (var item in listBox2.SelectedItems)
+                {
+                    this.listBox2.Items.Remove(item);
+                }
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (this.listBox2.Items.Count < 1)
+            {
+                return;
+            }
+            foreach (var item in listBox2.Items)
+            {
+                ProductMeta meta = new ProductMeta(item.ToString(), "", txtDocRegion.Text, txtDocDesc.Text, txtDocSub.Text);
+                meta.WriteDocMeta();
+            }
+            MessageBox.Show("Finished.");
         }
 
     }

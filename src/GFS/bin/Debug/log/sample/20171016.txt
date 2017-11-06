@@ -1,0 +1,85 @@
+
+ 
+记录时间：2017-10-16 09:55:51,590 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Sample.frmSampleSimulation property: [(null)] - 
+错误描述：Exception
+ 
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Convert.ToInt32(String value)
+   在 GFS.Sample.frmSampleSimulation.siBOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSampleSimulation.cs:行号 242
+
+ 
+记录时间：2017-10-16 09:57:31,734 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 统计面积失败：
+对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.SampleBLL.SampleFrame.CalLandArea(String unitFile, String framLand, String& msg) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleFrame.cs:行号 260
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 131
+
+ 
+记录时间：2017-10-16 09:58:06,773 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 统计面积失败：
+对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.SampleBLL.SampleFrame.CalLandArea(String unitFile, String framLand, String& msg) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleFrame.cs:行号 260
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 131
+
+ 
+记录时间：2017-10-16 10:43:32,853 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 统计面积失败：
+对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.SampleBLL.SampleFrame.CalLandArea(String unitFile, String framLand, String& msg) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleFrame.cs:行号 260
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 131
+
+ 
+记录时间：2017-10-16 10:47:29,917 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 统计面积失败：
+对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.SampleBLL.SampleFrame.CalLandArea(String unitFile, String framLand, String& msg) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleFrame.cs:行号 260
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 131
+
+ 
+记录时间：2017-10-16 10:49:02,899 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 统计面积失败：
+对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.SampleBLL.SampleFrame.CalLandArea(String unitFile, String framLand, String& msg) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleFrame.cs:行号 260
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 131
+
+ 
+记录时间：2017-10-16 10:49:37,197 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.frmSymbolSelector property: [(null)] - 
+错误描述：Exception
+ 
+System.Exception: 统计面积失败：
+对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.SampleBLL.SampleFrame.CalLandArea(String unitFile, String framLand, String& msg) 位置 G:\高分统计项目一期\trunk\src\GFS.SampleBLL\SampleFrame.cs:行号 260
+   在 GFS.Sample.frmSamplingSelect.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Sample\frmSamplingSelect.cs:行号 131

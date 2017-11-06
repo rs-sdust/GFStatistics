@@ -37,6 +37,7 @@ namespace GFS.Commands.UI
         private void frmNewTask_Load(object sender, EventArgs e)
         {
             this.updateTime.EditValue = DateTime.Now;
+            this.txtTaskID.Text = DateTime.Now.ToString("yyyyMMddhhmmss");
         }
         private void btnTaskFile_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {

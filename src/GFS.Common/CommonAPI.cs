@@ -26,6 +26,8 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.IO;
+using System.Data;
 
 /// <summary>
 /// The Common namespace.
@@ -242,8 +244,82 @@ namespace GFS.Common
             return result;
         }
 
+        public static void SavePathToRegistry(string sPath, string sKey)
+        {
+            using (Microsoft.Win32.RegistryKey registryKey = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(CommonAPI.C_KEY, true))
+            {
+                string value = sPath;
+                if (sPath.EndsWith(".gdb", System.StringComparison.CurrentCultureIgnoreCase))
+                {
+                    value = System.IO.Path.GetDirectoryName(sPath);
+                }
+                registryKey.SetValue(sKey, value);
+                registryKey.Close();
+            }
+        }
 
+        public static void DelectDir(string srcPath)
+        {
+            try
+            {
+                DirectoryInfo dir = new DirectoryInfo(srcPath);
+                FileSystemInfo[] fileinfo = dir.GetFileSystemInfos();  //返回目录中所有文件和子目录
+                foreach (FileSystemInfo i in fileinfo)
+                {
+                    if (i is DirectoryInfo)            //判断是否文件夹
+                    {
+                        DirectoryInfo subdir = new DirectoryInfo(i.FullName);
+                        subdir.Delete(true);          //删除子目录和文件
+                    }
+                    else
+                    {
+                        File.Delete(i.FullName);      //删除指定文件
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
 
+        public static List<string> GetColumnUniqueValue(DataTable dt, string columnName)
+        {
+            DataTable uniqueDT = dt.DefaultView.ToTable(true, columnName);
+            List<string> uniqueValues = new List<string>();
+            foreach (DataRow row in uniqueDT.Rows)
+            {
+                uniqueValues.Add(row[columnName].ToString());
+            }
+            return uniqueValues;
+        }
+
+        public static void CopyShpFile(string srcFile, string desFile)
+        {
+            string srcWithoutExt = srcFile.Substring(0, srcFile.Length - 3);
+            string desWithoutExt = desFile.Substring(0, desFile.Length - 3);
+
+            string srcShx = srcWithoutExt + "shx";
+            string srcPrj = srcWithoutExt + "prj";
+            string srcDbf = srcWithoutExt + "dbf";
+
+            string desShx = desWithoutExt + "shx";
+            string desPrj = desWithoutExt + "prj";
+            string desDbf = desWithoutExt + "dbf";
+
+            try
+            {
+                File.Copy(srcFile, desFile, true);
+                File.Copy(srcShx, desShx, true);
+                File.Copy(srcPrj, desPrj, true);
+                File.Copy(srcDbf, desDbf, true);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
 
     }
 }

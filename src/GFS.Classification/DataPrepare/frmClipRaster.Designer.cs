@@ -252,12 +252,12 @@
             this.Controls.Add(this.labelCilp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(763, 311);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(465, 311);
             this.Name = "frmClipRaster";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "图像裁剪";
             this.Load += new System.EventHandler(this.frmClipRaster_Load);

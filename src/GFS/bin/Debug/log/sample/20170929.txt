@@ -1,0 +1,26 @@
+
+ 
+记录时间：2017-09-29 16:27:09,416 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdOpenLayerTable property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The index passed was not within the valid range.
+   在 ESRI.ArcGIS.Geodatabase.IRow.get_Value(Int32 Index)
+   在 GFS.Commands.UI.CtrlPageGridControl.GetDataTable(ITable pTable, IQueryFilter pQueryFilter, Int32 pageIndex) 位置 G:\高分统计项目一期\trunk\src\GFS.Commands\UI\CtrlPageGridControl.cs:行号 250
+   在 GFS.Commands.UI.CtrlPageGridControl.Initialize(ITable pTable, IQueryFilter pQueryFilter, IMap map) 位置 G:\高分统计项目一期\trunk\src\GFS.Commands\UI\CtrlPageGridControl.cs:行号 207
+   在 GFS.Commands.CmdOpenLayerTable.OnClick() 位置 G:\高分统计项目一期\trunk\src\GFS.Commands\Command\CmdOpenLayerTable.cs:行号 191
+
+ 
+记录时间：2017-09-29 16:28:23,395 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Commands.CmdOpenLayerTable property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The index passed was not within the valid range.
+   在 ESRI.ArcGIS.Geodatabase.IRow.get_Value(Int32 Index)
+   在 GFS.Commands.UI.CtrlPageGridControl.GetDataTable(ITable pTable, IQueryFilter pQueryFilter, Int32 pageIndex) 位置 G:\高分统计项目一期\trunk\src\GFS.Commands\UI\CtrlPageGridControl.cs:行号 250
+   在 GFS.Commands.UI.CtrlPageGridControl.Initialize(ITable pTable, IQueryFilter pQueryFilter, IMap map) 位置 G:\高分统计项目一期\trunk\src\GFS.Commands\UI\CtrlPageGridControl.cs:行号 207
+   在 GFS.Commands.CmdOpenLayerTable.OnClick() 位置 G:\高分统计项目一期\trunk\src\GFS.Commands\Command\CmdOpenLayerTable.cs:行号 191

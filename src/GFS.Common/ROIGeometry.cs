@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ESRI.ArcGIS.Geometry;
+using ESRI.ArcGIS.Display;
 
 namespace GFS.Common
 {
@@ -24,10 +25,10 @@ namespace GFS.Common
         public int id;
         public string name
         { get; set; }
-        public int color;
+        public IColor color;
         public IGeometry geometry
         { get; set; }
-        public ROIGeometry(int id,string name,int color,IGeometry geometry)
+        public ROIGeometry(int id, string name, IColor color, IGeometry geometry)
         {
             this.id = id;
             this.color = color;

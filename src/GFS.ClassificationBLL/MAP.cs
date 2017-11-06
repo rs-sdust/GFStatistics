@@ -47,13 +47,20 @@ namespace GFS.ClassificationBLL
                 IRasterPyramid3 rasterPyramid = rasterDataset as IRasterPyramid3;
                 if (rasterPyramid != null && !rasterPyramid.Present)
                 {
-                    new frmCreatePyramid(new List<string>
-					{
-						rasterLayer.FilePath
-					})
+                    //new frmCreatePyramid(new List<string>
+                    //{
+                    //    rasterLayer.FilePath
+                    //})
+                    //{
+                    //    Owner = EnviVars.instance.MainForm
+                    //}.ShowDialog();
+                    //using (GPExecutor gp = new GPExecutor())
                     {
-                        Owner = EnviVars.instance.MainForm
-                    }.ShowDialog();
+                        EnviVars.instance.GpExecutor.CreatePyramid(new List<string>
+                    {
+                        rasterLayer.FilePath
+                    });
+                    }
                 }
                 EnviVars.instance.MapControl.AddLayer(rasterLayer, 0);
             }

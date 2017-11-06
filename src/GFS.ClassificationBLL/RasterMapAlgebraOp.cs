@@ -52,6 +52,10 @@ namespace GFS.ClassificationBLL
 
                 IGeoDataset resDataset = pRSalgebra.Execute(expression);
                 ISaveAs pSaveAs = resDataset as ISaveAs;
+                if (File.Exists(fileName))
+                {
+                    File.Delete(fileName);
+                }
                 FileInfo fInfo = new FileInfo(fileName);
                 IWorkspaceFactory pWKSF03 = new RasterWorkspaceFactoryClass();
                 IWorkspace pWorkspace03 = pWKSF03.OpenFromFile(fInfo.DirectoryName, 0);

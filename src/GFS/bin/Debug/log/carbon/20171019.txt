@@ -1,0 +1,11 @@
+
+ 
+记录时间：2017-10-19 16:12:11,088 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.MapAPI property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80041018): Failed to open raster dataset
+   在 ESRI.ArcGIS.DataSourcesRaster.IRasterWorkspace.OpenRasterDataset(String Name)
+   在 GFS.BLL.MapAPI.AddRasterFileToMap(String rasterPath) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\MapAPI.cs:行号 544

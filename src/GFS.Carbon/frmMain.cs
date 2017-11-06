@@ -55,48 +55,42 @@ namespace GFS.Carbon
 
         #endregion
 
+
         #region 业务模块事件
-        private void btnAddData_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
 
+        private void btnForest_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmForest frm = new frmForest();
+            frm.ShowDialog();
         }
 
-        private void btnNewTask_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnShrub_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            frmShrub frm = new frmShrub();
+            frm.ShowDialog();
         }
 
-        private void btnOpenTask_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnGrass_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            frmGrass frm = new frmGrass();
+            frm.ShowDialog();
         }
 
-        private void btnMask_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnPlant_ItemClick(object sender, ItemClickEventArgs e)
         {
-  
+            frmVegCarbon frm = new frmVegCarbon();
+            frm.ShowDialog();
         }
 
-        private void btnSample_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnSoil_ItemClick(object sender, ItemClickEventArgs e)
         {
-
-        }
-
-        private void btnRecode_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnVerify_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnCropMosaic_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
+            frmSoilCarbon frm = new frmSoilCarbon();
+            frm.ShowDialog();
         }
 
         #endregion
+
+
 
         #region basic GIS events
 

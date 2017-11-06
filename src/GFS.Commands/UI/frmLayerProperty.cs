@@ -874,6 +874,7 @@ namespace GFS.Commands.UI
             DataColumn dataColumn2 = dataTable.Columns.Add("字段类型", Type.GetType("System.String"));
             DataColumn dataColumn3 = dataTable.Columns.Add("允许空值", Type.GetType("System.Boolean"));
             DataColumn dataColumn4 = dataTable.Columns.Add("字段长度", Type.GetType("System.Int32"));
+            this.gridView1.Columns.Clear();
             this.gridControl1.DataSource = dataTable;
             this.gridView1.Columns["允许空值"].ColumnEdit = this.repositoryItemCheckEdit1;
             for (int i = 0; i < featClass.Fields.FieldCount; i++)

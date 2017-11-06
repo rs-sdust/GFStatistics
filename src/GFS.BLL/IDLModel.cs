@@ -1,9 +1,9 @@
 ﻿// ***********************************************************************
 // Assembly         : HDPro
-// Author           : YXQ
+// Author           : RickerYan
 // Created          : 10-27-2016
 //
-// Last Modified By : YXQ
+// Last Modified By : RickerYan
 // Last Modified On : 10-22-2016
 // ***********************************************************************
 // <copyright file="IDLModel.cs" company="SDJT">

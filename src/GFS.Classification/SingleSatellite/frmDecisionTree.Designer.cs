@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDecisionTree));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gridValueAndFile = new DevExpress.XtraGrid.GridControl();
@@ -39,12 +38,12 @@
             this.btnOpen = new DevExpress.XtraEditors.SimpleButton();
             this.btnNew = new DevExpress.XtraEditors.SimpleButton();
             this.panelCanvas = new DevExpress.XtraEditors.XtraScrollableControl();
-            this.popupMenuRight = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenuRight = new DevExpress.XtraBars.PopupMenu();
             this.barBtnEdit = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnAdd = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnDel = new DevExpress.XtraBars.BarButtonItem();
             this.barChkValueFile = new DevExpress.XtraBars.BarCheckItem();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barManager1 = new DevExpress.XtraBars.BarManager();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -251,6 +250,7 @@
             // frmDecisionTree
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 368);
@@ -259,9 +259,9 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDecisionTree";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "";
             this.Text = "决策树分类";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDecisionTree_FormClosing);

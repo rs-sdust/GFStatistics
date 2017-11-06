@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GFS.SampleBLL", "GFS.Sample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GFS.Classification", "GFS.Classification\GFS.Classification.csproj", "{4B540D41-921B-4D7F-B205-AFAE9D5D98D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GFS.License", "GFS.License\GFS.License.csproj", "{F9CFBDED-A428-443F-BCEC-32B7BA2F5C2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -44,9 +46,7 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C5AE596A-D2D0-4F8F-ABDC-F8C3389D4F65}.Debug|x86.ActiveCfg = Debug|x86
-		{C5AE596A-D2D0-4F8F-ABDC-F8C3389D4F65}.Debug|x86.Build.0 = Debug|x86
 		{C5AE596A-D2D0-4F8F-ABDC-F8C3389D4F65}.Release|x86.ActiveCfg = Release|x86
-		{C5AE596A-D2D0-4F8F-ABDC-F8C3389D4F65}.Release|x86.Build.0 = Release|x86
 		{11EE695C-496F-4301-AAB6-11D1CA5F6CC1}.Debug|x86.ActiveCfg = Debug|x86
 		{11EE695C-496F-4301-AAB6-11D1CA5F6CC1}.Debug|x86.Build.0 = Debug|x86
 		{11EE695C-496F-4301-AAB6-11D1CA5F6CC1}.Release|x86.ActiveCfg = Release|x86
@@ -99,6 +99,10 @@ Global
 		{4B540D41-921B-4D7F-B205-AFAE9D5D98D1}.Debug|x86.Build.0 = Debug|x86
 		{4B540D41-921B-4D7F-B205-AFAE9D5D98D1}.Release|x86.ActiveCfg = Release|x86
 		{4B540D41-921B-4D7F-B205-AFAE9D5D98D1}.Release|x86.Build.0 = Release|x86
+		{F9CFBDED-A428-443F-BCEC-32B7BA2F5C2D}.Debug|x86.ActiveCfg = Debug|x86
+		{F9CFBDED-A428-443F-BCEC-32B7BA2F5C2D}.Debug|x86.Build.0 = Debug|x86
+		{F9CFBDED-A428-443F-BCEC-32B7BA2F5C2D}.Release|x86.ActiveCfg = Release|x86
+		{F9CFBDED-A428-443F-BCEC-32B7BA2F5C2D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

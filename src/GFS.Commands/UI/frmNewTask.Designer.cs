@@ -71,6 +71,7 @@
             this.btnTaskFile.Name = "btnTaskFile";
             this.btnTaskFile.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnTaskFile.Properties.ReadOnly = true;
             this.btnTaskFile.Size = new System.Drawing.Size(222, 20);
             this.btnTaskFile.TabIndex = 0;
             this.btnTaskFile.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnTaskFile_ButtonClick);
@@ -170,6 +171,7 @@
             // 
             this.txtTaskID.Location = new System.Drawing.Point(98, 32);
             this.txtTaskID.Name = "txtTaskID";
+            this.txtTaskID.Properties.ReadOnly = true;
             this.txtTaskID.Size = new System.Drawing.Size(157, 20);
             this.txtTaskID.TabIndex = 0;
             // 

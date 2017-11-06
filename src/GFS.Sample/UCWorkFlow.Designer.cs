@@ -32,15 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCWorkFlow));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.panel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnGF = new System.Windows.Forms.Button();
-            this.btnDB = new System.Windows.Forms.Button();
-            this.btnPrepare = new System.Windows.Forms.Button();
+            this.btnFrame = new System.Windows.Forms.Button();
+            this.btnErrorAnalyze = new System.Windows.Forms.Button();
+            this.btnSimulation = new System.Windows.Forms.Button();
             this.btnSample = new System.Windows.Forms.Button();
-            this.btnSingleDate = new System.Windows.Forms.Button();
-            this.btnMultiDate = new System.Windows.Forms.Button();
-            this.btnAfter = new System.Windows.Forms.Button();
-            this.btnVerification = new System.Windows.Forms.Button();
+            this.btnReview = new System.Windows.Forms.Button();
+            this.btnEstimate = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnSummary = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,23 +47,139 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "btnGFDefault");
-            this.imageList1.Images.SetKeyName(1, "dataMan.png");
-            this.imageList1.Images.SetKeyName(2, "btnPrepareDefault");
-            this.imageList1.Images.SetKeyName(3, "btnPrepareRunning");
-            this.imageList1.Images.SetKeyName(4, "btnPrepareDone");
-            this.imageList1.Images.SetKeyName(5, "btnSampleDefault");
-            this.imageList1.Images.SetKeyName(6, "btnSampleRunning");
-            this.imageList1.Images.SetKeyName(7, "btnSampleDone");
-            this.imageList1.Images.SetKeyName(8, "btnSingleDateDefault");
-            this.imageList1.Images.SetKeyName(9, "btnSingleDateRunning");
-            this.imageList1.Images.SetKeyName(10, "btnSingleDateDone");
-            this.imageList1.Images.SetKeyName(11, "btnAfterDefault");
-            this.imageList1.Images.SetKeyName(12, "btnAfterRunning");
-            this.imageList1.Images.SetKeyName(13, "btnAfterDone");
-            this.imageList1.Images.SetKeyName(14, "btnVerificationDefault");
-            this.imageList1.Images.SetKeyName(15, "btnVerificationRunning");
-            this.imageList1.Images.SetKeyName(16, "btnVerificationDone");
+            this.imageList1.Images.SetKeyName(0, "btnErrorAnalyzeDefault");
+            this.imageList1.Images.SetKeyName(1, "btnErrorAnalyzeDone");
+            this.imageList1.Images.SetKeyName(2, "btnErrorAnalyzeRunning");
+            this.imageList1.Images.SetKeyName(3, "btnEstimateDefault");
+            this.imageList1.Images.SetKeyName(4, "btnEstimateDone");
+            this.imageList1.Images.SetKeyName(5, "btnEstimateRunning");
+            this.imageList1.Images.SetKeyName(6, "btnFrameDefault");
+            this.imageList1.Images.SetKeyName(7, "btnFrameDone");
+            this.imageList1.Images.SetKeyName(8, "btnFrameRunning");
+            this.imageList1.Images.SetKeyName(9, "btnReviewDefault");
+            this.imageList1.Images.SetKeyName(10, "btnReviewDone");
+            this.imageList1.Images.SetKeyName(11, "btnReviewRunning");
+            this.imageList1.Images.SetKeyName(12, "btnSampleDefault");
+            this.imageList1.Images.SetKeyName(13, "btnSampleDone");
+            this.imageList1.Images.SetKeyName(14, "btnSampleRunning");
+            this.imageList1.Images.SetKeyName(15, "btnSimulationDefault");
+            this.imageList1.Images.SetKeyName(16, "btnSimulationDone");
+            this.imageList1.Images.SetKeyName(17, "btnSimulationRunning");
+            this.imageList1.Images.SetKeyName(18, "btnSummaryDefault");
+            this.imageList1.Images.SetKeyName(19, "btnSummaryDone");
+            this.imageList1.Images.SetKeyName(20, "btnSummaryRunning");
+            // 
+            // btnFrame
+            // 
+            this.btnFrame.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnFrame.FlatAppearance.BorderSize = 0;
+            this.btnFrame.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnFrame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFrame.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnFrame.ImageKey = "btnFrameDefault";
+            this.btnFrame.ImageList = this.imageList1;
+            this.btnFrame.Location = new System.Drawing.Point(27, 71);
+            this.btnFrame.Name = "btnFrame";
+            this.btnFrame.Size = new System.Drawing.Size(80, 54);
+            this.btnFrame.TabIndex = 3;
+            this.btnFrame.Text = "构建抽样框";
+            this.btnFrame.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnFrame, "流程说明，\r\n浮动状态无法显示。");
+            this.btnFrame.UseVisualStyleBackColor = false;
+            // 
+            // btnErrorAnalyze
+            // 
+            this.btnErrorAnalyze.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnErrorAnalyze.FlatAppearance.BorderSize = 0;
+            this.btnErrorAnalyze.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnErrorAnalyze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnErrorAnalyze.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnErrorAnalyze.ImageKey = "btnErrorAnalyzeDefault";
+            this.btnErrorAnalyze.ImageList = this.imageList1;
+            this.btnErrorAnalyze.Location = new System.Drawing.Point(155, 71);
+            this.btnErrorAnalyze.Name = "btnErrorAnalyze";
+            this.btnErrorAnalyze.Size = new System.Drawing.Size(80, 54);
+            this.btnErrorAnalyze.TabIndex = 4;
+            this.btnErrorAnalyze.Text = "误差分析";
+            this.btnErrorAnalyze.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnErrorAnalyze, "流程说明");
+            this.btnErrorAnalyze.UseVisualStyleBackColor = false;
+            // 
+            // btnSimulation
+            // 
+            this.btnSimulation.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSimulation.FlatAppearance.BorderSize = 0;
+            this.btnSimulation.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnSimulation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSimulation.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSimulation.ImageKey = "btnSimulationDefault";
+            this.btnSimulation.ImageList = this.imageList1;
+            this.btnSimulation.Location = new System.Drawing.Point(283, 71);
+            this.btnSimulation.Name = "btnSimulation";
+            this.btnSimulation.Size = new System.Drawing.Size(80, 54);
+            this.btnSimulation.TabIndex = 5;
+            this.btnSimulation.Tag = "default";
+            this.btnSimulation.Text = "抽样仿真";
+            this.btnSimulation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnSimulation, "流程说明");
+            this.btnSimulation.UseVisualStyleBackColor = false;
+            // 
+            // btnSample
+            // 
+            this.btnSample.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSample.FlatAppearance.BorderSize = 0;
+            this.btnSample.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnSample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSample.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSample.ImageKey = "btnSampleDefault";
+            this.btnSample.ImageList = this.imageList1;
+            this.btnSample.Location = new System.Drawing.Point(411, 71);
+            this.btnSample.Name = "btnSample";
+            this.btnSample.Size = new System.Drawing.Size(80, 54);
+            this.btnSample.TabIndex = 7;
+            this.btnSample.Tag = "default";
+            this.btnSample.Text = "样本抽选";
+            this.btnSample.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnSample, "流程说明");
+            this.btnSample.UseVisualStyleBackColor = false;
+            // 
+            // btnReview
+            // 
+            this.btnReview.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnReview.FlatAppearance.BorderSize = 0;
+            this.btnReview.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnReview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReview.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnReview.ImageKey = "btnReviewDefault";
+            this.btnReview.ImageList = this.imageList1;
+            this.btnReview.Location = new System.Drawing.Point(667, 71);
+            this.btnReview.Name = "btnReview";
+            this.btnReview.Size = new System.Drawing.Size(80, 54);
+            this.btnReview.TabIndex = 10;
+            this.btnReview.Tag = "default";
+            this.btnReview.Text = "样本审核";
+            this.btnReview.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnReview, "流程说明");
+            this.btnReview.UseVisualStyleBackColor = false;
+            // 
+            // btnEstimate
+            // 
+            this.btnEstimate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEstimate.FlatAppearance.BorderSize = 0;
+            this.btnEstimate.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnEstimate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEstimate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnEstimate.ImageKey = "btnEstimateDefault";
+            this.btnEstimate.ImageList = this.imageList1;
+            this.btnEstimate.Location = new System.Drawing.Point(795, 71);
+            this.btnEstimate.Name = "btnEstimate";
+            this.btnEstimate.Size = new System.Drawing.Size(80, 54);
+            this.btnEstimate.TabIndex = 11;
+            this.btnEstimate.Tag = "default";
+            this.btnEstimate.Text = "总体估计";
+            this.btnEstimate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnEstimate, "流程说明");
+            this.btnEstimate.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -79,14 +194,13 @@
             this.panel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.panel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.panel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.panel1.Controls.Add(this.btnGF, 1, 2);
-            this.panel1.Controls.Add(this.btnDB, 2, 2);
-            this.panel1.Controls.Add(this.btnPrepare, 3, 2);
+            this.panel1.Controls.Add(this.btnFrame, 1, 2);
+            this.panel1.Controls.Add(this.btnErrorAnalyze, 2, 2);
+            this.panel1.Controls.Add(this.btnSimulation, 3, 2);
             this.panel1.Controls.Add(this.btnSample, 4, 2);
-            this.panel1.Controls.Add(this.btnSingleDate, 5, 1);
-            this.panel1.Controls.Add(this.btnMultiDate, 5, 3);
-            this.panel1.Controls.Add(this.btnAfter, 6, 2);
-            this.panel1.Controls.Add(this.btnVerification, 7, 2);
+            this.panel1.Controls.Add(this.btnEstimate, 7, 2);
+            this.panel1.Controls.Add(this.btnReview, 6, 2);
+            this.panel1.Controls.Add(this.btnSummary, 5, 2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -100,147 +214,23 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.UCWorkFlow_Paint);
             // 
-            // btnGF
+            // btnSummary
             // 
-            this.btnGF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGF.FlatAppearance.BorderSize = 0;
-            this.btnGF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGF.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGF.ImageIndex = 0;
-            this.btnGF.ImageList = this.imageList1;
-            this.btnGF.Location = new System.Drawing.Point(27, 71);
-            this.btnGF.Name = "btnGF";
-            this.btnGF.Size = new System.Drawing.Size(80, 54);
-            this.btnGF.TabIndex = 3;
-            this.btnGF.Text = "GF卫星";
-            this.btnGF.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnGF, "流程说明，\r\n浮动状态无法显示。");
-            this.btnGF.UseVisualStyleBackColor = false;
-            // 
-            // btnDB
-            // 
-            this.btnDB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDB.FlatAppearance.BorderSize = 0;
-            this.btnDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnDB.ImageIndex = 1;
-            this.btnDB.ImageList = this.imageList1;
-            this.btnDB.Location = new System.Drawing.Point(155, 71);
-            this.btnDB.Name = "btnDB";
-            this.btnDB.Size = new System.Drawing.Size(80, 54);
-            this.btnDB.TabIndex = 4;
-            this.btnDB.Text = "数据管理系统";
-            this.btnDB.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnDB, "流程说明");
-            this.btnDB.UseVisualStyleBackColor = false;
-            // 
-            // btnPrepare
-            // 
-            this.btnPrepare.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPrepare.FlatAppearance.BorderSize = 0;
-            this.btnPrepare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrepare.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPrepare.ImageKey = "btnPrepareDefault";
-            this.btnPrepare.ImageList = this.imageList1;
-            this.btnPrepare.Location = new System.Drawing.Point(283, 71);
-            this.btnPrepare.Name = "btnPrepare";
-            this.btnPrepare.Size = new System.Drawing.Size(80, 54);
-            this.btnPrepare.TabIndex = 5;
-            this.btnPrepare.Tag = "default";
-            this.btnPrepare.Text = "测量数据准备";
-            this.btnPrepare.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnPrepare, "流程说明");
-            this.btnPrepare.UseVisualStyleBackColor = false;
-            // 
-            // btnSample
-            // 
-            this.btnSample.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSample.FlatAppearance.BorderSize = 0;
-            this.btnSample.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSample.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSample.ImageKey = "btnSampleDefault";
-            this.btnSample.ImageList = this.imageList1;
-            this.btnSample.Location = new System.Drawing.Point(411, 71);
-            this.btnSample.Name = "btnSample";
-            this.btnSample.Size = new System.Drawing.Size(80, 54);
-            this.btnSample.TabIndex = 7;
-            this.btnSample.Tag = "default";
-            this.btnSample.Text = "训练样本选取";
-            this.btnSample.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnSample, "流程说明");
-            this.btnSample.UseVisualStyleBackColor = false;
-            // 
-            // btnSingleDate
-            // 
-            this.btnSingleDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSingleDate.FlatAppearance.BorderSize = 0;
-            this.btnSingleDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSingleDate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSingleDate.ImageKey = "btnSingleDateDefault";
-            this.btnSingleDate.ImageList = this.imageList1;
-            this.btnSingleDate.Location = new System.Drawing.Point(539, 7);
-            this.btnSingleDate.Name = "btnSingleDate";
-            this.btnSingleDate.Size = new System.Drawing.Size(80, 54);
-            this.btnSingleDate.TabIndex = 8;
-            this.btnSingleDate.Tag = "default";
-            this.btnSingleDate.Text = "单期分类";
-            this.btnSingleDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnSingleDate, "流程说明");
-            this.btnSingleDate.UseVisualStyleBackColor = false;
-            // 
-            // btnMultiDate
-            // 
-            this.btnMultiDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMultiDate.FlatAppearance.BorderSize = 0;
-            this.btnMultiDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMultiDate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMultiDate.ImageKey = "btnSingleDateDefault";
-            this.btnMultiDate.ImageList = this.imageList1;
-            this.btnMultiDate.Location = new System.Drawing.Point(539, 135);
-            this.btnMultiDate.Name = "btnMultiDate";
-            this.btnMultiDate.Size = new System.Drawing.Size(80, 54);
-            this.btnMultiDate.TabIndex = 9;
-            this.btnMultiDate.Tag = "default";
-            this.btnMultiDate.Text = "多期分类";
-            this.btnMultiDate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnMultiDate, "流程说明");
-            this.btnMultiDate.UseVisualStyleBackColor = false;
-            // 
-            // btnAfter
-            // 
-            this.btnAfter.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAfter.FlatAppearance.BorderSize = 0;
-            this.btnAfter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAfter.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAfter.ImageKey = "btnAfterDefault";
-            this.btnAfter.ImageList = this.imageList1;
-            this.btnAfter.Location = new System.Drawing.Point(667, 71);
-            this.btnAfter.Name = "btnAfter";
-            this.btnAfter.Size = new System.Drawing.Size(80, 54);
-            this.btnAfter.TabIndex = 10;
-            this.btnAfter.Tag = "default";
-            this.btnAfter.Text = "分类后处理";
-            this.btnAfter.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnAfter, "流程说明");
-            this.btnAfter.UseVisualStyleBackColor = false;
-            // 
-            // btnVerification
-            // 
-            this.btnVerification.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnVerification.FlatAppearance.BorderSize = 0;
-            this.btnVerification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerification.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnVerification.ImageKey = "btnVerificationDefault";
-            this.btnVerification.ImageList = this.imageList1;
-            this.btnVerification.Location = new System.Drawing.Point(795, 71);
-            this.btnVerification.Name = "btnVerification";
-            this.btnVerification.Size = new System.Drawing.Size(80, 54);
-            this.btnVerification.TabIndex = 11;
-            this.btnVerification.Tag = "default";
-            this.btnVerification.Text = "精度验证";
-            this.btnVerification.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnVerification, "流程说明");
-            this.btnVerification.UseVisualStyleBackColor = false;
+            this.btnSummary.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSummary.FlatAppearance.BorderSize = 0;
+            this.btnSummary.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Window;
+            this.btnSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSummary.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSummary.ImageKey = "btnSummaryDefault";
+            this.btnSummary.ImageList = this.imageList1;
+            this.btnSummary.Location = new System.Drawing.Point(539, 71);
+            this.btnSummary.Name = "btnSummary";
+            this.btnSummary.Size = new System.Drawing.Size(80, 54);
+            this.btnSummary.TabIndex = 10;
+            this.btnSummary.Tag = "default";
+            this.btnSummary.Text = "样本汇总";
+            this.btnSummary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSummary.UseVisualStyleBackColor = false;
             // 
             // UCWorkFlow
             // 
@@ -261,14 +251,13 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.TableLayoutPanel panel1;
-        private System.Windows.Forms.Button btnGF;
-        private System.Windows.Forms.Button btnDB;
-        private System.Windows.Forms.Button btnPrepare;
+        private System.Windows.Forms.Button btnFrame;
+        private System.Windows.Forms.Button btnErrorAnalyze;
+        private System.Windows.Forms.Button btnSimulation;
         private System.Windows.Forms.Button btnSample;
-        private System.Windows.Forms.Button btnSingleDate;
-        private System.Windows.Forms.Button btnMultiDate;
-        private System.Windows.Forms.Button btnAfter;
-        private System.Windows.Forms.Button btnVerification;
+        private System.Windows.Forms.Button btnReview;
+        private System.Windows.Forms.Button btnEstimate;
+        private System.Windows.Forms.Button btnSummary;
 
     }
 }

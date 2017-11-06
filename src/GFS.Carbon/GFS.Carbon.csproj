@@ -34,6 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -46,6 +47,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Data.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Utils.v14.1.dll</HintPath>
@@ -118,14 +120,49 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FlowStatus.cs" />
+    <Compile Include="frmForest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForest.Designer.cs">
+      <DependentUpon>frmForest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrass.designer.cs">
+      <DependentUpon>frmGrass.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmShrub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShrub.designer.cs">
+      <DependentUpon>frmShrub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSoilCarbon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSoilCarbon.Designer.cs">
+      <DependentUpon>frmSoilCarbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVegCarbon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVegCarbon.Designer.cs">
+      <DependentUpon>frmVegCarbon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UCWorkFlow.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -146,14 +183,37 @@
       <Project>{9A86A4E6-D14C-415D-8718-2FAE1392C9E6}</Project>
       <Name>GFS.Commands</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GFS.License\GFS.License.csproj">
+      <Project>{F9CFBDED-A428-443F-BCEC-32B7BA2F5C2D}</Project>
+      <Name>GFS.License</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmForest.resx">
+      <DependentUpon>frmForest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrass.resx">
+      <DependentUpon>frmGrass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShrub.resx">
+      <DependentUpon>frmShrub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSoilCarbon.resx">
+      <DependentUpon>frmSoilCarbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVegCarbon.resx">
+      <DependentUpon>frmVegCarbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UCWorkFlow.resx">
       <DependentUpon>UCWorkFlow.cs</DependentUpon>

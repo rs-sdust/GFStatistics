@@ -8,3 +8,13 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS.g.resources
 E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS.Properties.Resources.resources
 E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS.csproj.GenerateResource.Cache
 E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Release\GFS.exe
+G:\高分统计项目一期\trunk\Release\GFS.exe.config
+G:\高分统计项目一期\trunk\Release\GFS.exe
+G:\高分统计项目一期\trunk\src\GFS\obj\x86\Release\MainWindow.baml
+G:\高分统计项目一期\trunk\src\GFS\obj\x86\Release\MainWindow.g.cs
+G:\高分统计项目一期\trunk\src\GFS\obj\x86\Release\App.g.cs
+G:\高分统计项目一期\trunk\src\GFS\obj\x86\Release\GFS_MarkupCompile.cache
+G:\高分统计项目一期\trunk\src\GFS\obj\x86\Release\GFS.g.resources
+G:\高分统计项目一期\trunk\src\GFS\obj\x86\Release\GFS.Properties.Resources.resources
+G:\高分统计项目一期\trunk\src\GFS\obj\x86\Release\GFS.csproj.GenerateResource.Cache
+G:\高分统计项目一期\trunk\src\GFS\obj\x86\Release\GFS.exe

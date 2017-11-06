@@ -1,0 +1,15 @@
+
+ 
+记录时间：2017-10-25 20:55:28,425 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.MapAPI property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentException: 路径的形式不合法。
+   在 System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   在 System.IO.Path.GetFullPathInternal(String path)
+   在 System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   在 System.IO.FileInfo..ctor(String fileName)
+   在 GFS.BLL.MapAPI.AddShpFileToMap(String filePath) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\MapAPI.cs:行号 520

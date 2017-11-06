@@ -42,7 +42,7 @@ namespace GFS.BLL
                     {
                         if (xmlReader.Name == "F_TASKID")
                         {
-                            EnviVars.instance.taskID = xmlReader.ReadElementContentAsInt();
+                            EnviVars.instance.taskID = xmlReader.ReadElementContentAsLong();
                         }
                         else if (xmlReader.Name == "F_TASKSTATE")
                         {

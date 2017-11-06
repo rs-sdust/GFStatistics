@@ -32,6 +32,8 @@
             this.btnCancle = new DevExpress.XtraEditors.SimpleButton();
             this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.btnOut = new DevExpress.XtraEditors.SimpleButton();
+            this.txtOut = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
@@ -52,16 +54,15 @@
             this.ztbContribution = new DevExpress.XtraEditors.ZoomTrackBarControl();
             this.btnMore = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbInRaster = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.btnInRaster = new DevExpress.XtraEditors.SimpleButton();
             this.txtROI = new DevExpress.XtraEditors.TextEdit();
             this.btnInROI = new DevExpress.XtraEditors.SimpleButton();
-            this.txtOut = new DevExpress.XtraEditors.TextEdit();
-            this.btnOut = new DevExpress.XtraEditors.SimpleButton();
+            this.cmbInRaster = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.btnInRaster = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOut.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -82,9 +83,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ztbContribution.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbInRaster.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtROI.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOut.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbInRaster.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancle
@@ -115,6 +115,24 @@
             this.groupControl3.Size = new System.Drawing.Size(360, 77);
             this.groupControl3.TabIndex = 7;
             this.groupControl3.Text = "输出";
+            // 
+            // btnOut
+            // 
+            this.btnOut.Image = ((System.Drawing.Image)(resources.GetObject("btnOut.Image")));
+            this.btnOut.ImageIndex = 0;
+            this.btnOut.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnOut.Location = new System.Drawing.Point(320, 33);
+            this.btnOut.Name = "btnOut";
+            this.btnOut.Size = new System.Drawing.Size(24, 24);
+            this.btnOut.TabIndex = 15;
+            this.btnOut.Click += new System.EventHandler(this.btnOut_Click);
+            // 
+            // txtOut
+            // 
+            this.txtOut.Location = new System.Drawing.Point(94, 35);
+            this.txtOut.Name = "txtOut";
+            this.txtOut.Size = new System.Drawing.Size(219, 20);
+            this.txtOut.TabIndex = 14;
             // 
             // labelControl5
             // 
@@ -384,21 +402,22 @@
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "输入";
             // 
-            // labelControl6
+            // txtROI
             // 
-            this.labelControl6.Location = new System.Drawing.Point(15, 70);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(48, 14);
-            this.labelControl6.TabIndex = 3;
-            this.labelControl6.Text = "样本文件";
+            this.txtROI.Location = new System.Drawing.Point(94, 67);
+            this.txtROI.Name = "txtROI";
+            this.txtROI.Size = new System.Drawing.Size(219, 20);
+            this.txtROI.TabIndex = 12;
             // 
-            // labelControl1
+            // btnInROI
             // 
-            this.labelControl1.Location = new System.Drawing.Point(14, 38);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(60, 14);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "分割后影像";
+            this.btnInROI.Image = ((System.Drawing.Image)(resources.GetObject("btnInROI.Image")));
+            this.btnInROI.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnInROI.Location = new System.Drawing.Point(318, 65);
+            this.btnInROI.Name = "btnInROI";
+            this.btnInROI.Size = new System.Drawing.Size(24, 24);
+            this.btnInROI.TabIndex = 11;
+            this.btnInROI.Click += new System.EventHandler(this.btnInROI_Click);
             // 
             // cmbInRaster
             // 
@@ -418,40 +437,21 @@
             this.btnInRaster.TabIndex = 9;
             this.btnInRaster.Click += new System.EventHandler(this.btnInRaster_Click);
             // 
-            // txtROI
+            // labelControl6
             // 
-            this.txtROI.Location = new System.Drawing.Point(94, 67);
-            this.txtROI.Name = "txtROI";
-            this.txtROI.Size = new System.Drawing.Size(219, 20);
-            this.txtROI.TabIndex = 12;
+            this.labelControl6.Location = new System.Drawing.Point(15, 70);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(48, 14);
+            this.labelControl6.TabIndex = 3;
+            this.labelControl6.Text = "样本文件";
             // 
-            // btnInROI
+            // labelControl1
             // 
-            this.btnInROI.Image = ((System.Drawing.Image)(resources.GetObject("btnInROI.Image")));
-            this.btnInROI.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnInROI.Location = new System.Drawing.Point(318, 65);
-            this.btnInROI.Name = "btnInROI";
-            this.btnInROI.Size = new System.Drawing.Size(24, 24);
-            this.btnInROI.TabIndex = 11;
-            this.btnInROI.Click += new System.EventHandler(this.btnInROI_Click);
-            // 
-            // txtOut
-            // 
-            this.txtOut.Location = new System.Drawing.Point(94, 35);
-            this.txtOut.Name = "txtOut";
-            this.txtOut.Size = new System.Drawing.Size(219, 20);
-            this.txtOut.TabIndex = 14;
-            // 
-            // btnOut
-            // 
-            this.btnOut.Image = ((System.Drawing.Image)(resources.GetObject("btnOut.Image")));
-            this.btnOut.ImageIndex = 0;
-            this.btnOut.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnOut.Location = new System.Drawing.Point(320, 33);
-            this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(24, 24);
-            this.btnOut.TabIndex = 15;
-            this.btnOut.Click += new System.EventHandler(this.btnOut_Click);
+            this.labelControl1.Location = new System.Drawing.Point(14, 38);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(60, 14);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "分割后影像";
             // 
             // frmOOClassification
             // 
@@ -463,18 +463,19 @@
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(400, 510);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(400, 510);
             this.Name = "frmOOClassification";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "面向对象分类";
             this.Load += new System.EventHandler(this.frmOOClassification_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtOut.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
@@ -497,9 +498,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbInRaster.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtROI.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtOut.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbInRaster.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

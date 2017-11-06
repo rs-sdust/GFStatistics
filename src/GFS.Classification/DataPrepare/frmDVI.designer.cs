@@ -259,7 +259,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 399);
+            this.ClientSize = new System.Drawing.Size(415, 399);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl1);
@@ -269,12 +269,12 @@
             this.Controls.Add(this.siBOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(622, 428);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(421, 428);
             this.Name = "frmDVI";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "差值植被指数(DVI)";
             this.Load += new System.EventHandler(this.frmDVI_Load);

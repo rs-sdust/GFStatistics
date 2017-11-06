@@ -6,6 +6,7 @@ using System.Diagnostics;
 using ESRI.ArcGIS.esriSystem;
 using DevExpress.XtraEditors;
 using GFS.BLL;
+using GFS.License;
 
 namespace GFS.Sample
 {
@@ -28,7 +29,7 @@ namespace GFS.Sample
             try
             {
                 bool licensed = m_AOLicenseInitializer.InitializeApplication(new esriLicenseProductCode[] { esriLicenseProductCode.esriLicenseProductCodeEngine, esriLicenseProductCode.esriLicenseProductCodeStandard, esriLicenseProductCode .esriLicenseProductCodeAdvanced},
-                                new esriLicenseExtensionCode[] { });
+                                new esriLicenseExtensionCode[] { esriLicenseExtensionCode.esriLicenseExtensionCodeSpatialAnalyst});
                 if (!licensed)
                 {
                     XtraMessageBox.Show(m_AOLicenseInitializer.LicenseMessage(), "初始化许可失败", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);

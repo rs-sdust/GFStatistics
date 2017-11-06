@@ -43,6 +43,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Data.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\DevExpress.Utils.v14.1.dll</HintPath>
@@ -135,6 +136,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\CmdClipRaster.cs" />
     <Compile Include="CMDInitializer.cs" />
     <Compile Include="Command\CmdROI.cs" />
     <Compile Include="Command\CmdToolDrawElement.cs" />
@@ -151,6 +153,7 @@
     <Compile Include="Command\CmdRemoveLayer.cs" />
     <Compile Include="Command\CmdRendererLayer.cs" />
     <Compile Include="Command\CmdSaveFile.cs" />
+    <Compile Include="Command\CmdToolReCorrect.cs" />
     <Compile Include="Command\CmdZoomToLayer.cs" />
     <Compile Include="Command\CmdZoomToRasterResolution.cs" />
     <Compile Include="Command\CommandAPI.cs" />
@@ -164,8 +167,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Command\ReCorrectElement.cs" />
     <Compile Include="UI\CheckedTreeList.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ClipUtility.cs" />
+    <Compile Include="UI\ControlAPI.cs" />
+    <Compile Include="UI\CtrCurrentLayer.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\ctrlGeographicCoordinateInfo.cs">
       <SubType>UserControl</SubType>
@@ -184,6 +193,14 @@
     </Compile>
     <Compile Include="UI\ctrlProjectionCoordinateInfo.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\EnumLayerType.cs" />
+    <Compile Include="UI\EnumRasterBandCount.cs" />
+    <Compile Include="UI\frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmClipRaster.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\frmCreatePyramid.cs">
       <SubType>Form</SubType>
@@ -227,7 +244,13 @@
     <Compile Include="UI\frmNewTask.Designer.cs">
       <DependentUpon>frmNewTask.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\frmReCorect.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI\frmROI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmSelectFeatures.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\frmSymbolSelector.cs">
@@ -236,6 +259,13 @@
     <Compile Include="UI\frmSymbolSelector.Designer.cs">
       <DependentUpon>frmSymbolSelector.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\IconType.cs" />
+    <Compile Include="UI\MyDataLayer.cs" />
+    <Compile Include="UI\PixelType.cs" />
+    <Compile Include="UI\RasterFormat.cs" />
+    <Compile Include="UI\RasterSaveAsManager.cs" />
+    <Compile Include="UI\ResamplingMethod.cs" />
+    <Compile Include="UI\WorkspaceInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GFS.BLL\GFS.BLL.csproj">
@@ -260,6 +290,8 @@
     <EmbeddedResource Include="UI\CtrlPageGridControl.resx">
       <DependentUpon>CtrlPageGridControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBase.resources" />
+    <EmbeddedResource Include="UI\frmClipRaster.resources" />
     <EmbeddedResource Include="UI\frmCreatePyramid.resx">
       <DependentUpon>frmCreatePyramid.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,15 +307,16 @@
     <EmbeddedResource Include="UI\frmNewTask.resx">
       <DependentUpon>frmNewTask.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmReCorect.resx">
+      <DependentUpon>frmReCorect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmROI.resx">
       <DependentUpon>frmROI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmSelectFeatures.resources" />
     <EmbeddedResource Include="UI\frmSymbolSelector.resx">
       <DependentUpon>frmSymbolSelector.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

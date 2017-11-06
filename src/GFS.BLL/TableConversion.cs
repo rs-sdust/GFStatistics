@@ -65,10 +65,13 @@ namespace GFS.BLL
             IName names = (IName)workspaceName;
             IWorkspace inmemWor = (IWorkspace)names.Open();
             ITable pTable = DataTableToAETable(table, inmemWor as IFeatureWorkspace, name);
-
+            if (names != null)
             System.Runtime.InteropServices.Marshal.ReleaseComObject(names);
+            if (workspaceFactory != null)
             System.Runtime.InteropServices.Marshal.ReleaseComObject(workspaceFactory);
+            if (workspaceName != null)
             System.Runtime.InteropServices.Marshal.ReleaseComObject(workspaceName);
+            if (inmemWor != null)
             System.Runtime.InteropServices.Marshal.ReleaseComObject(inmemWor);
             return pTable;
         }
@@ -173,9 +176,11 @@ namespace GFS.BLL
                         }
                         cursor.InsertRow(rowBuffer);
                     }
-
+                    if (pFileds!=null)
                     System.Runtime.InteropServices.Marshal.ReleaseComObject(pFileds);
+                    if (pFieldsEdit != null)
                     System.Runtime.InteropServices.Marshal.ReleaseComObject(pFieldsEdit);
+                    if (featureWorkspace != null)
                     System.Runtime.InteropServices.Marshal.ReleaseComObject(featureWorkspace);
                     return pTable;
                 }
@@ -334,10 +339,10 @@ namespace GFS.BLL
                 //字段默认值
                 pDataColumn.DefaultValue = pField.DefaultValue;
                 //当字段为String类型是设置字段长度
-                //if (pField.VarType == 8&&pDataColumn.MaxLength < pField.Length)
+                //if (pField.VarType == 8 && pDataColumn.MaxLength < pField.Length)
                 //{
-                //    if (pField.Name=="FID_1")
-                //    pDataColumn.MaxLength = pField.Length; 
+                //    if (pField.Name == "FID_1")
+                //        pDataColumn.MaxLength = pField.Length;
                 //}
 
                 //字段添加到表中
