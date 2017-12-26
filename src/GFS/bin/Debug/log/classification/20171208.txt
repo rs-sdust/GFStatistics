@@ -1,0 +1,117 @@
+
+ 
+记录时间：2017-12-08 11:54:38,149 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-08 11:57:08,927 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-08 11:58:46,837 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-08 11:59:50,976 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-08 12:00:41,469 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-08 12:02:18,674 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-08 12:02:56,510 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-08 12:02:57,100 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-08 12:03:02,675 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104

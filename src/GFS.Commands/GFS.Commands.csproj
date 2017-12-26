@@ -253,12 +253,6 @@
     <Compile Include="UI\frmSelectFeatures.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\frmSymbolSelector.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\frmSymbolSelector.Designer.cs">
-      <DependentUpon>frmSymbolSelector.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\IconType.cs" />
     <Compile Include="UI\MyDataLayer.cs" />
     <Compile Include="UI\PixelType.cs" />
@@ -282,7 +276,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -314,9 +307,6 @@
       <DependentUpon>frmROI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmSelectFeatures.resources" />
-    <EmbeddedResource Include="UI\frmSymbolSelector.resx">
-      <DependentUpon>frmSymbolSelector.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

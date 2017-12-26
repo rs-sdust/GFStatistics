@@ -277,6 +277,7 @@
             this.Name = "frmDVI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "差值植被指数(DVI)";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmDVI_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmDVI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cEditFTP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gCHelp)).EndInit();

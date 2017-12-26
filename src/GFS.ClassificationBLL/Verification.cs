@@ -254,7 +254,7 @@ namespace GFS.ClassificationBLL
                     }
                     catch (Exception ex)
                     {
-                        Log.WriteLog(typeof(OOClassification), ex);
+                        Log.WriteLog(typeof(Verification), ex);
                         result = false;
                     }
                     finally
@@ -268,7 +268,7 @@ namespace GFS.ClassificationBLL
             }
             catch (Exception ex)
             {
-                Log.WriteLog(typeof(OOClassification), ex);
+                Log.WriteLog(typeof(Verification), ex);
                 result = false;
             }
 

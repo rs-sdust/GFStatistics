@@ -101,12 +101,12 @@ namespace GFS.Commands.UI
                 xmlWriter.WriteString(txtCompany.Text);
                 xmlWriter.WriteEndElement();
                 xmlWriter.WriteStartElement("F_UPDATETIME ");
-                xmlWriter.WriteString(updateTime.EditValue.ToString());
+                xmlWriter.WriteString(((DateTime)updateTime.EditValue).ToString("yyyy-MM-ddThh:mm:ss"));
                 xmlWriter.WriteEndElement();
 
                 xmlWriter.WriteEndElement();
                 xmlWriter.WriteEndElement();
-
+                EnviVars.instance.CurrentTask = taskXML;
             }
             catch (Exception ex)
             {
@@ -117,6 +117,11 @@ namespace GFS.Commands.UI
                 xmlWriter.Flush();
                 xmlWriter.Close();
             }
+        }
+
+        private void frmNewTask_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

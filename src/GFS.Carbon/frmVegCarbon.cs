@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using GFS.CarbonBLL;
 using DevExpress.Utils;
 using DevExpress.XtraEditors;
+using GFS.BLL;
 
 namespace GFS.Carbon
 {
@@ -165,7 +166,7 @@ namespace GFS.Carbon
             }
             else
             {
-                WaitDialogForm frmWait = new WaitDialogForm("正在处理...", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在处理...", "提示信息");
                 frmWait.Owner = this;
                 frmWait.TopMost = false;
                 try
@@ -202,6 +203,11 @@ namespace GFS.Carbon
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmVegCarbon_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
     }
 }

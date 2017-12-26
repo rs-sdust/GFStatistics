@@ -230,6 +230,45 @@ namespace GFS.BLL
             //    this.m_gpExecutor = value;
             //}
         }
+        private Dictionary<string, string> m_helpTopicDict = null;
+        public Dictionary<string, string> HelpTopics
+        {
+            get
+            {
+                if (this.m_helpTopicDict == null)
+                {
+                    this.ReadHelpTopics();
+                }
+                return this.m_helpTopicDict;
+            }
+        }
+        private void ReadHelpTopics()
+        {
+            this.m_helpTopicDict = new Dictionary<string, string>();
+            string path = Path.Combine(Application.StartupPath, "help", "MapFile.txt");
+            using (StreamReader streamReader = new StreamReader(path, Encoding.Default))
+            {
+                string text;
+                while ((text = streamReader.ReadLine()) != null)
+                {
+                    if (!string.IsNullOrWhiteSpace(text))
+                    {
+                        string[] array = text.Split(new char[]
+						{
+							','
+						});
+                        if (array != null && array.Length >= 2)
+                        {
+                            if (!this.m_helpTopicDict.ContainsKey(array[0]))
+                            {
+                                this.m_helpTopicDict.Add(array[0], array[1]);
+                            }
+                        }
+                    }
+                }
+                streamReader.Close();
+            }
+        }
         /// <summary>
         /// Prevents a default instance of the <see cref="EnviVars" /> class from being created.
         /// </summary>

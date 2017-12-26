@@ -32,10 +32,12 @@
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.cBESampleClassic = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cBECunName = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.lCSampleClassic = new DevExpress.XtraEditors.LabelControl();
             this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
             this.cBEMethod = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cBESamCunName = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.lCSample = new DevExpress.XtraEditors.LabelControl();
             this.cBESamBasis = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cBESamSurvey = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -64,8 +66,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cBESampleClassic.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cBECunName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBEMethod.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cBESamCunName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBESamBasis.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBESamSurvey.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBESamLayer.Properties)).BeginInit();
@@ -81,7 +84,7 @@
             // groupControl3
             // 
             this.groupControl3.Controls.Add(this.memoEdit1);
-            this.groupControl3.Location = new System.Drawing.Point(466, 12);
+            this.groupControl3.Location = new System.Drawing.Point(453, 12);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(170, 335);
             this.groupControl3.TabIndex = 65;
@@ -90,7 +93,7 @@
             // memoEdit1
             // 
             this.memoEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.memoEdit1.EditValue = "";
+            this.memoEdit1.EditValue = "以审核通过的合格样本和一级抽样框为基础通过不同的推算方法估算区域作物总面积。";
             this.memoEdit1.Location = new System.Drawing.Point(2, 22);
             this.memoEdit1.Name = "memoEdit1";
             this.memoEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window;
@@ -103,10 +106,12 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.cBESampleClassic);
+            this.groupControl1.Controls.Add(this.cBECunName);
+            this.groupControl1.Controls.Add(this.lCSampleClassic);
             this.groupControl1.Controls.Add(this.labelControl19);
             this.groupControl1.Controls.Add(this.cBEMethod);
-            this.groupControl1.Controls.Add(this.cBESamCunName);
-            this.groupControl1.Controls.Add(this.lCSample);
             this.groupControl1.Controls.Add(this.cBESamBasis);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.cBESamSurvey);
@@ -125,9 +130,45 @@
             this.groupControl1.Controls.Add(this.cBESample);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(430, 252);
+            this.groupControl1.Size = new System.Drawing.Size(430, 267);
             this.groupControl1.TabIndex = 67;
             this.groupControl1.Text = "输入数据";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl6.Location = new System.Drawing.Point(15, 210);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(61, 25);
+            this.labelControl6.TabIndex = 98;
+            this.labelControl6.Text = "村代码";
+            // 
+            // cBESampleClassic
+            // 
+            this.cBESampleClassic.Location = new System.Drawing.Point(111, 243);
+            this.cBESampleClassic.Name = "cBESampleClassic";
+            this.cBESampleClassic.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cBESampleClassic.Size = new System.Drawing.Size(100, 20);
+            this.cBESampleClassic.TabIndex = 97;
+            // 
+            // cBECunName
+            // 
+            this.cBECunName.Location = new System.Drawing.Point(111, 212);
+            this.cBECunName.Name = "cBECunName";
+            this.cBECunName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cBECunName.Size = new System.Drawing.Size(100, 20);
+            this.cBECunName.TabIndex = 96;
+            // 
+            // lCSampleClassic
+            // 
+            this.lCSampleClassic.Location = new System.Drawing.Point(15, 246);
+            this.lCSampleClassic.Name = "lCSampleClassic";
+            this.lCSampleClassic.Size = new System.Drawing.Size(72, 14);
+            this.lCSampleClassic.TabIndex = 95;
+            this.lCSampleClassic.Text = "样本分类结果";
             // 
             // labelControl19
             // 
@@ -150,26 +191,9 @@
             this.cBEMethod.TabIndex = 90;
             this.cBEMethod.EditValueChanged += new System.EventHandler(this.cBEMethod_EditValueChanged);
             // 
-            // cBESamCunName
-            // 
-            this.cBESamCunName.Location = new System.Drawing.Point(111, 217);
-            this.cBESamCunName.Name = "cBESamCunName";
-            this.cBESamCunName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cBESamCunName.Size = new System.Drawing.Size(100, 20);
-            this.cBESamCunName.TabIndex = 89;
-            // 
-            // lCSample
-            // 
-            this.lCSample.Location = new System.Drawing.Point(15, 220);
-            this.lCSample.Name = "lCSample";
-            this.lCSample.Size = new System.Drawing.Size(72, 14);
-            this.lCSample.TabIndex = 88;
-            this.lCSample.Text = "样本分类结果";
-            // 
             // cBESamBasis
             // 
-            this.cBESamBasis.Location = new System.Drawing.Point(111, 178);
+            this.cBESamBasis.Location = new System.Drawing.Point(111, 176);
             this.cBESamBasis.Name = "cBESamBasis";
             this.cBESamBasis.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -178,7 +202,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(15, 181);
+            this.labelControl2.Location = new System.Drawing.Point(15, 179);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(48, 14);
             this.labelControl2.TabIndex = 86;
@@ -186,7 +210,7 @@
             // 
             // cBESamSurvey
             // 
-            this.cBESamSurvey.Location = new System.Drawing.Point(293, 217);
+            this.cBESamSurvey.Location = new System.Drawing.Point(293, 212);
             this.cBESamSurvey.Name = "cBESamSurvey";
             this.cBESamSurvey.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -195,7 +219,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(235, 220);
+            this.labelControl1.Location = new System.Drawing.Point(235, 215);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(48, 14);
             this.labelControl1.TabIndex = 84;
@@ -203,7 +227,7 @@
             // 
             // cBESamLayer
             // 
-            this.cBESamLayer.Location = new System.Drawing.Point(293, 178);
+            this.cBESamLayer.Location = new System.Drawing.Point(293, 176);
             this.cBESamLayer.Name = "cBESamLayer";
             this.cBESamLayer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -212,7 +236,7 @@
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(235, 181);
+            this.labelControl9.Location = new System.Drawing.Point(235, 179);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(48, 14);
             this.labelControl9.TabIndex = 82;
@@ -222,7 +246,7 @@
             // 
             this.siBSample.Image = ((System.Drawing.Image)(resources.GetObject("siBSample.Image")));
             this.siBSample.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.siBSample.Location = new System.Drawing.Point(399, 141);
+            this.siBSample.Location = new System.Drawing.Point(399, 140);
             this.siBSample.Name = "siBSample";
             this.siBSample.Size = new System.Drawing.Size(20, 20);
             this.siBSample.TabIndex = 81;
@@ -275,7 +299,7 @@
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(15, 144);
+            this.labelControl7.Location = new System.Drawing.Point(15, 143);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(48, 14);
             this.labelControl7.TabIndex = 75;
@@ -301,7 +325,7 @@
             // 
             // cBESample
             // 
-            this.cBESample.Location = new System.Drawing.Point(111, 141);
+            this.cBESample.Location = new System.Drawing.Point(111, 140);
             this.cBESample.Name = "cBESample";
             this.cBESample.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -314,7 +338,7 @@
             this.groupControl2.Controls.Add(this.cBExport);
             this.groupControl2.Controls.Add(this.labelControl10);
             this.groupControl2.Controls.Add(this.siBsave);
-            this.groupControl2.Location = new System.Drawing.Point(12, 270);
+            this.groupControl2.Location = new System.Drawing.Point(12, 285);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(430, 77);
             this.groupControl2.TabIndex = 68;
@@ -353,7 +377,7 @@
             // siBcancel
             // 
             this.siBcancel.ImageIndex = 2;
-            this.siBcancel.Location = new System.Drawing.Point(205, 362);
+            this.siBcancel.Location = new System.Drawing.Point(205, 377);
             this.siBcancel.Name = "siBcancel";
             this.siBcancel.Size = new System.Drawing.Size(78, 25);
             this.siBcancel.TabIndex = 70;
@@ -363,7 +387,7 @@
             // siB_Ok
             // 
             this.siB_Ok.ImageIndex = 2;
-            this.siB_Ok.Location = new System.Drawing.Point(85, 362);
+            this.siB_Ok.Location = new System.Drawing.Point(85, 377);
             this.siB_Ok.Name = "siB_Ok";
             this.siB_Ok.Size = new System.Drawing.Size(78, 25);
             this.siB_Ok.TabIndex = 69;
@@ -373,7 +397,7 @@
             // siBHelp
             // 
             this.siBHelp.ImageIndex = 2;
-            this.siBHelp.Location = new System.Drawing.Point(327, 362);
+            this.siBHelp.Location = new System.Drawing.Point(327, 377);
             this.siBHelp.Name = "siBHelp";
             this.siBHelp.Size = new System.Drawing.Size(78, 25);
             this.siBHelp.TabIndex = 72;
@@ -384,7 +408,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 411);
+            this.ClientSize = new System.Drawing.Size(451, 412);
             this.Controls.Add(this.siBHelp);
             this.Controls.Add(this.siBcancel);
             this.Controls.Add(this.siB_Ok);
@@ -394,13 +418,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(641, 440);
+            this.MaximumSize = new System.Drawing.Size(641, 441);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(457, 440);
+            this.MinimumSize = new System.Drawing.Size(457, 439);
             this.Name = "frmAllEstimation";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "总体估计";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmAllEstimation_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmAllEstimation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
@@ -408,8 +433,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cBESampleClassic.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cBECunName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBEMethod.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cBESamCunName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBESamBasis.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBESamSurvey.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cBESamLayer.Properties)).EndInit();
@@ -431,8 +457,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.ComboBoxEdit cBEMethod;
-        private DevExpress.XtraEditors.ComboBoxEdit cBESamCunName;
-        private DevExpress.XtraEditors.LabelControl lCSample;
         private DevExpress.XtraEditors.ComboBoxEdit cBESamBasis;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.ComboBoxEdit cBESamSurvey;
@@ -456,5 +480,9 @@
         private DevExpress.XtraEditors.SimpleButton siBcancel;
         private DevExpress.XtraEditors.SimpleButton siB_Ok;
         private DevExpress.XtraEditors.SimpleButton siBHelp;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.ComboBoxEdit cBESampleClassic;
+        private DevExpress.XtraEditors.ComboBoxEdit cBECunName;
+        private DevExpress.XtraEditors.LabelControl lCSampleClassic;
     }
 }

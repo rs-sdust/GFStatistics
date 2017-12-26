@@ -76,7 +76,7 @@
             // memoEdit1
             // 
             this.memoEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.memoEdit1.EditValue = "DVI=NIR/R，或两个波段反射率的计算。";
+            this.memoEdit1.EditValue = "RVI=NIR/R，或两个波段反射率的计算。";
             this.memoEdit1.Location = new System.Drawing.Point(2, 22);
             this.memoEdit1.Name = "memoEdit1";
             this.memoEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window;
@@ -275,6 +275,7 @@
             this.Name = "frmRVI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "比值植被指数(RVI)";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmRVI_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmRVI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gCHelp)).EndInit();
             this.gCHelp.ResumeLayout(false);

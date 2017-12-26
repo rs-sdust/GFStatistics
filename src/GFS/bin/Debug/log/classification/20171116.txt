@@ -1,0 +1,204 @@
+
+ 
+记录时间：2017-11-16 11:07:08,868 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.InvalidOperationException: XML 文档(0, 0)中有错误。 ---> System.TypeInitializationException: “System.Xml.Serialization.XmlSerializationReader”的类型初始值设定项引发异常。 ---> System.Configuration.ConfigurationErrorsException: 配置系统未能初始化 ---> System.Configuration.ConfigurationErrorsException: 每个配置文件中只允许存在一个 <configSections> 元素，并且，如果存在该元素，它还必须是根 <configuration> 元素的第一个子元素。 (G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.Classification.exe.Config line 6)
+   在 System.Configuration.ConfigurationSchemaErrors.ThrowIfErrors(Boolean ignoreLocal)
+   在 System.Configuration.BaseConfigurationRecord.ThrowIfParseErrors(ConfigurationSchemaErrors schemaErrors)
+   在 System.Configuration.BaseConfigurationRecord.ThrowIfInitErrors()
+   在 System.Configuration.ClientConfigurationSystem.EnsureInit(String configKey)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Configuration.ConfigurationManager.PrepareConfigSystem()
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 System.Configuration.ConfigurationManager.get_AppSettings()
+   在 log4net.Util.SystemInfo.GetAppSetting(String key)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.DeserializePrimitive(XmlReader xmlReader, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 43
+
+ 
+记录时间：2017-11-16 11:09:41,224 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.InvalidOperationException: XML 文档(0, 0)中有错误。 ---> System.TypeInitializationException: “System.Xml.Serialization.XmlSerializationReader”的类型初始值设定项引发异常。 ---> System.Configuration.ConfigurationErrorsException: 配置系统未能初始化 ---> System.Configuration.ConfigurationErrorsException: 每个配置文件中只允许存在一个 <configSections> 元素，并且，如果存在该元素，它还必须是根 <configuration> 元素的第一个子元素。 (G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.Classification.exe.Config line 6)
+   在 System.Configuration.ConfigurationSchemaErrors.ThrowIfErrors(Boolean ignoreLocal)
+   在 System.Configuration.BaseConfigurationRecord.ThrowIfParseErrors(ConfigurationSchemaErrors schemaErrors)
+   在 System.Configuration.BaseConfigurationRecord.ThrowIfInitErrors()
+   在 System.Configuration.ClientConfigurationSystem.EnsureInit(String configKey)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Configuration.ConfigurationManager.PrepareConfigSystem()
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 System.Configuration.ConfigurationManager.get_AppSettings()
+   在 log4net.Util.SystemInfo.GetAppSetting(String key)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.DeserializePrimitive(XmlReader xmlReader, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 43
+
+ 
+记录时间：2017-11-16 11:10:23,095 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: s
+   在 System.IO.StringReader..ctor(String s)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 42
+
+ 
+记录时间：2017-11-16 11:12:37,781 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.InvalidOperationException: XML 文档(0, 0)中有错误。 ---> System.TypeInitializationException: “System.Xml.Serialization.XmlSerializationReader”的类型初始值设定项引发异常。 ---> System.Configuration.ConfigurationErrorsException: 配置系统未能初始化 ---> System.Configuration.ConfigurationErrorsException: 每个配置文件中只允许存在一个 <configSections> 元素，并且，如果存在该元素，它还必须是根 <configuration> 元素的第一个子元素。 (G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.Classification.exe.Config line 6)
+   在 System.Configuration.ConfigurationSchemaErrors.ThrowIfErrors(Boolean ignoreLocal)
+   在 System.Configuration.BaseConfigurationRecord.ThrowIfParseErrors(ConfigurationSchemaErrors schemaErrors)
+   在 System.Configuration.BaseConfigurationRecord.ThrowIfInitErrors()
+   在 System.Configuration.ClientConfigurationSystem.EnsureInit(String configKey)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Configuration.ConfigurationManager.PrepareConfigSystem()
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 System.Configuration.ConfigurationManager.get_AppSettings()
+   在 log4net.Util.SystemInfo.GetAppSetting(String key)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.DeserializePrimitive(XmlReader xmlReader, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 43
+
+ 
+记录时间：2017-11-16 11:19:03,439 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.InvalidOperationException: XML 文档(1, 1)中有错误。 ---> System.Xml.XmlException: 根级别上的数据无效。 第 1 行，位置 1。
+   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   在 System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   在 System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlTextReader.Read()
+   在 System.Xml.XmlReader.MoveToContent()
+   在 System.Xml.Serialization.XmlSerializationPrimitiveReader.Read_string()
+   在 System.Xml.Serialization.XmlSerializer.DeserializePrimitive(XmlReader xmlReader, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 43
+
+ 
+记录时间：2017-11-16 11:22:06,734 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: s
+   在 System.IO.StringReader..ctor(String s)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 42
+
+ 
+记录时间：2017-11-16 11:29:07,847 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.InvalidOperationException: XML 文档(1, 1)中有错误。 ---> System.Xml.XmlException: 根级别上的数据无效。 第 1 行，位置 1。
+   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   在 System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   在 System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlTextReader.Read()
+   在 System.Xml.XmlReader.MoveToContent()
+   在 System.Xml.Serialization.XmlSerializationPrimitiveReader.Read_string()
+   在 System.Xml.Serialization.XmlSerializer.DeserializePrimitive(XmlReader xmlReader, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 43
+
+ 
+记录时间：2017-11-16 11:30:21,541 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.InvalidOperationException: XML 文档(1, 1)中有错误。 ---> System.Xml.XmlException: 根级别上的数据无效。 第 1 行，位置 1。
+   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   在 System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   在 System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlTextReader.Read()
+   在 System.Xml.XmlReader.MoveToContent()
+   在 System.Xml.Serialization.XmlSerializationPrimitiveReader.Read_string()
+   在 System.Xml.Serialization.XmlSerializer.DeserializePrimitive(XmlReader xmlReader, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 43
+
+ 
+记录时间：2017-11-16 11:35:19,857 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.InvalidOperationException: XML 文档(1, 1)中有错误。 ---> System.Xml.XmlException: 根级别上的数据无效。 第 1 行，位置 1。
+   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   在 System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   在 System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlTextReader.Read()
+   在 System.Xml.XmlReader.MoveToContent()
+   在 System.Xml.Serialization.XmlSerializationPrimitiveReader.Read_string()
+   在 System.Xml.Serialization.XmlSerializer.DeserializePrimitive(XmlReader xmlReader, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   在 System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 43
+
+ 
+记录时间：2017-11-16 12:02:38,090 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.DeserializeTask(String taskFile) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 42

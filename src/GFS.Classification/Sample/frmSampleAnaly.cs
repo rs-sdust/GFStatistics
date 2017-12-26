@@ -100,7 +100,7 @@ namespace GFS.Classification
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            WaitDialogForm frmWait = new WaitDialogForm("正在分析样本...", "提示信息");
+            frmWaitDialog frmWait = new frmWaitDialog("正在分析样本...", "提示信息");
             try
             {
                 frmWait.Owner = this;
@@ -149,6 +149,11 @@ namespace GFS.Classification
                 this.btnHelp.Text = "显示帮助>>";
                 this.Size = this.MinimumSize;
             }
+        }
+
+        private void frmSampleAnaly_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
     }

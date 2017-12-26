@@ -2,3 +2,8 @@ E:\高分统计\GFStatistics.git\trunk\Release\GFS.CarbonBLL.dll
 E:\高分统计\GFStatistics.git\trunk\Release\GFS.CarbonBLL.pdb
 E:\高分统计\GFStatistics.git\trunk\src\GFS.CarbonBLL\obj\x86\Release\GFS.CarbonBLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS.CarbonBLL\obj\x86\Release\GFS.CarbonBLL.pdb
+G:\高分统计项目一期\trunk\Release\GFS.CarbonBLL.dll
+G:\高分统计项目一期\trunk\Release\GFS.CarbonBLL.pdb
+G:\高分统计项目一期\trunk\src\GFS.CarbonBLL\obj\x86\Release\GFS.CarbonBLL.csprojResolveAssemblyReference.cache
+G:\高分统计项目一期\trunk\src\GFS.CarbonBLL\obj\x86\Release\GFS.CarbonBLL.dll
+G:\高分统计项目一期\trunk\src\GFS.CarbonBLL\obj\x86\Release\GFS.CarbonBLL.pdb

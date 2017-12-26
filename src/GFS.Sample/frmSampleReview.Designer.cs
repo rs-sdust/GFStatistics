@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSampleReview));
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barManager1 = new DevExpress.XtraBars.BarManager();
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barBtnOpenShp = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnDel = new DevExpress.XtraBars.BarButtonItem();
@@ -44,7 +43,7 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection();
             this.barBtnZoomTo = new DevExpress.XtraBars.BarButtonItem();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControlTable = new DevExpress.XtraGrid.GridControl();
@@ -260,9 +259,13 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSampleReview";
             this.Text = "样本审核";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmSampleReview_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmSampleReview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();

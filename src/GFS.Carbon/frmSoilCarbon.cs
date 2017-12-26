@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using GFS.CarbonBLL;
 using DevExpress.XtraEditors;
 using DevExpress.Utils;
+using GFS.BLL;
 
 namespace GFS.Carbon
 {
@@ -93,7 +94,7 @@ namespace GFS.Carbon
             }
             else
             {
-                WaitDialogForm frmWait = new WaitDialogForm("正在处理...", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在处理...", "提示信息");
                 frmWait.Owner = this;
                 frmWait.TopMost = false;
                 try
@@ -156,6 +157,11 @@ namespace GFS.Carbon
             this.cmbGravel.Properties.Items.AddRange(numFields);
 
 
+        }
+
+        private void frmSoilCarbon_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
     }
 }

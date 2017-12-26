@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGrass));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cmbPixel = new DevExpress.XtraEditors.ComboBoxEdit();
             this.btnRParenthesis = new DevExpress.XtraEditors.SimpleButton();
             this.btnLParenthesis = new DevExpress.XtraEditors.SimpleButton();
             this.btnDivide = new DevExpress.XtraEditors.SimpleButton();
@@ -60,9 +61,9 @@
             this.btnOutBiology = new DevExpress.XtraEditors.SimpleButton();
             this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancle = new DevExpress.XtraEditors.SimpleButton();
-            this.cmbPixel = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPixel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtExpression.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listIndex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinCarbonIndex.Properties)).BeginInit();
@@ -72,7 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtOutCarbon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOutCarbonDensity.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOutBiology.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbPixel.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -101,6 +101,16 @@
             this.groupControl1.Size = new System.Drawing.Size(472, 290);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "输入";
+            // 
+            // cmbPixel
+            // 
+            this.cmbPixel.Location = new System.Drawing.Point(114, 70);
+            this.cmbPixel.Name = "cmbPixel";
+            this.cmbPixel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbPixel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbPixel.Size = new System.Drawing.Size(100, 20);
+            this.cmbPixel.TabIndex = 53;
             // 
             // btnRParenthesis
             // 
@@ -398,16 +408,6 @@
             this.btnCancle.Text = "取消";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
-            // cmbPixel
-            // 
-            this.cmbPixel.Location = new System.Drawing.Point(114, 70);
-            this.cmbPixel.Name = "cmbPixel";
-            this.cmbPixel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbPixel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbPixel.Size = new System.Drawing.Size(100, 20);
-            this.cmbPixel.TabIndex = 53;
-            // 
             // frmGrass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -417,12 +417,17 @@
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmGrass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "草地碳储量核算";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmGrass_HelpButtonClicked);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cmbPixel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtExpression.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listIndex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spinCarbonIndex.Properties)).EndInit();
@@ -433,7 +438,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtOutCarbon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOutCarbonDensity.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOutBiology.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbPixel.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

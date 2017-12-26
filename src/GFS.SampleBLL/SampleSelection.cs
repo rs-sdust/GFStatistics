@@ -46,9 +46,9 @@ namespace GFS.SampleBLL
         {
             msg = string.Empty;
             //firstunit
-            if (string.IsNullOrEmpty(SampleData.firstUnit))
+            if (string.IsNullOrEmpty(SampleData.firstSample))
             {
-                msg = "一级抽样单元为空！";
+                msg = "一级样本为空！";
                 return false;
             }
             else 

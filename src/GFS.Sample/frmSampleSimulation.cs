@@ -38,6 +38,10 @@ namespace GFS.Sample
         {
             this.Size = this.MinimumSize;
             MapAPI.GetAllLayers(null,cBFile);//加载地图图层中的数据
+            if (!string.IsNullOrEmpty(SampleData.firstUnit))
+            {
+                cBFile.Text = SampleData.firstUnit;
+            }
         }
         //入样总体
         private void btnOpenFile_Click(object sender, EventArgs e)
@@ -49,11 +53,12 @@ namespace GFS.Sample
 
             if (fileDialog.ShowDialog() == DialogResult.OK)
             {
-                string filepath = fileDialog.FileName.ToString();
+                string filepath = fileDialog.FileName;
                 cBFile.Text = filepath;//获取文件路径
 
             }
         }
+
         private void cBFile_TextChanged(object sender, EventArgs e)
         {
             SampleSimulation.BindFields(cBFile.Text, cBELayer);
@@ -215,7 +220,7 @@ namespace GFS.Sample
             }
             else
             {
-                WaitDialogForm frmWait = new WaitDialogForm("正在生成...", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在生成...", "提示信息");
                 try
                 {
                     DataTable ExtandTable = new DataTable();
@@ -256,6 +261,10 @@ namespace GFS.Sample
                     {
                         if (Sim.CreateShpFile(cBFile.Text, ExtandTable, cBESave.Text))
                         {
+                            BLL.ProductMeta meta = new ProductMeta(cBESave.Text.TrimEnd(), "", "", "一级样本村", "抽样和面积推算结果");
+                            meta.WriteShpMeta();
+                            BLL.ProductQuickView view = new BLL.ProductQuickView(cBESave.Text.TrimEnd());
+                            view.Create();
                             System.Windows.Forms.DialogResult dialogResult = XtraMessageBox.Show("保存样本成功,是否加载结果？", "提示信息", System.Windows.Forms.MessageBoxButtons.YesNo, System.Windows.Forms.MessageBoxIcon.Asterisk);
                             if (dialogResult == System.Windows.Forms.DialogResult.Yes)
                             {
@@ -353,6 +362,18 @@ namespace GFS.Sample
                 XtraMessageBox.Show(ex.Message);
             }
         }
+
+        private void cBESave_TextChanged(object sender, EventArgs e)
+        {
+            SampleData.firstSample = cBESave.Text;
+        }
+
+        private void frmSampleSimulation_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
+        }
+
+
 
 
 

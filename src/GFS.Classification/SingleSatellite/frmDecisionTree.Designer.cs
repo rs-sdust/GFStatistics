@@ -259,11 +259,15 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmDecisionTree";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "";
             this.Text = "决策树分类";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmDecisionTree_HelpButtonClicked);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDecisionTree_FormClosing);
             this.Load += new System.EventHandler(this.frmDecisionTree_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -2,7 +2,3 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.DataManBLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.DataManBLL.pdb
 E:\高分统计\GFStatistics.git\trunk\src\GFS.DataManBLL\obj\x86\Debug\GFS.DataManBLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS.DataManBLL\obj\x86\Debug\GFS.DataManBLL.pdb
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.DataManBLL.dll
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.DataManBLL.pdb
-G:\高分统计项目一期\trunk\src\GFS.DataManBLL\obj\x86\Debug\GFS.DataManBLL.dll
-G:\高分统计项目一期\trunk\src\GFS.DataManBLL\obj\x86\Debug\GFS.DataManBLL.pdb

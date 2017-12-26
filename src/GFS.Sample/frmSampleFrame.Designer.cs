@@ -97,9 +97,9 @@
             this.labelCilp1.LineVisible = true;
             this.labelCilp1.Location = new System.Drawing.Point(2, 22);
             this.labelCilp1.Name = "labelCilp1";
-            this.labelCilp1.Size = new System.Drawing.Size(279, 223);
+            this.labelCilp1.Size = new System.Drawing.Size(220, 223);
             this.labelCilp1.TabIndex = 20;
-            this.labelCilp1.Text = "该工具用于将栅格图像按\r\n照面状矢量文件的边界进\r\n行裁剪，得到矢量文件范\r\n围内的栅格图像。";
+            this.labelCilp1.Text = "在一级抽样单元基础上\r\n结合耕地数据信息计算\r\n各一级抽样单元的耕地\r\n面积，然后结合作物识\r\n别数据统计各抽样单元\r\n内指定作物的遥感分类\r\n识别面积。\r\n";
             // 
             // btnCancle
             // 
@@ -124,7 +124,7 @@
             this.groupControl3.Controls.Add(this.labelCilp1);
             this.groupControl3.Location = new System.Drawing.Point(503, 12);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(283, 247);
+            this.groupControl3.Size = new System.Drawing.Size(224, 247);
             this.groupControl3.TabIndex = 24;
             this.groupControl3.Text = "构建抽样框帮助";
             // 
@@ -470,12 +470,13 @@
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(800, 500);
+            this.MaximumSize = new System.Drawing.Size(741, 369);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(509, 369);
             this.Name = "frmSampleFrame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "抽样框";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmSampleFrame_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmClipRaster_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);

@@ -6,5 +6,5 @@ using System.Text;
 namespace GFS.Carbon
 {
     public enum FlowStatus
-    { Start, btnPrepare, btnSample, btnSingleDate, btnAfter, btnVerification, End }
+    { Start, btnForest, btnShrub, btnGrass, btnVeg, btnSoil, End }
 }

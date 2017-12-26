@@ -1,0 +1,5883 @@
+
+ 
+记录时间：2017-12-06 17:00:12,244 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:17:41,502 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:17:43,800 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:17:54,388 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:18:02,472 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:22:17,967 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:22:19,055 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:22:19,887 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:22:20,587 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:22:21,097 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:34:54,235 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:34:59,817 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:35:05,706 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:35:12,206 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:35:13,311 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:35:17,431 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 17:35:17,899 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,914 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,926 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,926 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,931 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,932 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,933 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,933 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,934 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,935 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,935 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,936 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,936 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,937 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,937 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,938 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,939 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,939 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,940 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,940 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,941 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,941 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,942 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,943 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,944 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,945 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,945 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:17,946 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,821 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,839 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,855 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,855 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,856 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,857 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,857 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,858 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,859 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,859 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,860 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,860 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,862 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,862 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,863 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,863 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,864 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,865 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,866 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,867 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,868 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,868 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,869 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,869 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,870 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,870 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,871 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,871 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,871 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,872 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,873 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:19,873 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,670 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,672 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,680 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,682 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,702 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,703 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,713 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,715 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,733 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,734 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,743 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,744 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,768 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,770 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,773 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,774 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,796 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:20,797 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,093 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,095 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,099 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,099 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,110 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,112 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,116 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,118 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,132 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,133 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,149 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,150 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,170 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,171 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,180 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,182 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,198 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,199 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,212 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,214 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,232 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,234 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,244 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,246 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,268 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,270 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,276 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,278 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,303 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,304 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,310 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:21,312 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,180 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,181 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,198 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,199 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,216 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,218 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,228 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,230 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,244 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,246 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,268 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,268 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,276 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,278 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,292 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,294 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,313 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,315 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,427 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,428 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,450 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,450 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,461 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,463 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,478 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,478 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,484 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,486 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,495 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,496 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,511 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,512 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,527 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,528 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,543 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,545 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,558 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,560 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,573 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,574 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,592 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,594 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,630 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,631 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,637 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,638 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,650 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,651 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,667 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,668 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,678 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,679 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,706 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,708 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,713 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,714 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,741 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,743 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,767 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,769 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,778 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,780 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,798 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,799 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,807 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,810 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,819 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,821 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,838 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,840 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,857 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:23,858 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,752 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,770 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,785 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,786 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,787 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,787 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,788 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,788 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,789 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,789 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,790 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,790 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,791 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,792 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,792 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,793 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,794 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,794 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,795 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,795 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,796 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,797 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,798 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,798 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,799 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,799 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,800 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,801 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,801 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,802 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,802 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:24,803 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=829}
+left:{X=146,Y=853}
+right{X=402,Y=853}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,205 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,217 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,228 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,228 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,229 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,229 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,230 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,231 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,231 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,232 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,233 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,233 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,234 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,234 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,235 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,235 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,236 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,236 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,237 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,238 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,238 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,239 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,239 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 17:35:26,240 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:07,836 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:12,726 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 19:36:13,223 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,239 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,252 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,252 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,257 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,258 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,259 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,259 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,260 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,261 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,262 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,262 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,263 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,263 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,264 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,265 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,265 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,266 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,267 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,267 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,268 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,269 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,269 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,270 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,271 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,271 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,272 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:13,272 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,386 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,400 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,401 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,408 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,417 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,425 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,435 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,440 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,456 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,464 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,480 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,488 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,496 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,504 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,512 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,522 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,528 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,536 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,545 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,552 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,568 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,576 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:28,891 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,892 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,899 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,900 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,916 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,917 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,921 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,922 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,928 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,929 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,947 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,948 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,961 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,962 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,977 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,979 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,993 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:28,995 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,011 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,012 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,026 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,027 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,037 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,038 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,058 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,059 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,069 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,070 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,085 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,086 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,107 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,108 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,118 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,119 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,137 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:29,138 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:36:30,120 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,128 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,138 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,144 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,152 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,160 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,168 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,176 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,184 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,195 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,201 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,730 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,740 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,749 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,757 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,763 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,768 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,776 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,784 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,792 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:36:30,800 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:39:10,049 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,050 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,058 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,059 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,059 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,060 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,070 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,071 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,086 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,086 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,104 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,104 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,117 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,118 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,136 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,137 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,150 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,151 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,169 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,170 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,181 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,182 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,195 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,201 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,210 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,212 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,225 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,226 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,241 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,241 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,263 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,264 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:10,602 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:39:10,610 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:39:10,618 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:39:10,625 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:39:38,878 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,880 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,884 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,885 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,900 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,902 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,915 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,916 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,922 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,923 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,932 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,933 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,945 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,945 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,961 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,962 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,982 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,982 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,991 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:38,992 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,014 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,015 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,026 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,026 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,045 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,046 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,057 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,058 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,070 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,071 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,091 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,092 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,103 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,104 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,125 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:39:39,126 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,713 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,714 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,720 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,720 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,730 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,731 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,747 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,747 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,756 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,756 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,779 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,780 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,788 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,789 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,810 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,811 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,821 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,822 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,837 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,838 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,857 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,858 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,869 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,869 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,891 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,893 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,901 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,903 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,924 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,926 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,934 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:40:28,936 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:01,415 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 19:41:02,579 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,597 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,611 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,612 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,618 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,619 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,620 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,620 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,621 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,622 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,624 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,624 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,625 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,626 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,627 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,628 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,629 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,630 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,631 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,631 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,632 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,633 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,634 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,635 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,636 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,637 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,638 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:02,638 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,699 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,700 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,901 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,902 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,923 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,924 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,933 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,933 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,944 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,945 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,960 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,961 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,981 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,983 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,994 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:23,996 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,014 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,016 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,068 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,070 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,075 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,077 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,096 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,098 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,103 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,105 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,125 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,127 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,133 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,136 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,157 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,158 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,162 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,163 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,185 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,186 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,221 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,222 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,229 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,230 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,246 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,247 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,261 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,262 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,280 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:41:24,280 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:32,540 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-12-06 19:42:33,010 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,024 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,035 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,035 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,045 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,045 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,046 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,047 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,047 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,048 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,049 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,049 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,050 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,051 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,051 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,052 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,053 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,053 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,054 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,055 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,056 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,057 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,058 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,058 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,059 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,059 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,060 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:42:33,060 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-06 19:43:05,999 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:43:06,008 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:43:06,016 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:43:06,024 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:43:06,031 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-12-06 19:43:29,949 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104

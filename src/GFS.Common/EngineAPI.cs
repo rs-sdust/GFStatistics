@@ -898,7 +898,88 @@ namespace GFS.Common
                 (targetWorkspace as IFeatureWorkspaceManage).DeleteByName(datasetName);
             }
         }
-
+        /// <summary>
+        /// Gets the class value from raster.
+        /// </summary>
+        /// <param name="inFile">The in file.</param>
+        /// <returns>List&lt;System.String&gt;.</returns>
+        /// <exception cref="System.Exception">文件类型不正确，请选择分类结果文件！</exception>
+        public static List<string> GetClassFromRaster(string inFile)
+        {
+            IRasterLayer pRasterLayer = null;
+            IUniqueValues pUniqueValues = null;
+            IRasterCalcUniqueValues pCalcUniqueValues = null;
+            List<string> classNames = null;
+            try
+            {
+                pRasterLayer = new RasterLayerClass();
+                pRasterLayer.CreateFromFilePath(inFile);
+                if (!(1 == pRasterLayer.BandCount))
+                {
+                    throw new Exception("文件类型不正确，请选择分类结果文件！");
+                }
+                pUniqueValues = new UniqueValuesClass();
+                pCalcUniqueValues = new RasterCalcUniqueValuesClass();
+                pCalcUniqueValues.AddFromRaster(pRasterLayer.Raster, 0, pUniqueValues);
+                classNames = new List<string>();
+                for (int i = 0; i < pUniqueValues.Count; i++)
+                {
+                    classNames.Add(pUniqueValues.get_UniqueValue(i).ToString());
+                }
+                return classNames;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (pCalcUniqueValues != null)
+                    Marshal.ReleaseComObject(pCalcUniqueValues);
+                if (pUniqueValues != null)
+                    Marshal.ReleaseComObject(pUniqueValues);
+                if (pRasterLayer != null)
+                    Marshal.ReleaseComObject(pRasterLayer);
+            }
+        }
+        public static List<string> GetRasterUniqueValue(string inFile)
+        {
+            IRasterLayer pRasterLayer = null;
+            IUniqueValues pUniqueValues = null;
+            IRasterCalcUniqueValues pCalcUniqueValues = null;
+            List<string> classNames = null;
+            try
+            {
+                pRasterLayer = new RasterLayerClass();
+                pRasterLayer.CreateFromFilePath(inFile);
+                if (!(1 == pRasterLayer.BandCount))
+                {
+                    throw new Exception("文件类型不正确，请选择分类结果文件！");
+                }
+                pUniqueValues = new UniqueValuesClass();
+                pCalcUniqueValues = new RasterCalcUniqueValuesClass();
+                pCalcUniqueValues.AddFromRaster(pRasterLayer.Raster, 0, pUniqueValues);
+                classNames = new List<string>();
+                for (int i = 0; i < pUniqueValues.Count; i++)
+                {
+                    classNames.Add(pUniqueValues.get_UniqueValue(i).ToString());
+                }
+                return classNames;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (pCalcUniqueValues != null)
+                    Marshal.ReleaseComObject(pCalcUniqueValues);
+                if (pUniqueValues != null)
+                    Marshal.ReleaseComObject(pUniqueValues);
+                if (pRasterLayer != null)
+                    Marshal.ReleaseComObject(pRasterLayer);
+            }
+        }
 
     }
 }

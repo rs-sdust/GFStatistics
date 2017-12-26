@@ -163,6 +163,30 @@
     <Compile Include="DataPrepare\frmSAVI.designer.cs">
       <DependentUpon>frmSAVI.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGF3Classification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGF3Classification.Designer.cs">
+      <DependentUpon>frmGF3Classification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHyperSpeClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHyperSpeClassification.Designer.cs">
+      <DependentUpon>frmHyperSpeClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpatialError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpatialError.Designer.cs">
+      <DependentUpon>frmSpatialError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWideInWidth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWideInWidth.Designer.cs">
+      <DependentUpon>frmWideInWidth.cs</DependentUpon>
+    </Compile>
     <Compile Include="SingleSatellite\frmOOMaximumLike.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,7 +223,7 @@
     <Compile Include="PostClassification\frmStatisticTable.designer.cs">
       <DependentUpon>frmStatisticTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkFlow\FlowStatus.cs" />
+    <Compile Include="FlowStatus.cs" />
     <Compile Include="DataPrepare\frmClipRaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,17 +248,17 @@
     <Compile Include="DataPrepare\frmMosaic.Designer.cs">
       <DependentUpon>frmMosaic.cs</DependentUpon>
     </Compile>
-    <Compile Include="SingleSatellite\frmOOClassification.cs">
+    <Compile Include="SingleSatellite\frmNeuralNet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SingleSatellite\frmOOClassification.Designer.cs">
-      <DependentUpon>frmOOClassification.cs</DependentUpon>
+    <Compile Include="SingleSatellite\frmNeuralNet.Designer.cs">
+      <DependentUpon>frmNeuralNet.cs</DependentUpon>
     </Compile>
-    <Compile Include="SingleSatellite\frmOOClassMorePara.cs">
+    <Compile Include="SingleSatellite\frmNeuralNetPara.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SingleSatellite\frmOOClassMorePara.Designer.cs">
-      <DependentUpon>frmOOClassMorePara.cs</DependentUpon>
+    <Compile Include="SingleSatellite\frmNeuralNetPara.Designer.cs">
+      <DependentUpon>frmNeuralNetPara.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample\frmSampleAnaly.cs">
       <SubType>Form</SubType>
@@ -273,10 +297,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="WorkFlow\UCWorkFlow.cs">
+    <Compile Include="UCWorkFlow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="WorkFlow\UCWorkFlow.Designer.cs">
+    <Compile Include="UCWorkFlow.Designer.cs">
       <DependentUpon>UCWorkFlow.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -325,6 +349,18 @@
     <EmbeddedResource Include="DataPrepare\frmSAVI.resx">
       <DependentUpon>frmSAVI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmGF3Classification.resx">
+      <DependentUpon>frmGF3Classification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHyperSpeClassification.resx">
+      <DependentUpon>frmHyperSpeClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpatialError.resx">
+      <DependentUpon>frmSpatialError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWideInWidth.resx">
+      <DependentUpon>frmWideInWidth.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SingleSatellite\frmOOMaximumLike.resx">
       <DependentUpon>frmOOMaximumLike.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,11 +388,11 @@
     <EmbeddedResource Include="DataPrepare\frmMosaic.resx">
       <DependentUpon>frmMosaic.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SingleSatellite\frmOOClassification.resx">
-      <DependentUpon>frmOOClassification.cs</DependentUpon>
+    <EmbeddedResource Include="SingleSatellite\frmNeuralNet.resx">
+      <DependentUpon>frmNeuralNet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SingleSatellite\frmOOClassMorePara.resx">
-      <DependentUpon>frmOOClassMorePara.cs</DependentUpon>
+    <EmbeddedResource Include="SingleSatellite\frmNeuralNetPara.resx">
+      <DependentUpon>frmNeuralNetPara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sample\frmSampleAnaly.resx">
       <DependentUpon>frmSampleAnaly.cs</DependentUpon>
@@ -377,7 +413,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="WorkFlow\UCWorkFlow.resx">
+    <EmbeddedResource Include="UCWorkFlow.resx">
       <DependentUpon>UCWorkFlow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

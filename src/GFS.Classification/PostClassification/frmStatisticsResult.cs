@@ -45,7 +45,7 @@ namespace GFS.Classification
             }
             else
             {
-                WaitDialogForm frmWait = new WaitDialogForm("正在统计...", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在统计...", "提示信息");
                 try
                 {
                     frmWait.Owner = this;
@@ -89,6 +89,11 @@ namespace GFS.Classification
                 this.Size = this.MinimumSize;
                 siBHelp.Text = "显示帮助>>";
             }
+        }
+
+        private void frmStatisticsResult_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

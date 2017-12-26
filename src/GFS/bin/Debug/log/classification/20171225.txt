@@ -1,0 +1,1354 @@
+
+ 
+记录时间：2017-12-25 00:00:50,578 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Classification.frmSegmentation property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.BLL.IDLModel.Execute(String cmd) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\IDLModel.cs:行号 94
+   在 GFS.Classification.frmSegmentation.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Classification\SingleSatellite\frmSegmentation.cs:行号 115
+
+ 
+记录时间：2017-12-25 09:39:05,927 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 09:40:52,678 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Classification.frmSegmentation property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.BLL.IDLModel.Execute(String cmd) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\IDLModel.cs:行号 94
+   在 GFS.Classification.frmSegmentation.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Classification\SingleSatellite\frmSegmentation.cs:行号 115
+
+ 
+记录时间：2017-12-25 09:41:08,508 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 09:42:48,085 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 09:42:55,188 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 09:42:56,076 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,102 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,125 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,127 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,141 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,143 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,147 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,148 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,150 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,151 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,153 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,154 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,157 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,157 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,160 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,161 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,165 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,166 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,169 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,170 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,172 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,173 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,176 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,177 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,179 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,180 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,182 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:42:56,183 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 09:51:13,370 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:13:10,230 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:13:45,160 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:14:09,056 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:14:09,721 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,735 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,744 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,745 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,749 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,749 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,750 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,751 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,752 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,753 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,754 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,754 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,754 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,755 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,755 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,756 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,756 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,757 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,758 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,758 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,759 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,759 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,760 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,760 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,761 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,761 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,762 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:09,762 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:14:29,288 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:14:44,767 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:15:11,791 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:17:17,432 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:17:20,526 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:18:44,272 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:19:29,615 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:21:37,455 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:25:09,249 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:25:11,440 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:25:46,951 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:28:58,864 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:29:53,225 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:30:05,656 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:30:49,207 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.Classification.frmSegmentation property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 GFS.BLL.IDLModel.Execute(String cmd) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\IDLModel.cs:行号 94
+   在 GFS.Classification.frmSegmentation.btnOK_Click(Object sender, EventArgs e) 位置 G:\高分统计项目一期\trunk\src\GFS.Classification\SingleSatellite\frmSegmentation.cs:行号 115
+
+ 
+记录时间：2017-12-25 10:31:08,568 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:32:13,481 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:32:24,569 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:32:49,217 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:35:22,562 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:35:22,649 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,663 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,675 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,676 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,676 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,677 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,677 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,678 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,679 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,679 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,680 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,680 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,681 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,681 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,682 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,682 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,683 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,683 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,684 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,684 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,685 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,685 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,686 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,686 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,686 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,687 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,687 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:35:22,688 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.ClassificationBLL.DecisionTree property: [(null)] - 
+错误描述：start:{X=274,Y=180}
+left:{X=146,Y=204}
+right{X=402,Y=204}
+ 
+
+ 
+记录时间：2017-12-25 10:36:51,097 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:37:02,185 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:37:18,026 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:40:09,993 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:42:24,210 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:44:06,180 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:45:07,698 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:45:47,923 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:46:32,233 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130
+
+ 
+记录时间：2017-12-25 10:47:02,218 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 130

@@ -37,6 +37,11 @@ namespace GFS.Sample
         private void frmAutoLayer_Load(object sender, EventArgs e)
         {
             MapAPI.GetAllLayers(null,cmbFUnit);
+
+            if (!string.IsNullOrEmpty(SampleData.firstUnit))
+            {
+                cmbFUnit.Text = SampleData.firstUnit;
+            }
         }
 
         private void btnUnit_Click(object sender, EventArgs e)
@@ -97,6 +102,8 @@ namespace GFS.Sample
         {
             ITableConversion conver = new TableConversion();
             DataTable dt = conver.AETableToDataTable(_pFLayer.FeatureClass);
+            //添加主键以提高处理速度
+            dt.PrimaryKey = new DataColumn[] { dt.Columns["FID"] };
             AutoLayer auto = new AutoLayer();
             _pFDt = auto.OptimalStratifying(dt,_lyrField,_lyrNum);
 
@@ -123,20 +130,27 @@ namespace GFS.Sample
             while ((pRow = pCursor.NextRow() )!= null)
             {
                 string value = pRow.get_Value(0).ToString();
-                foreach(DataRow dRow in  _pFDt.Rows)
-                {
-                    if (value == dRow["FID"].ToString())
-                    {
-                        pRow.set_Value(layerIndex, dRow[fName]);
-                        pCursor.UpdateRow(pRow);
-                        continue;
-                    }
-                }
+                //改用find接口以二叉树查找，效率提高百倍级别
+                DataRow test = _pFDt.Rows.Find(value);
+                if (test == null)
+                    continue;
+                pRow.set_Value(layerIndex, test[fName]);
+                pCursor.UpdateRow(pRow);
+                //原始遍历方法
+                //foreach(DataRow dRow in  _pFDt.Rows)
+                //{
+                //    if (value == dRow["FID"].ToString())
+                //    {
+                //        pRow.set_Value(layerIndex, dRow[fName]);
+                //        pCursor.UpdateRow(pRow);
+                //    }
+                //}
             }
             Marshal.ReleaseComObject(pCursor);
 
             XtraMessageBox.Show("分层完毕！", "提示信息", MessageBoxButtons.OK, MessageBoxIcon.Information);
             {
+                SampleData.layerField = fName;
                 MapAPI.UniqueValueRender(_pFLayer, fName);
                 (_pMapControl.Map as IActiveView).Extent = _pFLayer.AreaOfInterest;
                 _pMapControl.Refresh();
@@ -160,6 +174,11 @@ namespace GFS.Sample
         private void spinLyrNum_EditValueChanged(object sender, EventArgs e)
         {
             _lyrNum = int.Parse(spinLyrNum.EditValue.ToString());
+        }
+
+        private void frmAutoLayer_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

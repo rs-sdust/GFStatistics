@@ -225,6 +225,7 @@
             this.labelCilp1.Name = "labelCilp1";
             this.labelCilp1.Size = new System.Drawing.Size(279, 228);
             this.labelCilp1.TabIndex = 20;
+            this.labelCilp1.Text = "将分类结果与地面真实信息进行比较，\r\n利用混淆矩阵显示分类结果的准确性。\r\n计算混淆矩阵使用一个真实图像或使用\r\n地面真实样本。";
             // 
             // frmAccuracyVerify
             // 
@@ -238,6 +239,7 @@
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(763, 367);
@@ -246,6 +248,7 @@
             this.Name = "frmAccuracyVerify";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "精度验证";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmAccuracyVerify_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmAccuracyVerify_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

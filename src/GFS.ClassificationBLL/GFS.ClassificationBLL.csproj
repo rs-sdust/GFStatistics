@@ -148,13 +148,16 @@
     <Compile Include="frmEditNode.designer.cs">
       <DependentUpon>frmEditNode.cs</DependentUpon>
     </Compile>
+    <Compile Include="GF3Classification.cs" />
+    <Compile Include="HyperSpeClassification.cs" />
     <Compile Include="MAP.cs" />
     <Compile Include="MaximumLikeHood.cs" />
-    <Compile Include="OOClassification.cs" />
+    <Compile Include="NeuralNet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomColor.cs" />
     <Compile Include="RasterMapAlgebraOp.cs" />
     <Compile Include="SampleAnalyst.cs" />
+    <Compile Include="SpatialError.cs" />
     <Compile Include="StatisticsResult.cs" />
     <Compile Include="VegetationIndex.cs" />
     <Compile Include="Verification.cs" />
@@ -183,7 +186,6 @@
     <EmbeddedResource Include="frmEditNode.resx">
       <DependentUpon>frmEditNode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

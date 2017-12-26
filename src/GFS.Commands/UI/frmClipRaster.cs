@@ -1152,11 +1152,11 @@ namespace GFS.Commands.UI
                     //}
                     string empty = string.Empty;
                     bool flag = false;
-                    WaitDialogForm waitDialogForm = new WaitDialogForm("正在裁切数据......", "提示信息");
+                    frmWaitDialog frmWait = new frmWaitDialog("正在裁切数据......", "提示信息");
                     try
                     {
-                        waitDialogForm.Owner = this;
-                        waitDialogForm.TopMost = false;
+                        frmWait.Owner = this;
+                        frmWait.TopMost = false;
                         IRaster2 pRaster = this.m_pRasterDataset.CreateDefaultRaster() as IRaster2;
                         string empty2 = string.Empty;
                         this.CalculateRectangle(pRaster, ref empty2);
@@ -1218,7 +1218,7 @@ namespace GFS.Commands.UI
                     }
                     finally
                     {
-                        waitDialogForm.Close();
+                        frmWait.Close();
                     }
                     if (flag)
                     {
@@ -1523,7 +1523,7 @@ namespace GFS.Commands.UI
 
         private void FrmClipRaster_HelpButtonClicked(object sender, CancelEventArgs e)
         {
-            //HelpManager.ShowHelp(this);
+            HelpManager.ShowHelp(this);
         }
 
         private  void AddRadioGroupItem(RadioGroup radioGroup, string sDesc)

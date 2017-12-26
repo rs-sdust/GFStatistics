@@ -32,8 +32,8 @@ namespace GFS.SampleBLL
         {
            
             int rows = dTable.Rows.Count;
-            DataRow[] foundRow1 = new DataRow[rows];
-            foundRow1 = dTable.Select();
+            //DataRow[] foundRow1 = new DataRow[rows];
+            //foundRow1 = dTable.Select();
             DataRow[] foundRow = new DataRow[rows];
             var SelectRow = dTable.Columns[0].ColumnName + " = "+Num;
 
@@ -121,8 +121,8 @@ namespace GFS.SampleBLL
         /// Classify_Samples    抽样样本的分类结果
         /// SavePath            推算结果保存地址
         /// <returns>是否计算成功</returns>
-        public bool RatioPreprocessing(string PopulationPath, string SamplesPath, string FieldName, string Layer_Population, string Layer_Samples,
-                                       string Classify_Population, string Classify_Samples, string SavePath,string Sample_Basis)
+        public bool RatioPreprocessing(string PopulationPath, string SamplesPath, string Survey_Samples, string Layer_Population, string Layer_Samples,
+                                       string Classify_Population, string Classify_Samples, string SavePath, string Sample_Basis, string Sam_CunCode)
         {
             try
             {
@@ -135,10 +135,10 @@ namespace GFS.SampleBLL
             Population = conver.AETableToDataTable(PopuIFeaClass);
             Samples = conver.AETableToDataTable(SamIFeaClass);
             //比率估计计算
-            if (Population == null || Samples == null || FieldName == ""
+            if (Population == null || Samples == null || Survey_Samples == ""
                 || Layer_Population == "" || Layer_Samples == ""
                 || Classify_Population == "" || Classify_Samples == ""
-                || SavePath == "" || Sample_Basis=="")
+                || SavePath == "" || Sample_Basis == "" || Sam_CunCode == "")
                 return false;
             fUnitNum = Population.Rows.Count;
             SampleNum = Samples.Rows.Count;
@@ -146,9 +146,9 @@ namespace GFS.SampleBLL
             unitClassArea = double.Parse(Population.Compute(string.Format("sum({0})", Classify_Population), "true").ToString()) / 666.67;
             sampleLandArea = double.Parse(Samples.Compute(string.Format("sum({0})", Sample_Basis), "true").ToString()) / 666.67;
             sampleClassArea = double.Parse(Samples.Compute(string.Format("sum({0})", Classify_Samples), "true").ToString()) / 666.67;
-            sampleSurveyArea = double.Parse(Samples.Compute(string.Format("sum({0})", FieldName), "true").ToString()) / 666.67;
+            sampleSurveyArea = double.Parse(Samples.Compute(string.Format("sum({0})", Survey_Samples), "true").ToString()) / 666.67;
             double CV = 0;
-            double d_result = RatioEstimating(Population, Samples, FieldName, Layer_Population, Layer_Samples, Classify_Population, Classify_Samples, Sample_Basis,ref CV)/666.667;
+            double d_result = RatioEstimating(Population, Samples, Survey_Samples, Layer_Population, Layer_Samples, Classify_Population, Classify_Samples, Sample_Basis,Sam_CunCode, ref CV) / 666.667;
             //保存推算结果至EXCl
                 string p0 = "        面积估算结果";
                 string p1 = "估算方法：分层比率估计    ";
@@ -217,7 +217,7 @@ namespace GFS.SampleBLL
         /// CV                  精度评价 CV值
         /// <returns>推算结果</returns>
         /// <summary>      
-        private double RatioEstimating(DataTable Population, DataTable Samples, string Sample_Survey, string Layer_Population, string Layer_Samples, string Classify_Population, string Classify_Samples, string Sample_Basis,ref double CV)
+        private double RatioEstimating(DataTable Population, DataTable Samples, string Sample_Survey, string Layer_Population, string Layer_Samples, string Classify_Population, string Classify_Samples, string Sample_Basis,string Sam_CunCode,ref double CV)
         {
             //1.	计算所有【层号集】，即查出共有几层i_ZoneCount
             List<double> zones = new List<double>();
@@ -296,7 +296,7 @@ namespace GFS.SampleBLL
                 {
                     if (Convert.ToInt32(ZoneISamp[i].Rows[0][Layer_Samples]) == Convert.ToInt32(ZoneIPopu[j].Rows[0][Layer_Population]))
                     {
-                        int Num = ZoneISamp[i].AsEnumerable().Select(t => t.Field<string>("XZQDM")).Distinct().Count();//i层含有的村的总个数
+                        int Num = ZoneISamp[i].AsEnumerable().Select(t => t.Field<string>(Sam_CunCode)).Distinct().Count();//i层含有的村的总个数
                         f = (Num * 1.0F) / (ZoneISamp[j].Rows.Count * 1.0F);
                         Nh_Num=ZoneIPopu[j].Rows.Count;
                     }
@@ -308,7 +308,7 @@ namespace GFS.SampleBLL
                 double Sxh = CalculateStdDev(arrSample_Basis);//h层的样本遥感值的标准差
                 double Syh = CalculateStdDev(arrSample_Survey);//h层的样本调查值的标准差
                 double Rh = arrSample_Survey.Sum() / arrSample_Basis.Sum();//h层样本调查值与耕地面积的比例
-                double Ph = correl(arrSample_Classic, arrSample_Survey);
+                double Ph = correl(arrSample_Classic, arrSample_Survey);////h层样本分类面积与调查面积的比例
                 //coefficient = Ph;
                 // Syh是h层样本调查值的方差
                 V_Yr += Math.Pow(Nh_Num, 2) * (1 - f) / Nh * (Math.Pow(Syh, 2) + Math.Pow(Sxh, 2) * Math.Pow(Rh, 2) - 2 * Rh * Syh * Sxh * Ph);

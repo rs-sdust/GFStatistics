@@ -53,6 +53,12 @@
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtSubClass = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.listBoxFile = new System.Windows.Forms.ListBox();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonRemove = new System.Windows.Forms.Button();
@@ -63,13 +69,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBoxRegion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtDesc = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtSubClass = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtDocSub = new System.Windows.Forms.TextBox();
@@ -84,17 +84,18 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtDocRegion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -138,6 +139,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -154,7 +156,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(503, 340);
+            this.tabPage1.Size = new System.Drawing.Size(621, 451);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "任务历史测试";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -179,7 +181,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(503, 340);
+            this.tabPage2.Size = new System.Drawing.Size(621, 451);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "日志记录测试";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -375,6 +377,58 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(615, 445);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.txtSubClass);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(3, 418);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(529, 24);
+            this.panel4.TabIndex = 9;
+            // 
+            // txtSubClass
+            // 
+            this.txtSubClass.Location = new System.Drawing.Point(64, 2);
+            this.txtSubClass.Name = "txtSubClass";
+            this.txtSubClass.Size = new System.Drawing.Size(341, 21);
+            this.txtSubClass.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(5, 5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 12);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "产品子类";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.txtDesc);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 388);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(529, 24);
+            this.panel3.TabIndex = 8;
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Location = new System.Drawing.Point(64, 2);
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(341, 21);
+            this.txtDesc.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(5, 5);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "描述信息";
+            // 
             // listBoxFile
             // 
             this.listBoxFile.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -469,32 +523,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "区域";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txtDesc);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 388);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(529, 24);
-            this.panel3.TabIndex = 8;
-            // 
-            // txtDesc
-            // 
-            this.txtDesc.Location = new System.Drawing.Point(64, 2);
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(341, 21);
-            this.txtDesc.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 5);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "描述信息";
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.tableLayoutPanel2);
@@ -505,32 +533,6 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "文档元数据提取";
             this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.txtSubClass);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 418);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(529, 24);
-            this.panel4.TabIndex = 9;
-            // 
-            // txtSubClass
-            // 
-            this.txtSubClass.Location = new System.Drawing.Point(64, 2);
-            this.txtSubClass.Name = "txtSubClass";
-            this.txtSubClass.Size = new System.Drawing.Size(341, 21);
-            this.txtSubClass.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 5);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 12);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "产品子类";
             // 
             // tableLayoutPanel2
             // 
@@ -677,6 +679,16 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "区域";
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(621, 451);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "tabPage6";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -693,15 +705,15 @@
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.tabPage5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -771,6 +783,7 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox txtDocRegion;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TabPage tabPage6;
     }
 }
 

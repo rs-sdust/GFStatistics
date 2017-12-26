@@ -165,10 +165,16 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.groupControl4);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(512, 289);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(512, 289);
             this.Name = "frmAutoLayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "自动分层";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmAutoLayer_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmAutoLayer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);

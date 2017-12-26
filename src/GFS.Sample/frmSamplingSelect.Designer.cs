@@ -485,7 +485,7 @@
             // memoEdit1
             // 
             this.memoEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.memoEdit1.EditValue = "";
+            this.memoEdit1.EditValue = "在一级样本的耕地范围内构建指定大小的样方。并在一级样本各单元内随机抽取指定数目的二级样方。";
             this.memoEdit1.Location = new System.Drawing.Point(2, 22);
             this.memoEdit1.Name = "memoEdit1";
             this.memoEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window;
@@ -564,6 +564,7 @@
             this.Name = "frmSamplingSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "二阶段抽样";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmSamplingSelect_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmSamplingSelect_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

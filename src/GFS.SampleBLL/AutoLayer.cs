@@ -23,7 +23,8 @@ namespace GFS.SampleBLL
         /// <returns>总体分层</returns>
         public DataTable OptimalStratifying(DataTable Population, string ZoneIndex, int i_ZoneCount)
         {
-            DataTable Samples = Population.Copy();
+            //DataTable Samples = Population.Copy();
+            DataTable Samples = Population;     //直接操作源表减少内存占用
             string layerField = "FCBH";
             if (!Samples.Columns.Contains(layerField))
                 Samples.Columns.Add(layerField, typeof(int));

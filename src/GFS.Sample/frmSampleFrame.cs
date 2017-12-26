@@ -204,7 +204,7 @@ namespace GFS.Sample
             if (this.xtraTabControl1.SelectedTabPageIndex == 0)
             {
                 SampleFrame sampleFrame = new SampleFrame();
-                WaitDialogForm frmWait = new WaitDialogForm("正在处理...", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在处理...", "提示信息");
                 try
                 {
                     frmWait.Owner = this;
@@ -304,6 +304,11 @@ namespace GFS.Sample
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmSampleFrame_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

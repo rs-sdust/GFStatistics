@@ -68,7 +68,8 @@ namespace GFS.Sample
             SampleSimulation.BindFields(cBESample.Text, cBESamBasis);
             SampleSimulation.BindFields(cBESample.Text, cBESamLayer);
             SampleSimulation.BindFields(cBESample.Text, cBESamSurvey);
-            SampleSimulation.BindFields(cBESample.Text, cBESamCunName);  
+            SampleSimulation.BindFields(cBESample.Text, cBECunName);
+            SampleSimulation.BindFields(cBESample.Text, cBESampleClassic);     
         }
         //保存文件
         private void siBsave_Click(object sender, EventArgs e)
@@ -96,15 +97,19 @@ namespace GFS.Sample
                 SampleAduit Aduit=new SampleAduit ();
                 if(cBEMethod.Text =="分层比率估计")
                 {
-                    if (Aduit.RatioPreprocessing(cBSamplePopu.Text, cBESample.Text, cBESamSurvey.Text, cBEPopuLayer.Text, cBESamLayer.Text, cBEPopuBasis.Text, cBESamCunName.Text, cBExport.Text, cBESamBasis.Text))
+                    if (Aduit.RatioPreprocessing(cBSamplePopu.Text, cBESample.Text, cBESamSurvey.Text, cBEPopuLayer.Text, cBESamLayer.Text, cBEPopuBasis.Text, cBESampleClassic.Text, cBExport.Text, cBESamBasis.Text, cBECunName.Text))
                     {
+                        BLL.ProductMeta meta = new BLL.ProductMeta(cBExport.Text.TrimEnd(), "", "", "总体估计", "抽样和推算结果");
+                        meta.WriteDocMeta();
+                        BLL.ProductQuickView view = new BLL.ProductQuickView(cBExport.Text.TrimEnd());
+                        view.Create();
                         MessageBox.Show("估算成功！");
                         ExportData.report = cBExport.Text;
                     } 
                 }
                 else 
                 {
-                    if (Aduit.ProbabilityProcessing(cBSamplePopu.Text, cBESample.Text,cBEPopuBasis.Text,cBEPopuLayer.Text, cBESamLayer.Text,cBESamBasis.Text,cBESamSurvey.Text, cBESamCunName.Text,cBExport.Text))
+                    if (Aduit.ProbabilityProcessing(cBSamplePopu.Text, cBESample.Text, cBEPopuBasis.Text, cBEPopuLayer.Text, cBESamLayer.Text, cBESamBasis.Text, cBESamSurvey.Text, cBECunName.Text, cBExport.Text))
                     {
                         MessageBox.Show("估算成功！");
                         ExportData.report = cBExport.Text;
@@ -148,13 +153,22 @@ namespace GFS.Sample
             if (cBEMethod.Text == "分层比率估计")
             {
                 labelCBasis.Text = "总体分类结果";
-                lCSample.Text = "样本分类结果";
+                lCSampleClassic.Visible = true;
+                cBESampleClassic.Visible = true;
+
             }
             else
             {
                 labelCBasis.Text = "总体耕地";
-                lCSample.Text = "村代码";
+                lCSampleClassic.Visible = false;
+                cBESampleClassic.Visible = false;
+
             }
+        }
+
+        private void frmAllEstimation_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

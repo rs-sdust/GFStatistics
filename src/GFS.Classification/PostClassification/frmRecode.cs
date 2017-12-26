@@ -71,7 +71,7 @@ namespace GFS.Classification
 
         private void siBOK_Click(object sender, EventArgs e)
         {
-            WaitDialogForm frmWait = new WaitDialogForm("正在重编码...", "提示信息");
+            frmWaitDialog frmWait = new frmWaitDialog("正在重编码...", "提示信息");
             try
             {
                 frmWait.Owner = this;
@@ -197,6 +197,11 @@ namespace GFS.Classification
                 reMap = reMap.Substring(0, reMap.Length - 1);
             }
             return reMap;
+        }
+
+        private void frmRecode_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

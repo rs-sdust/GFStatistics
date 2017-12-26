@@ -56,6 +56,12 @@ namespace GFS.Sample
             //BaseMap.Add(BaseMapLayer.ChinaPoi);
             if (Internet.IsConnectInternet())
                 BaseMap.Add(BaseMapLayer.ChinaPoi);
+
+            //axMapControl.LoadMxFile(@"G:\高分统计项目一期\遥感所模块\SampleTestForm\测试数据\DataMap0.mxd");
+            //遥感所IDL模块初始化
+            GFS.Integration.Initialize.InitializeIDL();
+            GFS.Integration.Initialize.RegisterCMD(btnMaxClass, m_mapControl, m_tocControl, "MaxClassCommand");
+            GFS.Integration.Initialize.RegisterCMD(btnCV, m_mapControl, m_tocControl, "CV1Commad");
         }
 
         #endregion
@@ -107,9 +113,12 @@ namespace GFS.Sample
         }
         private void btnMosaic_ItemClick(object sender, ItemClickEventArgs e)
         {
-            this.ucWorkFlow.RefreshFlow(FlowStatus.btnErrorAnalyze);
-            frmErrorAnalysis frm = new frmErrorAnalysis();
-            frm.ShowDialog();
+            //this.ucWorkFlow.RefreshFlow(FlowStatus.btnErrorAnalyze);
+            //frmErrorAnalysis frm = new frmErrorAnalysis();
+            //frm.ShowDialog();
+            frmSpatialError frm = new frmSpatialError();
+            frm.ShowDialog(); 
+            
         }
         private void btnSelection_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -170,6 +179,13 @@ namespace GFS.Sample
         }
 
         #endregion
+
+        private void btnIniRADI_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //遥感所模块GIS命令注册
+            //GFS.Integration.Initialize.RegisterCMD(btnTest,m_mapControl, m_tocControl);
+        }
+
 
 
 

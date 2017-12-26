@@ -78,6 +78,10 @@
       <EmbedInteropTypes>False</EmbedInteropTypes>
       <HintPath>E:\Program Files (x86)\ArcGIS\DeveloperKit10.2\DotNet\ESRI.ArcGIS.Controls.dll</HintPath>
     </Reference>
+    <Reference Include="ESRI.ArcGIS.ConversionTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\DLLS\ESRI10.2.dll\ToolBoxs\ESRI.ArcGIS.ConversionTools.dll</HintPath>
+    </Reference>
     <Reference Include="ESRI.ArcGIS.DataManagementTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>E:\Program Files (x86)\ArcGIS\DeveloperKit10.2\DotNet\ToolBoxes\ESRI.ArcGIS.DataManagementTools.dll</HintPath>
@@ -189,6 +193,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -198,6 +203,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseMap.cs" />
+    <Compile Include="BuddhaBlessU.cs" />
     <Compile Include="ConstDef.cs" />
     <Compile Include="CurrentLayer.cs" />
     <Compile Include="EnviVars.cs" />
@@ -215,9 +221,14 @@
     <Compile Include="frmSymbolSelector.Designer.cs">
       <DependentUpon>frmSymbolSelector.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmWaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GFSApplication.cs" />
     <Compile Include="GPExecutor.cs" />
+    <Compile Include="HelpManager.cs" />
     <Compile Include="IDLModel.cs" />
+    <Compile Include="IniHelper.cs" />
     <Compile Include="Internet.cs" />
     <Compile Include="ITableConversion.cs" />
     <Compile Include="Log.cs" />
@@ -227,11 +238,17 @@
     <Compile Include="ProductMeta.cs" />
     <Compile Include="ProductQuickView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Summarize.cs" />
     <Compile Include="TableConversion.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="TaskHistory.cs" />
     <Compile Include="TaskState.cs" />
+    <Compile Include="WSHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmLayerRender.resx">
@@ -240,7 +257,10 @@
     <EmbeddedResource Include="frmSymbolSelector.resx">
       <DependentUpon>frmSymbolSelector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GFS.Carto\GFS.Carto.csproj">
@@ -262,6 +282,18 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadingBig.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadingLine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading48.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

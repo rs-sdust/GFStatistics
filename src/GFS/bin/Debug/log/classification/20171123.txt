@@ -1,0 +1,140 @@
+
+ 
+记录时间：2017-11-23 10:23:18,381 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-11-23 10:23:22,704 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-11-23 10:23:24,655 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104
+
+ 
+记录时间：2017-11-23 10:23:45,644 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-11-23 10:23:45,692 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-11-23 10:23:45,696 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-11-23 10:23:46,511 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-11-23 10:23:46,518 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-11-23 10:23:46,526 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-11-23 10:23:46,534 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-11-23 10:23:46,542 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 845
+
+ 
+记录时间：2017-11-23 11:21:40,565 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.Task property: [(null)] - 
+错误描述：Exception
+ 
+System.ArgumentNullException: 值不能为 null。
+参数名: url
+   在 System.Xml.XmlTextReaderImpl..ctor(String url, XmlNameTable nt)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 GFS.BLL.Task.UpdateXmlNode(String taskFile, String NodeName, String NodeValue) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\Task.cs:行号 104

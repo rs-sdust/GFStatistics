@@ -418,6 +418,11 @@ namespace GFS.Sample
             gridControlTable.DataSource = dt;
         }
 
+        private void frmSampleLayer_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
+        }
+
 
 
 

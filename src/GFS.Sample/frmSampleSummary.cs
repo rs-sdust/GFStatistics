@@ -156,7 +156,7 @@ namespace GFS.Sample
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            WaitDialogForm frmWait = new WaitDialogForm("正在汇总...", "提示信息");
+            frmWaitDialog frmWait = new frmWaitDialog("正在汇总...", "提示信息");
             try
             {
                 frmWait.Owner = this;
@@ -169,9 +169,10 @@ namespace GFS.Sample
                 }
                 else
                 {
-                    if (DialogResult.OK == XtraMessageBox.Show("汇总完成，是否加载？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
+                    if (DialogResult.OK == XtraMessageBox.Show("汇总完成！", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
                     {
-                        MapAPI.AddShpFileToMap(txtOut.Text);
+                        //MapAPI.AddShpFileToMap(txtOut.Text);
+                        BLL.EnviVars.instance.MapControl.Refresh();
                     }
                 }
             }
@@ -205,6 +206,11 @@ namespace GFS.Sample
                 this.Size = this.MinimumSize;
                 btnHelp.Text = "显示帮助>>";
             }
+        }
+
+        private void frmSampleSummary_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

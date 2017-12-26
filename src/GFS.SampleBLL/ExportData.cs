@@ -25,6 +25,11 @@ namespace GFS.SampleBLL
                 {
                     string toFile = Path.Combine(toFolder, "一级抽样单元.shp");
                     Common.CommonAPI.CopyShpFile(firstUnit, toFile);
+
+                    string toXml = Path.Combine(toFolder, "一级抽样单元.xml");
+                    string fsXml = report.Substring(0, firstUnit.LastIndexOf(".")) + ".xml";
+                    File.Copy(fsXml, toXml, true);
+
                     msg +=  (Environment.NewLine + "导出一级抽样单元成功！");
                 }
                 if (string.IsNullOrEmpty(secSample))
@@ -35,17 +40,27 @@ namespace GFS.SampleBLL
                 {
                     string toFile = Path.Combine(toFolder, "二级样方.shp");
                     Common.CommonAPI.CopyShpFile(secSample, toFile);
+
+                    string toXml = Path.Combine(toFolder, "二级样方.xml");
+                    string fsXml = report.Substring(0, secSample.LastIndexOf(".")) + ".xml";
+                    File.Copy(fsXml, toXml, true);
+
                     msg +=  (Environment.NewLine+"导出二级样方成功！");
                 }
                 if (string.IsNullOrEmpty(report))
                 {
-                    msg +=  (Environment.NewLine+"未指定估算报告！");
+                    msg +=  (Environment.NewLine+"未指定估算结果！");
                 }
                 else
                 {
-                    string toFile = Path.Combine(toFolder, "估算报告.txt");
+                    string toFile = Path.Combine(toFolder, "估算结果.txt");
                     File.Copy(report, toFile, true);
-                    msg +=  (Environment.NewLine+"导出估算报告成功！");
+
+                    string toXml = Path.Combine(toFolder, "二级样方.xml");
+                    string fsXml = report.Substring(0, report.LastIndexOf(".")) + ".xml";
+                    File.Copy(fsXml, toXml, true);
+
+                    msg +=  (Environment.NewLine+"导出估算结果成功！");
                 }
                 return msg;
             }

@@ -299,6 +299,7 @@
             this.MinimumSize = new System.Drawing.Size(421, 450);
             this.Name = "frmSAVI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmSAVI_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmSAVI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gCHelp)).EndInit();
             this.gCHelp.ResumeLayout(false);

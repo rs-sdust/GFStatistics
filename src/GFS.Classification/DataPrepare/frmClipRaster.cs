@@ -90,7 +90,7 @@ namespace GFS.Classification
             else
             {                
                 string msg = string.Empty;
-                WaitDialogForm frmWait = new WaitDialogForm("正在裁剪...", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在裁剪...", "提示信息");
                 try
                 {
                     frmWait.Owner= this;

@@ -493,10 +493,14 @@
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl1);
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmVegCarbon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "植被碳储量";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmVegCarbon_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmVegCarbon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

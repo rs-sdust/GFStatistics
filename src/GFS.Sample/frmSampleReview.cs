@@ -34,10 +34,11 @@ namespace GFS.Sample
         private string filepath = null;
         public IFeatureLayer _pFtLayer;
         //private IMap _map = null;
-
+        private frmSampleOverview Overview;
         private void frmSampleReview_Load(object sender, EventArgs e)
         {
             barStatic.Caption = string.Format("样本总数：{0}  已删样本数 {1} 合格样本数 {2}", sampleSum, deleted,qualified);
+            
         }
         private void barBtnOpenShp_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -75,7 +76,13 @@ namespace GFS.Sample
                 //将数据加载到主地图上
                 EnviVars.instance.MapControl.AddLayer(_pFtLayer);
                 //MAP.AddShpFileToMap(filepath);
+                deleted = sampleSum - qualified;
                 barStatic.Caption = string.Format("样本总数：{0}  已删样本数 {1} 合格样本数 {2}", sampleSum, deleted, qualified);
+                if (!(Overview == null || Overview.IsDisposed))
+                {
+                    Overview.Activate();
+                    Overview.updatetable(sampleSumTable, _pFtLayer);
+                }
             }
         }
         //选中一行
@@ -110,12 +117,18 @@ namespace GFS.Sample
                 deleted = deleted + Rows.Length;
                 qualified = sampleSum - deleted;
                 barStatic.Caption = string.Format("样本总数：{0}  已删样本数 {1} 合格样本数 {2}", sampleSum, deleted, qualified);
+                if (!(Overview == null || Overview.IsDisposed))
+                {
+                    Overview.Activate();
+                    Overview.UpdateSeries(sampleSumTable);
+                }
             }
+
         }
         
         private void barBtnSave_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (string.IsNullOrEmpty(vsRowNum.ToString()))
+            if (filepath == null)
             {
                 MessageBox.Show("错误信息：\n样本调查数据的值：是必需的");
             }
@@ -188,7 +201,11 @@ namespace GFS.Sample
             deleted--;
             qualified = sampleSum - deleted;
             barStatic.Caption = string.Format("样本总数：{0}  已删样本数 {1} 合格样本数 {2}", sampleSum, deleted, qualified);
-
+            if (!(Overview == null || Overview.IsDisposed))
+            {
+                Overview.Activate();
+                Overview.UpdateSeries(sampleSumTable);
+            }
             ChkDoEnable();
         }
 
@@ -196,7 +213,6 @@ namespace GFS.Sample
         {
 
             ChkDoEnable();
-
             if (!barBtnRedo.Enabled)
                 return;
 
@@ -226,14 +242,16 @@ namespace GFS.Sample
                 deleted++;
                 qualified = sampleSum - deleted;
                 barStatic.Caption = string.Format("样本总数：{0}  已删样本数 {1} 合格样本数 {2}", sampleSum, deleted, qualified);
-                
             }
-
+            if (!(Overview == null || Overview.IsDisposed))
+            {
+                Overview.Activate();
+                Overview.UpdateSeries(sampleSumTable);
+            }
             ChkDoEnable();
            
         }
-
-
+       
         private void barBtnChart_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (filepath == null)
@@ -243,8 +261,34 @@ namespace GFS.Sample
             }
             else
             {
-                frmSampleOverview Overview = new frmSampleOverview(filepath);
-                Overview.ShowDialog();
+                if (Overview == null || Overview.IsDisposed)
+                {
+                    Overview = new frmSampleOverview(sampleSumTable, _pFtLayer);
+                    Overview.Owner = this;
+                    Overview.Show();
+                }
+                else
+                {
+                    Overview.Activate();
+                }    
+                //注册事件
+                Overview.TransfEvent += Overview_TransfEvent;
+            }
+        }
+        //事件处理方法
+       public  void Overview_TransfEvent(List <object> list)
+        {
+            gridView1.ClearSelection();
+            for(int i=0;i<list.Count ;i++)
+            {
+               DataRow[] foundRow = new DataRow[sampleSumTable.Rows.Count ];
+               var SelectRows = sampleSumTable.Columns[0].ColumnName + " = "+list[i];
+               foundRow = sampleSumTable.Select(SelectRows);
+               foreach (DataRow row in foundRow)
+                {
+                    gridView1.FocusedRowHandle = sampleSumTable.Rows.IndexOf(row);
+                    gridView1.SelectRow(sampleSumTable.Rows.IndexOf(row));
+                }
             }
         }
 
@@ -273,12 +317,11 @@ namespace GFS.Sample
 
         private void gridView1_RowCountChanged(object sender, EventArgs e)
         {
-            barStatic.Caption = string.Format("样本总数：{0}  已删样本数 {1} 合格样本数 {2}", sampleSum, selectRows.Rows.Count, sampleSum - selectRows.Rows.Count);
+           barStatic.Caption = string.Format("样本总数：{0}  已删样本数 {1} 合格样本数 {2}", sampleSum, selectRows.Rows.Count, sampleSum - selectRows.Rows.Count);
         }
-
         private void ChkDoEnable()
         {
-            if (rowsIndex.Count == 0)
+            if (rowsIndex.Count == 0)  
                 barBtnRedo.Enabled = false;
             else
                 barBtnRedo.Enabled = true;
@@ -289,5 +332,9 @@ namespace GFS.Sample
                 barBtnUndo.Enabled = true;
         }
 
+        private void frmSampleReview_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
+        }
     }
 }

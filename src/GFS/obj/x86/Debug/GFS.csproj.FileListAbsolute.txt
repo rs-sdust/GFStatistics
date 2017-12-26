@@ -10,9 +10,8 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Debug\GFS.Properties.Reso
 E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Debug\GFS.csproj.GenerateResource.Cache
 E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Debug\GFS.exe
 E:\高分统计\GFStatistics.git\trunk\src\GFS\obj\x86\Debug\GFS.pdb
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.exe.config
 G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.exe
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.pdb
+G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.exe.config
 G:\高分统计项目一期\trunk\src\GFS\obj\x86\Debug\MainWindow.baml
 G:\高分统计项目一期\trunk\src\GFS\obj\x86\Debug\MainWindow.g.cs
 G:\高分统计项目一期\trunk\src\GFS\obj\x86\Debug\App.g.cs

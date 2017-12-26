@@ -116,6 +116,7 @@
     <Compile Include="SampleSelection.cs" />
     <Compile Include="SampleSimulation.cs" />
     <Compile Include="SampleSummary.cs" />
+    <Compile Include="SpatialError.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GFS.BLL\GFS.BLL.csproj">

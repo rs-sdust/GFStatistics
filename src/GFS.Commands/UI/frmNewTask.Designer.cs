@@ -124,6 +124,7 @@
             // 
             // txtCompany
             // 
+            this.txtCompany.EditValue = "农业统计调查子系统";
             this.txtCompany.Location = new System.Drawing.Point(98, 110);
             this.txtCompany.Name = "txtCompany";
             this.txtCompany.Size = new System.Drawing.Size(157, 20);
@@ -211,6 +212,7 @@
             this.Name = "frmNewTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "新建任务";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmNewTask_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmNewTask_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

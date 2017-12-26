@@ -47,14 +47,16 @@
             this.btnMosaic = new DevExpress.XtraBars.BarButtonItem();
             this.bsiSingleDate = new DevExpress.XtraBars.BarSubItem();
             this.btnNNHard = new DevExpress.XtraBars.BarButtonItem();
+            this.btnWideInWidth = new DevExpress.XtraBars.BarButtonItem();
             this.bsiSoftHard = new DevExpress.XtraBars.BarSubItem();
             this.btnfeatureAnaly = new DevExpress.XtraBars.BarButtonItem();
             this.btnSoftHard = new DevExpress.XtraBars.BarButtonItem();
+            this.bsiGF3Radar = new DevExpress.XtraBars.BarSubItem();
+            this.btnHyper = new DevExpress.XtraBars.BarButtonItem();
             this.bsiMultiDate = new DevExpress.XtraBars.BarSubItem();
             this.btnOverlayClass = new DevExpress.XtraBars.BarButtonItem();
             this.btnDecision = new DevExpress.XtraBars.BarButtonItem();
             this.bsiRadarAndMultiSpectral = new DevExpress.XtraBars.BarSubItem();
-            this.btnOpticsDiv = new DevExpress.XtraBars.BarButtonItem();
             this.btnSyn = new DevExpress.XtraBars.BarButtonItem();
             this.bsiMiddleAndHigh = new DevExpress.XtraBars.BarSubItem();
             this.btnSample = new DevExpress.XtraBars.BarButtonItem();
@@ -65,6 +67,7 @@
             this.btnVerify = new DevExpress.XtraBars.BarButtonItem();
             this.btnCropMosaic = new DevExpress.XtraBars.BarButtonItem();
             this.bsiAfter = new DevExpress.XtraBars.BarSubItem();
+            this.btnOpticsDiv = new DevExpress.XtraBars.BarButtonItem();
             this.staticSpt = new DevExpress.XtraBars.BarStaticItem();
             this.staticXY = new DevExpress.XtraBars.BarStaticItem();
             this.staticRaster = new DevExpress.XtraBars.BarStaticItem();
@@ -87,16 +90,50 @@
             this.btnEVI = new DevExpress.XtraBars.BarButtonItem();
             this.btnNDVI = new DevExpress.XtraBars.BarButtonItem();
             this.btnSAVI = new DevExpress.XtraBars.BarButtonItem();
+            this.btnSpatialError = new DevExpress.XtraBars.BarButtonItem();
+            this.btnGF3Radar = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupFile = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupTask = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupSample = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupSingle = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroupMulti = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupAfter = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup24 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup26 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup27 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup28 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup29 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup30 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup31 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup32 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup33 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup34 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup35 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup36 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup37 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup38 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.repositoryItemPopupContainerEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -233,21 +270,29 @@
             this.btnDVI,
             this.btnEVI,
             this.btnRVI,
-            this.btnSAVI});
+            this.btnSAVI,
+            this.btnWideInWidth,
+            this.btnSpatialError,
+            this.btnGF3Radar,
+            this.btnHyper,
+            this.bsiGF3Radar});
             this.ribbonControl.LargeImages = this.ribbion32;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 17;
+            this.ribbonControl.MaxItemId = 28;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
+            this.ribbonPage1,
+            this.ribbonPage2,
+            this.ribbonPage3,
+            this.ribbonPage4,
+            this.ribbonPage5,
+            this.ribbonPage6});
             this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPopupContainerEdit1,
             this.repositoryItemPopupContainerEdit2});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.True;
             this.ribbonControl.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl.ShowToolbarCustomizeItem = false;
             this.ribbonControl.Size = new System.Drawing.Size(1201, 147);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
@@ -349,6 +394,10 @@
             this.ribbion32.Images.SetKeyName(19, "recent.png");
             this.ribbion32.Images.SetKeyName(20, "help.png");
             this.ribbion32.Images.SetKeyName(21, "carbon.png");
+            this.ribbion32.Images.SetKeyName(22, "决策树32.png");
+            this.ribbion32.Images.SetKeyName(23, "errormap.png");
+            this.ribbion32.Images.SetKeyName(24, "hyper32.png");
+            this.ribbion32.Images.SetKeyName(25, "6分割.png");
             // 
             // labelRecently
             // 
@@ -414,6 +463,8 @@
             this.image16.Images.SetKeyName(45, "basemap.png");
             this.image16.Images.SetKeyName(46, "image.png");
             this.image16.Images.SetKeyName(47, "poi.png");
+            this.image16.Images.SetKeyName(48, "radar.png");
+            this.image16.Images.SetKeyName(49, "hyper.png");
             // 
             // btnAddData
             // 
@@ -460,7 +511,10 @@
             this.bsiSingleDate.LargeImageIndex = 12;
             this.bsiSingleDate.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnNNHard),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bsiSoftHard)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnWideInWidth),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bsiSoftHard),
+            new DevExpress.XtraBars.LinkPersistInfo(this.bsiGF3Radar),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnHyper)});
             this.bsiSingleDate.Name = "bsiSingleDate";
             // 
             // btnNNHard
@@ -470,6 +524,15 @@
             this.btnNNHard.ImageIndex = 16;
             this.btnNNHard.Name = "btnNNHard";
             this.btnNNHard.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNNHard_ItemClick);
+            // 
+            // btnWideInWidth
+            // 
+            this.btnWideInWidth.Caption = "中分宽幅分类";
+            this.btnWideInWidth.Id = 20;
+            this.btnWideInWidth.ImageIndex = 22;
+            this.btnWideInWidth.LargeImageIndex = 25;
+            this.btnWideInWidth.Name = "btnWideInWidth";
+            this.btnWideInWidth.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnWideInWidth_ItemClick);
             // 
             // bsiSoftHard
             // 
@@ -484,10 +547,11 @@
             // 
             // btnfeatureAnaly
             // 
-            this.btnfeatureAnaly.Caption = "图像分割";
+            this.btnfeatureAnaly.Caption = "面向对象分割";
             this.btnfeatureAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnfeatureAnaly.Id = 18;
             this.btnfeatureAnaly.ImageIndex = 17;
+            this.btnfeatureAnaly.LargeImageIndex = 25;
             this.btnfeatureAnaly.Name = "btnfeatureAnaly";
             this.btnfeatureAnaly.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnfeatureAnaly_ItemClick);
             // 
@@ -499,6 +563,28 @@
             this.btnSoftHard.LargeImageIndex = 25;
             this.btnSoftHard.Name = "btnSoftHard";
             this.btnSoftHard.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSoftHard_ItemClick);
+            // 
+            // bsiGF3Radar
+            // 
+            this.bsiGF3Radar.Caption = "雷达影像分类";
+            this.bsiGF3Radar.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.bsiGF3Radar.Id = 26;
+            this.bsiGF3Radar.ImageIndex = 48;
+            this.bsiGF3Radar.LargeImageIndex = 10;
+            this.bsiGF3Radar.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnfeatureAnaly),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSoftHard)});
+            this.bsiGF3Radar.Name = "bsiGF3Radar";
+            // 
+            // btnHyper
+            // 
+            this.btnHyper.Caption = "高光谱分类";
+            this.btnHyper.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnHyper.Id = 25;
+            this.btnHyper.ImageIndex = 49;
+            this.btnHyper.LargeImageIndex = 24;
+            this.btnHyper.Name = "btnHyper";
+            this.btnHyper.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHyper_ItemClick);
             // 
             // bsiMultiDate
             // 
@@ -513,7 +599,7 @@
             // 
             // btnOverlayClass
             // 
-            this.btnOverlayClass.Caption = "叠加分类";
+            this.btnOverlayClass.Caption = "长时间序列作物识别";
             this.btnOverlayClass.Id = 56;
             this.btnOverlayClass.ImageIndex = 19;
             this.btnOverlayClass.Name = "btnOverlayClass";
@@ -524,6 +610,7 @@
             this.btnDecision.Caption = "决策树分类";
             this.btnDecision.Id = 57;
             this.btnDecision.ImageIndex = 21;
+            this.btnDecision.LargeImageIndex = 22;
             this.btnDecision.Name = "btnDecision";
             this.btnDecision.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDecision_ItemClick);
             // 
@@ -534,17 +621,8 @@
             this.bsiRadarAndMultiSpectral.Id = 17;
             this.bsiRadarAndMultiSpectral.LargeImageIndex = 10;
             this.bsiRadarAndMultiSpectral.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnOpticsDiv),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnSyn)});
             this.bsiRadarAndMultiSpectral.Name = "bsiRadarAndMultiSpectral";
-            // 
-            // btnOpticsDiv
-            // 
-            this.btnOpticsDiv.Caption = "光学影像分割";
-            this.btnOpticsDiv.Id = 58;
-            this.btnOpticsDiv.ImageIndex = 22;
-            this.btnOpticsDiv.Name = "btnOpticsDiv";
-            this.btnOpticsDiv.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOpticsDiv_ItemClick);
             // 
             // btnSyn
             // 
@@ -636,6 +714,14 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnReject),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnStatistics)});
             this.bsiAfter.Name = "bsiAfter";
+            // 
+            // btnOpticsDiv
+            // 
+            this.btnOpticsDiv.Caption = "光学影像分割";
+            this.btnOpticsDiv.Id = 58;
+            this.btnOpticsDiv.ImageIndex = 22;
+            this.btnOpticsDiv.Name = "btnOpticsDiv";
+            this.btnOpticsDiv.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOpticsDiv_ItemClick);
             // 
             // staticSpt
             // 
@@ -825,6 +911,25 @@
             this.btnSAVI.Name = "btnSAVI";
             this.btnSAVI.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSAVI_ItemClick);
             // 
+            // btnSpatialError
+            // 
+            this.btnSpatialError.Caption = "误差空间表达";
+            this.btnSpatialError.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnSpatialError.Id = 22;
+            this.btnSpatialError.LargeImageIndex = 23;
+            this.btnSpatialError.Name = "btnSpatialError";
+            this.btnSpatialError.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSpatialError_ItemClick);
+            // 
+            // btnGF3Radar
+            // 
+            this.btnGF3Radar.Caption = "雷达影像分类";
+            this.btnGF3Radar.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnGF3Radar.Id = 24;
+            this.btnGF3Radar.ImageIndex = 48;
+            this.btnGF3Radar.LargeImageIndex = 10;
+            this.btnGF3Radar.Name = "btnGF3Radar";
+            this.btnGF3Radar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGF3Radar_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -833,12 +938,9 @@
             this.ribbonPageGroupData,
             this.ribbonPageGroupSample,
             this.ribbonPageGroupSingle,
-            this.ribbonPageGroupMulti,
-            this.ribbonPageGroupAfter,
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2});
+            this.ribbonPageGroupAfter});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
+            this.ribbonPage1.Text = "高分一号16米";
             // 
             // ribbonPageGroupFile
             // 
@@ -872,32 +974,313 @@
             // 
             // ribbonPageGroupSingle
             // 
-            this.ribbonPageGroupSingle.ItemLinks.Add(this.bsiSingleDate);
-            this.ribbonPageGroupSingle.ItemLinks.Add(this.bsiMultiDate);
+            this.ribbonPageGroupSingle.ItemLinks.Add(this.btnfeatureAnaly);
+            this.ribbonPageGroupSingle.ItemLinks.Add(this.btnSoftHard);
             this.ribbonPageGroupSingle.Name = "ribbonPageGroupSingle";
-            this.ribbonPageGroupSingle.Text = "单星影像分类";
-            // 
-            // ribbonPageGroupMulti
-            // 
-            this.ribbonPageGroupMulti.ItemLinks.Add(this.bsiMiddleAndHigh);
-            this.ribbonPageGroupMulti.ItemLinks.Add(this.bsiRadarAndMultiSpectral);
-            this.ribbonPageGroupMulti.Name = "ribbonPageGroupMulti";
-            this.ribbonPageGroupMulti.Text = "多星影像分类";
+            this.ribbonPageGroupSingle.Text = "作物识别";
             // 
             // ribbonPageGroupAfter
             // 
-            this.ribbonPageGroupAfter.ItemLinks.Add(this.bsiAfter);
+            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnRecode);
+            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnReject);
+            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnStatistics);
+            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnVerify);
+            this.ribbonPageGroupAfter.ItemLinks.Add(this.btnCropMosaic);
             this.ribbonPageGroupAfter.Name = "ribbonPageGroupAfter";
+            this.ribbonPageGroupAfter.Text = "分类后处理";
             // 
-            // ribbonPageGroup1
+            // ribbonPage2
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnVerify);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup4,
+            this.ribbonPageGroup5,
+            this.ribbonPageGroup10,
+            this.ribbonPageGroup7,
+            this.ribbonPageGroup8});
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "高分一二米级";
             // 
-            // ribbonPageGroup2
+            // ribbonPageGroup3
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnCropMosaic);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup3.ItemLinks.Add(this.btnAddData);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "文件管理";
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnNewTask);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnOpenTask);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnSaveTask);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btnUpdateTask);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.Text = "任务管理";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnMask);
+            this.ribbonPageGroup5.ItemLinks.Add(this.btnMosaic);
+            this.ribbonPageGroup5.ItemLinks.Add(this.bsiVegIndex);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            this.ribbonPageGroup5.Text = "测量数据准备";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnSample);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btnSampleAnaly);
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "训练样本选取";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.btnWideInWidth);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            this.ribbonPageGroup7.Text = "作物识别";
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnRecode);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnReject);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnStatistics);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnVerify);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnCropMosaic);
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "分类后处理";
+            // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup12,
+            this.ribbonPageGroup13,
+            this.ribbonPageGroup14,
+            this.ribbonPageGroup15,
+            this.ribbonPageGroup16,
+            this.ribbonPageGroup18});
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "高分三号";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.btnAddData);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            this.ribbonPageGroup12.Text = "文件管理";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.btnNewTask);
+            this.ribbonPageGroup13.ItemLinks.Add(this.btnOpenTask);
+            this.ribbonPageGroup13.ItemLinks.Add(this.btnSaveTask);
+            this.ribbonPageGroup13.ItemLinks.Add(this.btnUpdateTask);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            this.ribbonPageGroup13.Text = "任务管理";
+            // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.ItemLinks.Add(this.btnMask);
+            this.ribbonPageGroup14.ItemLinks.Add(this.btnMosaic);
+            this.ribbonPageGroup14.ItemLinks.Add(this.bsiVegIndex);
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup14.Text = "测量数据准备";
+            // 
+            // ribbonPageGroup15
+            // 
+            this.ribbonPageGroup15.ItemLinks.Add(this.btnSample);
+            this.ribbonPageGroup15.ItemLinks.Add(this.btnSampleAnaly);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
+            this.ribbonPageGroup15.Text = "训练样本选取";
+            // 
+            // ribbonPageGroup16
+            // 
+            this.ribbonPageGroup16.ItemLinks.Add(this.btnfeatureAnaly);
+            this.ribbonPageGroup16.ItemLinks.Add(this.btnSoftHard);
+            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
+            this.ribbonPageGroup16.Text = "作物识别";
+            // 
+            // ribbonPageGroup18
+            // 
+            this.ribbonPageGroup18.ItemLinks.Add(this.btnRecode);
+            this.ribbonPageGroup18.ItemLinks.Add(this.btnReject);
+            this.ribbonPageGroup18.ItemLinks.Add(this.btnStatistics);
+            this.ribbonPageGroup18.ItemLinks.Add(this.btnVerify);
+            this.ribbonPageGroup18.ItemLinks.Add(this.btnCropMosaic);
+            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
+            this.ribbonPageGroup18.Tag = "";
+            this.ribbonPageGroup18.Text = "分类后处理";
+            // 
+            // ribbonPage4
+            // 
+            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup21,
+            this.ribbonPageGroup22,
+            this.ribbonPageGroup23,
+            this.ribbonPageGroup24,
+            this.ribbonPageGroup25,
+            this.ribbonPageGroup26});
+            this.ribbonPage4.Name = "ribbonPage4";
+            this.ribbonPage4.Text = "高分四号";
+            // 
+            // ribbonPageGroup21
+            // 
+            this.ribbonPageGroup21.ItemLinks.Add(this.btnAddData);
+            this.ribbonPageGroup21.Name = "ribbonPageGroup21";
+            this.ribbonPageGroup21.Text = "文件管理";
+            // 
+            // ribbonPageGroup22
+            // 
+            this.ribbonPageGroup22.ItemLinks.Add(this.btnNewTask);
+            this.ribbonPageGroup22.ItemLinks.Add(this.btnOpenTask);
+            this.ribbonPageGroup22.ItemLinks.Add(this.btnSaveTask);
+            this.ribbonPageGroup22.ItemLinks.Add(this.btnUpdateTask);
+            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
+            this.ribbonPageGroup22.Text = "任务管理";
+            // 
+            // ribbonPageGroup23
+            // 
+            this.ribbonPageGroup23.ItemLinks.Add(this.btnMask);
+            this.ribbonPageGroup23.ItemLinks.Add(this.btnMosaic);
+            this.ribbonPageGroup23.ItemLinks.Add(this.bsiVegIndex);
+            this.ribbonPageGroup23.Name = "ribbonPageGroup23";
+            this.ribbonPageGroup23.Text = "测量数据准备";
+            // 
+            // ribbonPageGroup24
+            // 
+            this.ribbonPageGroup24.ItemLinks.Add(this.btnSample);
+            this.ribbonPageGroup24.ItemLinks.Add(this.btnSampleAnaly);
+            this.ribbonPageGroup24.Name = "ribbonPageGroup24";
+            this.ribbonPageGroup24.Text = "训练样本选取";
+            // 
+            // ribbonPageGroup25
+            // 
+            this.ribbonPageGroup25.ItemLinks.Add(this.btnOverlayClass);
+            this.ribbonPageGroup25.Name = "ribbonPageGroup25";
+            this.ribbonPageGroup25.Text = "作物识别";
+            // 
+            // ribbonPageGroup26
+            // 
+            this.ribbonPageGroup26.ItemLinks.Add(this.btnRecode);
+            this.ribbonPageGroup26.ItemLinks.Add(this.btnReject);
+            this.ribbonPageGroup26.ItemLinks.Add(this.btnStatistics);
+            this.ribbonPageGroup26.ItemLinks.Add(this.btnVerify);
+            this.ribbonPageGroup26.ItemLinks.Add(this.btnCropMosaic);
+            this.ribbonPageGroup26.Name = "ribbonPageGroup26";
+            this.ribbonPageGroup26.Text = "分类后处理";
+            // 
+            // ribbonPage5
+            // 
+            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup27,
+            this.ribbonPageGroup28,
+            this.ribbonPageGroup29,
+            this.ribbonPageGroup30,
+            this.ribbonPageGroup31,
+            this.ribbonPageGroup32});
+            this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Text = "高分五号";
+            // 
+            // ribbonPageGroup27
+            // 
+            this.ribbonPageGroup27.ItemLinks.Add(this.btnAddData);
+            this.ribbonPageGroup27.Name = "ribbonPageGroup27";
+            this.ribbonPageGroup27.Text = "文件管理";
+            // 
+            // ribbonPageGroup28
+            // 
+            this.ribbonPageGroup28.ItemLinks.Add(this.btnNewTask);
+            this.ribbonPageGroup28.ItemLinks.Add(this.btnOpenTask);
+            this.ribbonPageGroup28.ItemLinks.Add(this.btnSaveTask);
+            this.ribbonPageGroup28.ItemLinks.Add(this.btnUpdateTask);
+            this.ribbonPageGroup28.Name = "ribbonPageGroup28";
+            this.ribbonPageGroup28.Text = "任务管理";
+            // 
+            // ribbonPageGroup29
+            // 
+            this.ribbonPageGroup29.ItemLinks.Add(this.btnMask);
+            this.ribbonPageGroup29.ItemLinks.Add(this.btnMosaic);
+            this.ribbonPageGroup29.ItemLinks.Add(this.bsiVegIndex);
+            this.ribbonPageGroup29.Name = "ribbonPageGroup29";
+            this.ribbonPageGroup29.Text = "测量数据准备";
+            // 
+            // ribbonPageGroup30
+            // 
+            this.ribbonPageGroup30.ItemLinks.Add(this.btnSample);
+            this.ribbonPageGroup30.ItemLinks.Add(this.btnSampleAnaly);
+            this.ribbonPageGroup30.Name = "ribbonPageGroup30";
+            this.ribbonPageGroup30.Text = "训练样本选取";
+            // 
+            // ribbonPageGroup31
+            // 
+            this.ribbonPageGroup31.ItemLinks.Add(this.btnHyper);
+            this.ribbonPageGroup31.Name = "ribbonPageGroup31";
+            this.ribbonPageGroup31.Text = "作物识别";
+            // 
+            // ribbonPageGroup32
+            // 
+            this.ribbonPageGroup32.ItemLinks.Add(this.btnRecode);
+            this.ribbonPageGroup32.ItemLinks.Add(this.btnReject);
+            this.ribbonPageGroup32.ItemLinks.Add(this.btnStatistics);
+            this.ribbonPageGroup32.ItemLinks.Add(this.btnVerify);
+            this.ribbonPageGroup32.ItemLinks.Add(this.btnCropMosaic);
+            this.ribbonPageGroup32.Name = "ribbonPageGroup32";
+            this.ribbonPageGroup32.Text = "分类后处理";
+            // 
+            // ribbonPage6
+            // 
+            this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup33,
+            this.ribbonPageGroup34,
+            this.ribbonPageGroup35,
+            this.ribbonPageGroup36,
+            this.ribbonPageGroup37,
+            this.ribbonPageGroup38});
+            this.ribbonPage6.Name = "ribbonPage6";
+            this.ribbonPage6.Text = "综合分类";
+            // 
+            // ribbonPageGroup33
+            // 
+            this.ribbonPageGroup33.ItemLinks.Add(this.btnAddData);
+            this.ribbonPageGroup33.Name = "ribbonPageGroup33";
+            this.ribbonPageGroup33.Text = "文件管理";
+            // 
+            // ribbonPageGroup34
+            // 
+            this.ribbonPageGroup34.ItemLinks.Add(this.btnNewTask);
+            this.ribbonPageGroup34.ItemLinks.Add(this.btnOpenTask);
+            this.ribbonPageGroup34.ItemLinks.Add(this.btnSaveTask);
+            this.ribbonPageGroup34.ItemLinks.Add(this.btnUpdateTask);
+            this.ribbonPageGroup34.Name = "ribbonPageGroup34";
+            this.ribbonPageGroup34.Text = "任务管理";
+            // 
+            // ribbonPageGroup35
+            // 
+            this.ribbonPageGroup35.ItemLinks.Add(this.btnMask);
+            this.ribbonPageGroup35.ItemLinks.Add(this.btnMosaic);
+            this.ribbonPageGroup35.ItemLinks.Add(this.bsiVegIndex);
+            this.ribbonPageGroup35.Name = "ribbonPageGroup35";
+            this.ribbonPageGroup35.Text = "测量数据准备";
+            // 
+            // ribbonPageGroup36
+            // 
+            this.ribbonPageGroup36.ItemLinks.Add(this.btnSample);
+            this.ribbonPageGroup36.ItemLinks.Add(this.btnSampleAnaly);
+            this.ribbonPageGroup36.Name = "ribbonPageGroup36";
+            this.ribbonPageGroup36.Text = "训练样本选取";
+            // 
+            // ribbonPageGroup37
+            // 
+            this.ribbonPageGroup37.ItemLinks.Add(this.btnSyn);
+            this.ribbonPageGroup37.ItemLinks.Add(this.btnDecision);
+            this.ribbonPageGroup37.Name = "ribbonPageGroup37";
+            this.ribbonPageGroup37.Text = "作物识别";
+            // 
+            // ribbonPageGroup38
+            // 
+            this.ribbonPageGroup38.ItemLinks.Add(this.btnRecode);
+            this.ribbonPageGroup38.ItemLinks.Add(this.btnReject);
+            this.ribbonPageGroup38.ItemLinks.Add(this.btnStatistics);
+            this.ribbonPageGroup38.ItemLinks.Add(this.btnVerify);
+            this.ribbonPageGroup38.ItemLinks.Add(this.btnCropMosaic);
+            this.ribbonPageGroup38.Name = "ribbonPageGroup38";
+            this.ribbonPageGroup38.Text = "分类后处理";
             // 
             // repositoryItemPopupContainerEdit1
             // 
@@ -963,10 +1346,10 @@
             this.dpFlow.Location = new System.Drawing.Point(0, 0);
             this.dpFlow.Name = "dpFlow";
             this.dpFlow.Options.ShowCloseButton = false;
-            this.dpFlow.OriginalSize = new System.Drawing.Size(758, 256);
+            this.dpFlow.OriginalSize = new System.Drawing.Size(256, 256);
             this.dpFlow.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Bottom;
             this.dpFlow.SavedIndex = 1;
-            this.dpFlow.Size = new System.Drawing.Size(1014, 256);
+            this.dpFlow.Size = new System.Drawing.Size(1201, 256);
             this.dpFlow.Text = "业务流程";
             this.dpFlow.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
             // 
@@ -975,16 +1358,17 @@
             this.dockPanel1_Container.Controls.Add(this.ucWorkFlow);
             this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(1006, 229);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(1193, 229);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // ucWorkFlow
             // 
             this.ucWorkFlow.BackColor = System.Drawing.SystemColors.Window;
             this.ucWorkFlow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucWorkFlow.Location = new System.Drawing.Point(3, 3);
+            this.ucWorkFlow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucWorkFlow.Location = new System.Drawing.Point(0, 0);
             this.ucWorkFlow.Name = "ucWorkFlow";
-            this.ucWorkFlow.Size = new System.Drawing.Size(326, 182);
+            this.ucWorkFlow.Size = new System.Drawing.Size(1193, 229);
             this.ucWorkFlow.TabIndex = 0;
             // 
             // dockPanelTable
@@ -1007,23 +1391,24 @@
             // 
             this.controlContainer1.Location = new System.Drawing.Point(3, 22);
             this.controlContainer1.Name = "controlContainer1";
-            this.controlContainer1.Size = new System.Drawing.Size(194, 175);
+            this.controlContainer1.Size = new System.Drawing.Size(612, 357);
             this.controlContainer1.TabIndex = 0;
             // 
             // dpEagle
             // 
             this.dpEagle.Controls.Add(this.controlContainer2);
             this.dpEagle.Dock = DevExpress.XtraBars.Docking.DockingStyle.Float;
-            this.dpEagle.FloatLocation = new System.Drawing.Point(573, 229);
+            this.dpEagle.FloatLocation = new System.Drawing.Point(750, 303);
+            this.dpEagle.FloatSize = new System.Drawing.Size(160, 148);
             this.dpEagle.FloatVertical = true;
             this.dpEagle.ID = new System.Guid("97a9ddc0-c961-4411-ac36-717847629a03");
             this.dpEagle.Location = new System.Drawing.Point(-32768, -32768);
             this.dpEagle.Name = "dpEagle";
             this.dpEagle.Options.ShowCloseButton = false;
             this.dpEagle.Options.ShowMaximizeButton = false;
-            this.dpEagle.OriginalSize = new System.Drawing.Size(200, 200);
+            this.dpEagle.OriginalSize = new System.Drawing.Size(256, 200);
             this.dpEagle.SavedIndex = 0;
-            this.dpEagle.Size = new System.Drawing.Size(200, 200);
+            this.dpEagle.Size = new System.Drawing.Size(160, 148);
             this.dpEagle.Text = "鹰眼图";
             this.dpEagle.Visibility = DevExpress.XtraBars.Docking.DockVisibility.Hidden;
             // 
@@ -1032,15 +1417,15 @@
             this.controlContainer2.Controls.Add(this.axMapControlEagle);
             this.controlContainer2.Location = new System.Drawing.Point(3, 22);
             this.controlContainer2.Name = "controlContainer2";
-            this.controlContainer2.Size = new System.Drawing.Size(194, 175);
+            this.controlContainer2.Size = new System.Drawing.Size(154, 123);
             this.controlContainer2.TabIndex = 0;
             // 
             // axMapControlEagle
             // 
-            this.axMapControlEagle.Location = new System.Drawing.Point(12, 13);
+            this.axMapControlEagle.Location = new System.Drawing.Point(22, 18);
             this.axMapControlEagle.Name = "axMapControlEagle";
             this.axMapControlEagle.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControlEagle.OcxState")));
-            this.axMapControlEagle.Size = new System.Drawing.Size(100, 100);
+            this.axMapControlEagle.Size = new System.Drawing.Size(86, 75);
             this.axMapControlEagle.TabIndex = 0;
             // 
             // barManager
@@ -1308,8 +1693,8 @@
             // 
             // dockPanel2_Container
             // 
-            this.dockPanel2_Container.Controls.Add(this.pccRight);
             this.dockPanel2_Container.Controls.Add(this.axTOCControl);
+            this.dockPanel2_Container.Controls.Add(this.pccRight);
             this.dockPanel2_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel2_Container.Name = "dockPanel2_Container";
             this.dockPanel2_Container.Size = new System.Drawing.Size(248, 374);
@@ -1317,11 +1702,11 @@
             // 
             // axTOCControl
             // 
-            this.axTOCControl.Location = new System.Drawing.Point(3, 0);
+            this.axTOCControl.Location = new System.Drawing.Point(43, 133);
             this.axTOCControl.Name = "axTOCControl";
             this.axTOCControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl.OcxState")));
             this.axTOCControl.Size = new System.Drawing.Size(100, 100);
-            this.axTOCControl.TabIndex = 0;
+            this.axTOCControl.TabIndex = 17;
             // 
             // panelMap
             // 
@@ -1340,7 +1725,7 @@
             this.axMapControl.Name = "axMapControl";
             this.axMapControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl.OcxState")));
             this.axMapControl.Size = new System.Drawing.Size(100, 100);
-            this.axMapControl.TabIndex = 2;
+            this.axMapControl.TabIndex = 5;
             // 
             // axToolbarControl
             // 
@@ -1348,7 +1733,7 @@
             this.axToolbarControl.Name = "axToolbarControl";
             this.axToolbarControl.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl.OcxState")));
             this.axToolbarControl.Size = new System.Drawing.Size(100, 28);
-            this.axToolbarControl.TabIndex = 1;
+            this.axToolbarControl.TabIndex = 4;
             // 
             // barDockingMenuItem1
             // 
@@ -1450,7 +1835,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupData;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupSample;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupSingle;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroupMulti;
         private DevExpress.XtraBars.BarButtonItem btnNewTask;
         private DevExpress.XtraBars.BarButtonItem btnOpenTask;
         private DevExpress.XtraBars.BarButtonItem btnSaveTask;
@@ -1533,11 +1917,9 @@
         private DevExpress.XtraBars.BarButtonItem btnFramClearBat;
         private DevExpress.XtraBars.BarButtonItem btnFramExport;
         private DevExpress.XtraBars.PopupMenu popupMenuFrame;
-        private UCWorkFlow ucWorkFlow;
-        private ESRI.ArcGIS.Controls.AxMapControl axMapControl;
-        private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl;
-        private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl;
-        private DevExpress.XtraBars.Docking.AutoHideContainer hideContainerBottom;
+        //private ESRI.ArcGIS.Controls.AxMapControl axMapControl;
+        //private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl;
+        //private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl;
         private DevExpress.XtraBars.PopupControlContainer pccRight;
         private DevExpress.XtraEditors.ImageListBoxControl listRecently;
         private DevExpress.XtraEditors.LabelControl labelRecently;
@@ -1548,18 +1930,63 @@
         private DevExpress.XtraBars.Docking.ControlContainer controlContainer1;
         private DevExpress.XtraBars.Docking.DockPanel dpEagle;
         private DevExpress.XtraBars.Docking.ControlContainer controlContainer2;
-        private ESRI.ArcGIS.Controls.AxMapControl axMapControlEagle;
+        //private ESRI.ArcGIS.Controls.AxMapControl axMapControlEagle;
         private DevExpress.XtraBars.BarSubItem bsiVegIndex;
         private DevExpress.XtraBars.BarButtonItem btnNDVI;
         private DevExpress.XtraBars.BarButtonItem btnDVI;
         private DevExpress.XtraBars.BarButtonItem btnEVI;
         private DevExpress.XtraBars.BarButtonItem btnRVI;
         private DevExpress.XtraBars.BarButtonItem btnSAVI;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.BarSubItem bsiBaseMap;
         private DevExpress.XtraBars.BarButtonItem barBtnPOI;
         private DevExpress.XtraBars.BarButtonItem barBtnImagery;
+        private DevExpress.XtraBars.Docking.AutoHideContainer hideContainerBottom;
+        //private UCWorkFlow ucWorkFlow;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup18;
+        private DevExpress.XtraBars.BarButtonItem btnWideInWidth;
+        private UCWorkFlow ucWorkFlow;
+        private DevExpress.XtraBars.BarButtonItem btnSpatialError;
+        private DevExpress.XtraBars.BarButtonItem btnGF3Radar;
+        private DevExpress.XtraBars.BarButtonItem btnHyper;
+        private ESRI.ArcGIS.Controls.AxMapControl axMapControl;
+        private ESRI.ArcGIS.Controls.AxToolbarControl axToolbarControl;
+        private ESRI.ArcGIS.Controls.AxTOCControl axTOCControl;
+        private ESRI.ArcGIS.Controls.AxMapControl axMapControlEagle;
+        private DevExpress.XtraBars.BarSubItem bsiGF3Radar;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup23;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup25;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup26;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup27;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup28;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup29;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup30;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup31;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup32;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage6;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup33;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup34;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup35;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup36;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup37;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup38;
         //private DevExpress.XtraBars.Docking.ControlContainer controlContainer1;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;

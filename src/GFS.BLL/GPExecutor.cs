@@ -308,6 +308,38 @@ namespace GFS.BLL
             }
         }
 
+        public bool ZonalStatistics(string inZone, string zoneField, string inValue,string staticType,string outFile, out string msg)
+        {
+            msg = string.Empty;
+            bool result = true;
+            //IGeoDataset geoDataSet = null;
+            IGeoProcessorResult geoProcessorResult = null;
+            try
+            {
+                ESRI.ArcGIS.SpatialAnalystTools.ZonalStatistics zonal = new ESRI.ArcGIS.SpatialAnalystTools.ZonalStatistics();
+                zonal.in_zone_data = inZone;
+                zonal.zone_field = zoneField;
+                zonal.in_value_raster = inValue;
+                zonal.statistics_type = staticType;
+                zonal.out_raster = outFile;
+                geoProcessorResult = m_gp.Execute(zonal, null) as IGeoProcessorResult;
+                msg += GetGPMessages(m_gp);
+                if (geoProcessorResult.Status != esriJobStatus.esriJobSucceeded)
+                {
+                    result = false;
+                }
+                return result;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                Marshal.ReleaseComObject(geoProcessorResult);
+            }
+        }
         public bool SetNoData(string inRaster, int excludeValue,string outRaster,out string msg)
         {
             msg = string.Empty;
@@ -340,7 +372,7 @@ namespace GFS.BLL
             }
             finally
             {
-                //Marshal.ReleaseComObject(geoProcessorResult);
+                Marshal.ReleaseComObject(geoProcessorResult);
             }
         }
 
@@ -499,7 +531,38 @@ namespace GFS.BLL
                 //    Marshal.ReleaseComObject(geoProcessorResult);
             }
         }
-
+        public bool Raster2Polygon(string inRaster, string outShp, bool simplify, out string msg)
+        {
+            msg = string.Empty;
+            bool result = true;
+            IGeoProcessorResult geoProcessorResult = null;
+            try
+            {
+                ESRI.ArcGIS.ConversionTools.RasterToPolygon pR2P = new ESRI.ArcGIS.ConversionTools.RasterToPolygon();
+                pR2P.in_raster = inRaster;
+                pR2P.out_polygon_features = outShp;
+                if (simplify)
+                    pR2P.simplify = "SIMPLIFY";
+                else
+                    pR2P.simplify = "NO_SIMPLIFY";
+                geoProcessorResult = m_gp.Execute(pR2P, null) as IGeoProcessorResult;
+                msg += GetGPMessages(m_gp);
+                if (geoProcessorResult.Status != esriJobStatus.esriJobSucceeded)
+                {
+                    result = false;
+                }
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("栅格转矢量失败：\r\n" + ex.Message);
+            }
+            finally
+            {
+                if (geoProcessorResult != null)
+                    Marshal.ReleaseComObject(geoProcessorResult);
+            }
+        }
         /// <summary>
         /// GP cal area
         /// </summary>
@@ -551,12 +614,12 @@ namespace GFS.BLL
         }
         public void CreatePyramid(List<string> rasterFiles)
         {
-            WaitDialogForm waitDialogForm = new WaitDialogForm("正在创建金字塔" + "......", "提示信息");
+            frmWaitDialog frmWait = new frmWaitDialog("正在创建金字塔" + "......", "提示信息");
             IGeoProcessorResult geoProcessorResult = null;
             try
             {
-                waitDialogForm.Owner = EnviVars.instance.MainForm;
-                waitDialogForm.TopMost = false;
+                frmWait.Owner = EnviVars.instance.MainForm;
+                frmWait.TopMost = false;
                 //if (this._geoProcessor == null)
                 //{
                 //    this._geoProcessor = new Geoprocessor();
@@ -601,7 +664,7 @@ namespace GFS.BLL
             }
             finally
             {
-                waitDialogForm.Close();
+                frmWait.Close();
             }
         }
 

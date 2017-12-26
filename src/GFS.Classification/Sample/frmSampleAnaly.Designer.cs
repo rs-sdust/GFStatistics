@@ -178,7 +178,7 @@
             this.labelCilp1.Name = "labelCilp1";
             this.labelCilp1.Size = new System.Drawing.Size(242, 272);
             this.labelCilp1.TabIndex = 22;
-            this.labelCilp1.Text = "该工具用于将栅格图像按\r\n照面状矢量文件的边界进\r\n行裁剪，得到矢量文件范\r\n围内的栅格图像。";
+            this.labelCilp1.Text = "该工具用于统计所选样本类别\r\n像元个数和统计信息等";
             // 
             // labelCilp
             // 
@@ -220,6 +220,7 @@
             this.Name = "frmSampleAnaly";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "样本分析";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmSampleAnaly_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmSampleAnaly_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

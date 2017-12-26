@@ -2,8 +2,3 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.CarbonBLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.CarbonBLL.pdb
 E:\高分统计\GFStatistics.git\trunk\src\GFS.CarbonBLL\obj\x86\Debug\GFS.CarbonBLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS.CarbonBLL\obj\x86\Debug\GFS.CarbonBLL.pdb
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.CarbonBLL.dll
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.CarbonBLL.pdb
-G:\高分统计项目一期\trunk\src\GFS.CarbonBLL\obj\x86\Debug\GFS.CarbonBLL.csprojResolveAssemblyReference.cache
-G:\高分统计项目一期\trunk\src\GFS.CarbonBLL\obj\x86\Debug\GFS.CarbonBLL.dll
-G:\高分统计项目一期\trunk\src\GFS.CarbonBLL\obj\x86\Debug\GFS.CarbonBLL.pdb

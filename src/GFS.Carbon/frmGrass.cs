@@ -10,6 +10,7 @@ using DevExpress.XtraEditors;
 using System.IO;
 using GFS.CarbonBLL;
 using DevExpress.Utils;
+using GFS.BLL;
 
 namespace GFS.Carbon
 {
@@ -149,7 +150,7 @@ namespace GFS.Carbon
                 VegetationCarbon fc = new VegetationCarbon(this.cmbLandCover.Text, int.Parse(this.cmbPixel.Text), _Index, this.txtExpression.Text.TrimEnd(), Convert.ToDouble(this.spinCarbonIndex.Value), this.txtOutBiology.Text, this.txtOutCarbonDensity.Text, this.txtOutCarbon.Text);
                 string msg;
 
-                WaitDialogForm frmWait = new WaitDialogForm("正在处理...", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在处理...", "提示信息");
                 frmWait.Owner = this;
                 frmWait.TopMost = false;
 
@@ -200,6 +201,11 @@ namespace GFS.Carbon
             this.txtExpression.Text = expression;
             this.txtExpression.SelectionStart = curIndex + btn.Text.Length;
 
+        }
+
+        private void frmGrass_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

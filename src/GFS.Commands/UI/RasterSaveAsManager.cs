@@ -8,6 +8,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using GFS.Common;
+using GFS.BLL;
 
 namespace GFS.Commands.UI
 {
@@ -168,14 +169,14 @@ namespace GFS.Commands.UI
                 {
                     this.SetRepresentationType(raster, representationType);
                 }
-                WaitDialogForm waitDialogForm = new WaitDialogForm("正在输出......", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在输出......", "提示信息");
                 IWorkspace workspace = null;
                 string text2 = "输出成功！";
                 //Logger logger = new Logger();
                 try
                 {
-                    waitDialogForm.Owner = this.m_frm;
-                    waitDialogForm.TopMost = false;
+                    frmWait.Owner = this.m_frm;
+                    frmWait.TopMost = false;
                     string text3 = this.m_cmbOutputType.Text;
                     ISaveAs2 saveAs = raster as ISaveAs2;
                     if (!saveAs.CanSaveAs(text3))
@@ -204,7 +205,7 @@ namespace GFS.Commands.UI
                     {
                         Marshal.ReleaseComObject(workspace);
                     }
-                    waitDialogForm.Close();
+                    frmWait.Close();
                     if (bUseMessagebox)
                     {
                         XtraMessageBox.Show(text2, "提示信息", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Asterisk);

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DecisionTree>
+  <Node NodaName="node00" Text="node00" NodeColor="" NodeLayer="0" NodeIndex="0" Expression="( [b1] - [b3] ) &gt;= 0 | ( [b1] - [b2] ) &gt;= 0" ClassValue="-1">
+    <Node NodaName="node10" Text="node10" NodeColor="" NodeLayer="1" NodeIndex="0" Expression="[b4] &lt;= 0.27 | [b5] &lt;= 0.27" ClassValue="-1">
+      <Node NodaName="node20" Text="node20" NodeColor="" NodeLayer="2" NodeIndex="0" Expression="[b16] &gt;= 0.4" ClassValue="-1">
+        <Node NodaName="node30" Text="node30" NodeColor="" NodeLayer="3" NodeIndex="0" Expression="[b10] &gt;= 0.5 &amp; [b11] &gt;= 0.5" ClassValue="-1">
+          <Node NodaName="node40" Text="others" NodeColor="#2D0D73" NodeLayer="4" NodeIndex="0" Expression="" ClassValue="4" />
+          <Node NodaName="node41" Text="peanut" NodeColor="#CD6013" NodeLayer="4" NodeIndex="1" Expression="" ClassValue="8" />
+        </Node>
+        <Node NodaName="node31" Text="node31" NodeColor="" NodeLayer="3" NodeIndex="1" Expression="[b10] &gt;= 0.53 &amp; [b11] &gt;= 0.53 &amp; [b12] &gt;= 0.53" ClassValue="-1">
+          <Node NodaName="node42" Text="others" NodeColor="#150E81" NodeLayer="4" NodeIndex="2" Expression="" ClassValue="2" />
+          <Node NodaName="node43" Text="cotton" NodeColor="#605002" NodeLayer="4" NodeIndex="3" Expression="" ClassValue="7" />
+        </Node>
+      </Node>
+      <Node NodaName="node21" Text="node21" NodeColor="" NodeLayer="2" NodeIndex="1" Expression="[b10] &gt;= 0.55" ClassValue="-1">
+        <Node NodaName="node32" Text="others" NodeColor="#3D4241" NodeLayer="3" NodeIndex="2" Expression="" ClassValue="3" />
+        <Node NodaName="node33" Text="maize" NodeColor="#56752E" NodeLayer="3" NodeIndex="3" Expression="" ClassValue="5" />
+      </Node>
+    </Node>
+    <Node NodaName="node11" Text="node11" NodeColor="" NodeLayer="1" NodeIndex="1" Expression="[b11] &gt;= 0.55" ClassValue="-1">
+      <Node NodaName="node22" Text="others" NodeColor="#2EA167" NodeLayer="2" NodeIndex="2" Expression="" ClassValue="1" />
+      <Node NodaName="node23" Text="maize" NodeColor="#1CBE9F" NodeLayer="2" NodeIndex="3" Expression="" ClassValue="6" />
+    </Node>
+  </Node>
+  <Variable Name="b1" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_1" />
+  <Variable Name="b3" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_3" />
+  <Variable Name="b2" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_2" />
+  <Variable Name="b4" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_4" />
+  <Variable Name="b5" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_5" />
+  <Variable Name="b11" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_11" />
+  <Variable Name="b16" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_16" />
+  <Variable Name="b10" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_10" />
+  <Variable Name="b12" File="G:\高分统计项目一期\测试数据\基于高分-4号卫星数据的农作物识别\NDVI\NDVI_sg_mask.dat:Band_12" />
+</DecisionTree>

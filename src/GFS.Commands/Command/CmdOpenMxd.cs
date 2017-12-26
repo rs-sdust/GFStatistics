@@ -177,17 +177,18 @@ namespace GFS.Commands
                     IMapDocument mapDoc = new MapDocumentClass();
                     if (mapDoc.get_IsPresent(docName) && !mapDoc.get_IsPasswordProtected(docName))
                     {
-                        mapDoc.Open(docName, string.Empty);
+                        //mapDoc.Open(docName, string.Empty);
                         // set the first map as the active view
-                        IMap map = mapDoc.get_Map(0);
-                        mapDoc.SetActiveView((IActiveView)map);
+                        //IMap map = mapDoc.get_Map(0);
+                        //mapDoc.SetActiveView((IActiveView)map);
                         //EnviVars.instance.PageLayoutControl.PageLayout = mapDoc.PageLayout;
                         //EnviVars.instance.Synchronizer.ReplaceMap(map);
-                        EnviVars.instance.MapControl.Map = map;
-                        mapDoc.Close();
+                        //EnviVars.instance.MapControl.Map = map;
+                        //mapDoc.Close();
                         EnviVars.instance.MapControl.DocumentFilename = docName;
-
+                        EnviVars.instance.MapControl.LoadMxFile(docName);
                         EnviVars.instance.history.AddTask(docName);
+
                         //CommandAPI.AddRecentFile(docName, FileType.MXD);
                         //CommandAPI.SaveRecentFilesInfo();
                         //logger.Log(LogLevel.Info, EventType.UserManagement, AppMessage.MSG0090, null);

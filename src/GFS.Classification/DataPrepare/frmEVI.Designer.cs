@@ -300,6 +300,7 @@
             this.Name = "frmEVI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "增强型植被指数(EVI)";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmEVI_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmEVI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

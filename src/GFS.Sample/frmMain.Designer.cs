@@ -28,19 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu();
             this.btnNewTask = new DevExpress.XtraBars.BarButtonItem();
             this.btnOpenTask = new DevExpress.XtraBars.BarButtonItem();
             this.btnSaveTask = new DevExpress.XtraBars.BarButtonItem();
             this.btnHelp = new DevExpress.XtraBars.BarButtonItem();
-            this.pccRight = new DevExpress.XtraBars.PopupControlContainer(this.components);
+            this.pccRight = new DevExpress.XtraBars.PopupControlContainer();
             this.listRecently = new DevExpress.XtraEditors.ImageListBoxControl();
-            this.ribbion32 = new DevExpress.Utils.ImageCollection(this.components);
+            this.ribbion32 = new DevExpress.Utils.ImageCollection();
             this.labelRecently = new DevExpress.XtraEditors.LabelControl();
-            this.image16 = new DevExpress.Utils.ImageCollection(this.components);
+            this.image16 = new DevExpress.Utils.ImageCollection();
             this.btnAddData = new DevExpress.XtraBars.BarButtonItem();
             this.btnUpdateTask = new DevExpress.XtraBars.BarButtonItem();
             this.btnFrame = new DevExpress.XtraBars.BarButtonItem();
@@ -69,15 +68,19 @@
             this.btnSampleLayer = new DevExpress.XtraBars.BarButtonItem();
             this.btnSummary = new DevExpress.XtraBars.BarButtonItem();
             this.btnAutoLayer = new DevExpress.XtraBars.BarButtonItem();
+            this.btnCV = new DevExpress.XtraBars.BarButtonItem();
+            this.btnMaxClass = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupFile = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupTask = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupData = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupSample = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.repositoryItemPopupContainerEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
+            this.dockManager = new DevExpress.XtraBars.Docking.DockManager();
             this.hideContainerBottom = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.dpFlow = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
@@ -87,7 +90,7 @@
             this.dpEagle = new DevExpress.XtraBars.Docking.DockPanel();
             this.controlContainer2 = new DevExpress.XtraBars.Docking.ControlContainer();
             this.axMapControlEagle = new ESRI.ArcGIS.Controls.AxMapControl();
-            this.barManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.barManager = new DevExpress.XtraBars.BarManager();
             this.barTop = new DevExpress.XtraBars.Bar();
             this.barbtnAddData = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnFull = new DevExpress.XtraBars.BarButtonItem();
@@ -120,9 +123,9 @@
             this.axMapControl = new ESRI.ArcGIS.Controls.AxMapControl();
             this.axToolbarControl = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.barDockingMenuItem1 = new DevExpress.XtraBars.BarDockingMenuItem();
-            this.popupMenulayer = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.popupMenuFrame = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.popupMenuRGB = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.popupMenulayer = new DevExpress.XtraBars.PopupMenu();
+            this.popupMenuFrame = new DevExpress.XtraBars.PopupMenu();
+            this.popupMenuRGB = new DevExpress.XtraBars.PopupMenu();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pccRight)).BeginInit();
@@ -192,10 +195,12 @@
             this.btnHelp,
             this.btnSampleLayer,
             this.btnSummary,
-            this.btnAutoLayer});
+            this.btnAutoLayer,
+            this.btnCV,
+            this.btnMaxClass});
             this.ribbonControl.LargeImages = this.ribbion32;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 9;
+            this.ribbonControl.MaxItemId = 13;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -208,7 +213,7 @@
             this.ribbonControl.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
             this.ribbonControl.ShowToolbarCustomizeItem = false;
-            this.ribbonControl.Size = new System.Drawing.Size(1014, 147);
+            this.ribbonControl.Size = new System.Drawing.Size(1182, 147);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.Toolbar.ShowCustomizeItem = false;
             // 
@@ -308,6 +313,8 @@
             this.ribbion32.Images.SetKeyName(19, "recent.png");
             this.ribbion32.Images.SetKeyName(20, "help.png");
             this.ribbion32.Images.SetKeyName(21, "samplelayer32.png");
+            this.ribbion32.Images.SetKeyName(22, "maxclass.png");
+            this.ribbion32.Images.SetKeyName(23, "cv1.png");
             // 
             // labelRecently
             // 
@@ -398,7 +405,7 @@
             // 
             // btnErrorAnaly
             // 
-            this.btnErrorAnaly.Caption = "误差分析";
+            this.btnErrorAnaly.Caption = "误差空间表达";
             this.btnErrorAnaly.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
             this.btnErrorAnaly.Id = 14;
             this.btnErrorAnaly.LargeImageIndex = 8;
@@ -609,13 +616,32 @@
             this.btnAutoLayer.Name = "btnAutoLayer";
             this.btnAutoLayer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAutoLayer_ItemClick);
             // 
+            // btnCV
+            // 
+            this.btnCV.Caption = "总体分布变异系数";
+            this.btnCV.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnCV.Id = 9;
+            this.btnCV.LargeImageIndex = 23;
+            this.btnCV.Name = "btnCV";
+            // 
+            // btnMaxClass
+            // 
+            this.btnMaxClass.Caption = "复杂种植条件地类识别";
+            this.btnMaxClass.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnMaxClass.Id = 11;
+            this.btnMaxClass.LargeImageIndex = 22;
+            this.btnMaxClass.Name = "btnMaxClass";
+            this.btnMaxClass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnIniRADI_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroupFile,
             this.ribbonPageGroupTask,
+            this.ribbonPageGroup1,
             this.ribbonPageGroupData,
-            this.ribbonPageGroupSample});
+            this.ribbonPageGroupSample,
+            this.ribbonPageGroup2});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "ribbonPage1";
             // 
@@ -639,7 +665,6 @@
             this.ribbonPageGroupData.ItemLinks.Add(this.btnFrame);
             this.ribbonPageGroupData.ItemLinks.Add(this.btnAutoLayer);
             this.ribbonPageGroupData.ItemLinks.Add(this.btnSampleLayer);
-            this.ribbonPageGroupData.ItemLinks.Add(this.btnErrorAnaly);
             this.ribbonPageGroupData.ItemLinks.Add(this.btnsimulation);
             this.ribbonPageGroupData.ItemLinks.Add(this.btnSelection);
             this.ribbonPageGroupData.Name = "ribbonPageGroupData";
@@ -653,6 +678,19 @@
             this.ribbonPageGroupSample.ItemLinks.Add(this.btnExport);
             this.ribbonPageGroupSample.Name = "ribbonPageGroupSample";
             this.ribbonPageGroupSample.Text = "推算";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnErrorAnaly);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "误差空间表达";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnMaxClass);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnCV);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "遥感所模块";
             // 
             // repositoryItemPopupContainerEdit1
             // 
@@ -676,7 +714,7 @@
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 568);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1014, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1182, 31);
             // 
             // dockManager
             // 
@@ -706,7 +744,7 @@
             this.hideContainerBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.hideContainerBottom.Location = new System.Drawing.Point(0, 548);
             this.hideContainerBottom.Name = "hideContainerBottom";
-            this.hideContainerBottom.Size = new System.Drawing.Size(1014, 20);
+            this.hideContainerBottom.Size = new System.Drawing.Size(1182, 20);
             // 
             // dpFlow
             // 
@@ -1025,14 +1063,14 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(2, 2);
-            this.barDockControlTop.Size = new System.Drawing.Size(754, 31);
+            this.barDockControlTop.Size = new System.Drawing.Size(922, 31);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 599);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1014, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1182, 0);
             // 
             // barDockControlLeft
             // 
@@ -1045,7 +1083,7 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1014, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1182, 0);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 599);
             // 
             // dpLayers
@@ -1085,7 +1123,7 @@
             this.panelMap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMap.Location = new System.Drawing.Point(256, 147);
             this.panelMap.Name = "panelMap";
-            this.panelMap.Size = new System.Drawing.Size(758, 401);
+            this.panelMap.Size = new System.Drawing.Size(926, 401);
             this.panelMap.TabIndex = 9;
             // 
             // axMapControl
@@ -1143,7 +1181,7 @@
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 599);
+            this.ClientSize = new System.Drawing.Size(1182, 599);
             this.Controls.Add(this.panelMap);
             this.Controls.Add(this.dpLayers);
             this.Controls.Add(this.hideContainerBottom);
@@ -1291,6 +1329,10 @@
         private DevExpress.XtraBars.BarButtonItem btnSampleLayer;
         private DevExpress.XtraBars.BarButtonItem btnSummary;
         private DevExpress.XtraBars.BarButtonItem btnAutoLayer;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.BarButtonItem btnCV;
+        private DevExpress.XtraBars.BarButtonItem btnMaxClass;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         //private DevExpress.XtraBars.Docking.ControlContainer controlContainer1;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
         //private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;

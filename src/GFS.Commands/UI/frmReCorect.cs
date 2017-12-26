@@ -210,12 +210,12 @@ namespace GFS.Commands.UI
             IPnt pixelBlockOrigin = null;
             IPnt pixelBlockSize = null;
             IPixelBlock3 pixelBlock3 = null;
-            WaitDialogForm frmWait = null;
+            frmWaitDialog frmWait = null;
             try
             {
                 if (DialogResult.OK != XtraMessageBox.Show("是否保存所做更改？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
                     return;
-                frmWait = new WaitDialogForm("正在保存...", "提示信息");
+                frmWait = new frmWaitDialog("正在保存...", "提示信息");
                 frmWait.Owner = this;
                 frmWait.TopMost = false;
                 //get top visable raster
@@ -1117,7 +1117,7 @@ namespace GFS.Commands.UI
 
         private void frmReCorect_HelpButtonClicked(object sender, CancelEventArgs e)
         {
-            //HelpManager.ShowHelp(this);
+            HelpManager.ShowHelp(this);
         }
         protected override void Dispose(bool disposing)
         {

@@ -2,8 +2,3 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.SampleBLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS\bin\Debug\GFS.SampleBLL.pdb
 E:\高分统计\GFStatistics.git\trunk\src\GFS.SampleBLL\obj\x86\Debug\GFS.SampleBLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS.SampleBLL\obj\x86\Debug\GFS.SampleBLL.pdb
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.SampleBLL.dll
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.SampleBLL.pdb
-G:\高分统计项目一期\trunk\src\GFS.SampleBLL\obj\x86\Debug\GFS.SampleBLL.csprojResolveAssemblyReference.cache
-G:\高分统计项目一期\trunk\src\GFS.SampleBLL\obj\x86\Debug\GFS.SampleBLL.dll
-G:\高分统计项目一期\trunk\src\GFS.SampleBLL\obj\x86\Debug\GFS.SampleBLL.pdb

@@ -23,11 +23,13 @@ using DevExpress.XtraEditors;
 using GFS.ClassificationBLL;
 using System.Drawing.Drawing2D;
 using DevExpress.Utils;
+using GFS.BLL;
 
 namespace GFS.Classification
 {
     public partial class frmDecisionTree : DevExpress.XtraEditors.XtraForm
     {
+        string _treeFile = "";
         public frmDecisionTree()
         {
             InitializeComponent();
@@ -38,11 +40,24 @@ namespace GFS.Classification
             Canvas.instance.decisionTree = new DecisionTree();
             //Canvas.instance.gridTable = this.gridValueAndFile;
         }
+        public frmDecisionTree(string treeFile)
+        {
+            InitializeComponent();
+
+            //this.panelCanvas.Tag = false;
+            Canvas.instance.panelCanvas = this.panelCanvas;
+            Canvas.instance.nodeMenu = this.popupMenuRight;
+            Canvas.instance.decisionTree = new DecisionTree();
+            //Canvas.instance.gridTable = this.gridValueAndFile;
+            _treeFile = treeFile;
+        }
         private void frmDecisionTree_Load(object sender, EventArgs e)
         {
             Canvas.instance.decisionTree.RefreshTree();
             InitialGrigFile();
             this.gridValueAndFile.Visible = false;
+            if(!string.IsNullOrEmpty(_treeFile))
+                Canvas.instance.decisionTree.OpenDecisionTree(_treeFile);
         }
         //
         //新建决策树
@@ -143,6 +158,7 @@ namespace GFS.Classification
             {
                 string file = frm.FileName;
                 Canvas.instance.decisionTree.OpenDecisionTree(file);
+                Canvas.instance.treeSaved = true;
             }
         }
 
@@ -187,6 +203,8 @@ namespace GFS.Classification
                 }
                 DataTable dt = this.gridValueAndFile.DataSource as DataTable;
                 dt.Rows[gridView1.FocusedRowHandle][1] = file;
+                Canvas.instance.treeSaved = false;
+
             }
         }
         //
@@ -194,7 +212,7 @@ namespace GFS.Classification
         //
         private void btnRun_Click(object sender, EventArgs e)
         {
-            WaitDialogForm frmWait = new WaitDialogForm("正在分类...", "提示信息");
+            frmWaitDialog frmWait = new frmWaitDialog("正在分类...", "提示信息");
             try
             {
                 frmWait.Owner = this;
@@ -214,6 +232,21 @@ namespace GFS.Classification
                 {
                     op.Execute(dialog.FileName);
                 }
+                //元数据
+                if (_treeFile.Contains( "gf4.tree"))
+                {
+                    BLL.ProductMeta meta = new ProductMeta(dialog.FileName, "GF4", "", "长时间序列识别结果", "作物识别结果");
+                    meta.WriteGeoMeta();
+                }
+                else
+                {
+                    BLL.ProductMeta meta = new ProductMeta(dialog.FileName, "", "", "决策树识别结果", "作物识别结果");
+                    meta.WriteGeoMeta();
+                }
+                //快视图
+                BLL.ProductQuickView view = new BLL.ProductQuickView(dialog.FileName);
+                view.Create();
+
                 if (DialogResult.OK == XtraMessageBox.Show("分类完毕，是否加分类载结果？", "提示信息", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
                     MAP.AddRasterFileToMap(dialog.FileName);
                 //this.Close();
@@ -225,6 +258,11 @@ namespace GFS.Classification
                 frmWait.Close();
             }
 
+        }
+
+        private void frmDecisionTree_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
         
 

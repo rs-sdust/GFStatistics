@@ -139,6 +139,7 @@
             this.cBEClassic.Name = "cBEClassic";
             this.cBEClassic.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cBEClassic.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cBEClassic.Size = new System.Drawing.Size(62, 20);
             this.cBEClassic.TabIndex = 48;
             // 
@@ -156,6 +157,7 @@
             this.cBEBasis.Name = "cBEBasis";
             this.cBEBasis.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cBEBasis.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cBEBasis.Size = new System.Drawing.Size(62, 20);
             this.cBEBasis.TabIndex = 46;
             // 
@@ -183,6 +185,7 @@
             this.cBFile.Name = "cBFile";
             this.cBFile.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cBFile.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cBFile.Size = new System.Drawing.Size(249, 20);
             this.cBFile.TabIndex = 42;
             this.cBFile.TextChanged += new System.EventHandler(this.cBFile_TextChanged);
@@ -212,6 +215,7 @@
             "分层一",
             "分层二",
             "分层三"});
+            this.cBELayer.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cBELayer.Size = new System.Drawing.Size(55, 20);
             this.cBELayer.TabIndex = 38;
             // 
@@ -401,8 +405,10 @@
             this.cBESave.Name = "cBESave";
             this.cBESave.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cBESave.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cBESave.Size = new System.Drawing.Size(179, 20);
             this.cBESave.TabIndex = 45;
+            this.cBESave.TextChanged += new System.EventHandler(this.cBESave_TextChanged);
             // 
             // labelControl8
             // 
@@ -530,7 +536,7 @@
             // groupCHelp
             // 
             this.groupCHelp.Controls.Add(this.memoEdit1);
-            this.groupCHelp.Location = new System.Drawing.Point(758, 12);
+            this.groupCHelp.Location = new System.Drawing.Point(749, 11);
             this.groupCHelp.Name = "groupCHelp";
             this.groupCHelp.Size = new System.Drawing.Size(198, 318);
             this.groupCHelp.TabIndex = 68;
@@ -539,7 +545,7 @@
             // memoEdit1
             // 
             this.memoEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.memoEdit1.EditValue = "";
+            this.memoEdit1.EditValue = "在构建的一级抽样框基础上，选择一定的样本量和抽样次数模拟抽样过程和推算过程。依据多次抽样结果合cv值值确定一级样本量并保存一级样本。";
             this.memoEdit1.Location = new System.Drawing.Point(2, 22);
             this.memoEdit1.Name = "memoEdit1";
             this.memoEdit1.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window;
@@ -554,7 +560,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 397);
+            this.ClientSize = new System.Drawing.Size(429, 397);
             this.Controls.Add(this.groupCHelp);
             this.Controls.Add(this.siBHelp);
             this.Controls.Add(this.siBConcel);
@@ -572,6 +578,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "抽样仿真/一阶段抽样";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmSampleSimulation_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmSampleSimulation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupCInput)).EndInit();
             this.groupCInput.ResumeLayout(false);

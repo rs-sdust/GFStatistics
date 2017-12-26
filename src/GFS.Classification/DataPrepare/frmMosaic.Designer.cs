@@ -247,7 +247,7 @@
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(217, 348);
             this.labelControl2.TabIndex = 69;
-            this.labelControl2.Text = "该工具用于将相邻的两幅\r\n或多幅遥感影像拼接为一\r\n幅影像。";
+            this.labelControl2.Text = "将多个栅格数据集\r\n拼接成一个新的栅格数据集。";
             // 
             // groupControl3
             // 
@@ -308,6 +308,7 @@
             this.Name = "frmMosaic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "图像拼接";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmMosaic_HelpButtonClicked);
             this.Load += new System.EventHandler(this.mosaic_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtOut.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkUpload.Properties)).EndInit();

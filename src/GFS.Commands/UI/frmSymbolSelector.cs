@@ -114,14 +114,14 @@ namespace GFS.Commands.UI
         /// </summary>
         private void Init()
         {
-            this.cmbMarkerAngel.ValueChanged += new EventHandler(this.cmbMarkerAngel_EditValueChanged);
-            this.cmbMarkerSize.ValueChanged += new EventHandler(this.cmbMarkerSize_EditValueChanged);
-            this.cmbFillWidth.ValueChanged += new EventHandler(this.cmbFillAndLineWidth_EditValueChanged);
-            this.cmbLineWith.ValueChanged += new EventHandler(this.cmbFillAndLineWidth_EditValueChanged);
-            this.cmbFillColor.EditValueChanged += new EventHandler(this.cmbColor_EditValueChanged);
-            this.cmbLineColor.EditValueChanged += new EventHandler(this.cmbColor_EditValueChanged);
-            this.cmbMarkerColor.EditValueChanged += new EventHandler(this.cmbColor_EditValueChanged);
-            this.cmbFillLineColor.EditValueChanged += new EventHandler(this.cmbFillOutlineColor_EditValueChanged);
+            this.cmbMarkerAngel.ValueChanged -= new EventHandler(this.cmbMarkerAngel_EditValueChanged);
+            this.cmbMarkerSize.ValueChanged -= new EventHandler(this.cmbMarkerSize_EditValueChanged);
+            this.cmbFillWidth.ValueChanged -= new EventHandler(this.cmbFillAndLineWidth_EditValueChanged);
+            this.cmbLineWith.ValueChanged -= new EventHandler(this.cmbFillAndLineWidth_EditValueChanged);
+            this.cmbFillColor.EditValueChanged -= new EventHandler(this.cmbColor_EditValueChanged);
+            this.cmbLineColor.EditValueChanged -= new EventHandler(this.cmbColor_EditValueChanged);
+            this.cmbMarkerColor.EditValueChanged -= new EventHandler(this.cmbColor_EditValueChanged);
+            this.cmbFillLineColor.EditValueChanged -= new EventHandler(this.cmbFillOutlineColor_EditValueChanged);
             try
             {
                 switch (this.axSymbologyControl1.StyleClass)
@@ -373,7 +373,39 @@ namespace GFS.Commands.UI
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cmbColor_EditValueChanged(object sender, EventArgs e)
         {
-
+            if (this._styleGalleryItem != null)
+            {
+                ColorEdit colorEdit = sender as ColorEdit;
+                IColor color = SymbleAPI.ConvertColorToIColor(colorEdit.Color);
+                switch (this.axSymbologyControl1.StyleClass)
+                {
+                    case esriSymbologyStyleClass.esriStyleClassFillSymbols:
+                        {
+                            IFillSymbol fillSymbol = this._styleGalleryItem.Item as IFillSymbol;
+                            fillSymbol.Color = color;
+                            break;
+                        }
+                    case esriSymbologyStyleClass.esriStyleClassLineSymbols:
+                        {
+                            ILineSymbol lineSymbol = this._styleGalleryItem.Item as ILineSymbol;
+                            lineSymbol.Color = color;
+                            break;
+                        }
+                    case esriSymbologyStyleClass.esriStyleClassMarkerSymbols:
+                        {
+                            IMarkerSymbol markerSymbol = this._styleGalleryItem.Item as IMarkerSymbol;
+                            markerSymbol.Color = color;
+                            break;
+                        }
+                    case esriSymbologyStyleClass.esriStyleClassTextSymbols:
+                        {
+                            ITextSymbol textSymbol = this._styleGalleryItem.Item as ITextSymbol;
+                            textSymbol.Color = color;
+                            break;
+                        }
+                }
+                this.ViewSymble();
+            }
         }
 
         /// <summary>

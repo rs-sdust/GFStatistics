@@ -24,6 +24,7 @@ using System.Text.RegularExpressions;
 //using SDJT.Const;
 using DevExpress.Utils;
 using ESRI.ArcGIS.DataManagementTools;
+using GFS.BLL;
 //using SDJT.Log;
 
 /// <summary>
@@ -185,11 +186,11 @@ namespace GFS.Commands.UI
                 else
                 {
                     //Logger logger = new Logger();
-                    WaitDialogForm waitDialogForm = new WaitDialogForm("正在创建金字塔" + "......", "提示信息");
+                    frmWaitDialog frmWait = new frmWaitDialog("正在创建金字塔" + "......", "提示信息");
                     try
                     {
-                        waitDialogForm.Owner = this;
-                        waitDialogForm.TopMost = false;
+                        frmWait.Owner = this;
+                        frmWait.TopMost = false;
                         if (this._geoProcessor == null)
                         {
                             this._geoProcessor = new Geoprocessor();
@@ -225,7 +226,7 @@ namespace GFS.Commands.UI
                     }
                     finally
                     {
-                        waitDialogForm.Close();
+                        frmWait.Close();
                     }
                 }
             }

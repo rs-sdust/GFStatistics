@@ -12,46 +12,47 @@ using DevExpress.XtraCharts;
 using ESRI.ArcGIS.Geodatabase;
 using GFS.Common;
 using GFS.BLL;
+using ESRI.ArcGIS.Carto;
+using ESRI.ArcGIS.Geometry;
+using DevExpress.Utils;
 
 namespace GFS.Sample
 {
     public partial class frmSampleOverview : DevExpress.XtraEditors.XtraForm
     {
-        private string files = null;
-        private DataTable pTable = new DataTable();
+        public delegate void TransfDelegate(List<object> list1);//委托和事件
         private DataTable CurrentTable = new DataTable();
-        public frmSampleOverview(string file)
+        private Series Series1 = new Series("样方", ViewType.Point);
+        private IFeatureLayer _pFtLayer;
+        public frmSampleOverview(DataTable CurTable, IFeatureLayer IFeaLayer)
         {
             InitializeComponent();
-            this.files = file;
+            this.CurrentTable = CurTable;
+            this._pFtLayer = IFeaLayer;
         }
-
         private void frmSampleOverview_Load(object sender, EventArgs e)
         {
-            pTable.Clear();
-            pTable.Columns.Clear();
-            IFeatureClass allVillage = EngineAPI.OpenFeatureClass(files);
-            ITableConversion conver = new TableConversion();
-            this.CurrentTable = conver.AETableToDataTable(allVillage);
+            updatetable(CurrentTable, _pFtLayer);
+        }
+        //更新表和图层
+        public void updatetable(DataTable pTable, IFeatureLayer IFeaLayer)
+        {
+            this.CurrentTable = pTable;
+            this._pFtLayer = IFeaLayer;
+            cBEHorizontal.Properties.Items.Clear();
+            cBEvertical.Properties.Items.Clear();
             for (int i = 2; i < CurrentTable.Columns.Count; i++)
             {
-                if (CurrentTable.Columns[i].DataType==typeof (double ))
+                if (CurrentTable.Columns[i].DataType == typeof(double))
                 {
                     cBEHorizontal.Properties.Items.Add(CurrentTable.Columns[i]);
                     cBEvertical.Properties.Items.Add(CurrentTable.Columns[i]);
-                    pTable.Columns.Add(new DataColumn(CurrentTable.Columns[i].ColumnName, CurrentTable.Columns[i].DataType));
                 }
             }
-            DataRow drr = null;
-            for (int i = 0; i < CurrentTable.Rows.Count; i++)
+            if (cBEvertical.Properties.Items.Count > 0)
             {
-                drr = pTable.NewRow();
-                for (int j = 0; j < pTable.Columns.Count; j++)
-                {
-                    //转换成亩
-                    drr[j] = double.Parse(CurrentTable.Rows[i][pTable.Columns[j].ColumnName].ToString()) / 666.67;
-                }
-                pTable.Rows.Add(drr);
+                cBEHorizontal.Text = cBEHorizontal.Properties.Items[0].ToString();
+                cBEvertical.Text = cBEvertical.Properties.Items[0].ToString();
             }
         }
         private void siBOK_Click(object sender, EventArgs e)
@@ -62,45 +63,128 @@ namespace GFS.Sample
             }
             else
             {
-                 chartControl1.Series.Clear();
-                if (cBEHorizontal.Text == cBEvertical.Text)
-                {
-                    MessageBox.Show("错误信息：\n纵轴和横轴的值：是不同的，请重新选择");
+                chartControl1.Series.Clear();
+                UpdateSeries(CurrentTable);
 
-                }
+                chartControl1.Series.Add(Series1);
+
+                Series Series2 = new Series("1:1线", ViewType.Line);
+                ((LineSeriesView)Series2.View).LineStyle.DashStyle = DashStyle.Dot;
+                ((LineSeriesView)Series2.View).Color = System.Drawing.Color.Green;
+                XYDiagram diagram = (XYDiagram)chartControl1.Diagram;
+                Series2.Points.Add(new SeriesPoint(diagram.AxisX.VisualRange.MinValue, diagram.AxisY.VisualRange.MinValue));
+                double X = Convert.ToDouble(diagram.AxisX.VisualRange.MaxValue);
+                double Y = Convert.ToDouble(diagram.AxisY.VisualRange.MaxValue);
+                if (X >= Y)
+                    Series2.Points.Add(new SeriesPoint(Math.Round(X, 3), Math.Round(X, 3)));
                 else
-                {
-                    DataTable dat = new DataTable();
-                    dat.Clear();
-                    dat.Columns.Clear();
-                    dat = pTable.DefaultView.ToTable(false, new string[] { cBEHorizontal.Text, cBEvertical.Text });
-                    Series Series1 = new Series("样方", ViewType.Point);
-                    Series1.ArgumentDataMember = cBEHorizontal.Text;
-                    Series1.ValueDataMembers[0] = cBEvertical.Text;
-                    Series1.DataSource = dat;
-                    chartControl1.Series.Add(Series1);
-                    
-                    Series Series2 = new Series("1:1线", ViewType.Line);
-                    ((LineSeriesView)Series2.View).LineStyle.DashStyle = DashStyle.Dot;
-                    XYDiagram diagram = (XYDiagram)chartControl1.Diagram;
-                    Series2.Points.Add(new SeriesPoint(diagram.AxisX.VisualRange.MinValue, diagram.AxisY.VisualRange.MinValue));
-                    double X = Convert.ToDouble(diagram.AxisX.VisualRange.MaxValue);
-                    double Y = Convert.ToDouble(diagram.AxisY.VisualRange.MaxValue);
-                    if (X>=Y)
-                    {
-                        Series2.Points.Add(new SeriesPoint(diagram.AxisX.VisualRange.MaxValue, diagram.AxisX.VisualRange.MaxValue));
-                    }
-                    else
-                        Series2.Points.Add(new SeriesPoint(diagram.AxisY.VisualRange.MaxValue, diagram.AxisY.VisualRange.MaxValue));
+                    Series2.Points.Add(new SeriesPoint(Math.Round(Y, 3), Math.Round(Y, 3)));
+                //Series2.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.False;
+                //Series2.Label.PointOptions.PointView = PointView.Undefined;
+                chartControl1.Series.Add(Series2);
 
-                    chartControl1.Series.Add(Series2);
-                } 
+                if ((textEdit1.Text != "0") && (textEdit1.Text != ""))
+                {
+                    int edit = Convert.ToInt32(textEdit1.Text);
+
+                    Series Series3 = new Series("", ViewType.Line);
+                    ((LineSeriesView)Series3.View).LineStyle.DashStyle = DashStyle.Dot;
+                    ((LineSeriesView)Series3.View).Color = System.Drawing.Color.Red;
+                    XYDiagram diagram1 = (XYDiagram)chartControl1.Diagram;
+                    Series3.Points.Add(new SeriesPoint(diagram.AxisX.VisualRange.MinValue, diagram.AxisY.VisualRange.MinValue));
+                    if (X >= Y)
+                        Series3.Points.Add(new SeriesPoint(Math.Round(X, 3), Math.Round(X, 3) / edit));
+                    else
+                        Series3.Points.Add(new SeriesPoint(Math.Round(Y, 3), Math.Round(Y, 3) / edit));
+                    //Series3.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.False;
+                    chartControl1.Series.Add(Series3);
+
+                    Series Series4 = new Series("", ViewType.Line);
+                    ((LineSeriesView)Series4.View).LineStyle.DashStyle = DashStyle.Dot;
+                    ((LineSeriesView)Series4.View).Color = System.Drawing.Color.Red;
+                    XYDiagram diagram2 = (XYDiagram)chartControl1.Diagram;
+                    Series4.Points.Add(new SeriesPoint(diagram.AxisX.VisualRange.MinValue, diagram.AxisY.VisualRange.MinValue));
+                    if (X >= Y)
+                        Series4.Points.Add(new SeriesPoint(Math.Round(X, 3) / edit, Math.Round(X, 3)));
+                    else
+                        Series4.Points.Add(new SeriesPoint(Math.Round(X, 3) / edit, Math.Round(X, 3)));
+                    //Series4.Label .PointOptions.PointView = PointView.ArgumentAndValues;
+                    //Series4.LegendPointOptions.PointView = PointView.ArgumentAndValues;
+                    chartControl1.Series.Add(Series4);
+                }
             }
         }
+        //更新Series1
+        public void UpdateSeries(DataTable ptable)
+        {
+            this.CurrentTable = ptable;
+            Series1.Points.Dispose();//释放Series
+            Series1.Points.Clear();
+            Series1.ArgumentScaleType = ScaleType.Numerical;
+            Series1.ArgumentDataMember = cBEHorizontal.SelectedItem.ToString();
+            Series1.ValueDataMembers[0] = cBEvertical.SelectedItem.ToString();
+            for (int i = 0; i < ptable.Rows.Count; i++)
+            {
+                Series1.Points.Add(new SeriesPoint(((double)ptable.Rows[i][cBEHorizontal.Text] / 666.67), ((double)ptable.Rows[i][cBEvertical.Text] / 666.67)));
+            }
+        }
+        public event TransfDelegate TransfEvent;//委托
+        private void chartControl1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            List<object> list = new List<object>();
+            ChartHitInfo hitInfo = chartControl1.CalcHitInfo(e.Location);
+            if (hitInfo.SeriesPoint != null)
+            {
+                double X_value = Math.Round(double.Parse(hitInfo.SeriesPoint.Argument) * 666.67, 3);
+                double Y_value = Math.Round(double.Parse((hitInfo.SeriesPoint.Values[0] * 666.67).ToString()), 3);
+                for (int i = 0; i < CurrentTable.Rows.Count; i++)
+                {
+                    double X_temp = Math.Round(Convert.ToDouble(CurrentTable.Rows[i][cBEHorizontal.Text]), 3);
+                    double Y_temp = Math.Round(Convert.ToDouble(CurrentTable.Rows[i][cBEvertical.Text]), 3);
+                    if ((X_value == X_temp) && (Y_value == Y_temp))
+                        list.Add(CurrentTable.Rows[i][0]);
+                }
 
+                DataRow[] foundRow = new DataRow[list.Count];
+                IFeatureCursor pFeatureCursor = null;
+                ILayer pLayer = _pFtLayer as ILayer;
+                IFeatureLayer pFeaturelayer = (IFeatureLayer)pLayer;
+                IFeatureClass pFeatureClass = pFeaturelayer.FeatureClass;
+                IQueryFilter pQueryFilter = new QueryFilterClass();
+                IEnvelope pEnv = new EnvelopeClass();
+                IMap _map = EnviVars.instance.MapControl.Map;
+                _map.ClearSelection();
+                if (list.Count > 0)
+                {
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        pQueryFilter.WhereClause = "FID" + "=" + list[i].ToString();
+                        pFeatureCursor = pFeatureClass.Search(pQueryFilter, false);
+                        IFeature pFeature = pFeatureCursor.NextFeature();
+                        pEnv.Union(pFeature.ShapeCopy.Envelope);
+                        IGeometry pgeom = (IGeometry)pFeature.Shape;
+                        if (pFeature != null)
+                        {
+                            //_map = EnviVars.instance.MapControl.Map;
+                            //_map.ClearSelection();
+                            //(_map as IActiveView).Extent=pFeature.Extent;
+                            _map.SelectFeature(pLayer, pFeature);
+                            //(_map as IActiveView).Refresh();
+                        }
+                    }
+                    (_map as IActiveView).Extent = pEnv;
+                    (_map as IActiveView).Refresh();
+                    //System.Runtime.InteropServices.Marshal.ReleaseComObject(pFeatureCursor);
+                    //触发事件
+                    TransfEvent(list);
+                }
+                System.Runtime.InteropServices.Marshal.ReleaseComObject(pFeatureCursor);
+            }
+        }
         private void siBConcel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
     }
 }

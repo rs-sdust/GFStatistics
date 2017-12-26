@@ -1,0 +1,4 @@
+G:\高分统计项目一期\trunk\src\GFS.License\bin\Release\GFS.License.dll
+G:\高分统计项目一期\trunk\src\GFS.License\bin\Release\GFS.License.pdb
+G:\高分统计项目一期\trunk\src\GFS.License\obj\x86\Release\GFS.License.dll
+G:\高分统计项目一期\trunk\src\GFS.License\obj\x86\Release\GFS.License.pdb

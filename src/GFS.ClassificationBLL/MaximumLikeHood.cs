@@ -249,7 +249,7 @@ namespace GFS.ClassificationBLL
                     }
                     catch (Exception ex)
                     {
-                        Log.WriteLog(typeof(OOClassification), ex);
+                        Log.WriteLog(typeof(MaximumLikeHood), ex);
                         result = false;
                     }
                     finally
@@ -263,7 +263,7 @@ namespace GFS.ClassificationBLL
             }
             catch (Exception ex)
             {
-                Log.WriteLog(typeof(OOClassification), ex);
+                Log.WriteLog(typeof(MaximumLikeHood), ex);
                 result = false;
             }
 

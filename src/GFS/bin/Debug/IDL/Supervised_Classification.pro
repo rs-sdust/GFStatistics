@@ -2,22 +2,22 @@ PRO SUPERVISED_CLASSIFICATION
   COMPILE_OPT idl2
   ENVI,/RESTORE_BASE_SAVE_FILES
   ENVI_BATCH_INIT
-  InputFilename = "G:\æ–°å»ºæ–‡ä»¶å¤¹\åŒ—å¸ˆå¤§\OUT\OUt.img"
-  ExampleShpFile = "G:\æ–°å»ºæ–‡ä»¶å¤¹\åŒ—å¸ˆå¤§\æ–°å»ºæ–‡ä»¶å¤¹1\color_sample\sample.shp"
-  OutFileName = "G:\æ–°å»ºæ–‡ä»¶å¤¹\åŒ—å¸ˆå¤§\ziji\idlshiyanclassyyk111.img"
+  InputFilename = "G:\ĞÂ½¨ÎÄ¼ş¼Ğ\±±Ê¦´ó\OUT\OUt.img"
+  ExampleShpFile = "G:\ĞÂ½¨ÎÄ¼ş¼Ğ\±±Ê¦´ó\ĞÂ½¨ÎÄ¼ş¼Ğ1\color_sample\sample.shp"
+  OutFileName = "G:\ĞÂ½¨ÎÄ¼ş¼Ğ\±±Ê¦´ó\ziji\idlshiyanclassyyk111.img"
   MAXIMUM_LIKELIHOOD_CLASSIFICATION,InputFilename,ExampleShpFile,OutFileName
 END
 ;+
 ; :DESCRIPTION:
 ;    Describe the procedure.
-;  åˆ©ç”¨æœ€å¤§ä¼¼ç„¶æ³•å®ç°é¢å‘å¯¹è±¡çš„åˆ†ç±»
+;  ÀûÓÃ×î´óËÆÈ»·¨ÊµÏÖÃæÏò¶ÔÏóµÄ·ÖÀà
 ; :PARAMS:
-;    InputFilenameï¼šå¾…åˆ†ç±»å½±åƒ
-;    ExampleShpFileï¼šæ ·æœ¬ç‚¹Shpæ–‡ä»¶
-;       Shpæ–‡ä»¶å±æ€§è¡¨æ ¼å¼ï¼šFID   Shape    CLASS_NAME CLASS_ID   CLASS_CLRS
-;                    å±æ€§ï¼š           Geometry  String(40) String(10) String(12)
-;                    å€¼ï¼š                Polygon   City(Road) 1(2,3,4,5) 1(2,3,4,5)
-;    OutFileName:åˆ†ç±»ç»“æœç»å¯¹è·¯å¾„
+;    InputFilename£º´ı·ÖÀàÓ°Ïñ
+;    ExampleShpFile£ºÑù±¾µãShpÎÄ¼ş
+;       ShpÎÄ¼şÊôĞÔ±í¸ñÊ½£ºFID   Shape    CLASS_NAME CLASS_ID   CLASS_CLRS
+;                    ÊôĞÔ£º           Geometry  String(40) String(10) String(12)
+;                    Öµ£º                Polygon   City(Road) 1(2,3,4,5) 1(2,3,4,5)
+;    OutFileName:·ÖÀà½á¹û¾ø¶ÔÂ·¾¶
 ;
 ; :AUTHOR: Yikun Yang
 ;-
@@ -93,7 +93,7 @@ PRO MAXIMUM_LIKELIHOOD_CLASSIFICATION,InputFilename,ExampleShpFile,OutFileName
   ; Set the unclassified class to black and use roi colors
   lookup = BYTARR(3,num_classes+1)
   lookup[0,1] = roi_colors1
-  ; è®¡ç®—ç±»ROIçš„åŸºæœ¬ç»Ÿè®¡ä¿¡æ¯
+  ; ¼ÆËãÀàROIµÄ»ù±¾Í³¼ÆĞÅÏ¢
   ;
   mean = FLTARR(N_ELEMENTS(pos), num_classes)
   stdv = FLTARR(N_ELEMENTS(pos), num_classes)

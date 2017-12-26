@@ -135,11 +135,11 @@ namespace GFS.SampleBLL
                 msg = "调查面积字段为空！";
                 return false;
             }
-            else if (string.IsNullOrEmpty(_outSample))
-            {
-                msg = "输出样本文件为空！";
-                return false;
-            }
+            //else if (string.IsNullOrEmpty(_outSample))
+            //{
+            //    msg = "输出样本文件为空！";
+            //    return false;
+            //}
             else
             {
                 msg = "";

@@ -1,0 +1,5 @@
+G:\高分统计项目一期\trunk\src\UpdateTaskStatus\bin\UpdateTaskStatus.dll
+G:\高分统计项目一期\trunk\src\UpdateTaskStatus\bin\UpdateTaskStatus.pdb
+G:\高分统计项目一期\trunk\src\UpdateTaskStatus\obj\Debug\UpdateTaskStatus.dll
+G:\高分统计项目一期\trunk\src\UpdateTaskStatus\obj\Debug\UpdateTaskStatus.pdb
+G:\高分统计项目一期\trunk\src\UpdateTaskStatus\obj\Debug\UpdateTaskStatus.csprojResolveAssemblyReference.cache

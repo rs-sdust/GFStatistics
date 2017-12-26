@@ -76,7 +76,7 @@ namespace GFS.Carbon
         private void IniFlowList()
         {
             flowList = new List<Button>() 
-            { btnPrepare,btnSample,btnSingleDate,btnAfter,btnVerification};
+            { btnForest,btnShrub,btnGrass,btnVeg,btnSoil};
         }
         //获取流程右侧边中心坐标
         private Point GetLeftCenter(Button btn)
@@ -97,40 +97,40 @@ namespace GFS.Carbon
             //抗锯齿
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             //绘制链接线
-            Point start = GetRightCenter(btnGF);
-            Point end = GetLeftCenter(btnDB);
+            Point start = GetRightCenter(btnForest);
+            Point end = GetLeftCenter(btnShrub);
             e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnDB);
-            end = GetLeftCenter(btnPrepare);
-            ChangePenColor(ref pen,btnDB, btnPrepare);
+            start = GetRightCenter(btnShrub);
+            end = GetLeftCenter(btnGrass);
+            ChangePenColor(ref pen,btnShrub, btnGrass);
             e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnPrepare);
-            end = GetLeftCenter(btnSample);
-            ChangePenColor(ref pen,btnPrepare, btnSample);
+            start = GetRightCenter(btnGrass);
+            end = GetLeftCenter(btnVeg);
+            ChangePenColor(ref pen,btnGrass, btnVeg);
             e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnSample);
-            end = GetLeftCenter(btnSingleDate);
-            ChangePenColor(ref pen,btnSample, btnSingleDate);
-            e.Graphics.DrawLine(pen, start, end);
-            end = GetLeftCenter(btnMultiDate);
-            ChangePenColor(ref pen,btnSample, btnMultiDate);
-            e.Graphics.DrawLine(pen, start, end);
+            start = GetRightCenter(btnVeg);
+            //end = GetLeftCenter(btnSingleDate);
+            //ChangePenColor(ref pen,btnVeg, btnSingleDate);
+            //e.Graphics.DrawLine(pen, start, end);
+            //end = GetLeftCenter(btnMultiDate);
+            //ChangePenColor(ref pen,btnVeg, btnMultiDate);
+            //e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnSingleDate);
-            end = GetLeftCenter(btnAfter);
-            ChangePenColor(ref pen,btnSingleDate, btnAfter);
+            //start = GetRightCenter(btnSingleDate);
+            end = GetLeftCenter(btnSoil);
+            ChangePenColor(ref pen, btnVeg, btnSoil);
             e.Graphics.DrawLine(pen, start, end);
-            start = GetRightCenter(btnMultiDate);
-            ChangePenColor(ref pen, btnMultiDate, btnAfter);
-            e.Graphics.DrawLine(pen, start, end);
+            //start = GetRightCenter(btnMultiDate);
+            //ChangePenColor(ref pen, btnMultiDate, btnSoil);
+            //e.Graphics.DrawLine(pen, start, end);
 
-            start = GetRightCenter(btnAfter);
-            end = GetLeftCenter(btnVerification);
-            ChangePenColor(ref pen, btnAfter,btnVerification);
-            e.Graphics.DrawLine(pen, start, end);
+            //start = GetRightCenter(btnSoil);
+            //end = GetLeftCenter(btnVerification);
+            //ChangePenColor(ref pen, btnSoil,btnVerification);
+            //e.Graphics.DrawLine(pen, start, end);
 
 
         }

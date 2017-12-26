@@ -20,6 +20,7 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 /// <summary>
 /// The Sys namespace.
@@ -365,7 +366,39 @@ namespace GFS.BLL
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cmbColor_EditValueChanged(object sender, EventArgs e)
         {
-
+            if (this._styleGalleryItem != null)
+            {
+                ColorEdit colorEdit = sender as ColorEdit;
+                IColor color = SymbleAPI.ConvertColorToIColor(colorEdit.Color);
+                switch (this.axSymbologyControl1.StyleClass)
+                {
+                    case esriSymbologyStyleClass.esriStyleClassFillSymbols:
+                        {
+                            IFillSymbol fillSymbol = this._styleGalleryItem.Item as IFillSymbol;
+                            fillSymbol.Color = color;
+                            break;
+                        }
+                    case esriSymbologyStyleClass.esriStyleClassLineSymbols:
+                        {
+                            ILineSymbol lineSymbol = this._styleGalleryItem.Item as ILineSymbol;
+                            lineSymbol.Color = color;
+                            break;
+                        }
+                    case esriSymbologyStyleClass.esriStyleClassMarkerSymbols:
+                        {
+                            IMarkerSymbol markerSymbol = this._styleGalleryItem.Item as IMarkerSymbol;
+                            markerSymbol.Color = color;
+                            break;
+                        }
+                    case esriSymbologyStyleClass.esriStyleClassTextSymbols:
+                        {
+                            ITextSymbol textSymbol = this._styleGalleryItem.Item as ITextSymbol;
+                            textSymbol.Color = color;
+                            break;
+                        }
+                }
+                this.ViewSymble();
+            }
         }
 
         /// <summary>

@@ -127,6 +127,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\ESRI.ArcGIS.Version.dll</HintPath>
     </Reference>
+    <Reference Include="SampleIntegration">
+      <HintPath>..\..\..\遥感所模块\SampleTestForm\bin\Debug\SampleIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="SampleUtility">
+      <HintPath>..\..\..\遥感所模块\SampleTestForm\bin\Debug\SampleUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="SampleUtilityUI">
+      <HintPath>..\..\..\遥感所模块\SampleTestForm\bin\Debug\SampleUtilityUI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

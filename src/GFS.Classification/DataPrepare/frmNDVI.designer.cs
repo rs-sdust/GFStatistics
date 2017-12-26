@@ -276,6 +276,7 @@
             this.Name = "frmNDVI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "归一化植被指数(NDVI)";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmNDVI_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmNDVI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gCHelp)).EndInit();
             this.gCHelp.ResumeLayout(false);

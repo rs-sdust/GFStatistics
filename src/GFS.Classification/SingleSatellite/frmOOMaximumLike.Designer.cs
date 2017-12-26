@@ -208,7 +208,7 @@
             this.labelCilp1.Name = "labelCilp1";
             this.labelCilp1.Size = new System.Drawing.Size(279, 204);
             this.labelCilp1.TabIndex = 20;
-            this.labelCilp1.Text = "该工具用于将栅格图像按\r\n照面状矢量文件的边界进\r\n行裁剪，得到矢量文件范\r\n围内的栅格图像。";
+            this.labelCilp1.Text = "该工具基于面向对象分割结果\r\n对影像进行监督分类，从而完\r\n成面向对象作物识别提取";
             // 
             // frmOOMaximumLike
             // 
@@ -230,6 +230,7 @@
             this.Name = "frmOOMaximumLike";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "面向对象分类";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmOOMaximumLike_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmOOMaximumLike_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

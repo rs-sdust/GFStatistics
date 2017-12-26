@@ -562,16 +562,16 @@ namespace GFS.BLL
                             IRasterBand rasterBand = rasterBandCollection.Item(0);
                             if (rasterBand.Histogram == null)
                             {
-                                WaitDialogForm waitDialogForm = new WaitDialogForm(frmLayerRender.MSG08, "提示信息");
+                                frmWaitDialog frmWait = new frmWaitDialog(frmLayerRender.MSG08, "提示信息");
                                 try
                                 {
-                                    waitDialogForm.Owner = this;
-                                    waitDialogForm.TopMost = false;
+                                    frmWait.Owner = this;
+                                    frmWait.TopMost = false;
                                     rasterBand.ComputeStatsAndHist();
                                 }
                                 finally
                                 {
-                                    waitDialogForm.Close();
+                                    frmWait.Close();
                                 }
                             }
                             rasterRenderer.Raster = raster;

@@ -24,7 +24,10 @@ namespace GFS.Sample
         private void frmSamplingSelect_Load(object sender, EventArgs e)
         {
             this.Size = this.MinimumSize;
+
             MapAPI.GetAllLayers(null, cmbSecondUint);
+            MapAPI.GetAllLayers(null, cmbFirstUnit);
+            MapAPI.GetAllLayers(cmbASCDL, cmbCultivation);
 
             this.chkSecondUint.Checked = false;
             this.chkNewNet.Checked = true;
@@ -42,7 +45,7 @@ namespace GFS.Sample
 
         private void InitialData()
         {
-            cmbFirstUnit.Text = SampleData.firstUnit;
+            cmbFirstUnit.Text = SampleData.firstSample;
             if (!string.IsNullOrEmpty(cmbFirstUnit.Text))
             {
                 getFields();
@@ -54,6 +57,7 @@ namespace GFS.Sample
             cmbASCDL.Text = SampleData.ASCDL;
             if (!string.IsNullOrEmpty(cmbASCDL.Text))
             {
+                cmbCrop.Properties.Items.Clear();
                 if (SampleData.classNames.Count > 0)
                 {
                     cmbCrop.Properties.Items.AddRange(SampleData.classNames);
@@ -94,18 +98,24 @@ namespace GFS.Sample
         {
             chkNewNet.Checked = !chkSecondUint.Checked;
             cmbSecondUint.Enabled = btnSecondUint.Enabled = chkSecondUint.Checked;
-            spinLength.Enabled = spinWidth.Enabled = cmbFirstUnit.Enabled = btnFirstUnit.Enabled =
-                cmbVillage.Enabled = cmbLayer.Enabled = cmbCultivation.Enabled =
-                cmbASCDL.Enabled = cmbCrop.Enabled = chkNewNet.Checked;
+
+            spinLength.Enabled = spinWidth.Enabled = chkNewNet.Checked;
+            //cmbFirstUnit.Enabled = chkNewNet.Checked;
+            //spinLength.Enabled = spinWidth.Enabled = cmbFirstUnit.Enabled = btnFirstUnit.Enabled =
+            //    cmbVillage.Enabled = cmbLayer.Enabled = cmbCultivation.Enabled =
+            //    cmbASCDL.Enabled = cmbCrop.Enabled = chkNewNet.Checked;
         }
 
         private void chkNewNet_CheckedChanged(object sender, EventArgs e)
         {
             chkSecondUint.Checked = !chkNewNet.Checked;
             cmbSecondUint.Enabled = btnSecondUint.Enabled = chkSecondUint.Checked;
-            spinLength.Enabled = spinWidth.Enabled = cmbFirstUnit.Enabled = btnFirstUnit.Enabled =
-                cmbVillage.Enabled = cmbLayer.Enabled = cmbCultivation.Enabled =
-                cmbASCDL.Enabled = cmbCrop.Enabled = chkNewNet.Checked;
+
+            spinLength.Enabled = spinWidth.Enabled = chkNewNet.Checked;
+            //cmbFirstUnit.Enabled = chkNewNet.Checked;
+            //spinLength.Enabled = spinWidth.Enabled = cmbFirstUnit.Enabled = btnFirstUnit.Enabled =
+            //    cmbVillage.Enabled = cmbLayer.Enabled = cmbCultivation.Enabled =
+            //    cmbASCDL.Enabled = cmbCrop.Enabled = chkNewNet.Checked;
         }
 
         private void chkSampleNum_CheckedChanged(object sender, EventArgs e)
@@ -205,15 +215,16 @@ namespace GFS.Sample
         private void btnOK_Click(object sender, EventArgs e)
         {
             string msg = string.Empty;
-            WaitDialogForm frmWait = new WaitDialogForm("正在执行...", "提示信息");
+            frmWaitDialog frmWait = new frmWaitDialog("正在执行...", "提示信息");
             try
             {
                 frmWait.Owner = this;
                 frmWait.TopMost = false;
-
+                string fishNet = string.Empty;
+                string firstUnit = this.cmbFirstUnit.Text;
                 if (chkNewNet.Checked)
                 {
-                    SampleData.firstUnit = cmbFirstUnit.Text;
+                    SampleData.firstSample = cmbFirstUnit.Text;
                     SampleData.villageField = cmbVillage.Text;
                     SampleData.layerField = cmbLayer.Text;
                     SampleData.farmLand = cmbCultivation.Text;
@@ -225,26 +236,41 @@ namespace GFS.Sample
                         XtraMessageBox.Show(msg);
                         return;
                     }
+                    //一级单元范围内创建渔网
+                    frmWait.Caption = "创建二级抽样单元...";
+                    fishNet = System.IO.Path.Combine(ConstDef.PATH_TEMP, DateTime.Now.ToFileTime().ToString() + ".shp");
+                    int width = int.Parse(spinLength.EditValue.ToString());
+                    int height = int.Parse(this.spinWidth.EditValue.ToString());
+                    if (!EnviVars.instance.GpExecutor.CreateFishNet(firstUnit, width, height, fishNet, out msg))
+                    {
+                        XtraMessageBox.Show(msg);
+                        return;
+                    }
                 }
                 else
                 {
+                    SampleData.firstSample = cmbFirstUnit.Text;
+                    SampleData.villageField = cmbVillage.Text;
+                    SampleData.layerField = cmbLayer.Text;
+                    SampleData.farmLand = cmbCultivation.Text;
+                    SampleData.ASCDL = cmbASCDL.Text;
+                    SampleData.targetCrop = cmbCrop.SelectedIndex;
+
+                    if (!SampleSelection.ChkData(out msg))
+                    {
+                        XtraMessageBox.Show(msg);
+                        return;
+                    }
+
                     if (string.IsNullOrEmpty(cmbSecondUint.Text))
                     {
                         XtraMessageBox.Show("二级抽样单元为空！");
                         return;
                     }
+                    fishNet = cmbSecondUint.Text;
+
                 }
-                //一级单元范围内创建渔网
-                frmWait.Caption = "创建二级抽样单元...";
-                string fishNet = System.IO.Path.Combine(ConstDef.PATH_TEMP, DateTime.Now.ToFileTime().ToString()+".shp");
-                string firstUnit = this.cmbFirstUnit.Text;
-                int width = int.Parse(spinLength.EditValue.ToString());
-                int height =  int.Parse(this.spinWidth.EditValue.ToString());
-                if (!EnviVars.instance.GpExecutor.CreateFishNet(firstUnit, width, height, fishNet, out msg))
-                {
-                    XtraMessageBox.Show(msg);
-                    return;
-                }
+
                 //抽选样本
                 frmWait.Caption = "抽选样本...";
                 SamplePara para = new SamplePara();
@@ -266,6 +292,10 @@ namespace GFS.Sample
                     XtraMessageBox.Show(msg);
                     return;
                 }
+                BLL.ProductMeta meta = new ProductMeta(txtOut.Text.TrimEnd(), "", "", "二级样方", "抽样和面积推算结果");
+                meta.WriteShpMeta();
+                BLL.ProductQuickView view = new BLL.ProductQuickView(txtOut.Text.TrimEnd());
+                view.Create();
 
                 System.Windows.Forms.DialogResult dialogResult = XtraMessageBox.Show("抽样完成,是否加载结果？", "提示信息", System.Windows.Forms.MessageBoxButtons.YesNo, System.Windows.Forms.MessageBoxIcon.Asterisk);
                 if (dialogResult == System.Windows.Forms.DialogResult.Yes)
@@ -317,6 +347,11 @@ namespace GFS.Sample
             EnviVars.instance.GpExecutor.GetFields(cmbFirstUnit.Text, fieldsList);
             this.cmbVillage.Properties.Items.AddRange(fieldsList);
             this.cmbLayer.Properties.Items.AddRange(fieldsList);
+        }
+
+        private void frmSamplingSelect_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

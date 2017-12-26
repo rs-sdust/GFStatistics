@@ -65,7 +65,7 @@ namespace GFS.Classification
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            WaitDialogForm frmWait = new WaitDialogForm("正在验证...", "提示信息");
+            frmWaitDialog frmWait = new frmWaitDialog("正在验证...", "提示信息");
             try
             {
                 frmWait.Owner = this;
@@ -117,6 +117,11 @@ namespace GFS.Classification
                 this.Size = this.MinimumSize;
                 btnHelp.Text = "显示帮助>>";
             }
+        }
+
+        private void frmAccuracyVerify_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

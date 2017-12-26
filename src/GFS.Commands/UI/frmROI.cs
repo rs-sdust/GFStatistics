@@ -1615,7 +1615,7 @@ namespace GFS.Commands.UI
 
         private void FrmROI_HelpButtonClicked(object sender, CancelEventArgs e)
         {
-            //HelpManager.ShowHelp(this);
+            HelpManager.ShowHelp(this);
         }
     }
 }

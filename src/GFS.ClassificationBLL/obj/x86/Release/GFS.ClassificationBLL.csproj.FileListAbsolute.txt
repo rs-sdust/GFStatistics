@@ -7,3 +7,13 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release
 E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.dll.licenses
 E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.pdb
+G:\高分统计项目一期\trunk\Release\GFS.ClassificationBLL.dll
+G:\高分统计项目一期\trunk\Release\GFS.ClassificationBLL.pdb
+G:\高分统计项目一期\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.csprojResolveAssemblyReference.cache
+G:\高分统计项目一期\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.frmBandSelection.resources
+G:\高分统计项目一期\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.frmEditLeaf.resources
+G:\高分统计项目一期\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.frmEditNode.resources
+G:\高分统计项目一期\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.csproj.GenerateResource.Cache
+G:\高分统计项目一期\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.dll.licenses
+G:\高分统计项目一期\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.dll
+G:\高分统计项目一期\trunk\src\GFS.ClassificationBLL\obj\x86\Release\GFS.ClassificationBLL.pdb

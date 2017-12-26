@@ -100,6 +100,7 @@ namespace GFS.BLL
         public void Distroy()
         {
             oComIDL.DestroyObject();
+            BLL.EnviVars.instance.IdlModel = null;
         }
 
     }

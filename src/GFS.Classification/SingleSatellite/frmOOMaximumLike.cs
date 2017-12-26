@@ -58,13 +58,17 @@ namespace GFS.Classification
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            WaitDialogForm frmWait = new WaitDialogForm("正在分类...", "提示信息");
+            frmWaitDialog frmWait = new frmWaitDialog("正在分类...", "提示信息");
             try
             {
                 frmWait.Owner = this;
                 frmWait.TopMost = false;
                 MaximumLikeHood ooC = new MaximumLikeHood(cmbInRaster.Text, txtROI.Text, txtOut.Text);
                 ooC.Execute();
+                BLL.ProductMeta meta = new ProductMeta(txtOut.Text.TrimEnd(), "", "", "面向对象识别", "作物识别结果");
+                meta.WriteGeoMeta();
+                BLL.ProductQuickView view = new BLL.ProductQuickView(txtOut.Text.TrimEnd());
+                view.Create();
                 if (XtraMessageBox.Show("分类完成，是否加载？", "提示信息", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     MAP.AddRasterFileToMap(txtOut.Text.TrimEnd());
                 this.Close();
@@ -75,6 +79,10 @@ namespace GFS.Classification
                 Log.WriteLog(typeof(frmSegmentation), ex);
                 if (File.Exists(txtOut.Text.TrimEnd()))
                 {
+                    BLL.ProductMeta meta = new ProductMeta(txtOut.Text.TrimEnd(), "", "", "面向对象识别", "作物识别结果");
+                    meta.WriteGeoMeta();
+                    BLL.ProductQuickView view = new BLL.ProductQuickView(txtOut.Text.TrimEnd());
+                    view.Create();
                     FileInfo fInfo = new FileInfo(txtOut.Text.TrimEnd());
                     if (fInfo.Length / (1024 * 1024) > 1)
                     {
@@ -111,6 +119,11 @@ namespace GFS.Classification
                 this.Size = this.MinimumSize;
                 btnHelp.Text = "显示帮助>>";
             }
+        }
+
+        private void frmOOMaximumLike_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
     }
 }

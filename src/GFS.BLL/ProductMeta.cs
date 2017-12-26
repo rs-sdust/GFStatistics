@@ -66,6 +66,11 @@ namespace GFS.BLL
             this._desc = desc;
             _subClass = subClass;
         }
+
+        /// <summary>
+        /// Writes the RAster meta.
+        /// </summary>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public bool WriteGeoMeta()
         {
             StructProMeta meta=new StructProMeta();
@@ -84,6 +89,10 @@ namespace GFS.BLL
             this.Write2File(metaFile, meta);
             return true;
         }
+        /// <summary>
+        /// Writes the SHP meta.
+        /// </summary>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public bool WriteShpMeta()
         {
             StructProMeta meta = new StructProMeta();
@@ -102,6 +111,10 @@ namespace GFS.BLL
             this.Write2File(metaFile, meta);
             return true;
         }
+        /// <summary>
+        /// Writes the document meta.
+        /// </summary>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public bool WriteDocMeta()
         {
             StructProMeta meta = new StructProMeta();

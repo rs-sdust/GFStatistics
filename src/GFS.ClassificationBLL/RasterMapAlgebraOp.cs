@@ -163,6 +163,10 @@ namespace GFS.ClassificationBLL
 
             try
             {
+                if (!File.Exists(inFile))
+                {
+                    throw new Exception("文件不存在，" + inFile);
+                }
                 rasterWorkspace = (IRasterWorkspace)pWorkspaceFactory.OpenFromFile(filePath, 0);
                 rasterDataset = rasterWorkspace.OpenRasterDataset(fileName);
                 if (bandIndex > 0)
@@ -176,6 +180,7 @@ namespace GFS.ClassificationBLL
             {
                 //Console.WriteLine("Failed in Opening RasterDataset. " + ex.InnerException.ToString());
                 Log.WriteLog(typeof(RasterMapAlgebraOp), ex);
+                throw ex;
             }
 
             return rasterDataset;

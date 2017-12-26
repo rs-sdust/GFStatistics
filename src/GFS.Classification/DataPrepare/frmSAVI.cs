@@ -100,7 +100,7 @@ namespace GFS.Classification
             else
             {
 
-                WaitDialogForm frmWait = new WaitDialogForm("提示", "正在计算......");
+                frmWaitDialog frmWait = new frmWaitDialog("提示", "正在计算......");
                 try
                 {
                     frmWait.Owner = this;
@@ -165,6 +165,11 @@ namespace GFS.Classification
                 this.cBERed.SelectedIndex = 2;
                 this.cBENIRed.SelectedIndex = 3;
             }
+        }
+
+        private void frmSAVI_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

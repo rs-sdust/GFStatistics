@@ -1,0 +1,11 @@
+
+ 
+记录时间：2017-11-21 11:42:57,538 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GPExecutor property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80041098): ERROR 010092: Invalid output extent.
+   在 ESRI.ArcGIS.SpatialAnalyst.RasterZonalOpClass.ZonalStatisticsAsTable(IGeoDataset zone, IGeoDataset value, Boolean ignoreNoData)
+   在 GFS.BLL.GPExecutor.ZonalStatisticsAsTable(String inFile, String inValueFile, String zoneField, String statistisType) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GPExecutor.cs:行号 273

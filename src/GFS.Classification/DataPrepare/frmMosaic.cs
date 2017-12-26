@@ -137,7 +137,7 @@ namespace GFS.Classification
             }
             else
             {
-                WaitDialogForm frmWait = new WaitDialogForm("正在拼接...", "提示信息");
+                frmWaitDialog frmWait = new frmWaitDialog("正在拼接...", "提示信息");
                 try
                 {
                     frmWait.Owner = this;
@@ -297,6 +297,11 @@ namespace GFS.Classification
             List<string> fList = listDataSet.Items.Cast<string>().ToList<string>();
             frmPreview frm = new frmPreview(fList);
             frm.ShowDialog();
+        }
+
+        private void frmMosaic_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
         

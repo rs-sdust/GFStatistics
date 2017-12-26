@@ -5,10 +5,3 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.Res
 E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.csproj.GenerateResource.Cache
 E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.pdb
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.Carto.dll
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.Carto.pdb
-G:\高分统计项目一期\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.csprojResolveAssemblyReference.cache
-G:\高分统计项目一期\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.Resources.resources
-G:\高分统计项目一期\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.csproj.GenerateResource.Cache
-G:\高分统计项目一期\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.dll
-G:\高分统计项目一期\trunk\src\GFS.Carto\obj\x86\Debug\GFS.Carto.pdb

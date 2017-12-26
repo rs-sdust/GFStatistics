@@ -42,21 +42,21 @@
             this.panelLine = new DevExpress.XtraEditors.PanelControl();
             this.cmbLineWith = new DevExpress.XtraEditors.SpinEdit();
             this.cmbLineColor = new DevExpress.XtraEditors.ColorEdit();
+            this.panelTxt = new DevExpress.XtraEditors.PanelControl();
+            this.cmbTxtFont = new DevExpress.XtraEditors.FontEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.panelScaleBar = new DevExpress.XtraEditors.PanelControl();
+            this.cmbScaleBarUnit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.cmbTxtSize = new DevExpress.XtraEditors.SpinEdit();
+            this.cmbTxtColor = new DevExpress.XtraEditors.ColorEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.btnSelectStyle = new DevExpress.XtraEditors.SimpleButton();
             this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.panelTxt = new DevExpress.XtraEditors.PanelControl();
-            this.cmbTxtFont = new DevExpress.XtraEditors.FontEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbTxtSize = new DevExpress.XtraEditors.SpinEdit();
-            this.cmbTxtColor = new DevExpress.XtraEditors.ColorEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.panelScaleBar = new DevExpress.XtraEditors.PanelControl();
-            this.cmbScaleBarUnit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.panelMarker = new DevExpress.XtraEditors.PanelControl();
             this.cmbMarkerAngel = new DevExpress.XtraEditors.SpinEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
@@ -78,11 +78,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelTxt)).BeginInit();
             this.panelTxt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTxtFont.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTxtSize.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTxtColor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelScaleBar)).BeginInit();
             this.panelScaleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbScaleBarUnit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTxtSize.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTxtColor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMarker)).BeginInit();
             this.panelMarker.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbMarkerAngel.Properties)).BeginInit();
@@ -128,7 +128,7 @@
             this.cmbFillLineColor.Name = "cmbFillLineColor";
             this.cmbFillLineColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbFillLineColor.Size = new System.Drawing.Size(100, 21);
+            this.cmbFillLineColor.Size = new System.Drawing.Size(100, 20);
             this.cmbFillLineColor.TabIndex = 9;
             this.cmbFillLineColor.EditValueChanged += new System.EventHandler(this.cmbFillOutlineColor_EditValueChanged);
             // 
@@ -143,7 +143,7 @@
             this.cmbFillWidth.Name = "cmbFillWidth";
             this.cmbFillWidth.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.cmbFillWidth.Size = new System.Drawing.Size(100, 21);
+            this.cmbFillWidth.Size = new System.Drawing.Size(100, 20);
             this.cmbFillWidth.TabIndex = 8;
             this.cmbFillWidth.EditValueChanged += new System.EventHandler(this.cmbFillAndLineWidth_EditValueChanged);
             // 
@@ -154,7 +154,7 @@
             this.cmbFillColor.Name = "cmbFillColor";
             this.cmbFillColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbFillColor.Size = new System.Drawing.Size(100, 21);
+            this.cmbFillColor.Size = new System.Drawing.Size(100, 20);
             this.cmbFillColor.TabIndex = 7;
             this.cmbFillColor.EditValueChanged += new System.EventHandler(this.cmbColor_EditValueChanged);
             // 
@@ -195,6 +195,7 @@
             // 
             this.panelLine.Controls.Add(this.cmbLineWith);
             this.panelLine.Controls.Add(this.cmbLineColor);
+            this.panelLine.Controls.Add(this.panelTxt);
             this.panelLine.Controls.Add(this.labelControl4);
             this.panelLine.Controls.Add(this.labelControl6);
             this.panelLine.Location = new System.Drawing.Point(343, 134);
@@ -214,7 +215,7 @@
             this.cmbLineWith.Name = "cmbLineWith";
             this.cmbLineWith.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.cmbLineWith.Size = new System.Drawing.Size(100, 21);
+            this.cmbLineWith.Size = new System.Drawing.Size(100, 20);
             this.cmbLineWith.TabIndex = 8;
             this.cmbLineWith.EditValueChanged += new System.EventHandler(this.cmbFillAndLineWidth_EditValueChanged);
             // 
@@ -225,9 +226,112 @@
             this.cmbLineColor.Name = "cmbLineColor";
             this.cmbLineColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbLineColor.Size = new System.Drawing.Size(100, 21);
+            this.cmbLineColor.Size = new System.Drawing.Size(100, 20);
             this.cmbLineColor.TabIndex = 7;
             this.cmbLineColor.EditValueChanged += new System.EventHandler(this.cmbColor_EditValueChanged);
+            // 
+            // panelTxt
+            // 
+            this.panelTxt.Controls.Add(this.cmbTxtFont);
+            this.panelTxt.Controls.Add(this.labelControl8);
+            this.panelTxt.Controls.Add(this.panelScaleBar);
+            this.panelTxt.Controls.Add(this.cmbTxtSize);
+            this.panelTxt.Controls.Add(this.cmbTxtColor);
+            this.panelTxt.Controls.Add(this.labelControl5);
+            this.panelTxt.Controls.Add(this.labelControl7);
+            this.panelTxt.Location = new System.Drawing.Point(343, 134);
+            this.panelTxt.Name = "panelTxt";
+            this.panelTxt.Size = new System.Drawing.Size(233, 173);
+            this.panelTxt.TabIndex = 11;
+            this.panelTxt.Visible = false;
+            // 
+            // cmbTxtFont
+            // 
+            this.cmbTxtFont.Location = new System.Drawing.Point(93, 72);
+            this.cmbTxtFont.Name = "cmbTxtFont";
+            this.cmbTxtFont.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbTxtFont.Size = new System.Drawing.Size(100, 20);
+            this.cmbTxtFont.TabIndex = 10;
+            this.cmbTxtFont.EditValueChanged += new System.EventHandler(this.cmbTxtFont_EditValueChanged);
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(40, 112);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(36, 14);
+            this.labelControl8.TabIndex = 9;
+            this.labelControl8.Text = "大小：";
+            // 
+            // panelScaleBar
+            // 
+            this.panelScaleBar.Controls.Add(this.cmbScaleBarUnit);
+            this.panelScaleBar.Controls.Add(this.labelControl11);
+            this.panelScaleBar.Location = new System.Drawing.Point(184, 52);
+            this.panelScaleBar.Name = "panelScaleBar";
+            this.panelScaleBar.Size = new System.Drawing.Size(233, 173);
+            this.panelScaleBar.TabIndex = 12;
+            this.panelScaleBar.Visible = false;
+            // 
+            // cmbScaleBarUnit
+            // 
+            this.cmbScaleBarUnit.Location = new System.Drawing.Point(83, 69);
+            this.cmbScaleBarUnit.Name = "cmbScaleBarUnit";
+            this.cmbScaleBarUnit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbScaleBarUnit.Size = new System.Drawing.Size(90, 20);
+            this.cmbScaleBarUnit.TabIndex = 1;
+            this.cmbScaleBarUnit.EditValueChanged += new System.EventHandler(this.cmbScaleBarUnit_EditValueChanged);
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Location = new System.Drawing.Point(40, 69);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(36, 14);
+            this.labelControl11.TabIndex = 0;
+            this.labelControl11.Text = "单位：";
+            // 
+            // cmbTxtSize
+            // 
+            this.cmbTxtSize.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.cmbTxtSize.Location = new System.Drawing.Point(93, 109);
+            this.cmbTxtSize.Name = "cmbTxtSize";
+            this.cmbTxtSize.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.cmbTxtSize.Size = new System.Drawing.Size(100, 20);
+            this.cmbTxtSize.TabIndex = 8;
+            this.cmbTxtSize.EditValueChanged += new System.EventHandler(this.cmbTxtSize_EditValueChanged);
+            // 
+            // cmbTxtColor
+            // 
+            this.cmbTxtColor.EditValue = System.Drawing.Color.Empty;
+            this.cmbTxtColor.Location = new System.Drawing.Point(93, 34);
+            this.cmbTxtColor.Name = "cmbTxtColor";
+            this.cmbTxtColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbTxtColor.Size = new System.Drawing.Size(100, 20);
+            this.cmbTxtColor.TabIndex = 7;
+            this.cmbTxtColor.EditValueChanged += new System.EventHandler(this.cmbColor_EditValueChanged);
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Location = new System.Drawing.Point(39, 75);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(36, 14);
+            this.labelControl5.TabIndex = 2;
+            this.labelControl5.Text = "字体：";
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(39, 37);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(36, 14);
+            this.labelControl7.TabIndex = 0;
+            this.labelControl7.Text = "颜色：";
             // 
             // labelControl4
             // 
@@ -272,108 +376,6 @@
             this.btnCancel.Text = "取消";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // panelTxt
-            // 
-            this.panelTxt.Controls.Add(this.cmbTxtFont);
-            this.panelTxt.Controls.Add(this.labelControl8);
-            this.panelTxt.Controls.Add(this.cmbTxtSize);
-            this.panelTxt.Controls.Add(this.cmbTxtColor);
-            this.panelTxt.Controls.Add(this.labelControl5);
-            this.panelTxt.Controls.Add(this.labelControl7);
-            this.panelTxt.Location = new System.Drawing.Point(343, 134);
-            this.panelTxt.Name = "panelTxt";
-            this.panelTxt.Size = new System.Drawing.Size(233, 173);
-            this.panelTxt.TabIndex = 11;
-            this.panelTxt.Visible = false;
-            // 
-            // cmbTxtFont
-            // 
-            this.cmbTxtFont.Location = new System.Drawing.Point(93, 72);
-            this.cmbTxtFont.Name = "cmbTxtFont";
-            this.cmbTxtFont.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbTxtFont.Size = new System.Drawing.Size(100, 21);
-            this.cmbTxtFont.TabIndex = 10;
-            this.cmbTxtFont.EditValueChanged += new System.EventHandler(this.cmbTxtFont_EditValueChanged);
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Location = new System.Drawing.Point(40, 112);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(36, 14);
-            this.labelControl8.TabIndex = 9;
-            this.labelControl8.Text = "大小：";
-            // 
-            // cmbTxtSize
-            // 
-            this.cmbTxtSize.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.cmbTxtSize.Location = new System.Drawing.Point(93, 109);
-            this.cmbTxtSize.Name = "cmbTxtSize";
-            this.cmbTxtSize.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.cmbTxtSize.Size = new System.Drawing.Size(100, 21);
-            this.cmbTxtSize.TabIndex = 8;
-            this.cmbTxtSize.EditValueChanged += new System.EventHandler(this.cmbTxtSize_EditValueChanged);
-            // 
-            // cmbTxtColor
-            // 
-            this.cmbTxtColor.EditValue = System.Drawing.Color.Empty;
-            this.cmbTxtColor.Location = new System.Drawing.Point(93, 34);
-            this.cmbTxtColor.Name = "cmbTxtColor";
-            this.cmbTxtColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbTxtColor.Size = new System.Drawing.Size(100, 21);
-            this.cmbTxtColor.TabIndex = 7;
-            this.cmbTxtColor.EditValueChanged += new System.EventHandler(this.cmbColor_EditValueChanged);
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(39, 75);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(36, 14);
-            this.labelControl5.TabIndex = 2;
-            this.labelControl5.Text = "字体：";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(39, 37);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(36, 14);
-            this.labelControl7.TabIndex = 0;
-            this.labelControl7.Text = "颜色：";
-            // 
-            // panelScaleBar
-            // 
-            this.panelScaleBar.Controls.Add(this.cmbScaleBarUnit);
-            this.panelScaleBar.Controls.Add(this.labelControl11);
-            this.panelScaleBar.Location = new System.Drawing.Point(343, 134);
-            this.panelScaleBar.Name = "panelScaleBar";
-            this.panelScaleBar.Size = new System.Drawing.Size(233, 173);
-            this.panelScaleBar.TabIndex = 12;
-            this.panelScaleBar.Visible = false;
-            // 
-            // cmbScaleBarUnit
-            // 
-            this.cmbScaleBarUnit.Location = new System.Drawing.Point(83, 69);
-            this.cmbScaleBarUnit.Name = "cmbScaleBarUnit";
-            this.cmbScaleBarUnit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbScaleBarUnit.Size = new System.Drawing.Size(90, 21);
-            this.cmbScaleBarUnit.TabIndex = 1;
-            this.cmbScaleBarUnit.EditValueChanged += new System.EventHandler(this.cmbScaleBarUnit_EditValueChanged);
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Location = new System.Drawing.Point(40, 69);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(36, 14);
-            this.labelControl11.TabIndex = 0;
-            this.labelControl11.Text = "单位：";
-            // 
             // panelMarker
             // 
             this.panelMarker.Controls.Add(this.cmbMarkerAngel);
@@ -399,7 +401,7 @@
             this.cmbMarkerAngel.Name = "cmbMarkerAngel";
             this.cmbMarkerAngel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.cmbMarkerAngel.Size = new System.Drawing.Size(100, 21);
+            this.cmbMarkerAngel.Size = new System.Drawing.Size(100, 20);
             this.cmbMarkerAngel.TabIndex = 10;
             this.cmbMarkerAngel.EditValueChanged += new System.EventHandler(this.cmbMarkerAngel_EditValueChanged);
             // 
@@ -422,7 +424,7 @@
             this.cmbMarkerSize.Name = "cmbMarkerSize";
             this.cmbMarkerSize.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.cmbMarkerSize.Size = new System.Drawing.Size(100, 21);
+            this.cmbMarkerSize.Size = new System.Drawing.Size(100, 20);
             this.cmbMarkerSize.TabIndex = 8;
             this.cmbMarkerSize.EditValueChanged += new System.EventHandler(this.cmbMarkerSize_EditValueChanged);
             // 
@@ -433,7 +435,7 @@
             this.cmbMarkerColor.Name = "cmbMarkerColor";
             this.cmbMarkerColor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbMarkerColor.Size = new System.Drawing.Size(100, 21);
+            this.cmbMarkerColor.Size = new System.Drawing.Size(100, 20);
             this.cmbMarkerColor.TabIndex = 7;
             // 
             // labelControl9
@@ -459,8 +461,6 @@
             this.ClientSize = new System.Drawing.Size(584, 403);
             this.Controls.Add(this.panelMarker);
             this.Controls.Add(this.panelLine);
-            this.Controls.Add(this.panelTxt);
-            this.Controls.Add(this.panelScaleBar);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.panelFill);
@@ -494,12 +494,12 @@
             this.panelTxt.ResumeLayout(false);
             this.panelTxt.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTxtFont.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTxtSize.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbTxtColor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelScaleBar)).EndInit();
             this.panelScaleBar.ResumeLayout(false);
             this.panelScaleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbScaleBarUnit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTxtSize.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbTxtColor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMarker)).EndInit();
             this.panelMarker.ResumeLayout(false);
             this.panelMarker.PerformLayout();

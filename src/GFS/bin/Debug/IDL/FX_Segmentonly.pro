@@ -21,8 +21,10 @@
 ;    Merge_Settings_scale_level:融合尺度
 ;    Kernel_Size:纹理内核大小
 ;    OutputFile:分割输出结果
-;    
+;    vectorFile：矢量结果
+;
 ; :Author: 杨以坤
+; :Modify: RickerYan  Add  keyword output vectorFile
 ;-
 
 PRO FX_Segmentonly,InputFile,Segment_Settings_Scale_Level,Merge_Settings_scale_level,Kernel_Size,OutputFile,vectorFile

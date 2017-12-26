@@ -138,7 +138,7 @@
             this.labelCilp1.Name = "labelCilp1";
             this.labelCilp1.Size = new System.Drawing.Size(279, 230);
             this.labelCilp1.TabIndex = 20;
-            this.labelCilp1.Text = "该工具用于将栅格图像按\r\n照面状矢量文件的边界进\r\n行裁剪，得到矢量文件范\r\n围内的栅格图像。";
+            this.labelCilp1.Text = "图像裁剪可通过目标区域的矢量文件\r\n或在地图窗口手工绘制目标区域来\r\n裁剪遥感影像提取目标区域数据。";
             // 
             // siBconcel
             // 

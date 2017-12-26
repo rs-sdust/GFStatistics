@@ -170,6 +170,13 @@ namespace GFS.Classification
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
 
         }
+        private void btnWideInWidth_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            frmNeuralNet frm = new frmNeuralNet();
+            frm.Owner = this;
+            frm.ShowDialog();
+        }
         //
         //图像分割
         //
@@ -190,11 +197,15 @@ namespace GFS.Classification
             frm.ShowDialog();
         }
         //
-        //叠加分类
+        //长时间序列
         //
         private void btnOverlayClass_ItemClick(object sender, ItemClickEventArgs e)
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            string treeFile = System.IO.Path.Combine(BLL.ConstDef.STARTPATH, "gf4.tree");
+            frmDecisionTree frm = new frmDecisionTree(treeFile);
+            frm.Owner = this;
+            frm.Show();
         }
         //
         //决策树分类
@@ -203,6 +214,7 @@ namespace GFS.Classification
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
             frmDecisionTree frm = new frmDecisionTree();
+            frm.Owner = this;
             frm.Show();
         }
         //
@@ -218,6 +230,8 @@ namespace GFS.Classification
         private void btnSyn_ItemClick(object sender, ItemClickEventArgs e)
         {
             Task.UpdateTaskState(EnviVars.instance.CurrentTask, BLL.TaskState.Production);
+            frmGF3Classification frm = new frmGF3Classification();
+            frm.ShowDialog();
         }
         //
         //重编码
@@ -272,8 +286,29 @@ namespace GFS.Classification
             frmMosaic frm = new frmMosaic();
             frm.ShowDialog();
         }
-
+        private void btnSpatialError_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmSpatialError frm = new frmSpatialError();
+            frm.Owner = this;
+            frm.ShowDialog();
+        }
         #endregion
+
+        private void btnGF3Radar_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnHyper_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            frmHyperSpeClassification frm = new frmHyperSpeClassification();
+            frm.Owner = this;
+            frm.ShowDialog();
+        }
+
+
+
+
 
 
 

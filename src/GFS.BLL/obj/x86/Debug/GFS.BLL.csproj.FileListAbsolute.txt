@@ -8,14 +8,3 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.frmSymb
 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.csproj.GenerateResource.Cache
 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.dll
 E:\高分统计\GFStatistics.git\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.pdb
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.BLL.dll
-G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.BLL.pdb
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.csprojResolveAssemblyReference.cache
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\Interop.COM_IDL_connectLib.dll
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.csproj.ResolveComReference.cache
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.frmLayerRender.resources
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.frmSymbolSelector.resources
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.csproj.GenerateResource.Cache
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.dll.licenses
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.dll
-G:\高分统计项目一期\trunk\src\GFS.BLL\obj\x86\Debug\GFS.BLL.pdb

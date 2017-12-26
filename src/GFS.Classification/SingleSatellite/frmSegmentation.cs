@@ -101,16 +101,17 @@ namespace GFS.Classification
                 XtraMessageBox.Show("输入文件不存在！","提示信息",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
-            WaitDialogForm frmWait = new WaitDialogForm("正在分割...", "提示信息");
-                            string segImage = Path.Combine(ConstDef.PATH_TEMP, DateTime.Now.ToFileTime().ToString() + ".tif");
-                string vectorFile = Path.Combine(ConstDef.PATH_TEMP, DateTime.Now.ToFileTime().ToString() + ".shp");
+            frmWaitDialog frmWait = new frmWaitDialog("正在分割...", "提示信息");
+                            //string segImage = Path.Combine(ConstDef.PATH_TEMP, DateTime.Now.ToFileTime().ToString() + ".tif");
+            string segImg = txtOut.Text.TrimEnd();
+            string vectorFile = segImg.Substring(0,segImg.LastIndexOf(".")) + ".shp";
             try
             {
                 frmWait.Owner = this;
                 frmWait.TopMost = false;
                 string cmd = ConstDef.IDL_FUN_SEGMENTONLY + ",'" + cmbIn.Text.TrimEnd() + "'," +
                             spinSegment.Value.ToString() + "," + spinMerge.Value.ToString() + "," +
-                            spinKernel.Value.ToString() + ",'" + txtOut.Text.TrimEnd() + "','" + vectorFile + "'";
+                            spinKernel.Value.ToString() + ",'" + segImg + "','" + vectorFile + "'";
                 EnviVars.instance.IdlModel.Execute(cmd);
 
                 if (XtraMessageBox.Show("分割完成，是否加载？","提示信息",MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -121,9 +122,9 @@ namespace GFS.Classification
             {
                 //此处调用成功并写出结果后仍会抛出异常。
                 Log.WriteLog(typeof(frmSegmentation), ex);
-                if (File.Exists(txtOut.Text.TrimEnd()))
+                if (File.Exists(segImg))
                 {
-                    FileInfo fInfo = new FileInfo(txtOut.Text.TrimEnd());
+                    FileInfo fInfo = new FileInfo(segImg);
                     if (fInfo.Length / (1024 * 1024) > 1)
                     {
                         if (XtraMessageBox.Show("分割完成，是否加载？", "提示信息", MessageBoxButtons.OKCancel) == DialogResult.OK)
@@ -147,6 +148,11 @@ namespace GFS.Classification
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmSegmentation_HelpButtonClicked(object sender, CancelEventArgs e)
+        {
+            HelpManager.ShowHelp(this);
         }
 
 

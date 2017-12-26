@@ -143,7 +143,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 162);
+            this.ClientSize = new System.Drawing.Size(599, 162);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.siBHelp);
             this.Controls.Add(this.siBConcel);
@@ -159,6 +159,7 @@
             this.Name = "frmStatisticsResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "结果统计";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmStatisticsResult_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmStatisticsResult_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

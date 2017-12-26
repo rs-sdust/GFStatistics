@@ -249,6 +249,7 @@
             this.Name = "frmRecode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "地类重编码";
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.frmRecode_HelpButtonClicked);
             this.Load += new System.EventHandler(this.frmRecode_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

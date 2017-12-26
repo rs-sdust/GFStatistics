@@ -60,30 +60,35 @@ namespace GFS.Carbon
 
         private void btnForest_ItemClick(object sender, ItemClickEventArgs e)
         {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnForest);
             frmForest frm = new frmForest();
             frm.ShowDialog();
         }
 
         private void btnShrub_ItemClick(object sender, ItemClickEventArgs e)
         {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnShrub);
             frmShrub frm = new frmShrub();
             frm.ShowDialog();
         }
 
         private void btnGrass_ItemClick(object sender, ItemClickEventArgs e)
         {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnGrass);
             frmGrass frm = new frmGrass();
             frm.ShowDialog();
         }
 
         private void btnPlant_ItemClick(object sender, ItemClickEventArgs e)
         {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnVeg);
             frmVegCarbon frm = new frmVegCarbon();
             frm.ShowDialog();
         }
 
         private void btnSoil_ItemClick(object sender, ItemClickEventArgs e)
         {
+            this.ucWorkFlow.RefreshFlow(FlowStatus.btnSoil);
             frmSoilCarbon frm = new frmSoilCarbon();
             frm.ShowDialog();
         }
