@@ -1,0 +1,5 @@
+G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.Integration.dll
+G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.Integration.pdb
+G:\高分统计项目一期\trunk\src\GFS.Integration\obj\x86\Debug\GFS.Integration.csprojResolveAssemblyReference.cache
+G:\高分统计项目一期\trunk\src\GFS.Integration\obj\x86\Debug\GFS.Integration.dll
+G:\高分统计项目一期\trunk\src\GFS.Integration\obj\x86\Debug\GFS.Integration.pdb

@@ -1,0 +1,44 @@
+
+ 
+记录时间：2017-12-28 09:45:16,634 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 792
+
+ 
+记录时间：2017-12-28 17:52:13,845 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 792
+
+ 
+记录时间：2017-12-28 17:52:18,690 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 792
+
+ 
+记录时间：2017-12-28 17:52:18,697 
+线程ID:[1] 
+日志级别：  ERROR 
+出错类：GFS.BLL.GFSApplication property: [(null)] - 
+错误描述：Exception
+ 
+System.Runtime.InteropServices.COMException (0x80040202): The operation was attempted on an empty geometry.
+   在 ESRI.ArcGIS.Geometry.PointClass.get_X()
+   在 GFS.BLL.GFSApplication.GetStatusXY(Double mapX, Double mapY) 位置 G:\高分统计项目一期\trunk\src\GFS.BLL\GFSApplication.cs:行号 792

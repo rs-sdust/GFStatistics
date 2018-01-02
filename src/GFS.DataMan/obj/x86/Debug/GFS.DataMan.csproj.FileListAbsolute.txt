@@ -6,3 +6,11 @@ E:\高分统计\GFStatistics.git\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan
 E:\高分统计\GFStatistics.git\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan.csproj.GenerateResource.Cache
 E:\高分统计\GFStatistics.git\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan.exe
 E:\高分统计\GFStatistics.git\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan.pdb
+G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.DataMan.exe.config
+G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.DataMan.exe
+G:\高分统计项目一期\trunk\src\GFS\bin\Debug\GFS.DataMan.pdb
+G:\高分统计项目一期\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan.csprojResolveAssemblyReference.cache
+G:\高分统计项目一期\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan.frmMain.resources
+G:\高分统计项目一期\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan.csproj.GenerateResource.Cache
+G:\高分统计项目一期\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan.exe
+G:\高分统计项目一期\trunk\src\GFS.DataMan\obj\x86\Debug\GFS.DataMan.pdb

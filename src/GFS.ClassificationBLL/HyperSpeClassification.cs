@@ -471,12 +471,6 @@ namespace GFS.ClassificationBLL
 
 
 
-
-
-
-
-
-
         private bool LoadROI(string inSample, out string msg)
         {
             try
